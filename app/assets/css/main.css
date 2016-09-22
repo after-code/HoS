@@ -83,3 +83,44 @@ html {
 @font-face {
   font-family: 'Press';
   src: url(../../assets/font/PressStart2P.ttf); }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden; }
+
+.page-container {
+  max-width: 1000px;
+  border: 1px solid #424242;
+  width: 100%;
+  height: 1000px;
+  overflow: hidden;
+  position: relative; }
+
+.widget {
+  position: absolute;
+  width: 250px;
+  right: 0;
+  top: 100px;
+  background: #4a4a4a;
+  color: white; }
+
+.widget__header {
+  height: 30px;
+  width: 100%;
+  background: #383838;
+  text-align: center;
+  line-height: 30px; }
+
+.actions__list__item {
+  height: 30px;
+  padding-left: 10px;
+  line-height: 30px; }
+
+.widget__handle {
+  width: 40px;
+  height: 100px;
+  background: red;
+  float: left; }
+
+.widget__content {
+  float: left; }
