@@ -13,6 +13,8 @@
   ],
   "dependencies": {
     "jquery": "2.2.4",
-    "jquery-bez": "1.0.11"
+    "jquery-bez": "1.0.11",
+    "scrollmagic": "^2.0.5",
+    "gsap": "^1.19.0"
   }
 }

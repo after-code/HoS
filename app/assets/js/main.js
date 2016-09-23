@@ -26,4 +26,18 @@ $(function(){
       }
     }
   });
+
+  // ScrollMagic
+  var controller = new ScrollMagic.Controller();
+
+  new ScrollMagic.Scene({
+        duration: 1000,    // the scene should last for a scroll distance of 100px
+        offset: 50        // start this scene after scrolling for 50px
+    })
+    .setTween(".widget", 0.5, {backgroundColor: "green", scale: 2.5}) // pins the element for the the scene's duration
+    .addIndicators({name: "1 (duration: 0)"})
+    .addTo(controller);
+
+
+
 });
