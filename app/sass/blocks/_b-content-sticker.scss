@@ -1,0 +1,24 @@
+.b-content-sticker {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  color:black;
+  background: cyan;
+  top:0;
+  left:0;
+  padding:0 0% 0 3%;
+}
+.b-content-sticker__tag {
+  margin-top: 24%;
+    font-size: 15px;
+    margin-bottom: 7%;
+}
+.b-content-sticker__heading {
+  font-size: 38px;
+  line-height: 40px;
+  font-weight: bold;
+  margin-bottom: 8%;
+}
+.b-content-sticker__text{
+  line-height: 22px;
+}

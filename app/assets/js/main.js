@@ -30,14 +30,38 @@ $(function(){
   // ScrollMagic
   var controller = new ScrollMagic.Controller();
 
-  new ScrollMagic.Scene({
-        duration: 1000,    // the scene should last for a scroll distance of 100px
-        offset: 50        // start this scene after scrolling for 50px
-    })
-    .setTween(".widget", 0.5, {backgroundColor: "green", scale: 2.5}) // pins the element for the the scene's duration
-    .addIndicators({name: "1 (duration: 0)"})
-    .addTo(controller);
+  var i1 = 0;
+  var i2 = 0;
 
+  var scene = new ScrollMagic.Scene()
+  .addTo(controller)
+  .addIndicators()
+  .on("update", function() {
+      var x1 = controller.info("scrollDirection");
+      var x2 = $(window).scrollTop();
+      var x3 = 400;
+          if ( x1 == "REVERSE" && x2 >= x3 && i1 == 0) {
+              TweenLite.fromTo(".header", 0.2, { position:"fixed", top: "-80px"}, {position:"fixed", color:"white",  top: "0px", ease: Linear.easeNone});
+              i1++;
+              i2 = 0;
+          }
+          if ( x1 == "REVERSE" && x2 == 0) {
+              TweenLite.fromTo(".header", 0.3, { position:"relative", top: "0px"}, {color:"rgb(0,0,0)", background:"rgb(255,255,255)",top: "0px", ease: Linear.easeNone});
+              i1 = 0;
+              i2 = 0;
+          }
 
+          if ( x1 == "FORWARD" && x2 <= 200 ) {
+              TweenLite.to( ".header", 0.2, {position:"relative", background: "white", top:"0px", ease: Linear.easeNone});
+              i1 = 0;
+              i2 = 0;
+              console.log('top');
+          } else if ( x1 == "FORWARD"x2 >= 400 ) {
+              TweenLite.to( ".header", 0.2, {background: "black", top: "-130px", ease: Linear.easeNone});
+              i1 = 0;
+              i2 = 0;
+              console.log('top');
+          }
+  });
 
 });

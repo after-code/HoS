@@ -2,8 +2,13 @@
 @import 'base/breakpoints';
 @import 'base/typography';
 @import 'base/functions';
+@import 'base/mixins';
 
 @import 'layout/header';
 @import 'layout/main-layout';
+
+@import 'blocks/b-media';
+@import 'blocks/b-content-sticker';
+
 
 @import 'widgets/w-sidebar-widget';

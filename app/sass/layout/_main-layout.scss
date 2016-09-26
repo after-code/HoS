@@ -4,3 +4,8 @@
   padding:0 20px;
   margin:0 auto;
 }
+.wrapper--big {
+  @extend .wrapper;
+  opacity: 0;
+  max-width: 1400px;
+}
