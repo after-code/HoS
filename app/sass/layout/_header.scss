@@ -1,7 +1,11 @@
+.header__wrap {
+  height: 122px;
+}
 .header {
   width: 100%;
+  z-index: 999;
   height: 122px;
-  background: #000;
+  // background: #000;
   .wrapper {
     height: 100%;
   }

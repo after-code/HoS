@@ -6,6 +6,18 @@
 }
 .wrapper--big {
   @extend .wrapper;
-  opacity: 0;
+  // opacity: 0;
   max-width: 1400px;
+  padding-top:100px;
+  @extend .clearfix;
+}
+.section {
+  width: 100%;
+}
+.section--video {
+  @extend .section;
+  text-align: center;
+}
+body {
+  padding-bottom: 500px;
 }

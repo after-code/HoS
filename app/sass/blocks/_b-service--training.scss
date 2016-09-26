@@ -1,0 +1,18 @@
+.b-service--training {
+  background: #03c4c4;
+  text-align: center;
+  padding-top:40px;
+  .b-service__logo {
+    margin-bottom: 5%;
+  }
+  .b-service__division {
+    width: 100%;
+    padding:0 5%;
+  }
+  .b-service__element {
+    width: 33%;
+    padding:0 2%;
+    display: inline-block;
+    text-align: left;
+  }
+}

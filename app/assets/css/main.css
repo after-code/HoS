@@ -49,7 +49,7 @@ table {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-.clearfix:after {
+.clearfix:after, .wrapper--big:after {
   content: "";
   display: table;
   clear: both; }
@@ -88,10 +88,20 @@ body {
   font-family: 'Press';
   src: url(../../assets/font/PressStart2P.ttf); }
 
+h1 {
+  font-size: 60px;
+  text-align: center;
+  padding: 140px 0 50px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold; }
+
+.header__wrap {
+  height: 122px; }
+
 .header {
   width: 100%;
-  height: 122px;
-  background: #000; }
+  z-index: 999;
+  height: 122px; }
   .header .wrapper, .header .wrapper--big {
     height: 100%; }
 
@@ -139,8 +149,17 @@ body {
   margin: 0 auto; }
 
 .wrapper--big {
-  opacity: 0;
-  max-width: 1400px; }
+  max-width: 1400px;
+  padding-top: 100px; }
+
+.section, .section--video {
+  width: 100%; }
+
+.section--video {
+  text-align: center; }
+
+body {
+  padding-bottom: 500px; }
 
 .b-media, .b-media--big, .b-media--small, .b-media--middle {
   display: block;
@@ -185,6 +204,76 @@ body {
   width: 100%; }
   .b-media__item img {
     width: 100%; }
+
+.b-main-video {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  display: inline-block; }
+
+.b-service, .b-service--consultancy {
+  width: 100%; }
+
+.b-service--consultancy {
+  margin-bottom: 40px;
+  background: #fef339;
+  overflow: hidden; }
+  .b-service--consultancy .b-service__media {
+    float: left;
+    width: 52%; }
+    .b-service--consultancy .b-service__media img {
+      width: 100%;
+      display: block; }
+  .b-service--consultancy .b-service__content {
+    width: 48%;
+    padding-top: 35px;
+    height: 100%;
+    display: block;
+    position: relative;
+    float: left;
+    z-index: 99; }
+    .b-service--consultancy .b-service__content:after {
+      display: block;
+      width: 138px;
+      height: 1000px;
+      background: #fef339;
+      content: "";
+      position: absolute;
+      left: -147px;
+      transform: rotate(16deg);
+      top: -7px;
+      z-index: -1; }
+  .b-service--consultancy .b-service__logo {
+    margin-bottom: 20px; }
+  .b-service--consultancy .b-service__content__text {
+    margin-bottom: 30px; }
+  .b-service--consultancy .b-service__quote__img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    float: left; }
+    .b-service--consultancy .b-service__quote__img img {
+      height: 100%;
+      width: auto; }
+  .b-service--consultancy .b-service__quote__text {
+    margin-top: 20px;
+    margin-left: 20px;
+    float: left; }
+
+.b-service--training {
+  background: #03c4c4;
+  text-align: center;
+  padding-top: 40px; }
+  .b-service--training .b-service__logo {
+    margin-bottom: 5%; }
+  .b-service--training .b-service__division {
+    width: 100%;
+    padding: 0 5%; }
+  .b-service--training .b-service__element {
+    width: 33%;
+    padding: 0 2%;
+    display: inline-block;
+    text-align: left; }
 
 .b-content-sticker {
   width: 200px;

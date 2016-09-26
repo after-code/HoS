@@ -1,0 +1,63 @@
+.b-service {
+  width: 100%;
+}
+.b-service--consultancy {
+  // height: 500px;
+  margin-bottom: 40px;
+  background: #fef339;
+  overflow: hidden;
+  @extend .b-service;
+  .b-service__media  {
+    float: left;
+    width: 52%;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+  .b-service__content {
+    width: 48%;
+    padding-top:35px;
+    height: 100%;
+    display: block;
+    position: relative;
+    float: left;
+    z-index: 99;
+    &:after {
+      display: block;
+      width: 138px;
+      height: 1000px;
+      background: #fef339;
+      content: "";
+      position: absolute;
+      left: -147px;
+      transform: rotate(16deg);
+      top: -7px;
+      z-index: -1;
+    }
+  }
+  .b-service__logo {
+    margin-bottom: 20px;
+  }
+  .b-service__content__text {
+    margin-bottom:30px;
+  }
+  .b-service__quote {
+  }
+  .b-service__quote__img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    float: left;
+    img {
+      height: 100%;
+      width: auto;
+    }
+  }
+  .b-service__quote__text {
+    margin-top:20px;
+    margin-left:20px;
+    float: left;
+  }
+}

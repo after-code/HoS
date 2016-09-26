@@ -56,7 +56,7 @@ $(function(){
               i1 = 0;
               i2 = 0;
               console.log('top');
-          } else if ( x1 == "FORWARD"x2 >= 400 ) {
+          } else if ( x1 == "FORWARD" && x2 >= 400 ) {
               TweenLite.to( ".header", 0.2, {background: "black", top: "-130px", ease: Linear.easeNone});
               i1 = 0;
               i2 = 0;

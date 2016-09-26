@@ -2,12 +2,16 @@
 @import 'base/breakpoints';
 @import 'base/typography';
 @import 'base/functions';
+@import 'base/headings';
 @import 'base/mixins';
 
 @import 'layout/header';
 @import 'layout/main-layout';
 
 @import 'blocks/b-media';
+@import 'blocks/b-main-video';
+@import 'blocks/b-service--consultancy';
+@import 'blocks/b-service--training';
 @import 'blocks/b-content-sticker';
 
 
