@@ -1,0 +1,42 @@
+.b-conference {
+  width: 45%;
+  margin-left:2.5%;
+  margin-right:2.5%;
+  float: left;
+  padding-bottom:50px;
+}
+.b-conference__media {
+  width: 100%;
+  img {
+    width: 100%;
+  }
+}
+.b-conference__content {
+  width: 100%;
+}
+.b-conference__date {
+  float: left;
+  font-size: 35px;
+}
+.b-conference__info {
+  float: left;
+  padding-left:20px;
+  width: 80%;
+  &__city {
+    color:#424242;
+    margin-bottom: 23px;
+    margin-top:15px;
+  }
+  &__heading {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+  &__text {
+    line-height: 25px;
+    margin-bottom: 20px;
+  }
+  &__button {
+    float: right;
+  }
+}

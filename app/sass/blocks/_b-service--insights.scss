@@ -1,0 +1,53 @@
+.b-service--insights {
+  padding:20px;
+  max-height: 700px;
+  overflow: hidden;
+  background: #f2f2f2;
+  .b-service__media {
+    overflow: hidden;
+    position: relative;
+    width: 50%;
+    float: left;
+    padding:20px;
+    img {
+      width: 100%;
+    }
+  }
+  .b-service__media__mask {
+    background: red;
+    opacity:0.6;
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    left:10%;
+    top:10%;
+  }
+  .b-service__media__pre-heading {
+    font-size:35px;
+    color:yellow;
+  }
+  .b-service__media__heading {
+    font-size:50px;
+    color:white;
+  }
+  .b-service__media__year {
+    font-size: 50px;
+    color:yellow;
+  }
+  .b-service__content {
+    width: 50%;
+    float: left;
+  }
+  .b-service__text {
+    font-size: 19px;
+    line-height: 29px;
+    margin-bottom: 20px;
+  }
+  .b-service__content__button {
+    margin-top:40px;
+    border:3px solid #333;
+    display:inline-block;
+    padding:10px 20px;
+    margin-bottom: 60px;
+  }
+}

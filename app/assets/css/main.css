@@ -158,6 +158,12 @@ h1 {
 .section--video {
   text-align: center; }
 
+.section--events {
+  background: yellow; }
+
+.section--conference {
+  overflow: hidden; }
+
 body {
   padding-bottom: 500px; }
 
@@ -204,6 +210,13 @@ body {
   width: 100%; }
   .b-media__item img {
     width: 100%; }
+
+.b-events {
+  width: 80%;
+  margin: 0 auto;
+  background: #fff; }
+  .b-events .b-conference__content {
+    float: left; }
 
 .b-main-video {
   width: 70%;
@@ -263,7 +276,8 @@ body {
 .b-service--training {
   background: #03c4c4;
   text-align: center;
-  padding-top: 40px; }
+  padding-top: 40px;
+  margin-bottom: 50px; }
   .b-service--training .b-service__logo {
     margin-bottom: 5%; }
   .b-service--training .b-service__division {
@@ -274,6 +288,72 @@ body {
     padding: 0 2%;
     display: inline-block;
     text-align: left; }
+  .b-service--training .b-service__element__nbr {
+    font-size: 34px;
+    margin-bottom: 15px; }
+  .b-service--training .b-service__element__heading {
+    font-size: 32px;
+    margin-bottom: 40px; }
+    .b-service--training .b-service__element__heading:after {
+      width: 60px;
+      height: 5px;
+      content: '';
+      background: red;
+      display: block;
+      margin-top: 30px; }
+  .b-service--training .b-service__element__text {
+    font-size: 20px;
+    line-height: 30px; }
+  .b-service--training .b-service__button {
+    margin-top: 40px;
+    border: 3px solid #333;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 60px; }
+
+.b-service--insights {
+  padding: 20px;
+  max-height: 700px;
+  overflow: hidden;
+  background: #f2f2f2; }
+  .b-service--insights .b-service__media {
+    overflow: hidden;
+    position: relative;
+    width: 50%;
+    float: left;
+    padding: 20px; }
+    .b-service--insights .b-service__media img {
+      width: 100%; }
+  .b-service--insights .b-service__media__mask {
+    background: red;
+    opacity: 0.6;
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    top: 10%; }
+  .b-service--insights .b-service__media__pre-heading {
+    font-size: 35px;
+    color: yellow; }
+  .b-service--insights .b-service__media__heading {
+    font-size: 50px;
+    color: white; }
+  .b-service--insights .b-service__media__year {
+    font-size: 50px;
+    color: yellow; }
+  .b-service--insights .b-service__content {
+    width: 50%;
+    float: left; }
+  .b-service--insights .b-service__text {
+    font-size: 19px;
+    line-height: 29px;
+    margin-bottom: 20px; }
+  .b-service--insights .b-service__content__button {
+    margin-top: 40px;
+    border: 3px solid #333;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 60px; }
 
 .b-content-sticker {
   width: 200px;
@@ -298,6 +378,43 @@ body {
 
 .b-content-sticker__text {
   line-height: 22px; }
+
+.b-conference {
+  width: 45%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  float: left;
+  padding-bottom: 50px; }
+
+.b-conference__media {
+  width: 100%; }
+  .b-conference__media img {
+    width: 100%; }
+
+.b-conference__content {
+  width: 100%; }
+
+.b-conference__date {
+  float: left;
+  font-size: 35px; }
+
+.b-conference__info {
+  float: left;
+  padding-left: 20px;
+  width: 80%; }
+  .b-conference__info__city {
+    color: #424242;
+    margin-bottom: 23px;
+    margin-top: 15px; }
+  .b-conference__info__heading {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 20px; }
+  .b-conference__info__text {
+    line-height: 25px;
+    margin-bottom: 20px; }
+  .b-conference__info__button {
+    float: right; }
 
 .page-container {
   max-width: 1000px;

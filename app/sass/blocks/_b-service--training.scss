@@ -2,6 +2,7 @@
   background: #03c4c4;
   text-align: center;
   padding-top:40px;
+  margin-bottom: 50px;
   .b-service__logo {
     margin-bottom: 5%;
   }
@@ -14,5 +15,32 @@
     padding:0 2%;
     display: inline-block;
     text-align: left;
+  }
+  .b-service__element__nbr {
+    font-size: 34px;
+    margin-bottom: 15px;
+  }
+  .b-service__element__heading {
+    font-size: 32px;
+    margin-bottom: 40px;
+    &:after {
+      width: 60px;
+      height:5px;
+      content:'';
+      background: red;
+      display:block;
+      margin-top: 30px;
+    }
+  }
+  .b-service__element__text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .b-service__button {
+    margin-top:40px;
+    border:3px solid #333;
+    display:inline-block;
+    padding:10px 20px;
+    margin-bottom: 60px;
   }
 }

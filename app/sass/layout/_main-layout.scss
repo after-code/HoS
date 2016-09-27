@@ -18,6 +18,12 @@
   @extend .section;
   text-align: center;
 }
+.section--events {
+  background:yellow;
+}
+.section--conference {
+  overflow: hidden;
+}
 body {
   padding-bottom: 500px;
 }
