@@ -1,0 +1,45 @@
+.footer {
+  background: #222222;
+  width: 100%;
+  color:white;
+  text-align: center;
+  z-index: 0;
+  position: relative;
+  &:after {
+    width: 200%;
+    height: 100%;
+    content: '';
+    display: block;
+    position: absolute;
+    background: #222;
+    top: -33%;
+    left: -34%;
+    z-index: -1;
+    transform: rotate(8deg);
+  }
+}
+.footer__logo {
+  width: 120px;
+
+}
+.footer__nav__item {
+  display: inline-block;
+  text-align: left;
+  margin:50px 50px;
+}
+.footer__nav__link {
+  margin-bottom: 20px;
+  font-size: 12px;
+  &:first-child {
+    color:#424242;
+    margin-bottom: 40px;
+    &:after {
+      width: 40px;
+      height: 4px;
+      background: #ccc;
+      content:'';
+      display:block;
+      margin-top:20px;
+    }
+  }
+}

@@ -3,6 +3,11 @@
   max-height: 700px;
   overflow: hidden;
   background: #f2f2f2;
+  .b-service__logo {
+    width: 300px;
+    margin-bottom:40px;
+    margin-top:40px;
+  }
   .b-service__media {
     overflow: hidden;
     position: relative;

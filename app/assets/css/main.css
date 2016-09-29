@@ -159,13 +159,67 @@ h1 {
   text-align: center; }
 
 .section--events {
-  background: yellow; }
+  background: yellow;
+  padding-bottom: 100px;
+  position: relative; }
+  .section--events:after {
+    width: 200%;
+    height: 100%;
+    content: '';
+    display: block;
+    position: absolute;
+    background: yellow;
+    top: -33%;
+    left: -34%;
+    z-index: -1;
+    transform: rotate(23deg); }
 
 .section--conference {
   overflow: hidden; }
 
 body {
   padding-bottom: 500px; }
+
+.footer {
+  background: #222222;
+  width: 100%;
+  color: white;
+  text-align: center;
+  z-index: 0;
+  position: relative; }
+  .footer:after {
+    width: 200%;
+    height: 100%;
+    content: '';
+    display: block;
+    position: absolute;
+    background: #222;
+    top: -33%;
+    left: -34%;
+    z-index: -1;
+    transform: rotate(8deg); }
+
+.footer__logo {
+  width: 120px; }
+
+.footer__nav__item {
+  display: inline-block;
+  text-align: left;
+  margin: 50px 50px; }
+
+.footer__nav__link {
+  margin-bottom: 20px;
+  font-size: 12px; }
+  .footer__nav__link:first-child {
+    color: #424242;
+    margin-bottom: 40px; }
+    .footer__nav__link:first-child:after {
+      width: 40px;
+      height: 4px;
+      background: #ccc;
+      content: '';
+      display: block;
+      margin-top: 20px; }
 
 .b-media, .b-media--big, .b-media--small, .b-media--middle {
   display: block;
@@ -214,9 +268,26 @@ body {
 .b-events {
   width: 80%;
   margin: 0 auto;
-  background: #fff; }
-  .b-events .b-conference__content {
-    float: left; }
+  background: yellow;
+  max-width: 700px;
+  padding-bottom: 300px; }
+  .b-events .b-conference__info {
+    width: 62%; }
+  .b-events .b-conference__date {
+    margin-right: 10%; }
+  .b-events__sticker {
+    width: 100px;
+    height: 100px;
+    background: red;
+    text-align: center;
+    padding-top: 34px;
+    text-align: left;
+    padding-left: 16px;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    left: -50px;
+    top: -50px; }
 
 .b-main-video {
   width: 70%;
@@ -257,7 +328,8 @@ body {
       top: -7px;
       z-index: -1; }
   .b-service--consultancy .b-service__logo {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    width: 300px; }
   .b-service--consultancy .b-service__content__text {
     margin-bottom: 30px; }
   .b-service--consultancy .b-service__quote__img {
@@ -279,7 +351,8 @@ body {
   padding-top: 40px;
   margin-bottom: 50px; }
   .b-service--training .b-service__logo {
-    margin-bottom: 5%; }
+    margin-bottom: 5%;
+    width: 400px; }
   .b-service--training .b-service__division {
     width: 100%;
     padding: 0 5%; }
@@ -316,6 +389,10 @@ body {
   max-height: 700px;
   overflow: hidden;
   background: #f2f2f2; }
+  .b-service--insights .b-service__logo {
+    width: 300px;
+    margin-bottom: 40px;
+    margin-top: 40px; }
   .b-service--insights .b-service__media {
     overflow: hidden;
     position: relative;
@@ -392,7 +469,11 @@ body {
     width: 100%; }
 
 .b-conference__content {
-  width: 100%; }
+  width: 100%;
+  overflow: hidden;
+  background: white;
+  float: left;
+  padding-left: 10%; }
 
 .b-conference__date {
   float: left;
