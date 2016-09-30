@@ -4,4 +4,7 @@ h1 {
   padding:140px 0 50px;
   font-family: $text__family--Roboto;
   font-weight: bold;
+  @include breakpoint(typoMax) {
+    font-size: cvp(60px, 1400px);
+  }
 }

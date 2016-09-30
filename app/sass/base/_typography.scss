@@ -17,9 +17,15 @@ html {
   -moz-osx-font-smoothing: grayscale;
   font-family: $text__family--Roboto-Condensed;
 	font-size: $base__font-size;
+  @include breakpoint(typoMax) {
+    font-size: cvp(16px, 1400px);
+  }
 }
 body {
     font-family: $text__family--Roboto-Condensed;
+    @include breakpoint(typoMax) {
+      font-size: cvp(16px, 1400px);
+    }
 }
 @font-face {
   font-family: 'Press';
