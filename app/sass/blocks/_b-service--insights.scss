@@ -1,19 +1,19 @@
 .b-service--insights {
-  padding:20px;
-  max-height: 700px;
+  // padding:20px;
+  // max-height: 700px;
   overflow: hidden;
-  background: #f2f2f2;
+  background: #ed2b4a;
   .b-service__logo {
-    width: 300px;
-    margin-bottom:40px;
-    margin-top:40px;
+    width: 71%;
+    margin-bottom: 5.2%;
+    margin-top: 11.6%;
   }
   .b-service__media {
     overflow: hidden;
     position: relative;
-    width: 50%;
     float: left;
-    padding:20px;
+    width: 34.8%;
+    margin-top: 5%;
     img {
       width: 100%;
     }
@@ -40,19 +40,50 @@
     color:yellow;
   }
   .b-service__content {
-    width: 50%;
+    width: 60.6%;
     float: left;
+    padding-left: 8%;
+    .b-service__heading {
+      font-weight: bold;
+      color: white;
+      width: 53%;
+      font-size:68px;
+      margin-bottom: 5%;
+      @include breakpoint(typoMax){
+        font-size:cvp(68px, 2050px);
+      }
+      &:after {
+        width: 60px;
+        height:5px;
+        content:'';
+        background: red;
+        display:block;
+        margin-top: 10%;
+      }
+    }
   }
   .b-service__text {
-    font-size: 19px;
-    line-height: 29px;
+    font-size: 31px;
+    line-height: 34px;
     margin-bottom: 20px;
+    color: white;
+    width: 53%;
+    @include breakpoint(typoMax){
+      font-size:cvp(31px, 2050px);
+      line-height:cvp(34px, 2050px);
+    }
   }
   .b-service__content__button {
-    margin-top:40px;
-    border:3px solid #333;
-    display:inline-block;
-    padding:10px 20px;
-    margin-bottom: 60px;
+    margin-top: 7%;
+    border: 3px solid white;
+    display: inline-block;
+    padding: 3.3% 9.3%;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 14%;
+    font-weight: bold;
+    @include breakpoint(typoMax){
+        font-size:cvp(20px, 2050px);
+    }
   }
 }

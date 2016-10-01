@@ -1,27 +1,45 @@
 .b-events {
-  width: 80%;
-  margin:0 auto;
-  background: yellow;
-  max-width: 700px;
-  padding-bottom: 300px;
+  width: 48%;
+  margin: 0 auto;
+  background: white;
+  position: relative;
+  .b-conference__content {
+    padding-left: 0;
+    margin-left: 16%;
+    padding-top: 6.6%;
+    width: 74%;
+    margin-right: 9%;
+    border-bottom: 1px solid #222;
+  }
   .b-conference__info {
-    width: 62%;
+    width: 80%;
+    padding-left:0;
+    &__text {
+      margin-bottom: 4%;
+    }
   }
   .b-conference__date {
     margin-right:10%;
   }
   &__sticker {
-    width: 100px;
-    height: 100px;
-    background: red;
+    width: 19.7%;
+    padding-top: 19%;
+    background: #ed2b4a;
     text-align: center;
-    padding-top: 34px;
     text-align: left;
     padding-left: 16px;
     color: white;
     font-weight: bold;
-    position: relative;
-    left: -50px;
-    top: -50px;
+    position: absolute;
+    left: -9%;
+    top: 0%;
+    p {
+      position: absolute;
+      height: 100%;
+      display: block;
+      width: 100%;
+      font-size: 40px;
+      top: 34%;
+    }
   }
 }

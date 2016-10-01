@@ -6,40 +6,40 @@
 }
 .b-media--big {
   @extend .b-media;
-  width: 46%;
+  width: 46.6%;
   margin-right: 3.5%;
-  margin-left: 10%;
+  margin-left: 9.3%;
   .b-content-sticker {
-    left: -15%;
-    top: 13.5%;
-    width: 49%;
-    height: 76%;
+    left: -13.4%;
+    top: 12.4%;
+    width: 50%;
+  height: 74.2%;
     background: #dcebfc;
   }
 }
 .b-media--small {
   @extend .b-media;
-  width: 35%;
-  margin-top: 12%;
-  margin-left:2.5%;
+  width: 36.5%;
+  margin-top: 14%;
+  margin-left: 0.2%;
   .b-content-sticker {
-    left: -5%;
-    top: -34%;
-    width: 65%;
-    height: 100%;
+    left: 7.7%;
+    top: -42.3%;
+    width: 64.1%;
+    height: 96.1%;
     background: #dcebfc;
   }
 }
 .b-media--middle {
   @extend .b-media;
-  width: 44%;
+  width: 46%;
   margin-top: 4%;
-  margin-left: 40.5%;
+  margin-left: 34.5%;
   .b-content-sticker {
-    left: -25%;
-    top: 10%;
+    left: -17%;
+    top: 10.4%;
     width: 51%;
-    height: 81%;
+    height: 75.2%;
     background: #ed2b4a;
   }
 }

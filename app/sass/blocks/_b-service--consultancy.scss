@@ -3,7 +3,7 @@
 }
 .b-service--consultancy {
   // height: 500px;
-  margin-bottom: 40px;
+  margin-bottom: 4.4%;
   background: #fef339;
   overflow: hidden;
   @extend .b-service;
@@ -12,13 +12,13 @@
     width: 52%;
 
     img {
-      width: 100%;
+      width: 114%;
       display: block;
     }
   }
   .b-service__content {
     width: 48%;
-    padding-top:35px;
+    padding-top: 3%;
     height: 100%;
     display: block;
     position: relative;
@@ -26,29 +26,35 @@
     z-index: 99;
     &:after {
       display: block;
-      width: 138px;
-      height: 1000px;
+      width: 100%;
+      height: 131%;
       background: #fef339;
       content: "";
       position: absolute;
-      left: -147px;
-      transform: rotate(16deg);
-      top: -7px;
+      left: -14%;
+      transform: rotate(14.6deg);
+      top: 8%;
       z-index: -1;
     }
   }
   .b-service__logo {
-    margin-bottom: 20px;
-    width: 300px;
+    margin-bottom: 2%;
+    width: 90%;
   }
   .b-service__content__text {
-    margin-bottom:30px;
+    margin-bottom: 15%;
+    line-height: 39px;
+    font-size: 36px;
+    @include breakpoint(typoMax){
+      line-height: cvp(39px,2050px);
+      font-size: cvp(36px,2050px);
+    }
   }
   .b-service__quote {
+    margin-left: -7%;
   }
   .b-service__quote__img {
-    width: 80px;
-    height: 80px;
+    width: 13.4%;
     border-radius: 50%;
     float: left;
     img {
@@ -57,8 +63,16 @@
     }
   }
   .b-service__quote__text {
-    margin-top:20px;
-    margin-left:20px;
+    margin-left: 4%;
+    font-style: italic;
+    line-height: 34px;
+    font-size: 28px;
     float: left;
+    width: 43%;
+    text-decoration: underline;
+    @include breakpoint(typoMax){
+      line-height: cvp(34px,2050px);
+      font-size: cvp(28px,2050px);
+    }
   }
 }

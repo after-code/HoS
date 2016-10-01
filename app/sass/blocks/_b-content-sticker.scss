@@ -6,29 +6,32 @@
   background: cyan;
   top:0;
   left:0;
-  padding:0 0% 0 3%;
+  padding:0 0% 0 5%;
 }
 .b-content-sticker__tag {
-  margin-top: 24%;
-  margin-bottom: 7%;
-  font-size:16px;
+  margin-top: 20%;
+  margin-bottom: 5%;
+  font-size: 22px;
   @include breakpoint(typoMax) {
-    font-size: cvp(16px, 1400px);
+    font-size: cvp(22px, 2050px);
   }
 }
 .b-content-sticker__heading {
-  font-size: 38px;
-  line-height: 40px;
-  font-weight: bold;
+  font-size: 55px;
+  line-height: 53px;
+  font-weight: 800;
   margin-bottom: 8%;
   @include breakpoint(typoMax) {
-    font-size: cvp(38px, 1400px);
-    line-height: cvp(40px, 1400px);
+    font-size: cvp(55px, 2050px);
+    line-height: cvp(53px, 2050px);
   }
 }
 .b-content-sticker__text{
-  line-height: 22px;
+  line-height: 30px;
+  font-size: 22px;
+  padding-right: 9%;
   @include breakpoint(typoMax) {
-    line-height: cvp(22px, 1400px);
+    font-size:cvp(22px, 2050px);
+    line-height: cvp(30px, 2050px);
   }
 }

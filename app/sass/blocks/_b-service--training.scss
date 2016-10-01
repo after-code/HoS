@@ -4,8 +4,9 @@
   padding-top:40px;
   margin-bottom: 50px;
   .b-service__logo {
-    margin-bottom: 5%;
-    width: 400px;
+    margin-bottom: 6%;
+    width: 39%;
+    margin-top: 1.7%;
   }
   .b-service__division {
     width: 100%;
@@ -13,16 +14,22 @@
   }
   .b-service__element {
     width: 33%;
-    padding:0 2%;
+    padding:0 3%;
     display: inline-block;
     text-align: left;
   }
   .b-service__element__nbr {
-    font-size: 34px;
-    margin-bottom: 15px;
+    font-size: 53px;
+    margin-bottom: 1%;
+    // padding-left: 3%;
+    color:#fef339;
+    @include breakpoint(typoMax){
+      font-size: cvp(53px,2050px);
+    }
   }
   .b-service__element__heading {
-    font-size: 32px;
+    font-size: 49px;
+    line-height: 56px;
     margin-bottom: 40px;
     &:after {
       width: 60px;
@@ -32,16 +39,29 @@
       display:block;
       margin-top: 30px;
     }
+    @include breakpoint(typoMax){
+      font-size: cvp(49px,2050px);
+      line-height: cvp(56px,2050px);
+    }
   }
   .b-service__element__text {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 27px;
+    line-height: 45px;
+    @include breakpoint(typoMax){
+      font-size: cvp(27px,2050px);
+      line-height: cvp(45px,2050px);
+    }
   }
   .b-service__button {
-    margin-top:40px;
-    border:3px solid #333;
-    display:inline-block;
-    padding:10px 20px;
-    margin-bottom: 60px;
+    margin-top: 5.3%;
+    color: #fef339;
+    border: 3px solid #fef339;
+    display: inline-block;
+    padding: 1.6% 2.3%;
+    margin-bottom: 4.1%;
+    font-size: 22px;
+    @include breakpoint(typoMax){
+      font-size: cvp(22px,2050px);
+    }
   }
 }
