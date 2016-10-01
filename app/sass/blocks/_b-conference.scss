@@ -13,6 +13,10 @@
 }
 .b-conference__content {
   width: 100%;
+  overflow: hidden;
+  background: white;
+  float: left;
+  padding-left:10%;
 }
 .b-conference__date {
   float: left;

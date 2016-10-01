@@ -1,8 +1,27 @@
 .b-events {
   width: 80%;
   margin:0 auto;
-  background: #fff;
-  .b-conference__content {
-    float: left;
+  background: yellow;
+  max-width: 700px;
+  padding-bottom: 300px;
+  .b-conference__info {
+    width: 62%;
+  }
+  .b-conference__date {
+    margin-right:10%;
+  }
+  &__sticker {
+    width: 100px;
+    height: 100px;
+    background: red;
+    text-align: center;
+    padding-top: 34px;
+    text-align: left;
+    padding-left: 16px;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    left: -50px;
+    top: -50px;
   }
 }

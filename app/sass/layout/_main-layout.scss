@@ -20,6 +20,21 @@
 }
 .section--events {
   background:yellow;
+  padding-bottom: 100px;
+
+  position: relative;
+  &:after {
+    width: 200%;
+    height: 100%;
+    content: '';
+    display: block;
+    position: absolute;
+    background: yellow;
+    top: -33%;
+    left: -34%;
+    z-index: -1;
+    transform: rotate(23deg);
+  }
 }
 .section--conference {
   overflow: hidden;
