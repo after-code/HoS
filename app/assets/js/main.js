@@ -41,23 +41,23 @@ $(function(){
       var x2 = $(window).scrollTop();
       var x3 = 400;
           if ( x1 == "REVERSE" && x2 >= x3 && i1 == 0) {
-              TweenLite.fromTo(".header", 0.2, { position:"fixed", top: "-80px"}, {position:"fixed", color:"white",  top: "0px", ease: Linear.easeNone});
+              TweenLite.fromTo(".header", 0.2, { position:"fixed", top: "-80px"}, {position:"fixed", color:"white",  top: "0px", ease:  $.bez(sharpCurve)});
               i1++;
               i2 = 0;
           }
           if ( x1 == "REVERSE" && x2 == 0) {
-              TweenLite.fromTo(".header", 0.3, { position:"relative", top: "0px"}, {color:"rgb(0,0,0)", background:"rgb(255,255,255)",top: "0px", ease: Linear.easeNone});
+              TweenLite.fromTo(".header", 0.6, { position:"relative", top: "0px"}, {color:"rgb(0,0,0)", background:"rgb(255,255,255)",top: "0px", ease:  $.bez(sharpCurve)});
               i1 = 0;
               i2 = 0;
           }
 
           if ( x1 == "FORWARD" && x2 <= 200 ) {
-              TweenLite.to( ".header", 0.2, {position:"relative", background: "white", top:"0px", ease: Linear.easeNone});
+              TweenLite.to( ".header", 0.4, {position:"relative", background: "white", top:"0px", ease: $.bez(sharpCurve)});
               i1 = 0;
               i2 = 0;
               console.log('top');
           } else if ( x1 == "FORWARD" && x2 >= 400 ) {
-              TweenLite.to( ".header", 0.2, {background: "black", top: "-130px", ease: Linear.easeNone});
+              TweenLite.to( ".header", 0.2, {background: "black", top: "-130px", ease: $.bez(sharpCurve)});
               i1 = 0;
               i2 = 0;
               console.log('top');

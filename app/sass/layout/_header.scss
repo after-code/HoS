@@ -1,25 +1,25 @@
 .header__wrap {
-  height: 122px;
+  height: 97px;
 }
 .header {
   width: 100%;
   z-index: 999;
-  height: 122px;
+  height: 97px;
   // background: #000;
   .wrapper {
     height: 100%;
   }
 }
 .header__logo {
-  width: 170px;
-  margin-top: 23px;
+  width: 150px;
+  margin-top: 14px;
   float: left;
 }
 .header__links {
   float: left;
   margin:0 20px;
   margin-left: 17%;
-  padding: 46px 0;
+  padding: 33px 0;
 }
 .header__link {
   display:inline-block;
