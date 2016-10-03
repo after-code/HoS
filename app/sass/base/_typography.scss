@@ -22,6 +22,7 @@ html {
   }
 }
 body {
+    color:#222;
     font-family: $text__family--Roboto-Condensed;
     @include breakpoint(typoMax) {
       font-size: cvp(16px, 1400px);

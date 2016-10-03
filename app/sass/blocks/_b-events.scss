@@ -1,21 +1,31 @@
 .b-events {
-  width: 48%;
+  width: 44.7%;
   margin: 0 auto;
   background: white;
   position: relative;
+  margin-top: 7.3%;
   .b-conference__content {
     padding-left: 0;
     margin-left: 16%;
-    padding-top: 6.6%;
     width: 74%;
     margin-right: 9%;
     border-bottom: 1px solid #222;
+    padding-top: 6%;
+    &.last {
+      border-bottom: none;
+    }
   }
   .b-conference__info {
     width: 80%;
     padding-left:0;
     &__text {
-      margin-bottom: 4%;
+      margin-bottom: 3%;
+    }
+    &__city {
+      margin-bottom: 2%;
+    }
+    &__heading {
+      margin-bottom: 3%;
     }
   }
   .b-conference__date {
@@ -32,7 +42,7 @@
     font-weight: bold;
     position: absolute;
     left: -9%;
-    top: 0%;
+    top: -5%;
     p {
       position: absolute;
       height: 100%;
@@ -41,5 +51,18 @@
       font-size: 40px;
       top: 34%;
     }
+  }
+  .b-button__wrap {
+    text-align: center;
+  }
+  .b-button {
+    margin-top: 5.3%;
+    color: #222;
+    border: 3px solid #222;
+    display: inline-block;
+    padding: 2.6% 8.3%;
+    margin-bottom: 7.1%;
+    font-size: 22px;
+    margin-top: 7%;
   }
 }

@@ -46,7 +46,7 @@ $(function(){
               i2 = 0;
           }
           if ( x1 == "REVERSE" && x2 == 0) {
-              TweenLite.fromTo(".header", 0.6, { position:"relative", top: "0px"}, {color:"rgb(0,0,0)", background:"rgb(255,255,255)",top: "0px", ease:  $.bez(sharpCurve)});
+              TweenLite.fromTo(".header", 0.6, { position:"relative", top: "0px"}, {color:"rgb(34, 34, 34)", background:"rgb(255,255,255)",top: "0px", ease:  $.bez(sharpCurve)});
               i1 = 0;
               i2 = 0;
           }
@@ -57,7 +57,7 @@ $(function(){
               i2 = 0;
               console.log('top');
           } else if ( x1 == "FORWARD" && x2 >= 400 ) {
-              TweenLite.to( ".header", 0.2, {background: "black", top: "-130px", ease: $.bez(sharpCurve)});
+              TweenLite.to( ".header", 0.2, {background: "rgb(34, 34, 34)", top: "-130px", ease: $.bez(sharpCurve)});
               i1 = 0;
               i2 = 0;
               console.log('top');
