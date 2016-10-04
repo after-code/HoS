@@ -22,7 +22,7 @@
     font-size: 53px;
     margin-bottom: 1%;
     // padding-left: 3%;
-    color:#fef339;
+    color:$yellow;
     @include breakpoint(typoMax){
       font-size: cvp(53px,2050px);
     }

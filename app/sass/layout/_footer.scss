@@ -1,5 +1,5 @@
 .footer {
-  background: #222222;
+  background: $base-color;
   width: 100%;
   color:white;
   text-align: center;
@@ -12,7 +12,7 @@
     content: '';
     display: block;
     position: absolute;
-    background: #222;
+    background: $base-color;
     /* top: -50%; */
     left: 0;
     z-index: -1;
