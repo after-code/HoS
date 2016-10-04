@@ -373,11 +373,11 @@ h1 {
     .b-events .b-conference__info__heading {
       margin-bottom: 3%; }
   .b-events .b-conference__date {
-    margin-right: 10%; }
+    margin-right: 8%; }
   .b-events__sticker {
     width: 19.7%;
     padding-top: 19%;
-    background: #ed2b4a;
+    background: #ee2e45;
     text-align: center;
     text-align: left;
     padding-left: 16px;
@@ -393,6 +393,9 @@ h1 {
       width: 100%;
       font-size: 40px;
       top: 34%; }
+      @media (max-width: 2050px) {
+        .b-events__sticker p {
+          font-size: 1.95122vw; } }
   .b-events .b-button__wrap {
     text-align: center; }
   .b-events .b-button {
@@ -404,6 +407,9 @@ h1 {
     margin-bottom: 7.1%;
     font-size: 22px;
     margin-top: 7%; }
+    @media (max-width: 2050px) {
+      .b-events .b-button {
+        font-size: 1.07317vw; } }
 
 .b-main-video {
   width: 100%;
@@ -536,7 +542,7 @@ h1 {
 
 .b-service--insights {
   overflow: hidden;
-  background: #ed2b4a; }
+  background: #ee2e45; }
   .b-service--insights .b-service__logo {
     width: 71%;
     margin-bottom: 5.2%;
@@ -549,14 +555,6 @@ h1 {
     margin-top: 5%; }
     .b-service--insights .b-service__media img {
       width: 100%; }
-  .b-service--insights .b-service__media__mask {
-    background: red;
-    opacity: 0.6;
-    position: absolute;
-    width: 80%;
-    height: 80%;
-    left: 10%;
-    top: 10%; }
   .b-service--insights .b-service__media__pre-heading {
     font-size: 35px;
     color: #fcee2f; }
@@ -583,7 +581,7 @@ h1 {
         width: 60px;
         height: 5px;
         content: '';
-        background: red;
+        background: #ee2e45;
         display: block;
         margin-top: 10%; }
   .b-service--insights .b-service__text {
@@ -669,9 +667,26 @@ h1 {
   float: left;
   font-size: 35px;
   font-weight: bold;
+  position: relative;
   font-family: "Roboto", sans-serif; }
   .b-conference__date .b-day {
     font-size: 52px; }
+    @media (max-width: 2050px) {
+      .b-conference__date .b-day {
+        font-size: 2.53659vw; } }
+  @media (max-width: 2050px) {
+    .b-conference__date {
+      font-size: 1.70732vw; } }
+  .b-conference__date:after {
+    height: 100%;
+    width: 2px;
+    background: #ee2e45;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -37%;
+    transform: skew(-14.9deg);
+    display: block; }
 
 .b-conference__info {
   float: left;
@@ -690,7 +705,7 @@ h1 {
     line-height: 41px;
     margin-bottom: 7%;
     font-weight: bold; }
-    @media (max-width: 1000px) {
+    @media (max-width: 2050px) {
       .b-conference__info__heading {
         font-size: 1.80488vw;
         line-height: 2vw; } }

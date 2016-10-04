@@ -2,7 +2,7 @@
   // padding:20px;
   // max-height: 700px;
   overflow: hidden;
-  background: #ed2b4a;
+  background: $red;
   .b-service__logo {
     width: 71%;
     margin-bottom: 5.2%;
@@ -17,15 +17,6 @@
     img {
       width: 100%;
     }
-  }
-  .b-service__media__mask {
-    background: red;
-    opacity:0.6;
-    position: absolute;
-    width: 80%;
-    height: 80%;
-    left:10%;
-    top:10%;
   }
   .b-service__media__pre-heading {
     font-size:35px;
@@ -56,7 +47,7 @@
         width: 60px;
         height:5px;
         content:'';
-        background: red;
+        background: $red;
         display:block;
         margin-top: 10%;
       }

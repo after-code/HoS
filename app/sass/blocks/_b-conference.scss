@@ -21,14 +21,28 @@
 .b-conference__date {
   float: left;
   font-size: 35px;
-
   font-weight: bold;
+  position:relative;
   font-family:$text__family--Roboto;
   .b-day {
     font-size: 52px;
-    @include breakpoint(typeMax){
+    @include breakpoint(typoMax){
       font-size: cvp(52px,2050px);
     }
+  }
+  @include breakpoint(typoMax){
+    font-size: cvp(35px,2050px);
+  }
+  &:after {
+    height: 100%;
+    width:2px;
+    background:$red;
+    content:"";
+    position:absolute;
+    top:0;
+    right: -37%;
+    transform:skew(-14.9deg);
+    display:block;
   }
 }
 .b-conference__info {
@@ -49,7 +63,7 @@
     line-height: 41px;
     margin-bottom: 7%;
     font-weight: bold;
-    @include breakpoint(mobile){
+    @include breakpoint(typoMax){
       font-size:cvp(37px, 2050px);
       line-height:cvp(41px, 2050px);
     }

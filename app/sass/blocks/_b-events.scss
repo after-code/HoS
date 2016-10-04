@@ -29,12 +29,12 @@
     }
   }
   .b-conference__date {
-    margin-right:10%;
+    margin-right:8%;
   }
   &__sticker {
     width: 19.7%;
     padding-top: 19%;
-    background: #ed2b4a;
+    background: $red;
     text-align: center;
     text-align: left;
     padding-left: 16px;
@@ -50,6 +50,9 @@
       width: 100%;
       font-size: 40px;
       top: 34%;
+      @include breakpoint(typoMax) {
+        font-size: cvp(40px, 2050px);
+      }
     }
   }
   .b-button__wrap {
@@ -64,5 +67,8 @@
     margin-bottom: 7.1%;
     font-size: 22px;
     margin-top: 7%;
+    @include breakpoint(typoMax) {
+      font-size: cvp(22px, 2050px);
+    }
   }
 }
