@@ -7,6 +7,9 @@
   top:0;
   left:0;
   padding:0 0% 0 5%;
+  @include breakpoint(mobile) {
+      padding:0 0% 0 6%;
+  }
 }
 .b-content-sticker__tag {
   margin-top: 20%;
@@ -14,6 +17,10 @@
   font-size: 22px;
   @include breakpoint(typoMax) {
     font-size: cvp(22px, 2050px);
+  }
+  @include breakpoint(mobile) {
+    font-size: 13px;
+    margin-top: 9%;
   }
 }
 .b-content-sticker__heading {
@@ -25,6 +32,11 @@
     font-size: cvp(55px, 2050px);
     line-height: cvp(53px, 2050px);
   }
+  @include breakpoint(mobile) {
+    font-size: 28px;
+    line-height: 29px;
+    margin-bottom: 6%;
+  }
 }
 .b-content-sticker__text{
   line-height: 30px;
@@ -33,5 +45,9 @@
   @include breakpoint(typoMax) {
     font-size:cvp(22px, 2050px);
     line-height: cvp(30px, 2050px);
+  }
+  @include breakpoint(mobile) {
+    font-size: 14px;
+    line-height: 16px;
   }
 }

@@ -13,8 +13,19 @@
     left: -13.4%;
     top: 12.4%;
     width: 50%;
-  height: 74.2%;
+    height: 74.2%;
     background: #dcebfc;
+  }
+  @include breakpoint(mobile) {
+    width: 113%;
+    margin-bottom: 6%;
+    margin-left: 14%;
+    .b-content-sticker {
+      width: 62%;
+      left: -12.6%;
+      top: -19%;
+      height: 92%;
+    }
   }
 }
 .b-media--small {
@@ -29,6 +40,17 @@
     height: 96.1%;
     background: #dcebfc;
   }
+  @include breakpoint(mobile) {
+    width: 126%;
+    left: -34%;
+    margin-bottom: 25%;
+    .b-content-sticker {
+      left: 52%;
+      top: -11%;
+      width: 55%;
+      height: 82%;
+    }
+  }
 }
 .b-media--middle {
   @extend .b-media;
@@ -40,7 +62,17 @@
     top: 10.4%;
     width: 51%;
     height: 75.2%;
-    background: #ed2b4a;
+    background: $red;
+  }
+  @include breakpoint(mobile) {
+    width: 114%;
+    left: -24%;
+    .b-content-sticker {
+      top: -24%;
+      left: -9.2%;
+      width: 60.9%;
+      height: 90.8%;
+    }
   }
 }
 .b-media__item {

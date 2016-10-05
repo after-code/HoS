@@ -7,4 +7,7 @@ h1 {
   @include breakpoint(typoMax) {
     font-size: cvp(79px, 2050px);
   }
+  @include breakpoint(mobile) {
+    font-size: 27px;
+  }
 }

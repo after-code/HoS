@@ -10,10 +10,12 @@
   .b-service__media  {
     float: left;
     width: 52%;
-
     img {
       width: 114%;
       display: block;
+    }
+    @include breakpoint(mobile) {
+      width: 100%;
     }
   }
   .b-service__content {
@@ -36,10 +38,18 @@
       top: 8%;
       z-index: -1;
     }
+    @include breakpoint(mobile) {
+      width: 100%;
+    }
   }
   .b-service__logo {
     margin-bottom: 2%;
     width: 90%;
+    @include breakpoint(mobile) {
+      width: 90%;
+      margin-left: 5%;
+      margin-bottom: 4.8%;
+    }
   }
   .b-service__content__text {
     margin-bottom: 15%;
@@ -49,9 +59,18 @@
       line-height: cvp(39px,2050px);
       font-size: cvp(36px,2050px);
     }
+    @include breakpoint(mobile) {
+      padding: 0 3%;
+      text-align: center;
+      font-size: 18px;
+      line-height: 24px;
+    }
   }
   .b-service__quote {
     margin-left: -7%;
+    @include breakpoint(mobile) {
+      display: none;
+    }
   }
   .b-service__quote__img {
     width: 13.4%;
