@@ -46,12 +46,12 @@
     p {
       position: absolute;
       height: 100%;
-      display: block;
+      // display: block;
       width: 100%;
-      font-size: 40px;
+      font-size: 33px;
       top: 34%;
       @include breakpoint(typoMax) {
-        font-size: cvp(40px, 2050px);
+        font-size: cvp(33px, 2050px);
       }
     }
   }
@@ -67,6 +67,12 @@
     margin-bottom: 7.1%;
     font-size: 22px;
     margin-top: 7%;
+    cursor:pointer;
+    @include transition(all 300ms $sharpCurve);
+    &:hover {
+      background: #222;
+      color:#fff;
+    }
     @include breakpoint(typoMax) {
       font-size: cvp(22px, 2050px);
     }

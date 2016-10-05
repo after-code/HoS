@@ -49,4 +49,7 @@
       width: 100%;
     }
   }
+  @include breakpoint(typoMax) {
+    font-size:cvp(13px, 2050px);
+  }
 }

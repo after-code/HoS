@@ -104,7 +104,7 @@ h1 {
   @media (max-width: 2050px) {
     h1 {
       font-size: 3.85366vw; } }
-  @media (max-width: 1000px) {
+  @media (max-width: 450px) {
     h1 {
       font-size: 27px; } }
 
@@ -128,7 +128,7 @@ h1 {
   margin: 0 20px;
   margin-left: 17%;
   padding: 33px 0; }
-  @media (max-width: 1000px) {
+  @media (max-width: 450px) {
     .header__links {
       display: none; } }
 
@@ -157,6 +157,9 @@ h1 {
   .header__link:hover:after {
     left: 0%;
     width: 100%; }
+  @media (max-width: 2050px) {
+    .header__link {
+      font-size: 0.63415vw; } }
 
 .wrapper, .wrapper--big {
   max-width: 1850px;
@@ -185,10 +188,10 @@ h1 {
     display: block;
     position: absolute;
     background: #fef339;
-    top: -9%;
+    top: -21%;
     left: -34%;
     z-index: -1;
-    transform: rotate(15deg); }
+    transform: rotate(13.3deg); }
 
 .section--conference {
   overflow: hidden; }
@@ -326,7 +329,7 @@ h1 {
     width: 50%;
     height: 74.2%;
     background: #dcebfc; }
-  @media (max-width: 1000px) {
+  @media (max-width: 450px) {
     .b-media--big {
       width: 113%;
       margin-bottom: 6%;
@@ -347,7 +350,7 @@ h1 {
     width: 64.1%;
     height: 96.1%;
     background: #dcebfc; }
-  @media (max-width: 1000px) {
+  @media (max-width: 450px) {
     .b-media--small {
       width: 126%;
       left: -34%;
@@ -368,7 +371,7 @@ h1 {
     width: 51%;
     height: 75.2%;
     background: #ee2e45; }
-  @media (max-width: 1000px) {
+  @media (max-width: 450px) {
     .b-media--middle {
       width: 114%;
       left: -24%; }
@@ -424,13 +427,12 @@ h1 {
     .b-events__sticker p {
       position: absolute;
       height: 100%;
-      display: block;
       width: 100%;
-      font-size: 40px;
+      font-size: 33px;
       top: 34%; }
       @media (max-width: 2050px) {
         .b-events__sticker p {
-          font-size: 1.95122vw; } }
+          font-size: 1.60976vw; } }
   .b-events .b-button__wrap {
     text-align: center; }
   .b-events .b-button {
@@ -441,7 +443,16 @@ h1 {
     padding: 2.6% 8.3%;
     margin-bottom: 7.1%;
     font-size: 22px;
-    margin-top: 7%; }
+    margin-top: 7%;
+    cursor: pointer;
+    -moz-transition: all 300ms cubic-bezier(0.4, 0.0, 0.6, 1);
+    -o-transition: all 300ms cubic-bezier(0.4, 0.0, 0.6, 1);
+    -ms-transition: all 300ms cubic-bezier(0.4, 0.0, 0.6, 1);
+    -webkit-transition: all 300ms cubic-bezier(0.4, 0.0, 0.6, 1);
+    transition: all 300ms cubic-bezier(0.4, 0.0, 0.6, 1); }
+    .b-events .b-button:hover {
+      background: #222;
+      color: #fff; }
     @media (max-width: 2050px) {
       .b-events .b-button {
         font-size: 1.07317vw; } }
@@ -465,7 +476,7 @@ h1 {
     .b-service--consultancy .b-service__media img {
       width: 114%;
       display: block; }
-    @media (max-width: 1000px) {
+    @media (max-width: 450px) {
       .b-service--consultancy .b-service__media {
         width: 100%; } }
   .b-service--consultancy .b-service__content {
@@ -487,13 +498,13 @@ h1 {
       transform: rotate(14.6deg);
       top: 8%;
       z-index: -1; }
-    @media (max-width: 1000px) {
+    @media (max-width: 450px) {
       .b-service--consultancy .b-service__content {
         width: 100%; } }
   .b-service--consultancy .b-service__logo {
     margin-bottom: 2%;
     width: 90%; }
-    @media (max-width: 1000px) {
+    @media (max-width: 450px) {
       .b-service--consultancy .b-service__logo {
         width: 90%;
         margin-left: 5%;
@@ -506,7 +517,7 @@ h1 {
       .b-service--consultancy .b-service__content__text {
         line-height: 1.90244vw;
         font-size: 1.7561vw; } }
-    @media (max-width: 1000px) {
+    @media (max-width: 450px) {
       .b-service--consultancy .b-service__content__text {
         padding: 0 3%;
         text-align: center;
@@ -514,7 +525,7 @@ h1 {
         line-height: 24px; } }
   .b-service--consultancy .b-service__quote {
     margin-left: -7%; }
-    @media (max-width: 1000px) {
+    @media (max-width: 450px) {
       .b-service--consultancy .b-service__quote {
         display: none; } }
   .b-service--consultancy .b-service__quote__img {
@@ -546,7 +557,7 @@ h1 {
     margin-bottom: 6%;
     width: 39%;
     margin-top: 1.7%; }
-    @media (max-width: 1000px) {
+    @media (max-width: 450px) {
       .b-service--training .b-service__logo {
         margin-top: 0;
         margin-bottom: 11%;
@@ -559,7 +570,7 @@ h1 {
     padding: 0 3%;
     display: inline-block;
     text-align: left; }
-    @media (max-width: 1000px) {
+    @media (max-width: 450px) {
       .b-service--training .b-service__element {
         width: 100%;
         padding: 0; } }
@@ -570,7 +581,7 @@ h1 {
     @media (max-width: 2050px) {
       .b-service--training .b-service__element__nbr {
         font-size: 2.58537vw; } }
-    @media (max-width: 1000px) {
+    @media (max-width: 450px) {
       .b-service--training .b-service__element__nbr {
         font-size: 34px; } }
   .b-service--training .b-service__element__heading {
@@ -581,14 +592,15 @@ h1 {
       width: 60px;
       height: 5px;
       content: '';
-      background: red;
+      background: white;
       display: block;
+      opacity: 0.5;
       margin-top: 30px; }
     @media (max-width: 2050px) {
       .b-service--training .b-service__element__heading {
         font-size: 2.39024vw;
         line-height: 2.73171vw; } }
-    @media (max-width: 1000px) {
+    @media (max-width: 450px) {
       .b-service--training .b-service__element__heading {
         font-size: 30px;
         line-height: 34px;
@@ -604,7 +616,7 @@ h1 {
       .b-service--training .b-service__element__text {
         font-size: 1.31707vw;
         line-height: 2.19512vw; } }
-    @media (max-width: 1000px) {
+    @media (max-width: 450px) {
       .b-service--training .b-service__element__text {
         display: none; } }
   .b-service--training .b-service__button {
@@ -614,24 +626,34 @@ h1 {
     display: inline-block;
     padding: 1.6% 2.3%;
     margin-bottom: 4.1%;
-    font-size: 22px; }
+    font-size: 22px;
+    cursor: pointer;
+    -moz-transition: all 300ms cubic-bezier(0.4, 0.0, 0.6, 1);
+    -o-transition: all 300ms cubic-bezier(0.4, 0.0, 0.6, 1);
+    -ms-transition: all 300ms cubic-bezier(0.4, 0.0, 0.6, 1);
+    -webkit-transition: all 300ms cubic-bezier(0.4, 0.0, 0.6, 1);
+    transition: all 300ms cubic-bezier(0.4, 0.0, 0.6, 1); }
+    .b-service--training .b-service__button:hover {
+      background: #fef339;
+      color: #222; }
     @media (max-width: 2050px) {
       .b-service--training .b-service__button {
         font-size: 1.07317vw; } }
 
 .b-service--insights {
   overflow: hidden;
-  background: #ee2e45; }
+  background: url(../../assets/img/insights-bck.jpg); }
   .b-service--insights .b-service__logo {
-    width: 71%;
+    width: 78%;
     margin-bottom: 5.2%;
     margin-top: 11.6%; }
   .b-service--insights .b-service__media {
     overflow: hidden;
     position: relative;
     float: left;
-    width: 34.8%;
-    margin-top: 5%; }
+    width: 42.9%;
+    margin-top: 5%;
+    padding-left: 5.9%; }
     .b-service--insights .b-service__media img {
       width: 100%; }
   .b-service--insights .b-service__media__pre-heading {
@@ -639,23 +661,30 @@ h1 {
     color: #fcee2f; }
   .b-service--insights .b-service__media__heading {
     font-size: 50px;
-    color: white; }
+    color: white;
+    line-height: 61px; }
+    @media (max-width: 2050px) {
+      .b-service--insights .b-service__media__heading {
+        font-size: 2.43902vw;
+        line-height: 2.97561vw; } }
   .b-service--insights .b-service__media__year {
     font-size: 50px;
     color: #fcee2f; }
   .b-service--insights .b-service__content {
-    width: 60.6%;
+    width: 56.6%;
     float: left;
     padding-left: 8%; }
     .b-service--insights .b-service__content .b-service__heading {
       font-weight: bold;
       color: white;
-      width: 53%;
+      width: 60%;
       font-size: 68px;
-      margin-bottom: 5%; }
+      line-height: 73px;
+      margin-bottom: 1%; }
       @media (max-width: 2050px) {
         .b-service--insights .b-service__content .b-service__heading {
-          font-size: 3.31707vw; } }
+          font-size: 3.31707vw;
+          line-height: 3.56098vw; } }
       .b-service--insights .b-service__content .b-service__heading:after {
         width: 60px;
         height: 5px;
@@ -674,14 +703,24 @@ h1 {
         font-size: 1.5122vw;
         line-height: 1.65854vw; } }
   .b-service--insights .b-service__content__button {
-    margin-top: 7%;
+    margin-top: 9%;
+    margin-right: 6%;
     border: 3px solid white;
     display: inline-block;
-    padding: 3.3% 9.3%;
+    padding: 3.3% 11.6%;
     color: white;
     font-size: 20px;
-    margin-bottom: 14%;
-    font-weight: bold; }
+    margin-bottom: 9.6%;
+    font-weight: bold;
+    cursor: pointer;
+    -moz-transition: all 300ms cubic-bezier(0.4, 0.0, 0.6, 1);
+    -o-transition: all 300ms cubic-bezier(0.4, 0.0, 0.6, 1);
+    -ms-transition: all 300ms cubic-bezier(0.4, 0.0, 0.6, 1);
+    -webkit-transition: all 300ms cubic-bezier(0.4, 0.0, 0.6, 1);
+    transition: all 300ms cubic-bezier(0.4, 0.0, 0.6, 1); }
+    .b-service--insights .b-service__content__button:hover {
+      background: #fff;
+      color: #222; }
     @media (max-width: 2050px) {
       .b-service--insights .b-service__content__button {
         font-size: 0.97561vw; } }
@@ -695,7 +734,7 @@ h1 {
   top: 0;
   left: 0;
   padding: 0 0% 0 5%; }
-  @media (max-width: 1000px) {
+  @media (max-width: 450px) {
     .b-content-sticker {
       padding: 0 0% 0 6%; } }
 
@@ -706,7 +745,7 @@ h1 {
   @media (max-width: 2050px) {
     .b-content-sticker__tag {
       font-size: 1.07317vw; } }
-  @media (max-width: 1000px) {
+  @media (max-width: 450px) {
     .b-content-sticker__tag {
       font-size: 13px;
       margin-top: 9%; } }
@@ -720,7 +759,7 @@ h1 {
     .b-content-sticker__heading {
       font-size: 2.68293vw;
       line-height: 2.58537vw; } }
-  @media (max-width: 1000px) {
+  @media (max-width: 450px) {
     .b-content-sticker__heading {
       font-size: 28px;
       line-height: 29px;
@@ -734,7 +773,7 @@ h1 {
     .b-content-sticker__text {
       font-size: 1.07317vw;
       line-height: 1.46341vw; } }
-  @media (max-width: 1000px) {
+  @media (max-width: 450px) {
     .b-content-sticker__text {
       font-size: 14px;
       line-height: 16px; } }
@@ -792,7 +831,7 @@ h1 {
     margin-bottom: 5%;
     font-size: 22px;
     font-family: "Roboto", sans-serif; }
-    @media (max-width: 1000px) {
+    @media (max-width: 2050px) {
       .b-conference__info__city {
         font-size: 1.07317vw; } }
   .b-conference__info__heading {

@@ -54,7 +54,7 @@
     margin-bottom: 5%;
     font-size: 22px;
     font-family:$text__family--Roboto;
-    @include breakpoint(mobile){
+    @include breakpoint(typoMax){
       font-size:cvp(22px, 2050px);
     }
   }
