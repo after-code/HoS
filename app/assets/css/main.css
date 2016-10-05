@@ -642,7 +642,8 @@ h1 {
 
 .b-service--insights {
   overflow: hidden;
-  background: url(../../assets/img/insights-bck.jpg); }
+  background-color: #ee2e45;
+  background-image: url(../../assets/img/insights-bck.jpg); }
   .b-service--insights .b-service__logo {
     width: 78%;
     margin-bottom: 5.2%;

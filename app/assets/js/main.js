@@ -35,7 +35,6 @@ $(function(){
 
   var scene = new ScrollMagic.Scene()
   .addTo(controller)
-  .addIndicators()
   .on("update", function() {
       var x1 = controller.info("scrollDirection");
       var x2 = $(window).scrollTop();
