@@ -23,7 +23,8 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
+html, body {
+	overflow-x: hidden;
 	line-height: 1;
 }
 ol, ul {

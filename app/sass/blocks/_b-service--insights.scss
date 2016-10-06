@@ -8,6 +8,10 @@
     width: 78%;
     margin-bottom: 5.2%;
     margin-top: 11.6%;
+    @include breakpoint(mobile) {
+      width: 91%;
+      margin-bottom: 16%;
+    }
   }
   .b-service__media {
     overflow: hidden;
@@ -18,6 +22,14 @@
     padding-left: 5.9%;
     img {
       width: 100%;
+    }
+    @include breakpoint(mobile) {
+      width: 100%;
+      padding-right: 5.9%;
+      img {
+        width: 100%;
+        margin-top: 7%;
+      }
     }
   }
   .b-service__media__pre-heading {
@@ -39,7 +51,7 @@
   }
   .b-service__content {
     width: 56.6%;
-    float: left;
+    float: right;
     padding-left: 8%;
     .b-service__heading {
       font-weight: bold;
@@ -52,14 +64,15 @@
         font-size:cvp(68px, 2050px);
         line-height: cvp(73px, 2050px);
       }
-      &:after {
-        width: 60px;
-        height:5px;
-        content:'';
-        background: $red;
-        display:block;
-        margin-top: 10%;
+
+      @include breakpoint(mobile) {
+        font-size: 35px;
+        line-height: 37px;
+        width: 93%;
       }
+    }
+    @include breakpoint(mobile) {
+      width: 100%;
     }
   }
   .b-service__text {
@@ -71,6 +84,20 @@
     @include breakpoint(typoMax){
       font-size:cvp(31px, 2050px);
       line-height:cvp(34px, 2050px);
+    }
+    @include breakpoint(mobile) {
+      display: none;
+    }
+    &--mobile {
+      display: none;
+      @include breakpoint(mobile) {
+        display: block;
+        font-size: 18px;
+        line-height: 23px;
+        width: 82%;
+        margin-top: 12%;
+        margin-left: 9%;
+      }
     }
   }
   .b-service__content__button {
@@ -91,6 +118,22 @@
     }
     @include breakpoint(typoMax){
         font-size:cvp(20px, 2050px);
+    }
+    @include breakpoint(mobile) {
+      display: none;
+    }
+    &--mobile {
+      display: none;
+      @include breakpoint(mobile) {
+        display: block;
+        font-size: 15px;
+        padding: 5.6% 6%;
+        width: 82%;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 15%;
+        margin-bottom: 17%;
+      }
     }
   }
 }

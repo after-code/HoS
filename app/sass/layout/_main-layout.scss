@@ -33,6 +33,13 @@
     left: -34%;
     z-index: -1;
     transform: rotate(13.3deg);
+    @include breakpoint(mobile) {
+      display: none;
+    }
+  }
+  @include breakpoint(mobile) {
+    background: white;
+    padding: 0 4%;
   }
 }
 .section--conference {

@@ -2,6 +2,21 @@
   width: 42%;
   float: left;
   padding-bottom:50px;
+  @include breakpoint(mobile) {
+    width: 100%;
+    border:1px solid $footer-gray;
+    padding-bottom: 0;
+    margin-bottom: 8%;
+  }
+}
+.b-conference--mobile-short {
+  @include breakpoint(mobile) {
+    border: none;
+    margin-bottom: 0;
+    .b-conference__media {
+      display: none;
+    }
+  }
 }
 .b-conference__media {
   width: 100%;
@@ -29,6 +44,10 @@
     @include breakpoint(typoMax){
       font-size: cvp(52px,2050px);
     }
+    @include breakpoint(mobile) {
+      font-size: 31px;
+      line-height: 20px;
+    }
   }
   @include breakpoint(typoMax){
     font-size: cvp(35px,2050px);
@@ -43,6 +62,15 @@
     right: -37%;
     transform:skew(-14.9deg);
     display:block;
+    @include breakpoint(mobile) {
+      height: 116%;
+      top: -9%;
+      right: -23%;
+      transform: skew(-20.9deg);
+    }
+  }
+  @include breakpoint(mobile) {
+    font-size: 20px;
   }
 }
 .b-conference__info {
@@ -57,6 +85,11 @@
     @include breakpoint(typoMax){
       font-size:cvp(22px, 2050px);
     }
+    @include breakpoint(mobile) {
+      font-size: 12px;
+      margin-bottom: 2%;
+      color:$red;
+    }
   }
   &__heading {
     font-size: 37px;
@@ -67,6 +100,11 @@
       font-size:cvp(37px, 2050px);
       line-height:cvp(41px, 2050px);
     }
+    @include breakpoint(mobile) {
+      font-size: 20px;
+      line-height: 21px;
+      margin-bottom: 3%;
+    }
   }
   &__text {
     line-height: 40px;
@@ -75,6 +113,9 @@
     @include breakpoint(typoMax){
       font-size:cvp(27px, 2050px);
       line-height:cvp(40px, 2050px);
+    }
+    @include breakpoint(mobile) {
+      display: none;
     }
   }
   &__button {
@@ -86,5 +127,13 @@
     @include breakpoint(typoMax){
       font-size:cvp(20px, 2050px);
     }
+    @include breakpoint(mobile) {
+      display: none;
+    }
+  }
+  @include breakpoint(mobile) {
+    padding-left: 12%;
+    margin-top: -2%;
+    padding-bottom: 8%;
   }
 }

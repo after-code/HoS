@@ -26,7 +26,8 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
 
-body {
+html, body {
+  overflow-x: hidden;
   line-height: 1; }
 
 ol, ul {
@@ -135,7 +136,7 @@ h1 {
 .header__link {
   display: inline-block;
   margin: 0 20px;
-  font-size: 13px;
+  font-size: 16px;
   height: 30px;
   line-height: 30px;
   cursor: pointer;
@@ -159,7 +160,7 @@ h1 {
     width: 100%; }
   @media (max-width: 2050px) {
     .header__link {
-      font-size: 0.63415vw; } }
+      font-size: 0.78049vw; } }
 
 .wrapper, .wrapper--big {
   max-width: 1850px;
@@ -192,6 +193,13 @@ h1 {
     left: -34%;
     z-index: -1;
     transform: rotate(13.3deg); }
+    @media (max-width: 450px) {
+      .section--events:after {
+        display: none; } }
+  @media (max-width: 450px) {
+    .section--events {
+      background: white;
+      padding: 0 4%; } }
 
 .section--conference {
   overflow: hidden; }
@@ -392,6 +400,10 @@ h1 {
   background: white;
   position: relative;
   margin-top: 7.3%; }
+  @media (max-width: 450px) {
+    .b-events {
+      width: 100%;
+      margin-top: 0; } }
   .b-events .b-conference__content {
     padding-left: 0;
     margin-left: 16%;
@@ -401,6 +413,14 @@ h1 {
     padding-top: 6%; }
     .b-events .b-conference__content.last {
       border-bottom: none; }
+    @media (max-width: 450px) {
+      .b-events .b-conference__content {
+        margin-left: 0%;
+        padding-left: 5.9%;
+        padding-top: 9.2%;
+        width: 100%;
+        margin-right: 0%;
+        border-bottom: 1px solid #222; } }
   .b-events .b-conference__info {
     width: 80%;
     padding-left: 0; }
@@ -410,29 +430,31 @@ h1 {
       margin-bottom: 2%; }
     .b-events .b-conference__info__heading {
       margin-bottom: 3%; }
+    @media (max-width: 450px) {
+      .b-events .b-conference__info {
+        padding-left: 12%; } }
   .b-events .b-conference__date {
     margin-right: 8%; }
+    @media (max-width: 450px) {
+      .b-events .b-conference__date {
+        margin-right: 0; } }
   .b-events__sticker {
     width: 19.7%;
-    padding-top: 19%;
     background: #ee2e45;
     text-align: center;
     text-align: left;
-    padding-left: 16px;
     color: white;
     font-weight: bold;
     position: absolute;
     left: -9%;
     top: -5%; }
-    .b-events__sticker p {
-      position: absolute;
-      height: 100%;
+    @media (max-width: 450px) {
+      .b-events__sticker {
+        display: none; } }
+    .b-events__sticker img {
       width: 100%;
-      font-size: 33px;
-      top: 34%; }
-      @media (max-width: 2050px) {
-        .b-events__sticker p {
-          font-size: 1.60976vw; } }
+      top: 0;
+      display: block; }
   .b-events .b-button__wrap {
     text-align: center; }
   .b-events .b-button {
@@ -549,7 +571,8 @@ h1 {
         font-size: 1.36585vw; } }
 
 .b-service--training {
-  background: #03c4c4;
+  background-color: #03c4c4;
+  background-image: url(../../assets/img/bck.jpg);
   text-align: center;
   padding-top: 40px;
   margin-bottom: 50px; }
@@ -648,6 +671,10 @@ h1 {
     width: 78%;
     margin-bottom: 5.2%;
     margin-top: 11.6%; }
+    @media (max-width: 450px) {
+      .b-service--insights .b-service__logo {
+        width: 91%;
+        margin-bottom: 16%; } }
   .b-service--insights .b-service__media {
     overflow: hidden;
     position: relative;
@@ -657,6 +684,13 @@ h1 {
     padding-left: 5.9%; }
     .b-service--insights .b-service__media img {
       width: 100%; }
+    @media (max-width: 450px) {
+      .b-service--insights .b-service__media {
+        width: 100%;
+        padding-right: 5.9%; }
+        .b-service--insights .b-service__media img {
+          width: 100%;
+          margin-top: 7%; } }
   .b-service--insights .b-service__media__pre-heading {
     font-size: 35px;
     color: #fcee2f; }
@@ -673,7 +707,7 @@ h1 {
     color: #fcee2f; }
   .b-service--insights .b-service__content {
     width: 56.6%;
-    float: left;
+    float: right;
     padding-left: 8%; }
     .b-service--insights .b-service__content .b-service__heading {
       font-weight: bold;
@@ -686,13 +720,14 @@ h1 {
         .b-service--insights .b-service__content .b-service__heading {
           font-size: 3.31707vw;
           line-height: 3.56098vw; } }
-      .b-service--insights .b-service__content .b-service__heading:after {
-        width: 60px;
-        height: 5px;
-        content: '';
-        background: #ee2e45;
-        display: block;
-        margin-top: 10%; }
+      @media (max-width: 450px) {
+        .b-service--insights .b-service__content .b-service__heading {
+          font-size: 35px;
+          line-height: 37px;
+          width: 93%; } }
+    @media (max-width: 450px) {
+      .b-service--insights .b-service__content {
+        width: 100%; } }
   .b-service--insights .b-service__text {
     font-size: 31px;
     line-height: 34px;
@@ -703,6 +738,19 @@ h1 {
       .b-service--insights .b-service__text {
         font-size: 1.5122vw;
         line-height: 1.65854vw; } }
+    @media (max-width: 450px) {
+      .b-service--insights .b-service__text {
+        display: none; } }
+    .b-service--insights .b-service__text--mobile {
+      display: none; }
+      @media (max-width: 450px) {
+        .b-service--insights .b-service__text--mobile {
+          display: block;
+          font-size: 18px;
+          line-height: 23px;
+          width: 82%;
+          margin-top: 12%;
+          margin-left: 9%; } }
   .b-service--insights .b-service__content__button {
     margin-top: 9%;
     margin-right: 6%;
@@ -725,6 +773,21 @@ h1 {
     @media (max-width: 2050px) {
       .b-service--insights .b-service__content__button {
         font-size: 0.97561vw; } }
+    @media (max-width: 450px) {
+      .b-service--insights .b-service__content__button {
+        display: none; } }
+    .b-service--insights .b-service__content__button--mobile {
+      display: none; }
+      @media (max-width: 450px) {
+        .b-service--insights .b-service__content__button--mobile {
+          display: block;
+          font-size: 15px;
+          padding: 5.6% 6%;
+          width: 82%;
+          text-align: center;
+          margin: 0 auto;
+          margin-top: 15%;
+          margin-bottom: 17%; } }
 
 .b-content-sticker {
   width: 200px;
@@ -783,6 +846,19 @@ h1 {
   width: 42%;
   float: left;
   padding-bottom: 50px; }
+  @media (max-width: 450px) {
+    .b-conference {
+      width: 100%;
+      border: 1px solid #9b9b9b;
+      padding-bottom: 0;
+      margin-bottom: 8%; } }
+
+@media (max-width: 450px) {
+  .b-conference--mobile-short {
+    border: none;
+    margin-bottom: 0; }
+    .b-conference--mobile-short .b-conference__media {
+      display: none; } }
 
 .b-conference__media {
   width: 100%; }
@@ -809,6 +885,10 @@ h1 {
     @media (max-width: 2050px) {
       .b-conference__date .b-day {
         font-size: 2.53659vw; } }
+    @media (max-width: 450px) {
+      .b-conference__date .b-day {
+        font-size: 31px;
+        line-height: 20px; } }
   @media (max-width: 2050px) {
     .b-conference__date {
       font-size: 1.70732vw; } }
@@ -822,6 +902,15 @@ h1 {
     right: -37%;
     transform: skew(-14.9deg);
     display: block; }
+    @media (max-width: 450px) {
+      .b-conference__date:after {
+        height: 116%;
+        top: -9%;
+        right: -23%;
+        transform: skew(-20.9deg); } }
+  @media (max-width: 450px) {
+    .b-conference__date {
+      font-size: 20px; } }
 
 .b-conference__info {
   float: left;
@@ -835,6 +924,11 @@ h1 {
     @media (max-width: 2050px) {
       .b-conference__info__city {
         font-size: 1.07317vw; } }
+    @media (max-width: 450px) {
+      .b-conference__info__city {
+        font-size: 12px;
+        margin-bottom: 2%;
+        color: #ee2e45; } }
   .b-conference__info__heading {
     font-size: 37px;
     line-height: 41px;
@@ -844,6 +938,11 @@ h1 {
       .b-conference__info__heading {
         font-size: 1.80488vw;
         line-height: 2vw; } }
+    @media (max-width: 450px) {
+      .b-conference__info__heading {
+        font-size: 20px;
+        line-height: 21px;
+        margin-bottom: 3%; } }
   .b-conference__info__text {
     line-height: 40px;
     margin-bottom: 10%;
@@ -852,6 +951,9 @@ h1 {
       .b-conference__info__text {
         font-size: 1.31707vw;
         line-height: 1.95122vw; } }
+    @media (max-width: 450px) {
+      .b-conference__info__text {
+        display: none; } }
   .b-conference__info__button {
     float: right;
     font-size: 20px;
@@ -861,6 +963,14 @@ h1 {
     @media (max-width: 2050px) {
       .b-conference__info__button {
         font-size: 0.97561vw; } }
+    @media (max-width: 450px) {
+      .b-conference__info__button {
+        display: none; } }
+  @media (max-width: 450px) {
+    .b-conference__info {
+      padding-left: 12%;
+      margin-top: -2%;
+      padding-bottom: 8%; } }
 
 .page-container {
   max-width: 1000px;

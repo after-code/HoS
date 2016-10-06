@@ -4,6 +4,10 @@
   background: white;
   position: relative;
   margin-top: 7.3%;
+  @include breakpoint(mobile) {
+    width: 100%;
+    margin-top:0;
+  }
   .b-conference__content {
     padding-left: 0;
     margin-left: 16%;
@@ -13,6 +17,14 @@
     padding-top: 6%;
     &.last {
       border-bottom: none;
+    }
+    @include breakpoint(mobile) {
+      margin-left: 0%;
+      padding-left: 5.9%;
+      padding-top: 9.2%;
+      width: 100%;
+      margin-right: 0%;
+      border-bottom: 1px solid $base-color;
     }
   }
   .b-conference__info {
@@ -27,32 +39,34 @@
     &__heading {
       margin-bottom: 3%;
     }
+    @include breakpoint(mobile) {
+      padding-left:12%;
+    }
   }
   .b-conference__date {
     margin-right:8%;
+    @include breakpoint(mobile) {
+      margin-right: 0;
+
+    }
   }
   &__sticker {
     width: 19.7%;
-    padding-top: 19%;
     background: $red;
     text-align: center;
     text-align: left;
-    padding-left: 16px;
     color: white;
     font-weight: bold;
     position: absolute;
     left: -9%;
     top: -5%;
-    p {
-      position: absolute;
-      height: 100%;
-      // display: block;
+    @include breakpoint(mobile) {
+      display: none;
+    }
+    img {
       width: 100%;
-      font-size: 33px;
-      top: 34%;
-      @include breakpoint(typoMax) {
-        font-size: cvp(33px, 2050px);
-      }
+      top:0;
+      display: block;
     }
   }
   .b-button__wrap {
