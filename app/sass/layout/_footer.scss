@@ -16,11 +16,21 @@
     /* top: -50%; */
     left: 0;
     z-index: -1;
-    transform: skewY(3.6deg) translateY(-50%);  }
+    transform: skewY(3.6deg) translateY(-50%);
+    @include breakpoint(mobile) {
+      display: none;
+    }
+  }
+  @include breakpoint(mobile) {
+    overflow: hidden;
+  }
 }
 .footer__wrap {
   width: 34%;
   margin:0 auto;
+  @include breakpoint(mobile) {
+    width: 100%;
+  }
 }
 .footer-social {
   margin-bottom: 9%;
@@ -32,6 +42,12 @@
     @include breakpoint(typoMax){
       font-size: cvp(17px, 2050px);
     }
+    @include breakpoint(mobile) {
+      top:0;
+      padding-top: 12%;
+      margin-bottom: 4%;
+      font-size: 20px;
+    }
     &:after {
       width: 22px;
       background: $footer-gray;
@@ -41,6 +57,9 @@
       margin:15px auto 0px;
       position: relative;
       top:5px;
+      @include breakpoint(mobile) {
+        display: none;
+      }
     }
   }
   .footer-social__link {
@@ -52,11 +71,20 @@
     }
   }
 }
+.footer__social__links {
+  position: relative;
+  left: -1.4%;
+}
 .footer__logo {
   width: 13%;
   float: left;
   opacity: 0.09;
   margin-bottom: 20px;
+  @include breakpoint(mobile) {
+    width: 27%;
+    margin-left: 6%;
+    margin-top: 16%;
+  }
 }
 .footer__nav {
   margin-bottom: 7.8%;
@@ -71,6 +99,14 @@
   &:nth-child(3) {
     float: right;
   }
+  @include breakpoint(mobile) {
+    float: left;
+    width: 70%;
+    margin-right: 21%;
+    margin-left: 9%;
+    margin-bottom: 6%;
+
+  }
 }
 .footer__nav__link {
   margin-bottom: 15px;
@@ -83,6 +119,10 @@
     @include breakpoint(typoMax){
       font-size: cvp(17px,2050px);
     }
+    @include breakpoint(mobile) {
+      font-size: 18px;
+      margin-bottom: 4%;
+    }
     &:after {
       width: 22px;
       height: 2px;
@@ -90,10 +130,17 @@
       content:'';
       display:block;
       margin-top:15px;
+      @include breakpoint(mobile) {
+        margin-top:10px;
+        width: 18px
+      }
     }
   }
   @include breakpoint(typoMax){
     font-size: cvp(15px,2050px);
+  }
+  @include breakpoint(mobile) {
+    font-size: 16px;
   }
 }
 .footer__copyright {
@@ -114,17 +161,40 @@
   p {
     &:first-child{
       float: left;
-    }
-    &:nth-child(2){
-      float: right;
-      cursor: pointer;
-      font-size: 15px;
-      @include breakpoint(typoMax){
-        font-size: cvp(15px,2050px);
+      @include breakpoint(mobile) {
+        margin-top: 40%;
+        margin-left: 6%;
       }
     }
+    // &:nth-child(2){
+    //   float: right;
+    //   cursor: pointer;
+    //   font-size: 15px;
+    //   @include breakpoint(typoMax){
+    //     font-size: cvp(15px,2050px);
+    //   }
+    // }
   }
   @include breakpoint(typoMax){
     font-size: cvp(13px,2050px);
+  }
+  @include breakpoint(mobile) {
+    font-size: 12px;
+    width: 67%;
+    position: relative;
+  }
+}
+.footer__back-to-top {
+  float: right;
+  cursor: pointer;
+  font-size: 15px;
+  @include breakpoint(typoMax){
+    font-size: cvp(15px,2050px);
+  }
+  @include breakpoint(mobile) {
+    position: absolute;
+    right: 9%;
+    font-size: 17px;
+    top: 0;
   }
 }
