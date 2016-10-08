@@ -36,7 +36,7 @@ $(function(){
   var scene = new ScrollMagic.Scene()
   .addTo(controller)
   .on("update", function() {
-    if($(window).width() > 450){
+    if($(window).width() > 1025){
       var x1 = controller.info("scrollDirection");
       var x2 = $(window).scrollTop();
       var x3 = 400;
@@ -65,4 +65,10 @@ $(function(){
     }
   });
 
+});
+$(function(){
+  $(".nav-icon").click(function(){
+    console.log("ex");
+    $('.header').toggleClass("active");
+  });
 });

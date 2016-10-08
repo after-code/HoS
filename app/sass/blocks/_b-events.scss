@@ -10,11 +10,12 @@
   }
   .b-conference__content {
     padding-left: 0;
-    margin-left: 16%;
-    width: 74%;
-    margin-right: 9%;
-    border-bottom: 1px solid $base-color;
+    padding-left: 16%;
+    width: 100%;
+    padding-right: 6%;
+    border-bottom: 1px solid #ccc;
     padding-top: 6%;
+    cursor:pointer;
     &.last {
       border-bottom: none;
     }
@@ -26,18 +27,24 @@
       margin-right: 0%;
       border-bottom: 1px solid #e9e9e9;
     }
+    &:hover {
+      background: #eee;
+    }
   }
   .b-conference__info {
     width: 80%;
     padding-left:0;
     &__text {
-      margin-bottom: 3%;
+      margin-bottom: 6%;
     }
     &__city {
       margin-bottom: 2%;
     }
     &__heading {
       margin-bottom: 3%;
+    }
+    &__button {
+      margin-bottom: 5.7%;
     }
     @include breakpoint(mobile) {
       padding-left:12%;

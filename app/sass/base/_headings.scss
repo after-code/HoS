@@ -2,7 +2,7 @@ h1 {
   font-size: 79px;
   text-align: center;
   padding: 11.2% 0 3.5%;
-  font-family: $text__family--Roboto;
+  font-family: $text__family--Roboto-Condensed;
   font-weight: bold;
   @include breakpoint(typoMax) {
     font-size: cvp(79px, 2050px);

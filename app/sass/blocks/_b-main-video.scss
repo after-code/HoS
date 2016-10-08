@@ -3,4 +3,22 @@
   margin:0 auto;
   margin-bottom:100px;
   display:inline-block;
+  @include breakpoint(mobile){
+    margin-bottom: 2%;
+  }
+}
+.b-main-video__wrap {
+  overflow: hidden;
+  position: relative;
+}
+.b-main-video__icon {
+  width: 150px;
+  height: 150px;
+  background: url(../../assets/img/button-play.svg);
+  background-position: center;
+  position: absolute;
+  background-size: contain;
+  top:50%;
+  left:50%;
+  transform:translateX(-50%) translateY(-50%);
 }

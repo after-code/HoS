@@ -8,8 +8,8 @@
   @if $point == mobile {
      @media (max-width: 450px)  { @content ; }
   }
-  @if $point == large {
-     @media (min-width: 1170px)  { @content ; }
+  @if $point == tablet {
+     @media (max-width: 1025px)  { @content ; }
   }
   @if $point == xlarge {
      @media (min-width: 1681px)  { @content ; }

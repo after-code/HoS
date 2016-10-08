@@ -4,7 +4,7 @@
   color:white;
   text-align: center;
   z-index: 0;
-  padding-bottom: 6%;
+  padding-bottom: 9%;
   position: relative;
   &:before {
     width: 100%;
@@ -16,7 +16,7 @@
     /* top: -50%; */
     left: 0;
     z-index: -1;
-    transform: skewY(3.6deg) translateY(-50%);
+    transform: skewY(3.6deg) translateY(-60%);
     @include breakpoint(mobile) {
       display: none;
     }
@@ -33,36 +33,37 @@
   }
 }
 .footer-social {
-  margin-bottom: 9%;
-  .footer-social__heading {
+  margin-bottom: 13%;
+}
+.social__heading {
+  position: relative;
+  top: -30px;
+  font-size: 17px;
+  color: $footer-gray;
+  @include breakpoint(typoMax){
+    font-size: cvp(17px, 2050px);
+  }
+  @include breakpoint(mobile) {
+    top:0;
+    padding-top: 12%;
+    margin-bottom: 4%;
+    font-size: 20px;
+  }
+  &:after {
+    width: 22px;
+    background: $footer-gray;
+    display: block;
+    height: 2px;
+    content:'';
+    margin:15px auto 0px;
     position: relative;
-    top: -30px;
-    font-size: 17px;
-    color: $footer-gray;
-    @include breakpoint(typoMax){
-      font-size: cvp(17px, 2050px);
-    }
+    top:5px;
     @include breakpoint(mobile) {
-      top:0;
-      padding-top: 12%;
-      margin-bottom: 4%;
-      font-size: 20px;
-    }
-    &:after {
-      width: 22px;
-      background: $footer-gray;
-      display: block;
-      height: 2px;
-      content:'';
-      margin:15px auto 0px;
-      position: relative;
-      top:5px;
-      @include breakpoint(mobile) {
-        display: none;
-      }
+      display: none;
     }
   }
-  .footer-social__link {
+}
+  .social__link {
     display: inline-block;
     width: 30px;
     margin: 10px;
@@ -70,16 +71,14 @@
       height: 25px;
     }
   }
-}
-.footer__social__links {
+.social__links {
   position: relative;
-  left: -1.4%;
 }
 .footer__logo {
   width: 13%;
   float: left;
   opacity: 0.09;
-  margin-bottom: 20px;
+  margin-bottom: 7%;
   @include breakpoint(mobile) {
     width: 27%;
     margin-left: 6%;
@@ -121,7 +120,7 @@
     }
     @include breakpoint(mobile) {
       font-size: 18px;
-      margin-bottom: 4%;
+      margin-bottom: 9%;
     }
     &:after {
       width: 22px;

@@ -14,7 +14,11 @@
     top: 12.4%;
     width: 50%;
     height: 74.2%;
-    background: #dcebfc;
+    background: rgba(220, 235, 252, 0.93);
+    @include transition(background 400ms);
+    &:hover {
+      background: #dcebfc;
+    }
   }
   @include breakpoint(mobile) {
     width: 113%;
@@ -38,7 +42,11 @@
     top: -42.3%;
     width: 64.1%;
     height: 96.1%;
-    background: #dcebfc;
+    background: rgba(220, 235, 252, 0.93);
+    @include transition(background 400ms);
+    &:hover {
+      background: #dcebfc;
+    }
   }
   @include breakpoint(mobile) {
     width: 126%;
@@ -62,7 +70,11 @@
     top: 10.4%;
     width: 51%;
     height: 75.2%;
-    background: $red;
+    @include transition(background 400ms);
+    background: rgba(238, 46, 69, 0.93);
+    &:hover {
+      background: $red;
+    }
   }
   @include breakpoint(mobile) {
     width: 114%;
