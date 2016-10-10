@@ -31,12 +31,12 @@
       display: block;
       width: 100%;
       height: 131%;
-      background:  $yellow;
+      background: #fcee2f;
       content: "";
       position: absolute;
-      left: -14%;
-      transform: rotate(14.6deg);
-      top: 8%;
+      left: -13%;
+      transform: skew(-12.6deg);
+      top: 0%;
       z-index: -1;
       @include breakpoint(mobile) {
         display: none;
@@ -60,11 +60,13 @@
     margin-bottom: 15%;
     line-height: 39px;
     font-size: 36px;
+    width: 90%;
     @include breakpoint(typoMax){
       line-height: cvp(39px,2050px);
       font-size: cvp(36px,2050px);
     }
     @include breakpoint(mobile) {
+      width: 100%;
       padding: 0 3%;
       text-align: center;
       font-size: 18px;

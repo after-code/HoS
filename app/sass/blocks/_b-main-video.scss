@@ -41,14 +41,14 @@
   }
 }
 .b-main-video__heading {
-  font-size: 35px;
+  font-size: 50px;
   font-weight: bold;
-  line-height: 46px;
+  line-height: 66px;
   margin-bottom: 11%;
   color:$yellow;
   @include breakpoint(typoMax) {
-    font-size: cvp(35px,1422px);
-    line-height:cvp(46px,1422px);
+    font-size: cvp(50px,2050px);
+    line-height:cvp(66px,2050px);
   }
   @include breakpoint(mobile) {
     font-size: 21px;
@@ -56,11 +56,11 @@
   }
 }
 .b-main-video__text {
-  font-size: 17px;
-  line-height: 21px;
+  font-size: 24px;
+  line-height: 31px;
   @include breakpoint(typoMax) {
-    font-size: cvp(17px,1422px);
-    line-height:cvp(22px,1422px);
+    font-size: cvp(24px,2050px);
+    line-height:cvp(31px,2050px);
   }
   @include breakpoint(mobile) {
     display:none;
