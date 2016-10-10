@@ -24,7 +24,7 @@
       <div class="wrapper">
         <div class="nav-icon"></div>
         <img src="assets/img/hos-logo-black.svg" alt="HoS" class="header__logo">
-        <img src="assets/img/hos-logo-white.svg" alt="HoS" class="header__logo--mobile">
+        <img src="assets/img/hos-logo-white.svg" alt="HoS" class="header__logo--white">
         <div class="header__nav">
           <ul class="header__links">
             <li class="header__link--mobile-heading">WHAT WE DO</li>
@@ -92,7 +92,11 @@
     <h1>WHAT WE DO</h1>
     <div class="b-main-video__wrap">
       <img src="assets/img/video.jpg" class='b-main-video'>
-      <div class="b-main-video__icon"></div> 
+      <div class="b-main-video__icon"></div>
+      <div class="b-main-video__info">
+        <h4 class="b-main-video__heading">HOS ANIMATION <br /> GOES HERE</h4>
+        <p class="b-main-video__text">There are many variatuons of passages of Lorem Ipsum available, but the majority have suffered altereation in some</p>
+      </div>
     </div>
   </div>
   <div class="wrapper">
@@ -316,6 +320,21 @@
 <script src='bower_components/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js'></script>
 <script src='bower_components/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js'></script>
 <script src='bower_components/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js'></script>
+<script src='bower_components/viewport-units-buggyfill/viewport-units-buggyfill.js'></script>
+<script src='bower_components/viewport-units-buggyfill/viewport-units-buggyfill.hacks.js'></script>
 <script src='assets/js/main.js'></script>
+<!--[if lt IE 10]>
+<script>window.viewportUnitsBuggyfill.init({
+
+  // milliseconds to delay between updates of viewport-units
+  // caused by orientationchange, pageshow, resize events
+  refreshDebounceWait: 10,
+
+  // provide hacks plugin to make the contentHack property work correctly.
+  hacks: window.viewportUnitsBuggyfillHacks
+
+});</script>
+<![endif]-->
+
 </body>
 </html>

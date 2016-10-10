@@ -58,7 +58,7 @@
     margin:15px auto 0px;
     position: relative;
     top:5px;
-    @include breakpoint(mobile) {
+    @include breakpoint(tablet) {
       display: none;
     }
   }

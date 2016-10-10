@@ -26,6 +26,7 @@
     position: relative;
     float: left;
     z-index: 99;
+    background: $yellow;
     &:after {
       display: block;
       width: 100%;
@@ -37,9 +38,13 @@
       transform: rotate(14.6deg);
       top: 8%;
       z-index: -1;
+      @include breakpoint(mobile) {
+        display: none;
+      }
     }
     @include breakpoint(mobile) {
       width: 100%;
+      margin-top:-10;
     }
   }
   .b-service__logo {

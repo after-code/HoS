@@ -9,10 +9,15 @@
   // background: #000;
   .wrapper {
     height: 100%;
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
   }
   @include breakpoint(tablet) {
     background: white;
-    height: auto;
+    height: 100%;
     @include transition(all 400ms);
     &:after {
       content: "";
@@ -26,7 +31,7 @@
       .header__logo {
         opacity: 0;
       }
-      .header__logo--mobile {
+      .header__logo--white {
         opacity: 1;
       }
       .header__nav {
@@ -50,7 +55,6 @@
   background:url(../../assets/img/menu-ico.svg);
   background-repeat: no-repeat;
   background-position: center;
-  // background: red;
   @include breakpoint(tablet){
     display: block;
     position: absolute;
@@ -62,6 +66,8 @@
   width: 150px;
   margin-top: 14px;
   float: left;
+  position: absolute;
+  left: 4%;
   @include breakpoint(tablet) {
     margin-top:3px;
     // display: none;
@@ -69,20 +75,21 @@
     opacity: 1;
   }
 }
-.header__logo--mobile {
+.header__logo--white {
   @extend .header__logo;
-  display: none;
+  position: absolute;
+  opacity: 0;
+  left:4%;
   @include breakpoint(tablet){
     display: block;
-    position: absolute;
     @include transition(all 400ms);
-    opacity: 0;
+
   }
 }
 .header__links {
   float: left;
   margin: 0;
-  margin-left: 9%;
+  margin-left: 20%;
   padding: 33px 0;
   @include breakpoint(tablet) {
     z-index: -1;

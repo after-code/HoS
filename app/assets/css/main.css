@@ -119,10 +119,14 @@ h1 {
   position: relative; }
   .header .wrapper, .header .wrapper--big {
     height: 100%; }
+    .header .wrapper:after, .header .wrapper--big:after {
+      content: "";
+      display: table;
+      clear: both; }
   @media (max-width: 1025px) {
     .header {
       background: white;
-      height: auto;
+      height: 100%;
       -moz-transition: all 400ms;
       -o-transition: all 400ms;
       -ms-transition: all 400ms;
@@ -136,9 +140,9 @@ h1 {
       .header.active {
         z-index: 2;
         background: #222; }
-        .header.active .header__logo, .header.active .header__logo--mobile {
+        .header.active .header__logo, .header.active .header__logo--white {
           opacity: 0; }
-        .header.active .header__logo--mobile {
+        .header.active .header__logo--white {
           opacity: 1; }
         .header.active .header__nav {
           background: #222; }
@@ -163,12 +167,14 @@ h1 {
       right: 2%;
       top: 23%; } }
 
-.header__logo, .header__logo--mobile {
+.header__logo, .header__logo--white {
   width: 150px;
   margin-top: 14px;
-  float: left; }
+  float: left;
+  position: absolute;
+  left: 4%; }
   @media (max-width: 1025px) {
-    .header__logo, .header__logo--mobile {
+    .header__logo, .header__logo--white {
       margin-top: 3px;
       -moz-transition: all 400ms;
       -o-transition: all 400ms;
@@ -177,23 +183,23 @@ h1 {
       transition: all 400ms;
       opacity: 1; } }
 
-.header__logo--mobile {
-  display: none; }
+.header__logo--white {
+  position: absolute;
+  opacity: 0;
+  left: 4%; }
   @media (max-width: 1025px) {
-    .header__logo--mobile {
+    .header__logo--white {
       display: block;
-      position: absolute;
       -moz-transition: all 400ms;
       -o-transition: all 400ms;
       -ms-transition: all 400ms;
       -webkit-transition: all 400ms;
-      transition: all 400ms;
-      opacity: 0; } }
+      transition: all 400ms; } }
 
 .header__links {
   float: left;
   margin: 0;
-  margin-left: 9%;
+  margin-left: 20%;
   padding: 33px 0; }
   @media (max-width: 1025px) {
     .header__links {
@@ -402,7 +408,7 @@ h1 {
     margin: 15px auto 0px;
     position: relative;
     top: 5px; }
-    @media (max-width: 450px) {
+    @media (max-width: 1025px) {
       .social__heading:after {
         display: none; } }
 
@@ -733,9 +739,53 @@ h1 {
   background-position: center;
   position: absolute;
   background-size: contain;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%); }
+  @media (max-width: 450px) {
+    .b-main-video__icon {
+      width: 50px;
+      height: 50px; } }
+
+.b-main-video__info {
+  position: absolute;
+  bottom: 23%;
+  overflow: hidden;
+  padding-left: 9%;
+  width: 43%;
+  color: white;
+  text-align: left; }
+  @media (max-width: 450px) {
+    .b-main-video__info {
+      width: 100%;
+      bottom: -7%;
+      padding-left: 4%; } }
+
+.b-main-video__heading {
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 46px;
+  margin-bottom: 11%;
+  color: #fcee2f; }
+  @media (max-width: 2050px) {
+    .b-main-video__heading {
+      font-size: 2.46132vw;
+      line-height: 3.23488vw; } }
+  @media (max-width: 450px) {
+    .b-main-video__heading {
+      font-size: 21px;
+      line-height: 23px; } }
+
+.b-main-video__text {
+  font-size: 17px;
+  line-height: 21px; }
+  @media (max-width: 2050px) {
+    .b-main-video__text {
+      font-size: 1.1955vw;
+      line-height: 1.54712vw; } }
+  @media (max-width: 450px) {
+    .b-main-video__text {
+      display: none; } }
 
 .b-service, .b-service--consultancy {
   width: 100%; }
@@ -760,7 +810,8 @@ h1 {
     display: block;
     position: relative;
     float: left;
-    z-index: 99; }
+    z-index: 99;
+    background: #fcee2f; }
     .b-service--consultancy .b-service__content:after {
       display: block;
       width: 100%;
@@ -772,9 +823,13 @@ h1 {
       transform: rotate(14.6deg);
       top: 8%;
       z-index: -1; }
+      @media (max-width: 450px) {
+        .b-service--consultancy .b-service__content:after {
+          display: none; } }
     @media (max-width: 450px) {
       .b-service--consultancy .b-service__content {
-        width: 100%; } }
+        width: 100%;
+        margin-top: -10; } }
   .b-service--consultancy .b-service__logo {
     margin-bottom: 2%;
     width: 90%; }

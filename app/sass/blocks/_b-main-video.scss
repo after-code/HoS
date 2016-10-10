@@ -18,7 +18,51 @@
   background-position: center;
   position: absolute;
   background-size: contain;
-  top:50%;
+  top:45%;
   left:50%;
   transform:translateX(-50%) translateY(-50%);
+  @include breakpoint(mobile) {
+    width: 50px;
+    height: 50px;
+  }
+}
+.b-main-video__info {
+  position: absolute;
+  bottom: 23%;
+  overflow: hidden;
+  padding-left: 9%;
+  width: 43%;
+  color: white;
+  text-align: left;
+  @include breakpoint(mobile) {
+    width: 100%;
+    bottom: -7%;
+    padding-left: 4%;
+  }
+}
+.b-main-video__heading {
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 46px;
+  margin-bottom: 11%;
+  color:$yellow;
+  @include breakpoint(typoMax) {
+    font-size: cvp(35px,1422px);
+    line-height:cvp(46px,1422px);
+  }
+  @include breakpoint(mobile) {
+    font-size: 21px;
+    line-height: 23px;
+  }
+}
+.b-main-video__text {
+  font-size: 17px;
+  line-height: 21px;
+  @include breakpoint(typoMax) {
+    font-size: cvp(17px,1422px);
+    line-height:cvp(22px,1422px);
+  }
+  @include breakpoint(mobile) {
+    display:none;
+  }
 }
