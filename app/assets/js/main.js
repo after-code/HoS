@@ -45,16 +45,22 @@ $(function(){
 
       console.log(header);
           if ( x1 == "REVERSE" && x2 >= x3 && i1 == 0 ) {
-              TweenLite.to(".header", 0.24, {position:"fixed", color:"white",  top: "0px",delay:.2,  ease:  $.bez(accelerationCurve), onComplete:headerBlack});
-              TweenLite.to(".header__logo--white", 0, {opacity:'1', ease:  $.bez(accelerationCurve)});
+              TweenLite.fromTo(".header", 0.24,{height:"97px" }, {position:"fixed", color:"white",  top: "0px", delay:.2,  ease:  $.bez(accelerationCurve), onComplete:headerBlack});
+              TweenLite.fromTo(".header__logo--white", 0, {width:"142px", "margin-top": '1.1%', left: '25.7%' }, {opacity:'1', ease:  $.bez(accelerationCurve)});
               TweenLite.to(".header__logo", 0, {opacity:'0', ease:  $.bez(accelerationCurve)});
+              TweenLite.to(".header__links", 0, {"margin-top":"0%", ease:  $.bez(accelerationCurve)});
               i1++;
               i2 = 0;
           }
           if ( x1 == "REVERSE" && x2 == 0 && header == "black") {
-              TweenLite.fromTo(".header", 0.6, { position:"relative", top: "0px"}, {color:"rgb(34, 34, 34)", background:"rgb(255,255,255)",top: "0px", ease:  $.bez(accelerationCurve), onComplete:headerWhite});
-              TweenLite.fromTo(".header__logo", 0.6, { opacity:"0"}, {opacity:'1', ease:  $.bez(accelerationCurve)});
-              TweenLite.fromTo(".header__logo--white", 0.6, { opacity:"1"}, {opacity:'0', ease:  $.bez(accelerationCurve)});
+              TweenLite.fromTo(".header", 0.2, { position:"relative", top: "0px"}, {height:"149px",top: "0px", ease:  $.bez(sharpCurve), onComplete:function(){
+                TweenLite.to(".header", 0.4, {color:"rgb(34, 34, 34)", background:"rgb(255,255,255)"});
+                TweenLite.to(".header__logo", 0.4, {opacity:'1'});
+                TweenLite.to(".header__logo--white", 0.4, {opacity:'0'});
+              }});
+
+              TweenLite.to(".header__links", 0.2, {"margin-top":"2%", ease:  $.bez(sharpCurve)});
+              TweenLite.to(".header__logo--white", 0.2, {width:"185px", left:"22.7%", "margin-top":"2.4%", ease:  $.bez(sharpCurve)});
               i1 = 0;
               i2 = 0;
             }

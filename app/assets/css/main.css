@@ -168,11 +168,11 @@ h1 {
       top: 23%; } }
 
 .header__logo, .header__logo--white {
-  width: 150px;
-  margin-top: 14px;
+  width: 185px;
+  margin-top: 2.4%;
   float: left;
   position: absolute;
-  left: 4%; }
+  left: 22.7%; }
   @media (max-width: 1025px) {
     .header__logo, .header__logo--white {
       margin-top: 3px;
@@ -184,9 +184,7 @@ h1 {
       opacity: 1; } }
 
 .header__logo--white {
-  position: absolute;
-  opacity: 0;
-  left: 4%; }
+  opacity: 0; }
   @media (max-width: 1025px) {
     .header__logo--white {
       display: block;
@@ -199,7 +197,8 @@ h1 {
 .header__links {
   float: left;
   margin: 0;
-  margin-left: 20%;
+  margin-top: 2%;
+  margin-left: 37%;
   padding: 33px 0; }
   @media (max-width: 1025px) {
     .header__links {
