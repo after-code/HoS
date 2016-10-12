@@ -310,6 +310,9 @@ h1 {
 .wrapper--big {
   max-width: 2050px;
   padding-top: 100px; }
+  @media (max-width: 1600px) {
+    .wrapper--big {
+      padding: 0 1%; } }
 
 .section, .section--video {
   width: 100%; }
@@ -354,7 +357,7 @@ h1 {
   color: white;
   text-align: center;
   z-index: 0;
-  padding-bottom: 9%;
+  padding-bottom: 11%;
   position: relative; }
   .footer:before {
     width: 100%;
@@ -380,6 +383,9 @@ h1 {
   @media (max-width: 450px) {
     .footer__wrap {
       width: 100%; } }
+  @media (max-width: 1600px) {
+    .footer__wrap {
+      width: 42%; } }
 
 .footer-social {
   margin-bottom: 13%; }
@@ -392,6 +398,9 @@ h1 {
   @media (max-width: 2050px) {
     .social__heading {
       font-size: 0.82927vw; } }
+  @media (max-width: 1600px) {
+    .social__heading {
+      font-size: 1.07317vw; } }
   @media (max-width: 450px) {
     .social__heading {
       top: 0;
@@ -431,6 +440,9 @@ h1 {
       width: 27%;
       margin-left: 6%;
       margin-top: 16%; } }
+  @media (max-width: 1600px) {
+    .footer__logo {
+      width: 15%; } }
 
 .footer__nav {
   margin-bottom: 7.8%; }
@@ -461,6 +473,9 @@ h1 {
     @media (max-width: 2050px) {
       .footer__nav__link:first-child {
         font-size: 0.82927vw; } }
+    @media (max-width: 1600px) {
+      .footer__nav__link:first-child {
+        font-size: 1.07317vw; } }
     @media (max-width: 450px) {
       .footer__nav__link:first-child {
         font-size: 18px;
@@ -479,6 +494,9 @@ h1 {
   @media (max-width: 2050px) {
     .footer__nav__link {
       font-size: 0.73171vw; } }
+  @media (max-width: 1600px) {
+    .footer__nav__link {
+      font-size: 0.97561vw; } }
   @media (max-width: 450px) {
     .footer__nav__link {
       font-size: 16px; } }
@@ -492,8 +510,7 @@ h1 {
   color: #9b9b9b; }
   .footer__copyright .arrow-top {
     margin-left: 10px;
-    position: relative;
-    top: -3px; }
+    position: relative; }
   .footer__copyright span {
     color: white; }
   .footer__copyright p:first-child {
@@ -505,6 +522,9 @@ h1 {
   @media (max-width: 2050px) {
     .footer__copyright {
       font-size: 0.63415vw; } }
+  @media (max-width: 1600px) {
+    .footer__copyright {
+      font-size: 0.78049vw; } }
   @media (max-width: 450px) {
     .footer__copyright {
       font-size: 12px;
@@ -518,6 +538,9 @@ h1 {
   @media (max-width: 2050px) {
     .footer__back-to-top {
       font-size: 0.73171vw; } }
+  @media (max-width: 1600px) {
+    .footer__back-to-top {
+      font-size: 0.78049vw; } }
   @media (max-width: 450px) {
     .footer__back-to-top {
       position: absolute;
@@ -562,7 +585,7 @@ h1 {
 .b-media--small {
   width: 36.5%;
   margin-top: 14%;
-  margin-left: 0.2%; }
+  margin-left: 1.2%; }
   .b-media--small .b-content-sticker {
     left: 7.7%;
     top: -42.3%;
@@ -764,7 +787,7 @@ h1 {
   font-size: 50px;
   font-weight: bold;
   line-height: 66px;
-  margin-bottom: 11%;
+  padding-bottom: 2%;
   color: #fcee2f; }
   @media (max-width: 2050px) {
     .b-main-video__heading {
@@ -1121,6 +1144,9 @@ h1 {
   left: 0;
   padding: 0 0% 0 5%;
   cursor: pointer; }
+  @media (max-width: 1600px) {
+    .b-content-sticker {
+      padding: 0 0% 0 3%; } }
   @media (max-width: 450px) {
     .b-content-sticker {
       padding: 0 0% 0 6%; } }
@@ -1129,10 +1155,15 @@ h1 {
   margin-top: 20%;
   margin-bottom: 5%;
   font-size: 22px;
+  text-transform: uppercase;
   float: left; }
   @media (max-width: 2050px) {
     .b-content-sticker__tag {
       font-size: 1.07317vw; } }
+  @media (max-width: 1600px) {
+    .b-content-sticker__tag {
+      margin-top: 11%;
+      font-size: 1.17073vw; } }
   @media (max-width: 450px) {
     .b-content-sticker__tag {
       font-size: 13px;
@@ -1142,12 +1173,17 @@ h1 {
   font-size: 55px;
   line-height: 53px;
   font-weight: 800;
+  text-transform: uppercase;
   margin-bottom: 8%;
   float: left; }
   @media (max-width: 2050px) {
     .b-content-sticker__heading {
       font-size: 2.68293vw;
       line-height: 2.58537vw; } }
+  @media (max-width: 1600px) {
+    .b-content-sticker__heading {
+      font-size: 2.87805vw;
+      line-height: 2.73171vw; } }
   @media (max-width: 450px) {
     .b-content-sticker__heading {
       font-size: 28px;
@@ -1163,6 +1199,10 @@ h1 {
     .b-content-sticker__text {
       font-size: 1.07317vw;
       line-height: 1.46341vw; } }
+  @media (max-width: 1600px) {
+    .b-content-sticker__text {
+      font-size: 1.21951vw;
+      line-height: 1.65854vw; } }
   @media (max-width: 450px) {
     .b-content-sticker__text {
       font-size: 14px;
@@ -1311,6 +1351,9 @@ h1 {
       padding-left: 12%;
       margin-top: -2%;
       padding-bottom: 8%; } }
+
+.page-homepage .wrapper--big {
+  padding-top: 7%; }
 
 .page-container {
   max-width: 1000px;

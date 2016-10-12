@@ -4,7 +4,7 @@
   color:white;
   text-align: center;
   z-index: 0;
-  padding-bottom: 9%;
+  padding-bottom: 11%;
   position: relative;
   &:before {
     width: 100%;
@@ -31,6 +31,9 @@
   @include breakpoint(mobile) {
     width: 100%;
   }
+  @include breakpoint(laptop) {
+    width: 42%;
+  }
 }
 .footer-social {
   margin-bottom: 13%;
@@ -42,6 +45,9 @@
   color: $footer-gray;
   @include breakpoint(typoMax){
     font-size: cvp(17px, 2050px);
+  }
+  @include breakpoint(laptop) {
+      font-size: cvp(22px, 2050px);
   }
   @include breakpoint(mobile) {
     top:0;
@@ -84,6 +90,9 @@
     margin-left: 6%;
     margin-top: 16%;
   }
+  @include breakpoint(laptop) {
+        width: 15%;
+  }
 }
 .footer__nav {
   margin-bottom: 7.8%;
@@ -118,6 +127,9 @@
     @include breakpoint(typoMax){
       font-size: cvp(17px,2050px);
     }
+    @include breakpoint(laptop) {
+        font-size: cvp(22px, 2050px);
+    }
     @include breakpoint(mobile) {
       font-size: 18px;
       margin-bottom: 9%;
@@ -138,6 +150,9 @@
   @include breakpoint(typoMax){
     font-size: cvp(15px,2050px);
   }
+  @include breakpoint(laptop) {
+      font-size: cvp(20px, 2050px);
+  }
   @include breakpoint(mobile) {
     font-size: 16px;
   }
@@ -152,7 +167,7 @@
   .arrow-top {
     margin-left:10px;
     position: relative;
-    top:-3px;
+    // top:-3px;
   }
   span {
     color:white;
@@ -177,6 +192,9 @@
   @include breakpoint(typoMax){
     font-size: cvp(13px,2050px);
   }
+  @include breakpoint(laptop) {
+      font-size: cvp(16px, 2050px);
+  }
   @include breakpoint(mobile) {
     font-size: 12px;
     width: 67%;
@@ -189,6 +207,9 @@
   font-size: 15px;
   @include breakpoint(typoMax){
     font-size: cvp(15px,2050px);
+  }
+  @include breakpoint(laptop) {
+      font-size: cvp(16px, 2050px);
   }
   @include breakpoint(mobile) {
     position: absolute;

@@ -44,7 +44,7 @@
   font-size: 50px;
   font-weight: bold;
   line-height: 66px;
-  margin-bottom: 11%;
+  padding-bottom: 2%;
   color:$yellow;
   @include breakpoint(typoMax) {
     font-size: cvp(50px,2050px);
