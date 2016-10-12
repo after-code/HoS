@@ -126,7 +126,7 @@
 .header__link {
   display:inline-block;
   margin:0 20px;
-  font-size: 16px;
+  font-size: 20px;
   height: 30px;
   line-height: 30px;
   cursor:pointer;
@@ -149,7 +149,7 @@
     }
   }
   @include breakpoint(typoMax) {
-    font-size:cvp(16px, 2050px);
+    font-size:cvp(20px, 2050px);
   }
   @include breakpoint(tablet) {
     display: block;

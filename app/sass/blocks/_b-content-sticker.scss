@@ -6,7 +6,7 @@
   background: cyan;
   top:0;
   left:0;
-  padding:0 0% 0 5%;
+  padding:0 0% 0 4%;
   cursor: pointer;
   @include breakpoint(laptop) {
     padding:0 0% 0 3%;
@@ -16,8 +16,8 @@
   }
 }
 .b-content-sticker__tag {
-  margin-top: 20%;
-  margin-bottom: 5%;
+  margin-top: 10%;
+  margin-bottom: 1.2%;
   font-size: 22px;
   text-transform: uppercase;
   float: left;
@@ -34,15 +34,16 @@
   }
 }
 .b-content-sticker__heading {
-  font-size: 55px;
-  line-height: 53px;
+  font-size: 50px;
+  line-height: 51px;
   font-weight: 800;
+  width: 90%;
   text-transform: uppercase;
-  margin-bottom: 8%;
+  margin-bottom: 7%;
   float: left;
   @include breakpoint(typoMax) {
-    font-size: cvp(55px, 2050px);
-    line-height: cvp(53px, 2050px);
+    font-size: cvp(50px, 2050px);
+    line-height: cvp(51px, 2050px);
   }
   @include breakpoint(laptop) {
     font-size: cvp(59px, 2050px);
@@ -70,5 +71,15 @@
   @include breakpoint(mobile) {
     font-size: 14px;
     line-height: 16px;
+  }
+}
+.b-content-sticker__date {
+  float: left;
+  text-transform: uppercase;
+  color:#4a90e2;
+  margin-bottom: 4%;
+  font-size: 20px;
+  @include breakpoint(typoMax) {
+    font-size:cvp(20px, 2050px);
   }
 }

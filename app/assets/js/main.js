@@ -53,14 +53,14 @@ $(function(){
               i2 = 0;
           }
           if ( x1 == "REVERSE" && x2 == 0 && header == "black") {
-              TweenLite.fromTo(".header", 0.2, { position:"relative", top: "0px"}, {height:"149px",top: "0px", ease:  $.bez(sharpCurve), onComplete:function(){
-                TweenLite.to(".header", 0.4, {color:"rgb(34, 34, 34)", background:"rgb(255,255,255)"});
-                TweenLite.to(".header__logo", 0.4, {opacity:'1'});
-                TweenLite.to(".header__logo--white", 0.4, {opacity:'0'});
+              TweenLite.fromTo(".header", 0.28, { position:"relative", top: "0px"}, {height:"149px",top: "0px", ease:  $.bez(decelerationCurve), onComplete:function(){
+                TweenLite.to(".header", 0.55, {color:"rgb(34, 34, 34)", background:"rgb(255,255,255)"});
+                TweenLite.to(".header__logo", 0.55, {opacity:'1'});
+                TweenLite.to(".header__logo--white", 0.55, {opacity:'0'});
               }});
 
-              TweenLite.to(".header__links", 0.2, {"margin-top":"2%", ease:  $.bez(sharpCurve)});
-              TweenLite.to(".header__logo--white", 0.2, {width:"185px", left:"22.7%", "margin-top":"2.4%", ease:  $.bez(sharpCurve)});
+              TweenLite.to(".header__links", 0.28, {"margin-top":"2%", ease:  $.bez(decelerationCurve)});
+              TweenLite.to(".header__logo--white", 0.28, {width:"185px", left:"22.7%", "margin-top":"2.4%", ease:  $.bez(decelerationCurve)});
               i1 = 0;
               i2 = 0;
             }
