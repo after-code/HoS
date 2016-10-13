@@ -1,10 +1,10 @@
 .header__wrap {
-  height: 97px;
+  // height: 97px;
 }
 .header {
   width: 100%;
   z-index: 999;
-  height: 97px;
+  // height: 97px;
   position: relative;
   // background: #000;
   .wrapper {
@@ -63,11 +63,11 @@
   }
 }
 .header__logo {
-  width: 185px;
+  width: 11%;
   margin-top: 2.4%;
   float: left;
   position: absolute;
-  left: 22.7%;
+  left: 24.7%;
   @include breakpoint(tablet) {
     margin-top:3px;
     // display: none;
@@ -86,10 +86,8 @@
 }
 .header__links {
   float: left;
-  margin: 0;
-  margin-top: 2%;
+  margin: 4.16% 0;
   margin-left: 37%;
-  padding: 33px 0;
   @include breakpoint(tablet) {
     z-index: -1;
     left:0;
@@ -104,10 +102,9 @@
 }
 .header__nav {
   transition: background 400ms, max-height 500ms;
-
+  overflow: hidden;
   @include breakpoint(tablet){
     max-height: 0;
-    overflow: hidden;
     position: absolute;
     top:100%;
     width: 100%;
@@ -127,8 +124,8 @@
   display:inline-block;
   margin:0 20px;
   font-size: 20px;
-  height: 30px;
-  line-height: 30px;
+  // height: 30px;
+  // line-height: 30px;
   cursor:pointer;
   position:relative;
   &:after {

@@ -109,13 +109,9 @@ h1 {
     h1 {
       font-size: 27px; } }
 
-.header__wrap {
-  height: 97px; }
-
 .header {
   width: 100%;
   z-index: 999;
-  height: 97px;
   position: relative; }
   .header .wrapper, .header .wrapper--big {
     height: 100%; }
@@ -168,11 +164,11 @@ h1 {
       top: 23%; } }
 
 .header__logo, .header__logo--white {
-  width: 185px;
+  width: 11%;
   margin-top: 2.4%;
   float: left;
   position: absolute;
-  left: 22.7%; }
+  left: 24.7%; }
   @media (max-width: 1025px) {
     .header__logo, .header__logo--white {
       margin-top: 3px;
@@ -196,10 +192,8 @@ h1 {
 
 .header__links {
   float: left;
-  margin: 0;
-  margin-top: 2%;
-  margin-left: 37%;
-  padding: 33px 0; }
+  margin: 4.16% 0;
+  margin-left: 37%; }
   @media (max-width: 1025px) {
     .header__links {
       z-index: -1;
@@ -213,11 +207,11 @@ h1 {
       overflow: hidden; } }
 
 .header__nav {
-  transition: background 400ms, max-height 500ms; }
+  transition: background 400ms, max-height 500ms;
+  overflow: hidden; }
   @media (max-width: 1025px) {
     .header__nav {
       max-height: 0;
-      overflow: hidden;
       position: absolute;
       top: 100%;
       width: 100%;
@@ -236,8 +230,6 @@ h1 {
   display: inline-block;
   margin: 0 20px;
   font-size: 20px;
-  height: 30px;
-  line-height: 30px;
   cursor: pointer;
   position: relative; }
   .header__link:after, .header__link--mobile-heading:after {
