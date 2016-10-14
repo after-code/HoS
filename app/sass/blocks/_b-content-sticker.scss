@@ -26,7 +26,7 @@
   }
   @include breakpoint(laptop) {
     margin-top: 11%;
-    font-size: cvp(24px, 2050px);
+    font-size: cvp(26px, 2050px);
   }
   @include breakpoint(mobile) {
     font-size: 13px;
@@ -46,7 +46,7 @@
     line-height: cvp(51px, 2050px);
   }
   @include breakpoint(laptop) {
-    font-size: cvp(59px, 2050px);
+    font-size: cvp(61px, 2050px);
     line-height: cvp(56px, 2050px);
   }
   @include breakpoint(mobile) {
@@ -65,7 +65,7 @@
     line-height: cvp(30px, 2050px);
   }
   @include breakpoint(laptop) {
-    font-size:cvp(25px, 2050px);
+    font-size:cvp(27px, 2050px);
     line-height: cvp(34px, 2050px);
   }
   @include breakpoint(mobile) {
