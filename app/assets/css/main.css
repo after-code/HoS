@@ -897,22 +897,41 @@ h1 {
   background-color: #03c4c4;
   background-image: url(../../assets/img/bck.jpg);
   text-align: center;
-  padding-top: 40px;
-  margin-bottom: 4.4%; }
+  margin-bottom: 4.4%;
+  width: 100%; }
   .b-service--training .b-service__logo {
+    margin: 0 auto;
+    display: block;
     margin-bottom: 6%;
     width: 39%;
-    margin-top: 1.7%; }
+    margin-bottom: 4.6%; }
     @media (max-width: 450px) {
       .b-service--training .b-service__logo {
         margin-top: 0;
         margin-bottom: 11%;
         width: 86%; } }
+  .b-service--training .b-service__top {
+    height: 50%;
+    background: #F8F8F8;
+    padding-top: 4.4%; }
+  .b-service--training .b-service__top__text {
+    text-align: left;
+    padding: 0 17%;
+    font-size: 31px;
+    line-height: 48px;
+    margin-bottom: 2.3%; }
+    @media (max-width: 2050px) {
+      .b-service--training .b-service__top__text {
+        font-size: 1.5122vw;
+        line-height: 2.34146vw; } }
   .b-service--training .b-service__division {
     width: 100%;
-    padding: 0 5%; }
+    padding: 0 8.2%;
+    padding-top: 4.1%;
+    padding-bottom: 4.5%; }
   .b-service--training .b-service__element {
     width: 33%;
+    vertical-align: top;
     padding: 0 3%;
     display: inline-block;
     text-align: left; }
@@ -921,30 +940,23 @@ h1 {
         width: 100%;
         padding: 0; } }
   .b-service--training .b-service__element__nbr {
-    font-size: 53px;
-    margin-bottom: 1%;
+    font-size: 50px;
+    margin-bottom: -1%;
     color: #fcee2f; }
     @media (max-width: 2050px) {
       .b-service--training .b-service__element__nbr {
-        font-size: 2.58537vw; } }
+        font-size: 2.43902vw; } }
     @media (max-width: 450px) {
       .b-service--training .b-service__element__nbr {
         font-size: 34px; } }
   .b-service--training .b-service__element__heading {
-    font-size: 49px;
     line-height: 56px;
-    margin-bottom: 40px; }
-    .b-service--training .b-service__element__heading:after {
-      width: 60px;
-      height: 5px;
-      content: '';
-      background: white;
-      display: block;
-      opacity: 0.5;
-      margin-top: 30px; }
+    margin-bottom: -1%;
+    font-size: 26px;
+    color: white; }
     @media (max-width: 2050px) {
       .b-service--training .b-service__element__heading {
-        font-size: 2.39024vw;
+        font-size: 1.26829vw;
         line-height: 2.73171vw; } }
     @media (max-width: 450px) {
       .b-service--training .b-service__element__heading {
@@ -956,23 +968,24 @@ h1 {
           height: 4px;
           margin-top: 15px; } }
   .b-service--training .b-service__element__text {
-    font-size: 27px;
-    line-height: 45px; }
+    font-size: 45px;
+    line-height: 52px; }
     @media (max-width: 2050px) {
       .b-service--training .b-service__element__text {
-        font-size: 1.31707vw;
-        line-height: 2.19512vw; } }
+        font-size: 2.19512vw;
+        line-height: 2.53659vw; } }
     @media (max-width: 450px) {
       .b-service--training .b-service__element__text {
         display: none; } }
   .b-service--training .b-service__button {
-    margin-top: 5.3%;
-    color: white;
-    border: 3px solid white;
+    margin-top: 2.7%;
+    color: #222;
+    background: #fcee2f;
     display: inline-block;
-    padding: 1.6% 2.3%;
+    padding: 1.6% 5.7%;
     margin-bottom: 4.1%;
-    font-size: 22px;
+    font-size: 20px;
+    font-weight: bold;
     cursor: pointer;
     -moz-transition: all 300ms cubic-bezier(0.4, 0.0, 0.6, 1);
     -o-transition: all 300ms cubic-bezier(0.4, 0.0, 0.6, 1);
