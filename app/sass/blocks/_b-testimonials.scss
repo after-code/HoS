@@ -1,0 +1,204 @@
+.b-testimonials {
+  width: 100%;
+  overflow: hidden;
+  background: $white-gray;
+  padding-bottom: 5.2%;
+  position: relative;
+  a {
+    color: inherit;
+  }
+  &:after {
+    width: 54%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -41.3%;
+    background: #2abec0;
+    transform: skew(-47.6deg);
+    z-index: 0;
+    @include breakpoint(mobile){
+      width: 182%;
+      height: 108%;
+      content: "";
+      position: absolute;
+      top: -65%;
+      left: -41.3%;
+    }
+  }
+}
+.b-testimonials__left {
+  float: left;
+  width: 28%;
+  padding-left: 4.3%;
+  @include breakpoint(mobile){
+    width: 100%;
+  }
+}
+.b-testimonials__right {
+  float: left;
+  width: 72%;
+  @include breakpoint(mobile){
+    width: 100%;
+  }
+}
+.b-testimonials__pre-heading {
+  z-index: 6;
+  position: relative;
+  margin-top: 37%;
+  margin-bottom: 5%;
+  color:rgba(255,255,255, 0.55);
+  img {
+    width: 13%;
+    margin-right: 2%;
+    @include breakpoint(mobile){
+      margin-left: 8%;
+      width: 10%;
+      margin-top: 5%;
+    }
+  }
+  font-size: 38px;// za vece od 1425 mora da se promeni
+  @include breakpoint(typoMax) {
+    font-size: cvp(38px, 2050px);
+  }
+  @include breakpoint(mobile){
+    margin-top: 3%;
+    font-size: 19px;
+  }
+}
+.b-testimonials__heading {
+  z-index: 6;
+  position: relative;
+  font-size:105px;// za vece od 1425 mora da se promeni
+  line-height: 94px;// za vece od 1425 mora da se promeni
+  font-weight: bold;
+  @include breakpoint(typoMax) {
+    font-size: cvp(105px, 2050px);
+    line-height: cvp(94px, 2050px);
+  }
+  @include breakpoint(mobile) {
+    font-size: cvp(54px, 330px);
+    line-height: cvp(47px, 330px);
+    margin-left: 9%;
+  }
+}
+.b-testimonials__right {
+  padding-top: 13%;
+  padding-right: 4.5%;
+  @include breakpoint(mobile){
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+  }
+  a:nth-child(3n-1) .b-testimonials__box{
+    margin: 0 2.6%;
+    @include breakpoint(mobile){
+      margin: 0;
+    }
+  }
+}
+.b-testimonials__box {
+  font-family: $text__family--Roboto;
+  background: #fff;
+  width: 31.6%;
+  float: left;
+  margin-bottom: 3.7%;
+  position: relative;
+  z-index: 10;
+  border-bottom:1px solid transparent;
+  &.active {
+    border-bottom:1px solid $cyan;
+  }
+  &:nth-child(3n-1){
+    margin: 0 2.6%;
+  }
+  @include breakpoint(mobile){
+    width:100%;
+  }
+}
+.b-testimonials__author {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 33.7%;
+  padding:6.8% 2% 6.1% 6%;
+  &__image {
+    width: 25%;
+    float: left;
+  }
+  &__name {
+    width: 75%;
+    float: left;
+    margin-top: 11%;
+    padding-left: 4%;
+    font-weight: bold;
+    @include breakpoint(mobile){
+      font-size: cvp(20px,330);
+    }
+  }
+  &__tag {
+    color: #ABB8C3;
+    font-size: 12px;
+    margin-left: 4%;
+    float: left;
+    width: 70%;
+    @include breakpoint(typoMax){
+      font-size:cvp(12px, 2050px);
+    }
+    @include breakpoint(mobile) {
+      font-size:cvp(12px, 330px);
+
+    }
+  }
+  @include breakpoint(mobile){
+    margin-bottom: 0;
+  }
+}
+.b-testimonials__box__text {
+  font-size: 17px;
+  line-height: 22px;
+  padding-left: 6.1%;
+  padding-right: 10%;
+  margin-bottom: 11%;
+  position: absolute;
+  left: 0%;
+  top: 44%;
+  span {
+    color:$cyan;
+  }
+  @include breakpoint(typoMax) {
+    font-size: cvp(17px, 2050px);
+    line-height: cvp(22px, 2050px);
+  }
+  @include breakpoint(mobile){
+    position:relative;
+    font-size: cvp(17px, 330px);
+    line-height: cvp(22px, 330px);
+  }
+}
+.b-testimonials__box__footer {
+  font-size: 12px;
+  @include breakpoint(typoMax) {
+    font-size: cvp(12px, 2050px);
+  }
+  @include breakpoint(mobile) {
+    overflow: hidden;
+    margin-bottom: 5.7%;
+  }
+}
+.b-testimonials__twitt-ico {
+  width: 5.3%;
+  float: left;
+  margin-left: 5.9%;
+  margin-right: 3.1%;
+}
+.b-testimonials__box__footer__date {
+  padding-top: 0.8%;
+  color:#ABB8C3;
+  padding-bottom: 4%;
+
+  @include breakpoint(mobile){
+    font-size: cvp(13px, 330px);
+    margin-bottom: 2%;
+    padding-bottom: 0%;
+
+  }
+}

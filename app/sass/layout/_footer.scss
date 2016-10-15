@@ -28,11 +28,11 @@
 .footer__wrap {
   width: 34%;
   margin:0 auto;
-  @include breakpoint(mobile) {
-    width: 100%;
-  }
   @include breakpoint(laptop) {
     width: 42%;
+  }
+  @include breakpoint(mobile) {
+    width: 100%;
   }
 }
 .footer-social {

@@ -42,10 +42,13 @@
     top: -42.3%;
     width: 64.1%;
     height: 96.1%;
-    background: rgba(220, 235, 252, 0.93);
+    background: rgba(238, 46, 69, 0.93);
     @include transition(background 400ms);
     &:hover {
-      background: #dcebfc;
+      background: $red;
+    }
+    &__date {
+      color: white;
     }
   }
   @include breakpoint(mobile) {
@@ -71,9 +74,9 @@
     width: 51%;
     height: 75.2%;
     @include transition(background 400ms);
-    background: rgba(238, 46, 69, 0.93);
+    background: rgba(220, 235, 252, 0.93);
     &:hover {
-      background: $red;
+      background: #dcebfc;
     }
   }
   @include breakpoint(mobile) {

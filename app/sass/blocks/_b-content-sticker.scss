@@ -7,12 +7,15 @@
   top:0;
   left:0;
   padding:0 0% 0 4%;
+  padding-top: 6%;
   cursor: pointer;
   @include breakpoint(laptop) {
     padding:0 0% 0 3%;
+    padding-top: 6%;
   }
   @include breakpoint(mobile) {
     padding:0 0% 0 6%;
+    padding-top: 6%;
   }
 }
 .b-content-sticker__tag {
@@ -26,7 +29,7 @@
   }
   @include breakpoint(laptop) {
     margin-top: 11%;
-    font-size: cvp(24px, 2050px);
+    font-size: cvp(26px, 2050px);
   }
   @include breakpoint(mobile) {
     font-size: 13px;
@@ -46,12 +49,12 @@
     line-height: cvp(51px, 2050px);
   }
   @include breakpoint(laptop) {
-    font-size: cvp(59px, 2050px);
+    font-size: cvp(61px, 2050px);
     line-height: cvp(56px, 2050px);
   }
   @include breakpoint(mobile) {
-    font-size: 28px;
-    line-height: 29px;
+    font-size: cvp(28px,360px);
+    line-height: cvp(29px,360px);
     margin-bottom: 6%;
   }
 }
@@ -65,12 +68,12 @@
     line-height: cvp(30px, 2050px);
   }
   @include breakpoint(laptop) {
-    font-size:cvp(25px, 2050px);
+    font-size:cvp(27px, 2050px);
     line-height: cvp(34px, 2050px);
   }
   @include breakpoint(mobile) {
-    font-size: 14px;
-    line-height: 16px;
+    font-size: cvp(16px,360px) ;
+    line-height:cvp(18px, 360px);
   }
 }
 .b-content-sticker__date {
@@ -81,5 +84,8 @@
   font-size: 20px;
   @include breakpoint(typoMax) {
     font-size:cvp(20px, 2050px);
+  }
+  @include breakpoint(mobile) {
+    font-size: cvp(16px,360px);
   }
 }

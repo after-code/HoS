@@ -1,5 +1,5 @@
 .b-conference {
-  width: 42%;
+  width: 46%;
   float: left;
   padding-bottom:50px;
   @include breakpoint(mobile) {
@@ -7,6 +7,28 @@
     border:1px solid #e9e9e9;
     padding-bottom: 0;
     margin-bottom: 8%;
+  }
+}
+.b-conference__wrap {
+  max-width: 1525px;
+  width: 100%;
+  a{
+    color: inherit;
+  }
+  margin:0 auto;
+  &>a {
+    // display: block;
+    width: 46%;
+    @include breakpoint(mobile){
+      width: 100%;
+    }
+    .b-conference {
+      width: 100%;
+    }
+    float: left;
+    &:nth-child(3){
+      float: right;
+    }
   }
 }
 .b-conference--mobile-short {
@@ -45,8 +67,9 @@
   overflow: hidden;
   background: white;
   float: left;
-  padding-left: 5.9%;
-  padding-top: 9.2%;
+  padding-left: 4.5%;
+  padding-top: 7%;
+  padding-right: 6%;
 }
 .b-conference__date {
   float: left;
@@ -55,28 +78,39 @@
   position:relative;
   font-family:$text__family--Roboto;
   .b-day {
-    font-size: 52px;
+    font-size: 42px;
+    margin-bottom: 6%;
     @include breakpoint(typoMax){
-      font-size: cvp(52px,2050px);
+      font-size: cvp(42px,2050px);
     }
     @include breakpoint(mobile) {
-      font-size: 31px;
-      line-height: 20px;
+      font-size: cvp(25px,330px);
+      line-height: cvp(20px,330px);
+    }
+  }
+  .b-month {
+    font-size: 21px;
+    @include breakpoint(typoMax){
+      font-size: cvp(21px,2050px);
+    }
+    @include breakpoint(mobile) {
+      margin-top:4%;
+      font-size: cvp(13px,330px);
     }
   }
   @include breakpoint(typoMax){
     font-size: cvp(35px,2050px);
   }
   &:after {
-    height: 100%;
-    width:2px;
-    background:$red;
-    content:"";
-    position:absolute;
-    top:0;
-    right: -37%;
-    transform:skew(-14.9deg);
-    display:block;
+    height: 119%;
+    width: 2px;
+    background: $red;
+    content: "";
+    position: absolute;
+    top: 6%;
+    right: -14%;
+    transform: skew(-20.9deg);
+    display: block;
     @include breakpoint(mobile) {
       height: 116%;
       top: -9%;
@@ -90,15 +124,17 @@
 }
 .b-conference__info {
   float: left;
-  padding-left: 12%;
+  padding-left: 7%;
   width: 80%;
   &__city {
-    color: $base-color;
+    color: $red;
     margin-bottom: 5%;
+    font-size: 20px;
+    margin-top: 1%;
     font-size: 22px;
     font-family:$text__family--Roboto;
     @include breakpoint(typoMax){
-      font-size:cvp(22px, 2050px);
+      font-size:cvp(20px, 2050px);
     }
     @include breakpoint(mobile) {
       font-size: 12px;
@@ -107,13 +143,14 @@
     }
   }
   &__heading {
-    font-size: 37px;
-    line-height: 41px;
-    margin-bottom: 7%;
+    font-size: 32px;
+    line-height: 37px;
+    padding: 0 5% 0 0;
+    margin-bottom: 4%;
     font-weight: bold;
     @include breakpoint(typoMax){
-      font-size:cvp(37px, 2050px);
-      line-height:cvp(41px, 2050px);
+      font-size:cvp(32px, 2050px);
+      line-height:cvp(39px, 2050px);
     }
     @include breakpoint(mobile) {
       font-size: 20px;
@@ -122,12 +159,12 @@
     }
   }
   &__text {
-    line-height: 40px;
-    margin-bottom: 5%;
-    font-size: 27px;
+    line-height: 38px;
+    margin-bottom: 4%;
+    font-size: 25px;
     @include breakpoint(typoMax){
-      font-size:cvp(27px, 2050px);
-      line-height:cvp(40px, 2050px);
+      font-size:cvp(25px, 2050px);
+      line-height:cvp(38px, 2050px);
     }
     @include breakpoint(mobile) {
       display: none;
@@ -137,7 +174,7 @@
     float: right;
     font-size: 20px;
     font-weight: bold;
-    margin-bottom: 8.7%;
+    margin-bottom: 6.5%;
     color:$cyan;
     @include breakpoint(typoMax){
       font-size:cvp(20px, 2050px);
@@ -150,5 +187,9 @@
     padding-left: 12%;
     margin-top: -2%;
     padding-bottom: 8%;
+    width: 71%;
   }
+}
+.b-conference__sticker--mobile {
+  display: none;
 }

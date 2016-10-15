@@ -47,6 +47,9 @@
       }
     }
   }
+  @include breakpoint(mobile) {
+    height:70px;
+  }
 }
 .nav-icon {
   display: none;
@@ -69,10 +72,16 @@
   position: absolute;
   left: 24.7%;
   @include breakpoint(tablet) {
-    margin-top:3px;
-    // display: none;
+    float: left;
+    left: 2%;
+    top: 14%;
+    width: 20%;
+    margin-top: 0%;
     @include transition(all 400ms);
     opacity: 1;
+  }
+  @include breakpoint(mobile){
+    width: 47% !important;
   }
 }
 .header__logo--white {
@@ -87,7 +96,7 @@
 .header__links {
   float: left;
   margin: 4.16% 0;
-  margin-left: 37%;
+  margin-left: 42.8%;
   @include breakpoint(tablet) {
     z-index: -1;
     left:0;
@@ -134,9 +143,10 @@
     left:50%;
     content:"";
     height:1px;
-    top:-4px;
-    background:#000;
+    background:transparent;
     display:block;
+    border-bottom:1px solid #222;
+    padding-top: 4.7%;
     @include transition ("width 200ms #{$cubic-bezier1}, left 200ms #{$cubic-bezier1}"  );
   }
   &:hover {

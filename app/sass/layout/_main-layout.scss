@@ -11,11 +11,19 @@
   padding-top:100px;
   @extend .clearfix;
   @include breakpoint(laptop) {
-    padding: 0 1%;
+    padding: 0%;
+  }
+  @include breakpoint(tablet){
+    padding-top: 20%;
   }
 }
 .section {
   width: 100%;
+}
+.section--about {
+  width: 100%;
+  float: left;
+  margin-bottom: 4.4%;
 }
 .section--video {
   @extend .section;
@@ -25,21 +33,7 @@
   background:#fef339;
   padding-bottom: 20%;
   position: relative;
-  &:after {
-    width: 200%;
-    height: 100%;
-    content: '';
-    display: block;
-    position: absolute;
-    background: #fef339;
-    top: -21%;
-    left: -34%;
-    z-index: -1;
-    transform: rotate(13.3deg);
-    @include breakpoint(mobile) {
-      display: none;
-    }
-  }
+  display: none;
   @include breakpoint(mobile) {
     background: white;
     padding: 0 4%;
@@ -47,12 +41,36 @@
 }
 .section--conference {
   overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding: 0 12.5%;
+  padding-bottom: 25%;
   .b-conference:nth-child(3){
     float: right;
   }
+  &:after {
+    width: 200%;
+    height: 100%;
+    content: '';
+    display: block;
+    position: absolute;
+    background: #fef339;
+    top: 47%;
+    left: -34%;
+    z-index: -1;
+    transform: rotate(-170.3deg);
+    @include breakpoint(mobile) {
+      display: none;
+    }
+  }
+  @include breakpoint(mobile){
+    padding:0 2%;
+  }
 }
 .section--insights {
-  margin-bottom: 2.5%;
+  margin-bottom: 4.4%;
+  float: left;
+  width: 100%;
 }
 body {
   // padding-bottom: 500px;
