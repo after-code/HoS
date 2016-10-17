@@ -17,6 +17,10 @@
     background: #2abec0;
     transform: skew(-47.6deg);
     z-index: 0;
+    @include breakpoint(tablet){
+      width: 75%;
+      left: -103.3%;
+    }
     @include breakpoint(mobile){
       width: 182%;
       height: 108%;
@@ -31,6 +35,10 @@
   float: left;
   width: 28%;
   padding-left: 4.3%;
+  @include breakpoint(tablet){
+    width: 35%;
+    padding-left: 6.3%;
+  }
   @include breakpoint(mobile){
     width: 100%;
   }
@@ -61,6 +69,10 @@
   @include breakpoint(typoMax) {
     font-size: cvp(38px, 2050px);
   }
+  @include breakpoint(tablet){
+    margin-top: 24%;
+    font-size:cvp(19px, 768px);
+  }
   @include breakpoint(mobile){
     margin-top: 3%;
     font-size: 19px;
@@ -76,6 +88,10 @@
     font-size: cvp(105px, 2050px);
     line-height: cvp(94px, 2050px);
   }
+  @include breakpoint(tablet){
+    font-size: cvp(60px, 768px);
+    line-height: cvp(52px, 768px);
+  }
   @include breakpoint(mobile) {
     font-size: cvp(54px, 330px);
     line-height: cvp(47px, 330px);
@@ -85,15 +101,28 @@
 .b-testimonials__right {
   padding-top: 13%;
   padding-right: 4.5%;
+  @include breakpoint(tablet){
+    width: 100%;
+    padding-left: 7%;
+    padding-top: 3%;
+    padding-right: 6%;
+  }
   @include breakpoint(mobile){
+    padding-top: 13%;
     padding-left: 2.5%;
     padding-right: 2.5%;
   }
+  a:nth-child(2n-1) .b-testimonials__box {
+    @include breakpoint(tablet){
+      margin-right: 6%;
+    }
+  }
   a:nth-child(3n-1) .b-testimonials__box{
     margin: 0 2.6%;
-    @include breakpoint(mobile){
+    @include breakpoint(tablet){
       margin: 0;
     }
+
   }
 }
 .b-testimonials__box {
@@ -108,8 +137,8 @@
   &.active {
     border-bottom:1px solid $cyan;
   }
-  &:nth-child(3n-1){
-    margin: 0 2.6%;
+  @include breakpoint(tablet){
+    width: 46%;
   }
   @include breakpoint(mobile){
     width:100%;
@@ -130,6 +159,9 @@
     margin-top: 11%;
     padding-left: 4%;
     font-weight: bold;
+    @include breakpoint(tablet){
+      font-size: cvp(16px,768px);
+    }
     @include breakpoint(mobile){
       font-size: cvp(20px,330px);
     }
@@ -143,10 +175,16 @@
     @include breakpoint(typoMax){
       font-size:cvp(12px, 2050px);
     }
+    @include breakpoint(tablet){
+      font-size: cvp(13px,768px);
+    }
     @include breakpoint(mobile) {
       font-size:cvp(12px, 330px);
 
     }
+  }
+  @include breakpoint(tablet){
+    margin-bottom: 37.7%;
   }
   @include breakpoint(mobile){
     margin-bottom: 0;
@@ -168,6 +206,10 @@
     font-size: cvp(17px, 2050px);
     line-height: cvp(22px, 2050px);
   }
+  @include breakpoint(tablet){
+    font-size: cvp(14px, 768px);
+    line-height: cvp(19px, 768px);
+  }
   @include breakpoint(mobile){
     position:relative;
     font-size: cvp(17px, 330px);
@@ -178,6 +220,9 @@
   font-size: 12px;
   @include breakpoint(typoMax) {
     font-size: cvp(12px, 2050px);
+  }
+  @include breakpoint(tablet){
+    font-size:  cvp(11px,768px);
   }
   @include breakpoint(mobile) {
     overflow: hidden;

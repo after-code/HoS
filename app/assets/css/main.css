@@ -112,6 +112,14 @@ h1 {
     h1 {
       font-size: 27px; } }
 
+@media (max-width: 1025px) {
+  .header__wrap {
+    height: 208px; } }
+
+@media (max-width: 450px) {
+  .header__wrap {
+    height: auto; } }
+
 .header {
   width: 100%;
   z-index: 999;
@@ -167,11 +175,15 @@ h1 {
       display: block;
       position: absolute;
       right: 2%;
-      top: 23%; } }
+      top: 11%;
+      background-size: 76%;
+      width: 50px;
+      height: 50px; } }
   @media (max-width: 450px) {
     .nav-icon {
       right: 0.3%;
-      top: 5%; } }
+      top: 5%;
+      background-size: auto; } }
 
 .header__logo, .header__logo--white {
   width: 11%;
@@ -182,16 +194,16 @@ h1 {
   @media (max-width: 1025px) {
     .header__logo, .header__logo--white {
       float: left;
-      left: 2%;
-      top: 14%;
-      width: 20%;
       margin-top: 0%;
       -moz-transition: all 400ms;
       -o-transition: all 400ms;
       -ms-transition: all 400ms;
       -webkit-transition: all 400ms;
       transition: all 400ms;
-      opacity: 1; } }
+      opacity: 1;
+      width: 30.4%;
+      left: 2.8%;
+      top: 5%; } }
   @media (max-width: 450px) {
     .header__logo, .header__logo--white {
       width: 47% !important;
@@ -318,6 +330,12 @@ h1 {
   width: 100%;
   padding: 0 4%;
   margin: 0 auto; }
+  @media (max-width: 1025px) {
+    .wrapper, .wrapper--big {
+      padding: 0 3%; } }
+  @media (max-width: 450px) {
+    .wrapper, .wrapper--big {
+      padding: 0 4%; } }
 
 .wrapper--big {
   max-width: 2050px;
@@ -338,7 +356,8 @@ h1 {
   margin-bottom: 4.4%; }
 
 .section--video {
-  text-align: center; }
+  text-align: center;
+  float: right; }
 
 .section--events {
   background: #fef339;
@@ -603,6 +622,16 @@ h1 {
     transition: background 400ms; }
     .b-media--big .b-content-sticker:hover {
       background: #dcebfc; }
+  @media (max-width: 1025px) {
+    .b-media--big {
+      width: 96%;
+      /* top: 20%; */
+      left: 0.6%; }
+      .b-media--big .b-content-sticker {
+        top: -13.3%;
+        left: -11%;
+        width: 59%;
+        height: 88%; } }
   @media (max-width: 450px) {
     .b-media--big {
       width: 113%;
@@ -633,6 +662,16 @@ h1 {
       background: #ee2e45; }
     .b-media--small .b-content-sticker__date {
       color: white; }
+  @media (max-width: 1025px) {
+    .b-media--small {
+      width: 97.5%;
+      margin-top: 7%;
+      left: -34.9%; }
+      .b-media--small .b-content-sticker {
+        left: 81.4%;
+        top: 5.7%;
+        width: 58.1%;
+        height: 88.1%; } }
   @media (max-width: 450px) {
     .b-media--small {
       width: 132%;
@@ -661,11 +700,22 @@ h1 {
     background: rgba(220, 235, 252, 0.93); }
     .b-media--middle .b-content-sticker:hover {
       background: #dcebfc; }
+  @media (max-width: 1025px) {
+    .b-media--middle {
+      width: 100%;
+      margin-top: 13%;
+      margin-left: 10.3%; }
+      .b-media--middle .b-content-sticker {
+        left: -11%;
+        top: -8.3%;
+        width: 56.6%;
+        height: 86.2%; } }
   @media (max-width: 450px) {
     .b-media--middle {
       width: 129%;
       left: -24%;
-      margin-top: 0%; }
+      margin-top: 0%;
+      margin-left: 34.5%; }
       .b-media--middle .b-content-sticker {
         top: 6%;
         left: -9.2%;
@@ -1312,7 +1362,7 @@ h1 {
   @media (max-width: 1605px) {
     .b-content-sticker {
       padding: 0 0% 0 3%;
-      padding-top: 6%; } }
+      padding-top: 4%; } }
   @media (max-width: 450px) {
     .b-content-sticker {
       padding: 0 0% 0 6%;
@@ -1352,6 +1402,11 @@ h1 {
     .b-content-sticker__heading {
       font-size: 2.97561vw;
       line-height: 2.73171vw; } }
+  @media (max-width: 1025px) {
+    .b-content-sticker__heading {
+      font-size: 6.51042vw;
+      line-height: 6.77083vw;
+      margin-bottom: 4%; } }
   @media (max-width: 450px) {
     .b-content-sticker__heading {
       font-size: 7.77778vw;
@@ -1367,10 +1422,10 @@ h1 {
     .b-content-sticker__text {
       font-size: 1.07317vw;
       line-height: 1.46341vw; } }
-  @media (max-width: 1605px) {
+  @media (max-width: 1025px) {
     .b-content-sticker__text {
-      font-size: 1.31707vw;
-      line-height: 1.65854vw; } }
+      font-size: 2.86458vw;
+      line-height: 4.16667vw; } }
   @media (max-width: 450px) {
     .b-content-sticker__text {
       font-size: 4.44444vw;
@@ -1385,6 +1440,10 @@ h1 {
   @media (max-width: 2050px) {
     .b-content-sticker__date {
       font-size: 0.97561vw; } }
+  @media (max-width: 1025px) {
+    .b-content-sticker__date {
+      margin-bottom: 6%;
+      font-size: 2.86458vw; } }
   @media (max-width: 450px) {
     .b-content-sticker__date {
       font-size: 4.44444vw; } }
@@ -1586,6 +1645,10 @@ h1 {
     background: #2abec0;
     transform: skew(-47.6deg);
     z-index: 0; }
+    @media (max-width: 1025px) {
+      .b-testimonials:after {
+        width: 75%;
+        left: -103.3%; } }
     @media (max-width: 450px) {
       .b-testimonials:after {
         width: 182%;
@@ -1599,6 +1662,10 @@ h1 {
   float: left;
   width: 28%;
   padding-left: 4.3%; }
+  @media (max-width: 1025px) {
+    .b-testimonials__left {
+      width: 35%;
+      padding-left: 6.3%; } }
   @media (max-width: 450px) {
     .b-testimonials__left {
       width: 100%; } }
@@ -1628,6 +1695,10 @@ h1 {
   @media (max-width: 2050px) {
     .b-testimonials__pre-heading {
       font-size: 1.85366vw; } }
+  @media (max-width: 1025px) {
+    .b-testimonials__pre-heading {
+      margin-top: 24%;
+      font-size: 2.47396vw; } }
   @media (max-width: 450px) {
     .b-testimonials__pre-heading {
       margin-top: 3%;
@@ -1643,6 +1714,10 @@ h1 {
     .b-testimonials__heading {
       font-size: 5.12195vw;
       line-height: 4.58537vw; } }
+  @media (max-width: 1025px) {
+    .b-testimonials__heading {
+      font-size: 7.8125vw;
+      line-height: 6.77083vw; } }
   @media (max-width: 450px) {
     .b-testimonials__heading {
       font-size: 16.36364vw;
@@ -1652,13 +1727,23 @@ h1 {
 .b-testimonials__right {
   padding-top: 13%;
   padding-right: 4.5%; }
+  @media (max-width: 1025px) {
+    .b-testimonials__right {
+      width: 100%;
+      padding-left: 7%;
+      padding-top: 3%;
+      padding-right: 6%; } }
   @media (max-width: 450px) {
     .b-testimonials__right {
+      padding-top: 13%;
       padding-left: 2.5%;
       padding-right: 2.5%; } }
+  @media (max-width: 1025px) {
+    .b-testimonials__right a:nth-child(2n-1) .b-testimonials__box {
+      margin-right: 6%; } }
   .b-testimonials__right a:nth-child(3n-1) .b-testimonials__box {
     margin: 0 2.6%; }
-    @media (max-width: 450px) {
+    @media (max-width: 1025px) {
       .b-testimonials__right a:nth-child(3n-1) .b-testimonials__box {
         margin: 0; } }
 
@@ -1673,8 +1758,9 @@ h1 {
   border-bottom: 1px solid transparent; }
   .b-testimonials__box.active {
     border-bottom: 1px solid #2abec0; }
-  .b-testimonials__box:nth-child(3n-1) {
-    margin: 0 2.6%; }
+  @media (max-width: 1025px) {
+    .b-testimonials__box {
+      width: 46%; } }
   @media (max-width: 450px) {
     .b-testimonials__box {
       width: 100%; } }
@@ -1693,6 +1779,9 @@ h1 {
     margin-top: 11%;
     padding-left: 4%;
     font-weight: bold; }
+    @media (max-width: 1025px) {
+      .b-testimonials__author__name {
+        font-size: 2.08333vw; } }
     @media (max-width: 450px) {
       .b-testimonials__author__name {
         font-size: 6.06061vw; } }
@@ -1705,9 +1794,15 @@ h1 {
     @media (max-width: 2050px) {
       .b-testimonials__author__tag {
         font-size: 0.58537vw; } }
+    @media (max-width: 1025px) {
+      .b-testimonials__author__tag {
+        font-size: 1.69271vw; } }
     @media (max-width: 450px) {
       .b-testimonials__author__tag {
         font-size: 3.63636vw; } }
+  @media (max-width: 1025px) {
+    .b-testimonials__author {
+      margin-bottom: 37.7%; } }
   @media (max-width: 450px) {
     .b-testimonials__author {
       margin-bottom: 0; } }
@@ -1727,6 +1822,10 @@ h1 {
     .b-testimonials__box__text {
       font-size: 0.82927vw;
       line-height: 1.07317vw; } }
+  @media (max-width: 1025px) {
+    .b-testimonials__box__text {
+      font-size: 1.82292vw;
+      line-height: 2.47396vw; } }
   @media (max-width: 450px) {
     .b-testimonials__box__text {
       position: relative;
@@ -1738,6 +1837,9 @@ h1 {
   @media (max-width: 2050px) {
     .b-testimonials__box__footer {
       font-size: 0.58537vw; } }
+  @media (max-width: 1025px) {
+    .b-testimonials__box__footer {
+      font-size: 1.43229vw; } }
   @media (max-width: 450px) {
     .b-testimonials__box__footer {
       overflow: hidden;
@@ -1764,6 +1866,9 @@ h1 {
   background: #F8F8F8;
   overflow: hidden;
   padding-bottom: 9%; }
+  @media (max-width: 1025px) {
+    .b-about {
+      padding-bottom: 0; } }
 
 .b-about__logo {
   width: 24%;
@@ -1773,8 +1878,9 @@ h1 {
   margin-bottom: 4.6%; }
   @media (max-width: 1025px) {
     .b-about__logo {
-      width: 75%;
-      margin-top: 10%; } }
+      width: 30%;
+      margin-top: 4%;
+      margin-bottom: 6%; } }
 
 .b-about__left {
   width: 45%;
@@ -1788,19 +1894,30 @@ h1 {
   width: 45%;
   float: left;
   text-align: left; }
+  @media (max-width: 1025px) {
+    .b-about__right {
+      width: 55%;
+      padding-left: 5%; } }
   @media (max-width: 450px) {
     .b-about__right {
       width: 100%;
-      padding-top: 13%; } }
+      padding-top: 13%;
+      padding-left: 0%; } }
 
 .b-about__typo {
   margin: 0 auto;
   width: 65%;
   display: block; }
+  @media (max-width: 1025px) {
+    .b-about__typo {
+      margin-top: 3%;
+      width: 82%;
+      margin-left: 17%; } }
   @media (max-width: 450px) {
     .b-about__typo {
       width: 94%;
-      margin-top: 3%; } }
+      margin-top: 3%;
+      margin-left: auto; } }
 
 .b-about__text {
   font-size: 32.8px;
@@ -1812,14 +1929,19 @@ h1 {
       line-height: 2.34146vw; } }
   @media (max-width: 1025px) {
     .b-about__text {
-      font-size: 5vw;
-      line-height: 7.22222vw;
-      margin-bottom: 23%; } }
+      font-size: 2.34375vw;
+      line-height: 3.125vw;
+      margin-bottom: 8%; } }
 
-@media (max-width: 450px) {
-  .page-homepage .wrapper--big {
-    padding-top: 47%;
-    margin-bottom: 5%; } }
+.page-homepage .wrapper--big {
+  margin-bottom: 2%; }
+  @media (max-width: 1025px) {
+    .page-homepage .wrapper--big {
+      padding-top: 8%; } }
+  @media (max-width: 450px) {
+    .page-homepage .wrapper--big {
+      padding-top: 8%;
+      margin-bottom: 5%; } }
 
 .page-container {
   max-width: 1000px;

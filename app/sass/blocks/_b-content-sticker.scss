@@ -11,7 +11,7 @@
   cursor: pointer;
   @include breakpoint(laptop) {
     padding:0 0% 0 3%;
-    padding-top: 6%;
+    padding-top: 4%;
   }
   @include breakpoint(mobile) {
     padding:0 0% 0 6%;
@@ -52,6 +52,11 @@
     font-size: cvp(61px, 2050px);
     line-height: cvp(56px, 2050px);
   }
+  @include breakpoint(tablet){
+    font-size: cvp(50px,768px);
+    line-height: cvp(52px,768px);
+    margin-bottom: 4%;
+  }
   @include breakpoint(mobile) {
     font-size: cvp(28px,360px);
     line-height: cvp(29px,360px);
@@ -67,9 +72,9 @@
     font-size:cvp(22px, 2050px);
     line-height: cvp(30px, 2050px);
   }
-  @include breakpoint(laptop) {
-    font-size:cvp(27px, 2050px);
-    line-height: cvp(34px, 2050px);
+  @include breakpoint(tablet) {
+    font-size:cvp(22px, 768px);
+    line-height: cvp(32px, 768px);
   }
   @include breakpoint(mobile) {
     font-size: cvp(16px,360px) ;
@@ -84,6 +89,10 @@
   font-size: 20px;
   @include breakpoint(typoMax) {
     font-size:cvp(20px, 2050px);
+  }
+  @include breakpoint(tablet){
+    margin-bottom: 6%;
+    font-size: cvp(22px,768px);
   }
   @include breakpoint(mobile) {
     font-size: cvp(16px,360px);

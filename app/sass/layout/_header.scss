@@ -1,5 +1,11 @@
 .header__wrap {
   // height: 97px;
+  @include breakpoint(tablet){
+    height: 208px;
+  }
+  @include breakpoint(mobile){
+    height: auto;
+  }
 }
 .header {
   width: 100%;
@@ -62,12 +68,16 @@
   @include breakpoint(tablet){
     display: block;
     position: absolute;
-    right:2%;
-    top:23%;
+    right: 2%;
+    top: 11%;
+    background-size: 76%;
+    width: 50px;
+    height: 50px;
   }
   @include breakpoint(mobile) {
     right: 0.3%;
     top: 5%;
+    background-size:auto;
   }
 }
 .header__logo {
@@ -78,12 +88,12 @@
   left: 24.7%;
   @include breakpoint(tablet) {
     float: left;
-    left: 2%;
-    top: 14%;
-    width: 20%;
     margin-top: 0%;
     @include transition(all 400ms);
     opacity: 1;
+    width: 30.4%;
+    left: 2.8%;
+    top: 5%;
   }
   @include breakpoint(mobile){
     width: 47% !important;

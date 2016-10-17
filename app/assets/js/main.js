@@ -87,8 +87,10 @@ $(function(){
   $(".footer__back-to-top").click(function(){
     $("html, body").animate({scrollTop:"0px"},1000, $.bez(accelerationCurve));
   });
-  var header_height = $(".header__nav").height();
-  $(".header__wrap").css({"height":header_height+"px"});
+  if ($(window).width() > 1025){
+    var header_height = $(".header__nav").height();
+    $(".header__wrap").css({"height":header_height+"px"});
+  }
 });
 function headerBlack(){
   header = 'black';

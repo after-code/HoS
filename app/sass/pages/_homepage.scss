@@ -1,7 +1,11 @@
 .page-homepage {
   .wrapper--big {
+    margin-bottom: 2%;
+    @include breakpoint(tablet){
+      padding-top: 8%;
+    }
     @include breakpoint(mobile){
-      padding-top: 47%;
+      padding-top: 8%;
       margin-bottom: 5%;
     }
   }
