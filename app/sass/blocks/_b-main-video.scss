@@ -10,6 +10,9 @@
 .b-main-video__wrap {
   overflow: hidden;
   position: relative;
+  @include breakpoint(mobile) {
+    margin-bottom: 6%;
+  }
 }
 .b-main-video__icon {
   width: 150px;

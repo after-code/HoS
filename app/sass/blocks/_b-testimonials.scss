@@ -131,7 +131,7 @@
     padding-left: 4%;
     font-weight: bold;
     @include breakpoint(mobile){
-      font-size: cvp(20px,330);
+      font-size: cvp(20px,330px);
     }
   }
   &__tag {

@@ -25,10 +25,10 @@
     margin-bottom: 6%;
     margin-left: 14%;
     .b-content-sticker {
-      width: 62%;
-      left: -12.6%;
-      top: -19%;
-      height: 92%;
+      width: 66.5%;
+      left: -13.6%;
+      top: -18%;
+      height: 99.2%;
     }
   }
 }
@@ -52,14 +52,14 @@
     }
   }
   @include breakpoint(mobile) {
-    width: 126%;
-    left: -34%;
+    width: 132%;
+    left: -39%;
     margin-bottom: 25%;
     .b-content-sticker {
-      left: 52%;
-      top: -11%;
-      width: 55%;
-      height: 82%;
+      left: 48.8%;
+      top: 9%;
+      width: 56%;
+      height: 85%;
     }
   }
 }
@@ -80,13 +80,14 @@
     }
   }
   @include breakpoint(mobile) {
-    width: 114%;
+    width: 129%;
     left: -24%;
+    margin-top: 0%;
     .b-content-sticker {
-      top: -24%;
+      top: 6%;
       left: -9.2%;
-      width: 60.9%;
-      height: 90.8%;
+      width: 57.9%;
+      height: 87.8%;
     }
   }
 }

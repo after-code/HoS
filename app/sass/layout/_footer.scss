@@ -6,6 +6,9 @@
   z-index: 0;
   padding-bottom: 11%;
   position: relative;
+  a {
+    color: inherit;
+  }
   &:before {
     width: 100%;
     height: 42%;

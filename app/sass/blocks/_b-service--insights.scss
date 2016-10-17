@@ -11,9 +11,11 @@
     display: block;
     margin-top: 5%;
     @include breakpoint(mobile) {
-      width: 91%;
+      width: 86%;
       margin-bottom: 0%;
       padding-bottom: 5%;
+      margin-top:10%;
+      margin-bottom: 8%;
     }
   }
   .b-service__media {
@@ -30,7 +32,7 @@
       width: 100%;
       padding-right: 5.9%;
       img {
-        width: 100%;
+        width: 154%;
         margin-top: 7%;
       }
     }
@@ -52,32 +54,46 @@
     font-size: 50px;
     color:$yellow;
   }
+  .b-service__heading {
+    font-weight: bold;
+    color: $yellow;
+    width: 60%;
+    font-size: 98px;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 2.8%;
+    @include breakpoint(typoMax){
+      font-size:cvp(98px, 2050px);
+      // line-height: cvp(73px, 2050px);
+    }
+
+    @include breakpoint(mobile) {
+      font-size: cvp(33px,330px);
+      line-height: cvp(37px,330px);
+      width: 93%;
+      margin-left: 9%;
+    }
+  }
+  .b-service__heading {
+    display: block;
+    @include breakpoint(mobile) {
+      display: none;
+    }
+    &--mobile {
+      display: none;
+      @include breakpoint(mobile) {
+        display: block;
+      }
+    }
+  }
   .b-service__content {
     width: 48%;
     float: left;
     padding-left: 11%;
     padding-top:5%;
-    .b-service__heading {
-      font-weight: bold;
-      color: $yellow;
-      width: 60%;
-      font-size: 98px;
-      font-style: italic;
-      font-weight: bold;
-      margin-bottom: 2.8%;
-      @include breakpoint(typoMax){
-        font-size:cvp(98px, 2050px);
-        // line-height: cvp(73px, 2050px);
-      }
-
-      @include breakpoint(mobile) {
-        font-size: 35px;
-        line-height: 37px;
-        width: 93%;
-      }
-    }
     @include breakpoint(mobile) {
       width: 100%;
+      padding-top:8%;
     }
   }
   .b-service__text {
@@ -93,11 +109,16 @@
     }
     @include breakpoint(mobile) {
       display: none;
+      font-size: cvp(28px,330px);
+      line-height:cvp(33px,330px);
+      margin-right: 0;
+      margin-top: 0;
+      width: 90%;
     }
     &--mobile {
       display: none;
       @include breakpoint(mobile) {
-        display: none;
+        display: block;
         font-size: 18px;
         line-height: 23px;
         width: 82%;
@@ -131,7 +152,7 @@
     &--mobile {
       display: none;
       @include breakpoint(mobile) {
-        display: none;
+        display: block;
         font-size: 15px;
         padding: 5.6% 6%;
         width: 82%;
@@ -147,6 +168,9 @@
       font-size: 28px;
       color: white;
       margin-bottom: 6%;
+      @include breakpoint(mobile) {
+        font-size: cvp(20px, 330px);
+      }
     }
   }
   .b-service__content__social__item {
@@ -155,9 +179,17 @@
     margin-right: 12%;
     &:nth-child(4){
       width: 5%;
+      @include breakpoint(mobile) {
+        width: 6%;
+      }
     }
     img {
       width: 100%;
+    }
+    @include breakpoint(mobile) {
+      width: 13%;
+      margin-top: 6%;
+      margin-bottom: 11%;
     }
   }
 }

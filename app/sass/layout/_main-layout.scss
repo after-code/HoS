@@ -8,10 +8,10 @@
   @extend .wrapper;
   // opacity: 0;
   max-width: 2050px;
-  padding-top:100px;
+  padding-top: 5%;
   @extend .clearfix;
   @include breakpoint(laptop) {
-    padding: 0%;
+    padding-top: 5%;
   }
   @include breakpoint(tablet){
     padding-top: 20%;
