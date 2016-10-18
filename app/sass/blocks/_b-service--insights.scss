@@ -18,6 +18,17 @@
       margin-bottom: 8%;
     }
   }
+  .b-service__img {
+    @include breakpoint(mobile) {
+      display: none;
+    }
+  }
+  .b-service__img--mobile {
+    display: none;
+    @include breakpoint(mobile) {
+      display: block;
+    }
+  }
   .b-service__media {
     overflow: hidden;
     position: relative;

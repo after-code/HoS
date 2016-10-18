@@ -1192,6 +1192,14 @@ h1 {
         padding-bottom: 5%;
         margin-top: 10%;
         margin-bottom: 8%; } }
+  @media (max-width: 450px) {
+    .b-service--insights .b-service__img {
+      display: none; } }
+  .b-service--insights .b-service__img--mobile {
+    display: none; }
+    @media (max-width: 450px) {
+      .b-service--insights .b-service__img--mobile {
+        display: block; } }
   .b-service--insights .b-service__media {
     overflow: hidden;
     position: relative;
@@ -1928,6 +1936,11 @@ h1 {
       font-size: 1.6vw;
       line-height: 2.34146vw; } }
   @media (max-width: 1025px) {
+    .b-about__text {
+      font-size: 2.34375vw;
+      line-height: 3.125vw;
+      margin-bottom: 8%; } }
+  @media (max-width: 450px) {
     .b-about__text {
       font-size: 2.34375vw;
       line-height: 3.125vw;
