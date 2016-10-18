@@ -18,6 +18,11 @@
     margin-top: 4%;
     margin-bottom: 6%;
   }
+  @include breakpoint(mobile) {
+    width: 75%;
+    margin-top: 8%;
+    margin-bottom: 2%;
+  }
 }
 .b-about__left {
   width: 45%;
@@ -70,8 +75,8 @@
     margin-bottom: 8%;
   }
   @include breakpoint(mobile) {
-    font-size: cvp(18px, 768px);
-    line-height: cvp(24px, 768px);
+    font-size: cvp(18px, 330px);
+    line-height: cvp(26px, 330px);
     margin-bottom: 8%;
   }
 }

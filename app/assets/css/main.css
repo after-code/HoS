@@ -391,9 +391,14 @@ h1 {
     @media (max-width: 450px) {
       .section--conference:after {
         display: none; } }
+  @media (max-width: 1025px) {
+    .section--conference {
+      padding: 0 2.5%;
+      padding-bottom: 20%; } }
   @media (max-width: 450px) {
     .section--conference {
-      padding: 0 2%; } }
+      padding: 0 2%;
+      padding-bottom: 25%; } }
 
 .section--insights {
   margin-bottom: 4.4%;
@@ -1476,6 +1481,9 @@ h1 {
   .b-conference__wrap > a {
     width: 46%;
     float: left; }
+    @media (max-width: 1025px) {
+      .b-conference__wrap > a {
+        width: 48%; } }
     @media (max-width: 450px) {
       .b-conference__wrap > a {
         width: 100%; } }
@@ -1532,6 +1540,9 @@ h1 {
     @media (max-width: 2050px) {
       .b-conference__date .b-day {
         font-size: 2.04878vw; } }
+    @media (max-width: 1025px) {
+      .b-conference__date .b-day {
+        font-size: 2.86458vw; } }
     @media (max-width: 450px) {
       .b-conference__date .b-day {
         font-size: 7.57576vw;
@@ -1541,6 +1552,9 @@ h1 {
     @media (max-width: 2050px) {
       .b-conference__date .b-month {
         font-size: 1.02439vw; } }
+    @media (max-width: 1025px) {
+      .b-conference__date .b-month {
+        font-size: 1.69271vw; } }
     @media (max-width: 450px) {
       .b-conference__date .b-month {
         margin-top: 4%;
@@ -1558,6 +1572,9 @@ h1 {
     right: -14%;
     transform: skew(-20.9deg);
     display: block; }
+    @media (max-width: 1025px) {
+      .b-conference__date:after {
+        right: -26%; } }
     @media (max-width: 450px) {
       .b-conference__date:after {
         height: 116%;
@@ -1582,6 +1599,11 @@ h1 {
     @media (max-width: 2050px) {
       .b-conference__info__city {
         font-size: 0.97561vw; } }
+    @media (max-width: 1025px) {
+      .b-conference__info__city {
+        font-size: 1.95312vw;
+        margin-top: -2%;
+        margin-bottom: 2%; } }
     @media (max-width: 450px) {
       .b-conference__info__city {
         font-size: 12px;
@@ -1597,6 +1619,10 @@ h1 {
       .b-conference__info__heading {
         font-size: 1.56098vw;
         line-height: 1.90244vw; } }
+    @media (max-width: 1025px) {
+      .b-conference__info__heading {
+        font-size: 2.60417vw;
+        line-height: 2.86458vw; } }
     @media (max-width: 450px) {
       .b-conference__info__heading {
         font-size: 20px;
@@ -1610,6 +1636,10 @@ h1 {
       .b-conference__info__text {
         font-size: 1.21951vw;
         line-height: 1.85366vw; } }
+    @media (max-width: 1025px) {
+      .b-conference__info__text {
+        font-size: 2.08333vw;
+        line-height: 2.73438vw; } }
     @media (max-width: 450px) {
       .b-conference__info__text {
         display: none; } }
@@ -1622,9 +1652,16 @@ h1 {
     @media (max-width: 2050px) {
       .b-conference__info__button {
         font-size: 0.97561vw; } }
+    @media (max-width: 1025px) {
+      .b-conference__info__button {
+        display: none; } }
     @media (max-width: 450px) {
       .b-conference__info__button {
         display: none; } }
+  @media (max-width: 1025px) {
+    .b-conference__info {
+      padding-left: 10.9%;
+      width: 78%; } }
   @media (max-width: 450px) {
     .b-conference__info {
       padding-left: 12%;
@@ -1889,6 +1926,11 @@ h1 {
       width: 30%;
       margin-top: 4%;
       margin-bottom: 6%; } }
+  @media (max-width: 450px) {
+    .b-about__logo {
+      width: 75%;
+      margin-top: 8%;
+      margin-bottom: 2%; } }
 
 .b-about__left {
   width: 45%;
@@ -1942,8 +1984,8 @@ h1 {
       margin-bottom: 8%; } }
   @media (max-width: 450px) {
     .b-about__text {
-      font-size: 2.34375vw;
-      line-height: 3.125vw;
+      font-size: 5.45455vw;
+      line-height: 7.87879vw;
       margin-bottom: 8%; } }
 
 .page-homepage .wrapper--big {

@@ -70,8 +70,13 @@
       display: none;
     }
   }
+  @include breakpoint(tablet){
+    padding:0 2.5%;
+    padding-bottom: 20%;
+  }
   @include breakpoint(mobile){
     padding:0 2%;
+    padding-bottom: 25%;
   }
 }
 .section--insights {

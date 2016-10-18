@@ -19,6 +19,9 @@
   &>a {
     // display: block;
     width: 46%;
+    @include breakpoint(tablet) {
+        width: 48%;
+    }
     @include breakpoint(mobile){
       width: 100%;
     }
@@ -83,6 +86,9 @@
     @include breakpoint(typoMax){
       font-size: cvp(42px,2050px);
     }
+    @include breakpoint(tablet) {
+      font-size: cvp(22px,768px);
+    }
     @include breakpoint(mobile) {
       font-size: cvp(25px,330px);
       line-height: cvp(20px,330px);
@@ -92,6 +98,9 @@
     font-size: 21px;
     @include breakpoint(typoMax){
       font-size: cvp(21px,2050px);
+    }
+    @include breakpoint(tablet) {
+      font-size: cvp(13px,768px);
     }
     @include breakpoint(mobile) {
       margin-top:4%;
@@ -111,6 +120,9 @@
     right: -14%;
     transform: skew(-20.9deg);
     display: block;
+    @include breakpoint(tablet) {
+      right: -26%;
+    }
     @include breakpoint(mobile) {
       height: 116%;
       top: -9%;
@@ -136,6 +148,11 @@
     @include breakpoint(typoMax){
       font-size:cvp(20px, 2050px);
     }
+    @include breakpoint(tablet) {
+      font-size: cvp(15px,768px);
+      margin-top: -2%;
+      margin-bottom: 2%;
+    }
     @include breakpoint(mobile) {
       font-size: 12px;
       margin-bottom: 2%;
@@ -152,6 +169,10 @@
       font-size:cvp(32px, 2050px);
       line-height:cvp(39px, 2050px);
     }
+    @include breakpoint(tablet) {
+      font-size:cvp(20px, 768px);
+      line-height:cvp(22px, 768px);
+    }
     @include breakpoint(mobile) {
       font-size: 20px;
       line-height: 21px;
@@ -166,6 +187,10 @@
       font-size:cvp(25px, 2050px);
       line-height:cvp(38px, 2050px);
     }
+    @include breakpoint(tablet) {
+      font-size: cvp(16px, 768px);
+      line-height: cvp(21px, 768px);
+    }
     @include breakpoint(mobile) {
       display: none;
     }
@@ -179,9 +204,16 @@
     @include breakpoint(typoMax){
       font-size:cvp(20px, 2050px);
     }
+    @include breakpoint(tablet) {
+      display: none;
+    }
     @include breakpoint(mobile) {
       display: none;
     }
+  }
+  @include breakpoint(tablet) {
+    padding-left: 10.9%;
+    width: 78%;
   }
   @include breakpoint(mobile) {
     padding-left: 12%;
