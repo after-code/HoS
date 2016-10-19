@@ -73,6 +73,12 @@
   padding-left: 4.5%;
   padding-top: 7%;
   padding-right: 6%;
+  @include breakpoint(tablet) {
+    padding-bottom: 3%;
+  }
+  @include breakpoint(mobile) {
+    padding-bottom:0;
+  }
 }
 .b-conference__date {
   float: left;
@@ -213,7 +219,7 @@
   }
   @include breakpoint(tablet) {
     padding-left: 10.9%;
-    width: 78%;
+    width: 75%;
   }
   @include breakpoint(mobile) {
     padding-left: 12%;
@@ -224,4 +230,10 @@
 }
 .b-conference__sticker--mobile {
   display: none;
+}
+.tablet-br {
+  display: none;
+  @include breakpoint(tablet) {
+    display: block;
+  }
 }

@@ -53,7 +53,7 @@ table {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-.clearfix:after, .wrapper--big:after {
+.clearfix:after, .wrapper--big:after, .footer__wrap:after {
   content: "";
   display: table;
   clear: both; }
@@ -108,13 +108,16 @@ h1 {
   @media (max-width: 2050px) {
     h1 {
       font-size: 3.85366vw; } }
+  @media (max-width: 1025px) {
+    h1 {
+      font-size: 6.51042vw; } }
   @media (max-width: 450px) {
     h1 {
-      font-size: 27px; } }
+      font-size: 8.18182vw; } }
 
 @media (max-width: 1025px) {
   .header__wrap {
-    height: 208px; } }
+    height: 158px; } }
 
 @media (max-width: 450px) {
   .header__wrap {
@@ -158,7 +161,8 @@ h1 {
         .header.active .nav-icon {
           background: url(../../assets/img/close-nav.svg);
           background-repeat: no-repeat;
-          background-position: center; } }
+          background-position: center;
+          background-size: 56%; } }
   @media (max-width: 450px) {
     .header {
       height: 100px; } }
@@ -278,6 +282,9 @@ h1 {
     -ms-transition: width 200ms cubic-bezier(0,1,1,1), left 200ms cubic-bezier(0,1,1,1);
     -webkit-transition: width 200ms cubic-bezier(0,1,1,1), left 200ms cubic-bezier(0,1,1,1);
     transition: width 200ms cubic-bezier(0,1,1,1), left 200ms cubic-bezier(0,1,1,1); }
+    @media (max-width: 1025px) {
+      .header__link:after, .header__link--mobile-heading:after {
+        display: none; } }
   .header__link:hover:after, .header__link--mobile-heading:hover:after {
     left: 0%;
     width: 100%; }
@@ -288,7 +295,7 @@ h1 {
     .header__link, .header__link--mobile-heading {
       display: block;
       margin-left: 0;
-      font-size: 22px;
+      font-size: 3.25521vw;
       margin-bottom: 1.7%; }
       .header__link:hover:after, .header__link--mobile-heading:hover:after {
         left: 0%;
@@ -318,12 +325,12 @@ h1 {
     .header__link--mobile-heading {
       margin-bottom: 4%;
       display: block;
-      font-size: 17px;
+      font-size: 3.4076vw;
       color: #9b9b9b;
       margin-top: 6%;
       border-bottom: 1px solid #363333; }
       .header__link--mobile-heading:first-child {
-        margin-top: 9.6%; } }
+        margin-top: 3.6%; } }
 
 .wrapper, .wrapper--big {
   max-width: 1850px;
@@ -439,6 +446,9 @@ h1 {
   @media (max-width: 1605px) {
     .footer__wrap {
       width: 42%; } }
+  @media (max-width: 1025px) {
+    .footer__wrap {
+      width: 89%; } }
   @media (max-width: 450px) {
     .footer__wrap {
       width: 100%; } }
@@ -457,6 +467,9 @@ h1 {
   @media (max-width: 1605px) {
     .social__heading {
       font-size: 1.07317vw; } }
+  @media (max-width: 1025px) {
+    .social__heading {
+      font-size: 2.47396vw; } }
   @media (max-width: 450px) {
     .social__heading {
       top: 0;
@@ -491,6 +504,9 @@ h1 {
   float: left;
   opacity: 0.09;
   margin-bottom: 7%; }
+  @media (max-width: 1025px) {
+    .footer__logo {
+      width: 19%; } }
   @media (max-width: 450px) {
     .footer__logo {
       width: 27%;
@@ -532,9 +548,12 @@ h1 {
     @media (max-width: 1605px) {
       .footer__nav__link:first-child {
         font-size: 1.07317vw; } }
+    @media (max-width: 1025px) {
+      .footer__nav__link:first-child {
+        font-size: 2.21354vw; } }
     @media (max-width: 450px) {
       .footer__nav__link:first-child {
-        font-size: 18px;
+        font-size: 5.45455vw;
         margin-bottom: 9%; } }
     .footer__nav__link:first-child:after {
       width: 22px;
@@ -553,6 +572,9 @@ h1 {
   @media (max-width: 1605px) {
     .footer__nav__link {
       font-size: 0.97561vw; } }
+  @media (max-width: 1025px) {
+    .footer__nav__link {
+      font-size: 2.21354vw; } }
   @media (max-width: 450px) {
     .footer__nav__link {
       font-size: 16px; } }
@@ -581,6 +603,9 @@ h1 {
   @media (max-width: 1605px) {
     .footer__copyright {
       font-size: 0.78049vw; } }
+  @media (max-width: 1025px) {
+    .footer__copyright {
+      font-size: 1.69271vw; } }
   @media (max-width: 450px) {
     .footer__copyright {
       font-size: 12px;
@@ -597,6 +622,9 @@ h1 {
   @media (max-width: 1605px) {
     .footer__back-to-top {
       font-size: 0.78049vw; } }
+  @media (max-width: 1025px) {
+    .footer__back-to-top {
+      font-size: 1.69271vw; } }
   @media (max-width: 450px) {
     .footer__back-to-top {
       position: absolute;
@@ -946,6 +974,11 @@ h1 {
     .b-service--consultancy .b-service__media img {
       width: 114%;
       display: block; }
+    @media (max-width: 1025px) {
+      .b-service--consultancy .b-service__media {
+        width: 48%; }
+        .b-service--consultancy .b-service__media img {
+          width: 141%; } }
     @media (max-width: 450px) {
       .b-service--consultancy .b-service__media {
         width: 100%;
@@ -982,6 +1015,10 @@ h1 {
     margin-bottom: 2%;
     width: 86%;
     margin-left: 3%; }
+    @media (max-width: 1025px) {
+      .b-service--consultancy .b-service__logo {
+        width: 94%;
+        margin-bottom: 1%; } }
     @media (max-width: 450px) {
       .b-service--consultancy .b-service__logo {
         width: 91%;
@@ -995,16 +1032,28 @@ h1 {
     padding: 0 6%; }
     .b-service--consultancy .b-service__content__text--small {
       margin-bottom: 5%; }
+      @media (max-width: 1025px) {
+        .b-service--consultancy .b-service__content__text--small {
+          margin-bottom: 9%; } }
     @media (max-width: 2050px) {
       .b-service--consultancy .b-service__content__text {
         line-height: 2.04878vw;
         font-size: 1.65854vw; } }
+    @media (max-width: 1025px) {
+      .b-service--consultancy .b-service__content__text {
+        padding-left: 3%;
+        padding-right: 0px;
+        font-size: 2.34375vw;
+        line-height: 2.99479vw;
+        width: 99%;
+        margin-bottom: 4%; } }
     @media (max-width: 450px) {
       .b-service--consultancy .b-service__content__text {
         width: 100%;
         padding: 0 3%;
         text-align: center;
         font-size: 18px;
+        margin-bottom: 5%;
         line-height: 24px;
         text-align: left; } }
   .b-service--consultancy .b-service__quote {
@@ -1038,6 +1087,10 @@ h1 {
     @media (max-width: 450px) {
       .b-service--consultancy .b-button {
         margin-left: auto; } }
+    @media (max-width: 1025px) {
+      .b-service--consultancy .b-button {
+        font-size: 1.95312vw;
+        padding: 4% 13%; } }
     .b-service--consultancy .b-button:hover {
       background: #222;
       color: white; }
@@ -1054,6 +1107,9 @@ h1 {
     margin-bottom: 6%;
     width: 39%;
     margin-bottom: 4.6%; }
+    @media (max-width: 1025px) {
+      .b-service--training .b-service__logo {
+        width: 41%; } }
     @media (max-width: 450px) {
       .b-service--training .b-service__logo {
         margin-top: 0;
@@ -1063,9 +1119,6 @@ h1 {
     height: 50%;
     background: #F8F8F8;
     padding-top: 4.4%; }
-    @media (max-width: 1025px) {
-      .b-service--training .b-service__top {
-        padding-top: 14.4%; } }
   .b-service--training .b-service__top__text {
     text-align: left;
     padding: 0 17%;
@@ -1076,6 +1129,11 @@ h1 {
       .b-service--training .b-service__top__text {
         font-size: 1.5122vw;
         line-height: 2.34146vw; } }
+    @media (max-width: 1025px) {
+      .b-service--training .b-service__top__text {
+        font-size: 2.34375vw;
+        padding: 0 13%;
+        line-height: 3.25521vw; } }
     @media (max-width: 450px) {
       .b-service--training .b-service__top__text {
         padding: 0 9%;
@@ -1087,8 +1145,17 @@ h1 {
     padding: 0 8.2%;
     padding-top: 4.1%;
     padding-bottom: 4.5%; }
+    @media (max-width: 1025px) {
+      .b-service--training .b-service__division {
+        padding: 0 1.2%;
+        padding-top: 7.1%; } }
+    @media (max-width: 1025px) {
+      .b-service--training .b-service__division {
+        padding-bottom: 3%; } }
     @media (max-width: 450px) {
       .b-service--training .b-service__division {
+        padding: 0 8.2%;
+        padding-bottom: 4.5%;
         padding-top: 12%; } }
   .b-service--training .b-service__element {
     width: 33%;
@@ -1107,6 +1174,10 @@ h1 {
     @media (max-width: 2050px) {
       .b-service--training .b-service__element__nbr {
         font-size: 2.43902vw; } }
+    @media (max-width: 1025px) {
+      .b-service--training .b-service__element__nbr {
+        float: left;
+        font-size: 3.51562vw; } }
     @media (max-width: 450px) {
       .b-service--training .b-service__element__nbr {
         font-size: 10.83333vw;
@@ -1121,6 +1192,12 @@ h1 {
       .b-service--training .b-service__element__heading {
         font-size: 1.26829vw;
         line-height: 2.73171vw; } }
+    @media (max-width: 1025px) {
+      .b-service--training .b-service__element__heading {
+        font-size: 17px;
+        margin-left: 16%;
+        margin-top: 5%;
+        margin-bottom: 6%; } }
     @media (max-width: 450px) {
       .b-service--training .b-service__element__heading {
         font-size: 30px;
@@ -1139,6 +1216,10 @@ h1 {
       .b-service--training .b-service__element__text {
         font-size: 2.19512vw;
         line-height: 2.53659vw; } }
+    @media (max-width: 1025px) {
+      .b-service--training .b-service__element__text {
+        font-size: 2.60417vw;
+        line-height: 2.99479vw; } }
     @media (max-width: 450px) {
       .b-service--training .b-service__element__text {
         font-size: 7.27273vw;
@@ -1165,6 +1246,11 @@ h1 {
     @media (max-width: 2050px) {
       .b-service--training .b-service__button {
         font-size: 1.07317vw; } }
+    @media (max-width: 1025px) {
+      .b-service--training .b-service__button {
+        margin-top: 0.6%;
+        font-size: 1.95312vw;
+        padding: 2% 6.8%; } }
     @media (max-width: 450px) {
       .b-service--training .b-service__button {
         display: block;
@@ -1527,6 +1613,12 @@ h1 {
   padding-left: 4.5%;
   padding-top: 7%;
   padding-right: 6%; }
+  @media (max-width: 1025px) {
+    .b-conference__content {
+      padding-bottom: 3%; } }
+  @media (max-width: 450px) {
+    .b-conference__content {
+      padding-bottom: 0; } }
 
 .b-conference__date {
   float: left;
@@ -1661,7 +1753,7 @@ h1 {
   @media (max-width: 1025px) {
     .b-conference__info {
       padding-left: 10.9%;
-      width: 78%; } }
+      width: 75%; } }
   @media (max-width: 450px) {
     .b-conference__info {
       padding-left: 12%;
@@ -1671,6 +1763,12 @@ h1 {
 
 .b-conference__sticker--mobile {
   display: none; }
+
+.tablet-br {
+  display: none; }
+  @media (max-width: 1025px) {
+    .tablet-br {
+      display: block; } }
 
 .b-testimonials {
   width: 100%;
@@ -1992,7 +2090,7 @@ h1 {
   margin-bottom: 2%; }
   @media (max-width: 1025px) {
     .page-homepage .wrapper--big {
-      padding-top: 8%; } }
+      padding-top: 15%; } }
   @media (max-width: 450px) {
     .page-homepage .wrapper--big {
       padding-top: 8%;

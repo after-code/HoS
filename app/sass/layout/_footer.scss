@@ -31,8 +31,13 @@
 .footer__wrap {
   width: 34%;
   margin:0 auto;
+  // overflow: hidden;
+  @extend .clearfix;
   @include breakpoint(laptop) {
     width: 42%;
+  }
+  @include breakpoint(tablet) {
+    width: 89%;
   }
   @include breakpoint(mobile) {
     width: 100%;
@@ -50,7 +55,10 @@
     font-size: cvp(17px, 2050px);
   }
   @include breakpoint(laptop) {
-      font-size: cvp(22px, 2050px);
+    font-size: cvp(22px, 2050px);
+  }
+  @include breakpoint(tablet) {
+    font-size: cvp(19px, 768px);
   }
   @include breakpoint(mobile) {
     top:0;
@@ -88,13 +96,16 @@
   float: left;
   opacity: 0.09;
   margin-bottom: 7%;
+  @include breakpoint(tablet) {
+    width: 19%;
+  }
   @include breakpoint(mobile) {
     width: 27%;
     margin-left: 6%;
     margin-top: 16%;
   }
   @include breakpoint(laptop) {
-        width: 15%;
+      width: 15%;
   }
 }
 .footer__nav {
@@ -131,10 +142,14 @@
       font-size: cvp(17px,2050px);
     }
     @include breakpoint(laptop) {
-        font-size: cvp(22px, 2050px);
+      font-size: cvp(22px, 2050px);
     }
+    @include breakpoint(tablet) {
+      font-size: cvp(17px, 768px);
+    }
+
     @include breakpoint(mobile) {
-      font-size: 18px;
+      font-size: cvp(18px, 330px);
       margin-bottom: 9%;
     }
     &:after {
@@ -155,6 +170,9 @@
   }
   @include breakpoint(laptop) {
       font-size: cvp(20px, 2050px);
+  }
+  @include breakpoint(tablet) {
+    font-size: cvp(17px, 768px);
   }
   @include breakpoint(mobile) {
     font-size: 16px;
@@ -196,7 +214,10 @@
     font-size: cvp(13px,2050px);
   }
   @include breakpoint(laptop) {
-      font-size: cvp(16px, 2050px);
+    font-size: cvp(16px, 2050px);
+  }
+  @include breakpoint(tablet) {
+    font-size: cvp(13px, 768px);
   }
   @include breakpoint(mobile) {
     font-size: 12px;
@@ -212,7 +233,10 @@
     font-size: cvp(15px,2050px);
   }
   @include breakpoint(laptop) {
-      font-size: cvp(16px, 2050px);
+    font-size: cvp(16px, 2050px);
+  }
+  @include breakpoint(tablet) {
+    font-size: cvp(13px, 768px);
   }
   @include breakpoint(mobile) {
     position: absolute;

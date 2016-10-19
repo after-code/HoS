@@ -1,7 +1,7 @@
 .header__wrap {
   // height: 97px;
   @include breakpoint(tablet){
-    height: 208px;
+    height: 158px;
   }
   @include breakpoint(mobile){
     height: auto;
@@ -50,6 +50,7 @@
         background:url(../../assets/img/close-nav.svg);
         background-repeat: no-repeat;
         background-position: center;
+        background-size: 56%;
       }
     }
   }
@@ -165,6 +166,9 @@
     border-bottom:1px solid #222;
     padding-top: 4.7%;
     @include transition ("width 200ms #{$cubic-bezier1}, left 200ms #{$cubic-bezier1}"  );
+    @include breakpoint(tablet) {
+      display: none;
+    }
   }
   &:hover {
     &:after {
@@ -178,7 +182,7 @@
   @include breakpoint(tablet) {
     display: block;
     margin-left: 0;
-    font-size: 22px;
+    font-size: cvp(25px,768px);
     margin-bottom: 1.7%;
     &:hover {
       &:after {
@@ -214,12 +218,12 @@
   @include breakpoint(tablet){
     margin-bottom: 4%;
     display: block;
-    font-size: 17px;
+    font-size: cvp(26px,763px);
     color:#9b9b9b;
     margin-top: 6%;
     border-bottom:1px solid #363333;
     &:first-child {
-      margin-top: 9.6%;
+      margin-top: 3.6%;
     }
   }
 }
