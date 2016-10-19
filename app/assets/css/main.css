@@ -1083,7 +1083,7 @@ h1 {
   .b-service--consultancy .b-button {
     border: 3px solid #222;
     padding: 3.2% 11%;
-    margin-left: 3%; }
+    margin-left: 6%; }
     @media (max-width: 450px) {
       .b-service--consultancy .b-button {
         margin-left: auto; } }

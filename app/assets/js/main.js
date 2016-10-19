@@ -9,27 +9,6 @@
   var animSpeed = 205;
 $(function(){
 
-  $(".widget").click(function(){
-    console.log("nigga");
-    if (!animating){
-      if (!open){
-        animating = true;
-        $(".widget").animate({"right":"-220px"}, animSpeed, $.bez(sharpCurve));
-        $(".widget__content").animate({"height":"30px", opacity:'0'}, animSpeed, $.bez(sharpCurve),function(){
-          animating = false;
-        });
-        open = true;
-      } else {
-        animating = true;
-        $(".widget").animate({"right":"-0px"}, animSpeed, $.bez(decelerationCurve));
-        $(".widget__content").animate({"height":"126px", opacity:'1'}, animSpeed, $.bez(sharpCurve),function(){
-          animating = false;
-        });
-        open = false;
-      }
-    }
-  });
-
   // ScrollMagic
   var controller = new ScrollMagic.Controller();
 
@@ -55,7 +34,7 @@ $(function(){
           }
           if ( x1 == "REVERSE" && x2 == 0 && header == "black") {
               TweenLite.to(".header", 0.28, {top: "0px", ease:  $.bez(decelerationCurve), onComplete:function(){
-                TweenLite.to(".header", 0.42, {color:"rgb(34, 34, 34)", background:"rgb(255,255,255)",  ease:  $.bez(standardCurve)});
+                TweenLite.to(".header", 0.42, {position:"relative", color:"rgb(34, 34, 34)", background:"rgb(255,255,255)",  ease:  $.bez(standardCurve)});
                 TweenLite.to(".header__logo", 0.42, {opacity:'1',delay:0.12, ease:  $.bez(standardCurve)});
                 TweenLite.to(".header__logo--white", 0.42, {opacity:'0',delay:0.12, ease:  $.bez(standardCurve), onComplete:headerWhite});
               }});
@@ -91,6 +70,17 @@ $(function(){
     var header_height = $(".header__nav").height();
     $(".header__wrap").css({"height":header_height+"px"});
   }
+  $( window ).resize(function() {
+    if ($(window).width() <1025) {
+      $(".header").removeAttr('style');
+      $(".header__logo--white").removeAttr('style');
+      $(".header__logo").removeAttr('style');
+      $(".header__wrap").removeAttr('style');
+    } else {
+      var header_height = $(".header__nav").height();
+      $(".header__wrap").css({"height":header_height+"px"});
+    }
+  });
 });
 function headerBlack(){
   header = 'black';
