@@ -1283,6 +1283,19 @@ h1 {
         padding-bottom: 5%;
         margin-top: 10%;
         margin-bottom: 8%; } }
+  .b-service--insights .b-service__svg, .b-service--insights .b-service__svg--small {
+    position: absolute;
+    width: 75.7%;
+    top: 1.1%;
+    left: 15.8%;
+    -webkit-animation: rotate 10s infinite; }
+    .b-service--insights .b-service__svg svg, .b-service--insights .b-service__svg--small svg {
+      width: 100%; }
+  .b-service--insights .b-service__svg--small {
+    width: 33.3%;
+    top: 29%;
+    left: 0.7%;
+    top: 37.7%; }
   @media (max-width: 450px) {
     .b-service--insights .b-service__img {
       display: none; } }
@@ -1446,6 +1459,12 @@ h1 {
         width: 13%;
         margin-top: 6%;
         margin-bottom: 11%; } }
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg); } }
 
 .b-content-sticker {
   width: 200px;

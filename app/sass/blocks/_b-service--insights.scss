@@ -18,6 +18,23 @@
       margin-bottom: 8%;
     }
   }
+  .b-service__svg {
+    position: absolute;
+    width: 75.7%;
+    top: 1.1%;
+    left: 15.8%;
+    svg {
+      width: 100%;
+    }
+    -webkit-animation: rotate 10s infinite;
+  }
+  .b-service__svg--small {
+    @extend .b-service__svg;
+    width: 33.3%;
+    top: 29%;
+    left: 0.7%;
+    top: 37.7%;
+  }
   .b-service__img {
     @include breakpoint(mobile) {
       display: none;
@@ -203,4 +220,8 @@
       margin-bottom: 11%;
     }
   }
+}
+@-webkit-keyframes rotate {
+  0% {-webkit-transform: rotate(0deg);}
+  100% {-webkit-transform: rotate(360deg);}
 }
