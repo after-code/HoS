@@ -967,13 +967,34 @@ h1 {
 .b-service--consultancy {
   margin-bottom: 4.4%;
   background: #fcee2f;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
   .b-service--consultancy .b-service__media {
     float: left;
     width: 52%; }
     .b-service--consultancy .b-service__media img {
       width: 114%;
       display: block; }
+    .b-service--consultancy .b-service__media .b-service__svg, .b-service--consultancy .b-service__media .b-service--insights .b-service__svg--small, .b-service--insights .b-service--consultancy .b-service__media .b-service__svg--small {
+      position: absolute;
+      left: 24%;
+      width: 9%;
+      top: 3%;
+      -webkit-animation: smoke 1.5s infinite;
+      -webkit-animation-timing-function: cubic-bezier(0.4, 0, 1, 1); }
+      .b-service--consultancy .b-service__media .b-service__svg svg, .b-service--consultancy .b-service__media .b-service--insights .b-service__svg--small svg, .b-service--insights .b-service--consultancy .b-service__media .b-service__svg--small svg {
+        width: 100%; }
+      .b-service--consultancy .b-service__media .b-service__svg--second {
+        top: 3%;
+        -webkit-animation-delay: 0.5s; }
+      .b-service--consultancy .b-service__media .b-service__svg--third {
+        top: 3%;
+        -webkit-animation-delay: 1s; }
+      .b-service--consultancy .b-service__media .b-service__svg--cup {
+        top: 38.8%;
+        width: 10.4%;
+        left: 23.5%;
+        -webkit-animation: cup 1s infinite; }
     @media (max-width: 1025px) {
       .b-service--consultancy .b-service__media {
         width: 48%; }
@@ -1094,6 +1115,32 @@ h1 {
     .b-service--consultancy .b-button:hover {
       background: #222;
       color: white; }
+
+@-webkit-keyframes smoke {
+  0% {
+    opacity: 0; }
+  27% {
+    opacity: 0; }
+  33% {
+    opacity: 1; }
+  60% {
+    opacity: 1; }
+  66% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@-webkit-keyframes cup {
+  0% {
+    opacity: 0; }
+  40% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  90% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
 
 .b-service--training {
   background-color: #03c4c4;
