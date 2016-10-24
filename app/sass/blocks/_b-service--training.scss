@@ -1,8 +1,8 @@
 .b-service--training {
-  background-color: #03c4c4;
-  background-image: url(../../assets/img/bck.jpg);
+  background-image: url(../../assets/img/background-turquoise-2.jpg);
   text-align: center;
-
+  background-repeat: no-repeat;
+  background-size: 100%;
   margin-bottom: 4.4%;
   width: 100%;
   .b-service__logo {
@@ -21,9 +21,9 @@
     }
   }
   .b-service__top {
-    height: 50%;
-    background: #F8F8F8;
+    height: 61%;
     padding-top: 4.4%;
+    padding-bottom: 4%;
   }
   .b-service__top__text {
     text-align: left;
@@ -50,8 +50,11 @@
   .b-service__division {
     width: 100%;
     padding: 0 8.2%;
-    padding-top: 4.1%;
+    padding-top: 1.4%;
     padding-bottom: 4.5%;
+    @include breakpoint(typoMax){
+        padding-top: 4.1%;
+    }
     @include breakpoint(tablet) {
       padding: 0 1.2%;
       padding-top: 7.1%;
@@ -175,8 +178,12 @@
       margin-bottom: 17%;
     }
   }
+  @include breakpoint(tablet){
+    background-size: 125%;
+  }
   @include breakpoint(mobile) {
     overflow: hidden;
     background-image: none;
+    background: $cyan;
   }
 }

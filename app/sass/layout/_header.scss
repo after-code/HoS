@@ -192,6 +192,10 @@
       }
     }
   }
+  @include breakpoint(mobile){
+    font-size: cvp(20px,330px);
+    line-height: cvp(33px,330px);
+  }
 }
 .header-social {
   float: left;
@@ -201,7 +205,6 @@
   padding-bottom: 4.9%;
   display: none;
   width: 100%;
-  // opacity: 0.5;
   .social__heading {
     top: 0;
     padding-top: 6%;
@@ -225,5 +228,9 @@
     &:first-child {
       margin-top: 3.6%;
     }
+  }
+  @include breakpoint(mobile){
+    font-size: cvp(20px,330px);
+    line-height: cvp(33px,330px);
   }
 }

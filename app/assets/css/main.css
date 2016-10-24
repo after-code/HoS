@@ -301,6 +301,10 @@ h1 {
         left: 0%;
         width: 100%;
         display: none; } }
+  @media (max-width: 450px) {
+    .header__link, .header__link--mobile-heading {
+      font-size: 6.06061vw;
+      line-height: 10vw; } }
 
 .header-social {
   float: left;
@@ -331,6 +335,10 @@ h1 {
       border-bottom: 1px solid #363333; }
       .header__link--mobile-heading:first-child {
         margin-top: 3.6%; } }
+  @media (max-width: 450px) {
+    .header__link--mobile-heading {
+      font-size: 6.06061vw;
+      line-height: 10vw; } }
 
 .wrapper, .wrapper--big {
   max-width: 1850px;
@@ -459,11 +467,11 @@ h1 {
 .social__heading {
   position: relative;
   top: -30px;
-  font-size: 17px;
+  font-size: 20px;
   color: #9b9b9b; }
   @media (max-width: 2050px) {
     .social__heading {
-      font-size: 0.82927vw; } }
+      font-size: 0.97561vw; } }
   @media (max-width: 1605px) {
     .social__heading {
       font-size: 1.07317vw; } }
@@ -536,11 +544,11 @@ h1 {
 
 .footer__nav__link {
   margin-bottom: 15px;
-  font-size: 15px;
+  font-size: 20px;
   color: white; }
   .footer__nav__link:first-child {
     color: #9b9b9b;
-    font-size: 17px;
+    font-size: 20px;
     margin-bottom: 30px; }
     @media (max-width: 2050px) {
       .footer__nav__link:first-child {
@@ -568,7 +576,7 @@ h1 {
           width: 18px; } }
   @media (max-width: 2050px) {
     .footer__nav__link {
-      font-size: 0.73171vw; } }
+      font-size: 0.97561vw; } }
   @media (max-width: 1605px) {
     .footer__nav__link {
       font-size: 0.97561vw; } }
@@ -976,6 +984,7 @@ h1 {
       width: 114%;
       display: block; }
     .b-service--consultancy .b-service__media .b-service__svg, .b-service--consultancy .b-service__media .b-service--insights .b-service__svg--small, .b-service--insights .b-service--consultancy .b-service__media .b-service__svg--small {
+      display: none;
       position: absolute;
       left: 24%;
       width: 9%;
@@ -1116,36 +1125,11 @@ h1 {
       background: #222;
       color: white; }
 
-@-webkit-keyframes smoke {
-  0% {
-    opacity: 0; }
-  27% {
-    opacity: 0; }
-  33% {
-    opacity: 1; }
-  60% {
-    opacity: 1; }
-  66% {
-    opacity: 0; }
-  100% {
-    opacity: 0; } }
-
-@-webkit-keyframes cup {
-  0% {
-    opacity: 0; }
-  40% {
-    opacity: 0; }
-  50% {
-    opacity: 1; }
-  90% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-
 .b-service--training {
-  background-color: #03c4c4;
-  background-image: url(../../assets/img/bck.jpg);
+  background-image: url(../../assets/img/background-turquoise-2.jpg);
   text-align: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
   margin-bottom: 4.4%;
   width: 100%; }
   .b-service--training .b-service__logo {
@@ -1163,9 +1147,9 @@ h1 {
         margin-bottom: 11%;
         width: 86%; } }
   .b-service--training .b-service__top {
-    height: 50%;
-    background: #F8F8F8;
-    padding-top: 4.4%; }
+    height: 61%;
+    padding-top: 4.4%;
+    padding-bottom: 4%; }
   .b-service--training .b-service__top__text {
     text-align: left;
     padding: 0 17%;
@@ -1190,8 +1174,11 @@ h1 {
   .b-service--training .b-service__division {
     width: 100%;
     padding: 0 8.2%;
-    padding-top: 4.1%;
+    padding-top: 1.4%;
     padding-bottom: 4.5%; }
+    @media (max-width: 2050px) {
+      .b-service--training .b-service__division {
+        padding-top: 4.1%; } }
     @media (max-width: 1025px) {
       .b-service--training .b-service__division {
         padding: 0 1.2%;
@@ -1308,10 +1295,14 @@ h1 {
         margin: 0 auto;
         margin-top: 15%;
         margin-bottom: 17%; } }
+  @media (max-width: 1025px) {
+    .b-service--training {
+      background-size: 125%; } }
   @media (max-width: 450px) {
     .b-service--training {
       overflow: hidden;
-      background-image: none; } }
+      background-image: none;
+      background: #2abec0; } }
 
 .b-service--insights {
   overflow: hidden;

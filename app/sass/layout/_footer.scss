@@ -49,10 +49,10 @@
 .social__heading {
   position: relative;
   top: -30px;
-  font-size: 17px;
+  font-size: 20px;
   color: $footer-gray;
   @include breakpoint(typoMax){
-    font-size: cvp(17px, 2050px);
+    font-size: cvp(20px, 2050px);
   }
   @include breakpoint(laptop) {
     font-size: cvp(22px, 2050px);
@@ -132,11 +132,11 @@
 }
 .footer__nav__link {
   margin-bottom: 15px;
-  font-size: 15px;
+  font-size: 20px;
   color: white;
   &:first-child {
     color: $footer-gray;
-    font-size: 17px;
+    font-size: 20px;
     margin-bottom: 30px;
     @include breakpoint(typoMax){
       font-size: cvp(17px,2050px);
@@ -166,7 +166,7 @@
     }
   }
   @include breakpoint(typoMax){
-    font-size: cvp(15px,2050px);
+    font-size: cvp(20px,2050px);
   }
   @include breakpoint(laptop) {
       font-size: cvp(20px, 2050px);
