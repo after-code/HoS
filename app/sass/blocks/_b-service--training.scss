@@ -169,7 +169,7 @@
     }
     @include breakpoint(mobile) {
       display: block;
-      font-size: 15px;
+      font-size: cvp(15px,330px);
       padding: 5.6% 6%;
       width: 82%;
       text-align: center;

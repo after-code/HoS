@@ -42,6 +42,7 @@
   }
   .b-service__img--mobile {
     display: none;
+
     @include breakpoint(mobile) {
       display: block;
     }
@@ -62,6 +63,7 @@
       img {
         width: 154%;
         margin-top: 7%;
+        margin-left:0;
       }
     }
   }

@@ -1,5 +1,4 @@
 .header__wrap {
-  // height: 97px;
   @include breakpoint(tablet){
     height: 158px;
   }
@@ -10,9 +9,7 @@
 .header {
   width: 100%;
   z-index: 999;
-  // height: 97px;
   position: relative;
-  // background: #000;
   .wrapper {
     height: 100%;
     &:after {
@@ -22,41 +19,18 @@
     }
   }
   @include breakpoint(tablet) {
-    background: white;
-    height: 100%;
     @include transition(all 400ms);
+    background: transparent;
+    height: 200px;
+    padding:2% 0;
     &:after {
       content: "";
       display: table;
       clear: both;
     }
-    padding:2% 0;
-    &.active {
-      z-index: 2;
-      background: #222;
-      .header__logo {
-        opacity: 0;
-      }
-      .header__logo--white {
-        opacity: 1;
-      }
-      .header__nav {
-        background: #222;
-      }
-      .header__links {
-        opacity: 1;
-      }
-      .nav-icon {
-        background:url(../../assets/img/close-nav.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 56%;
-      }
-    }
   }
   @include breakpoint(mobile) {
     height:100px;
-
   }
 }
 .nav-icon {
@@ -66,6 +40,7 @@
   background:url(../../assets/img/menu-ico.svg);
   background-repeat: no-repeat;
   background-position: center;
+  @include transition(margin 300ms);
   @include breakpoint(tablet){
     display: block;
     position: absolute;
@@ -128,31 +103,25 @@
   }
 }
 .header__nav {
-  transition: background 400ms, max-height 500ms;
+  transition: opacity 400ms, padding 400ms;
   overflow: hidden;
   @include breakpoint(tablet){
     max-height: 0;
     position: absolute;
-    top:100%;
+    top:61%;
     width: 100%;
     background: #fff;
     left:0;
+    opacity: 0;
   }
-}
-.active .header__nav {
   @include breakpoint(tablet){
-    max-height: 1125px;
-  }
-  @include breakpoint(mobile){
-    max-height: 750px;
-  }
+    top:86%;
+   }
 }
 .header__link {
   display:inline-block;
   margin:0 20px;
   font-size: 20px;
-  // height: 30px;
-  // line-height: 30px;
   cursor:pointer;
   position:relative;
   &:after {
@@ -197,6 +166,25 @@
     line-height: cvp(33px,330px);
   }
 }
+.header__link--mobile-heading {
+  display: none;
+  @extend .header__link;
+  @include breakpoint(tablet){
+    margin-bottom: 4%;
+    display: block;
+    font-size: cvp(26px,763px);
+    color:#9b9b9b;
+    margin-top: 6%;
+    border-bottom:1px solid #363333;
+    &:first-child {
+      margin-top: 3.6%;
+    }
+  }
+  @include breakpoint(mobile){
+    font-size: cvp(20px,330px);
+    line-height: cvp(33px,330px);
+  }
+}
 .header-social {
   float: left;
   background: #1a1a1a;
@@ -215,22 +203,74 @@
     display:block;
   }
 }
-.header__link--mobile-heading {
-  display: none;
-  @extend .header__link;
+//-- NAV ANIMATION
+
+.header__wrap {
   @include breakpoint(tablet){
-    margin-bottom: 4%;
-    display: block;
-    font-size: cvp(26px,763px);
-    color:#9b9b9b;
-    margin-top: 6%;
-    border-bottom:1px solid #363333;
-    &:first-child {
-      margin-top: 3.6%;
+    &.opened {
+      height: 1000px;
+      position: fixed;
+      top:0;
+      left:0;
+      width: 100%;
+      z-index: 110;
+      height: 100%;
+      overflow-y: scroll;
+      background: #222;
     }
   }
   @include breakpoint(mobile){
-    font-size: cvp(20px,330px);
-    line-height: cvp(33px,330px);
+    &.opened {
+      height: 1000px;
+      position: fixed;
+      top:0;
+      left:0;
+      width: 100%;
+      z-index: 110;
+      height: 100%;
+      overflow-y: scroll;
+    }
+  }
+}
+.active {
+  @include breakpoint(tablet) {
+    z-index: 2;
+    background: transparent;
+    .header__logo {
+      opacity: 0;
+      top:10%;
+    }
+    .header__logo--white {
+      opacity: 1;
+      top: 10%;
+    }
+    .header__nav {
+      background: transparent;
+      opacity: 1;
+      max-height: 1125px;
+      padding-top:3%;
+    }
+    .header__links {
+      opacity: 1;
+    }
+    .nav-icon {
+      background:url(../../assets/img/close-nav.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 56%;
+      margin-top:3%;
+    }
+  }
+  @include breakpoint(mobile) {
+    .nav-icon {
+      background:url(../../assets/img/close-nav.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: auto;
+    }
+    .header__nav {
+      max-height: 750px;
+      padding-top:3%;
+    }
   }
 }

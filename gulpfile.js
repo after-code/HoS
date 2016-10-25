@@ -8,6 +8,7 @@ var gulp = require("gulp"),
     sass = require("gulp-sass"),
     plumber = require("gulp-plumber"),
     browserSync = require("browser-sync"),
+    concat = require("gulp-concat"),
     reload = browserSync.reload;
 
 // /////////////////////////////////////////////////
@@ -15,7 +16,18 @@ var gulp = require("gulp"),
 // /////////////////////////////////////////////////
 
 gulp.task("scripts",function(){
-    gulp.src(["app/assets/js/**/*.js", '!app/assets/js/**/*.min.js'])
+    gulp.src([
+      "app/bower_components/jquery/dist/jquery.min.js",
+      "app/bower_components/jquery-bez/jquery.bez.min.js",
+      "app/bower_components/gsap/src/minified/TweenMax.min.js",
+      "app/bower_components/scrollmagic/scrollmagic/minified/ScrollMagic.min.js",
+      "app/bower_components/scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js",
+      "app/bower_components/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js",
+      "app/bower_components/viewport-units-buggyfill/viewport-units-buggyfill.js",
+      "app/bower_components/viewport-units-buggyfill/viewport-units-buggyfill.hacks.js",
+      "app/js/**/*.js", '!app/js/**/*.min.js',
+    ])
+    .pipe(concat('main.js'))
     .pipe(rename({suffix:'.min'}))
     .pipe(uglify())
     .pipe(gulp.dest('app/assets/js'))

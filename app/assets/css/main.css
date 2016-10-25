@@ -135,34 +135,18 @@ h1 {
       clear: both; }
   @media (max-width: 1025px) {
     .header {
-      background: white;
-      height: 100%;
       -moz-transition: all 400ms;
       -o-transition: all 400ms;
       -ms-transition: all 400ms;
       -webkit-transition: all 400ms;
       transition: all 400ms;
+      background: transparent;
+      height: 200px;
       padding: 2% 0; }
       .header:after {
         content: "";
         display: table;
-        clear: both; }
-      .header.active {
-        z-index: 2;
-        background: #222; }
-        .header.active .header__logo, .header.active .header__logo--white {
-          opacity: 0; }
-        .header.active .header__logo--white {
-          opacity: 1; }
-        .header.active .header__nav {
-          background: #222; }
-        .header.active .header__links {
-          opacity: 1; }
-        .header.active .nav-icon {
-          background: url(../../assets/img/close-nav.svg);
-          background-repeat: no-repeat;
-          background-position: center;
-          background-size: 56%; } }
+        clear: both; } }
   @media (max-width: 450px) {
     .header {
       height: 100px; } }
@@ -173,7 +157,12 @@ h1 {
   height: 40px;
   background: url(../../assets/img/menu-ico.svg);
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+  -moz-transition: margin 300ms;
+  -o-transition: margin 300ms;
+  -ms-transition: margin 300ms;
+  -webkit-transition: margin 300ms;
+  transition: margin 300ms; }
   @media (max-width: 1025px) {
     .nav-icon {
       display: block;
@@ -242,24 +231,20 @@ h1 {
       overflow: hidden; } }
 
 .header__nav {
-  transition: background 400ms, max-height 500ms;
+  transition: opacity 400ms, padding 400ms;
   overflow: hidden; }
   @media (max-width: 1025px) {
     .header__nav {
       max-height: 0;
       position: absolute;
-      top: 100%;
+      top: 61%;
       width: 100%;
       background: #fff;
-      left: 0; } }
-
-@media (max-width: 1025px) {
-  .active .header__nav {
-    max-height: 1125px; } }
-
-@media (max-width: 450px) {
-  .active .header__nav {
-    max-height: 750px; } }
+      left: 0;
+      opacity: 0; } }
+  @media (max-width: 1025px) {
+    .header__nav {
+      top: 86%; } }
 
 .header__link, .header__link--mobile-heading {
   display: inline-block;
@@ -306,6 +291,23 @@ h1 {
       font-size: 6.06061vw;
       line-height: 10vw; } }
 
+.header__link--mobile-heading {
+  display: none; }
+  @media (max-width: 1025px) {
+    .header__link--mobile-heading {
+      margin-bottom: 4%;
+      display: block;
+      font-size: 3.4076vw;
+      color: #9b9b9b;
+      margin-top: 6%;
+      border-bottom: 1px solid #363333; }
+      .header__link--mobile-heading:first-child {
+        margin-top: 3.6%; } }
+  @media (max-width: 450px) {
+    .header__link--mobile-heading {
+      font-size: 6.06061vw;
+      line-height: 10vw; } }
+
 .header-social {
   float: left;
   background: #1a1a1a;
@@ -323,22 +325,69 @@ h1 {
     .header-social {
       display: block; } }
 
-.header__link--mobile-heading {
-  display: none; }
-  @media (max-width: 1025px) {
-    .header__link--mobile-heading {
-      margin-bottom: 4%;
-      display: block;
-      font-size: 3.4076vw;
-      color: #9b9b9b;
-      margin-top: 6%;
-      border-bottom: 1px solid #363333; }
-      .header__link--mobile-heading:first-child {
-        margin-top: 3.6%; } }
-  @media (max-width: 450px) {
-    .header__link--mobile-heading {
-      font-size: 6.06061vw;
-      line-height: 10vw; } }
+@media (max-width: 1025px) {
+  .header__wrap.opened {
+    height: 1000px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 110;
+    height: 100%;
+    overflow-y: scroll;
+    background: #222; } }
+
+@media (max-width: 450px) {
+  .header__wrap.opened {
+    height: 1000px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 110;
+    height: 100%;
+    overflow-y: scroll; } }
+
+@media (max-width: 1025px) {
+  .active {
+    z-index: 2;
+    background: transparent; }
+    .active .header__logo, .active .header__logo--white {
+      opacity: 0;
+      top: 10%; }
+    .active .header__logo--white {
+      opacity: 1;
+      top: 10%; }
+    .active .header__nav {
+      background: transparent;
+      opacity: 1;
+      max-height: 1125px;
+      padding-top: 3%; }
+    .active .header__links {
+      opacity: 1; }
+    .active .nav-icon {
+      background: url(../../assets/img/close-nav.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 56%;
+      margin-top: 3%; } }
+
+@media (max-width: 450px) {
+  .active .nav-icon {
+    background: url(../../assets/img/close-nav.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto; }
+  .active .header__nav {
+    max-height: 750px;
+    padding-top: 3%; } }
+
+html.opened {
+  overflow: hidden;
+  height: 100%; }
+  html.opened body {
+    height: 100%;
+    overflow: auto; }
 
 .wrapper, .wrapper--big {
   max-width: 1850px;
@@ -1114,13 +1163,14 @@ h1 {
     border: 3px solid #222;
     padding: 3.2% 11%;
     margin-left: 6%; }
-    @media (max-width: 450px) {
-      .b-service--consultancy .b-button {
-        margin-left: auto; } }
     @media (max-width: 1025px) {
       .b-service--consultancy .b-button {
         font-size: 1.95312vw;
         padding: 4% 13%; } }
+    @media (max-width: 450px) {
+      .b-service--consultancy .b-button {
+        margin-left: auto;
+        font-size: 4.54545vw; } }
     .b-service--consultancy .b-button:hover {
       background: #222;
       color: white; }
@@ -1288,7 +1338,7 @@ h1 {
     @media (max-width: 450px) {
       .b-service--training .b-service__button {
         display: block;
-        font-size: 15px;
+        font-size: 4.54545vw;
         padding: 5.6% 6%;
         width: 82%;
         text-align: center;
@@ -1357,7 +1407,8 @@ h1 {
         padding-right: 5.9%; }
         .b-service--insights .b-service__media img {
           width: 154%;
-          margin-top: 7%; } }
+          margin-top: 7%;
+          margin-left: 0; } }
   .b-service--insights .b-service__media__pre-heading {
     font-size: 35px;
     color: #fcee2f; }
@@ -2146,12 +2197,18 @@ h1 {
 .page-homepage .wrapper--big {
   margin-bottom: 2%; }
   @media (max-width: 1025px) {
+    .page-homepage .wrapper--big.opened {
+      margin-top: 158px; } }
+  @media (max-width: 450px) {
+    .page-homepage .wrapper--big.opened {
+      margin-top: 100px; } }
+  @media (max-width: 1025px) {
     .page-homepage .wrapper--big {
       padding-top: 15%; } }
   @media (max-width: 450px) {
     .page-homepage .wrapper--big {
-      padding-top: 8%;
-      margin-bottom: 5%; } }
+      margin-bottom: 5%;
+      padding-top: 22%; } }
 
 .page-container {
   max-width: 1000px;

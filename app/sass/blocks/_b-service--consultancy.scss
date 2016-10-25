@@ -164,12 +164,13 @@
     border: 3px solid #222;
     padding: 3.2% 11%;
     margin-left: 6%;
-    @include breakpoint(mobile){
-      margin-left: auto;
-    }
     @include breakpoint(tablet) {
       font-size: cvp(15px, 768px);
       padding: 4% 13%;
+    }
+    @include breakpoint(mobile){
+      margin-left: auto;
+      font-size: cvp(15px,330px);
     }
     &:hover {
       background: #222;

@@ -1,3 +1,17 @@
+html {
+  &.opened {
+    overflow: hidden;
+    height: 100%;
+    body {
+      height: 100%;
+      overflow: auto;
+    }
+    // .header {
+    //   display: none;
+    // }
+  }
+
+}
 .wrapper {
   max-width: 1850px;
   width: 100%;
