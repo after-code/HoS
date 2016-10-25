@@ -89,10 +89,42 @@ $(function(){
   });
 });
 function headerBlack(){
-header = 'black';
+  header = 'black';
 console.log('header changed to '+header);
 }
 function headerWhite(){
-header = 'white';
+  header = 'white';
 console.log('header changed to '+header);
+}
+
+
+
+/// Widget animations
+var widget_active = false,
+    $widget,
+    $widget_left,
+    $widget_right,
+    $widget_main_img,
+    $widget_chat_img,
+    $widget_text_img;
+$(function(){
+
+
+  $widget = ".w-sidebar-widget",
+  $widget_left = ".w-sidebar-widget__left",
+  $widget_right = ".w-sidebar-widget__right",
+  $widget_main_img = ".w-sidebar-widget__main-img",
+  $widget_chat_img = ".w-sidebar-widget__chat-img",
+  $widget_text_img = ".w-sidebar-widget__text-img";
+});
+
+function toggleWidget(speed){
+  if (!widget_active){
+    TweenLite.to($widget_chat_img, 0.300, {opacity:"0"});
+    TweenLite.to($widget_text_img, 0.300, {opacity:"0", onComplete:function(){
+        TweenLite.to($widget, 0.300, {width:"300px", "margin-top":'30px', height:"70px"});
+        TweenLite.to($widget_right, 0.300, {opacity:'1'});
+        TweenLite.to($widget_main_img, 0.300, {"margin-top":'-15px'});
+    }});
+  }
 }
