@@ -117,14 +117,13 @@ $(function(){
   $widget_chat_img = ".w-sidebar-widget__chat-img",
   $widget_text_img = ".w-sidebar-widget__text-img";
 });
-
+var t1 = new TimelineLite();
 function toggleWidget(speed){
   if (!widget_active){
-    TweenLite.to($widget_chat_img, 0.300, {opacity:"0"});
-    TweenLite.to($widget_text_img, 0.300, {opacity:"0", onComplete:function(){
-        TweenLite.to($widget, 0.300, {width:"300px", "margin-top":'30px', height:"70px"});
-        TweenLite.to($widget_right, 0.300, {opacity:'1'});
-        TweenLite.to($widget_main_img, 0.300, {"margin-top":'-15px'});
-    }});
+    t1.from($widget_chat_img, 0.3, {opacity:"0"});
+    t1.from($widget_text_img, 0.3, {opacity:"0"}, "-=0.3");
+          t1.from($widget, 0.3, {width:"300px", "margin-top":'30px', height:"70px"}, "-=0.6");
+          t1.from($widget_right, 0.3, {opacity:'1'}, "-=0.6");
+          t1.from($widget_main_img, 0.3, {"margin-top":'-15px'}, "-=0.6");
   }
 }
