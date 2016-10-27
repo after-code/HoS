@@ -2215,14 +2215,23 @@ html.opened {
   right: 0;
   height: 255px;
   z-index: 32999;
-  top: 40%; }
+  overflow: hidden;
+  top: 40%;
+  background: rgba(255, 255, 255, 0);
+  height: 120px; }
   .w-sidebar-widget__left {
     float: left;
     position: relative; }
   .w-sidebar-widget__right {
     float: left;
     opacity: 0;
+    padding-top: 13px;
     margin-left: 30px; }
+  .w-sidebar-widget__text {
+    font-size: 22px;
+    opacity: 0; }
+    .w-sidebar-widget__text--small {
+      font-size: 22px; }
   .w-sidebar-widget__text-img {
     position: absolute;
     left: 0;
@@ -2236,3 +2245,5 @@ html.opened {
     float: right;
     right: 0;
     top: 50%; }
+  .w-sidebar-widget__main-img {
+    position: relative; }

@@ -3,7 +3,10 @@
   right:0;
   height: 255px;
   z-index: 32999;
+  overflow: hidden;
   top:40%;
+  background: rgba(255,255,255,0);
+  height: 120px;
   &__left {
     float: left;
     position: relative;
@@ -11,7 +14,15 @@
   &__right {
     float: left;
     opacity: 0;
+    padding-top: 13px;
     margin-left:30px;
+  }
+  &__text {
+    font-size: 22px;
+    opacity: 0;
+    &--small {
+      font-size: 22px;
+    }
   }
   &__text-img {
     position: absolute;
@@ -28,6 +39,9 @@
     float: right;
     right:0;
     top:50%;
+  }
+  &__main-img {
+    position: relative;
   }
 }
 // animations
