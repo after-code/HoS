@@ -2212,21 +2212,54 @@ html.opened {
 
 .w-sidebar-widget {
   position: fixed;
+  cursor: pointer;
   right: 0;
   height: 255px;
   z-index: 32999;
+  width: 350px;
   overflow: hidden;
   top: 40%;
-  background: rgba(255, 255, 255, 0);
+  right: -220px;
   height: 120px; }
   .w-sidebar-widget__left {
     float: left;
-    position: relative; }
+    position: relative;
+    width: 33%;
+    height: 100%; }
+    .w-sidebar-widget__left > .after-wrap {
+      top: 25%;
+      height: 50%;
+      position: absolute;
+      width: 250%;
+      overflow: hidden; }
+    .w-sidebar-widget__left .after {
+      width: 70%;
+      height: 100%;
+      position: relative;
+      background: #2abec0;
+      left: -106%;
+      top: 0;
+      z-index: -1;
+      transform: skew(18deg); }
+      .w-sidebar-widget__left .after--white {
+        background: white;
+        z-index: -2;
+        width: 100%;
+        top: -100%;
+        left: -176%;
+        transform: skew(0deg); }
   .w-sidebar-widget__right {
     float: left;
     opacity: 0;
-    padding-top: 13px;
-    margin-left: 30px; }
+    margin-left: 30px;
+    height: 100%;
+    padding-top: 10.8%; }
+  .w-sidebar-widget__main-img-wrap {
+    width: 100%;
+    height: 80%;
+    top: 10%;
+    position: relative;
+    overflow: hidden; }
   .w-sidebar-widget__text {
     font-size: 22px;
     opacity: 0; }
@@ -2235,7 +2268,7 @@ html.opened {
   .w-sidebar-widget__text-img {
     position: absolute;
     left: 0;
-    bottom: -14%; }
+    bottom: 0%; }
   .w-sidebar-widget__chat-img {
     position: absolute;
     right: 0;
@@ -2243,7 +2276,14 @@ html.opened {
   .w-sidebar-widget__button {
     position: absolute;
     float: right;
-    right: 0;
-    top: 50%; }
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%); }
   .w-sidebar-widget__main-img {
-    position: relative; }
+    position: absolute;
+    margin-left: 5%;
+    top: 50%;
+    transform: translateY(-50%); }

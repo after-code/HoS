@@ -1,21 +1,63 @@
+
 .w-sidebar-widget {
   position: fixed;
+  // background: red;
+  cursor: pointer;
+  // padding-left:20px;
   right:0;
   height: 255px;
   z-index: 32999;
+  width: 350px;
   overflow: hidden;
   top:40%;
-  background: rgba(255,255,255,0);
+  right:-220px;
+  // background: rgba(255,255,255,0);
   height: 120px;
   &__left {
     float: left;
     position: relative;
+    width: 33%;
+    height: 100%;
+    & > .after-wrap {
+      top: 25%;
+      height: 50%;
+      position: absolute;
+      width: 250%;
+      overflow: hidden;
+    }
+    .after {
+      width: 70%;
+      height: 100%;
+      position: relative;
+      background: $cyan;
+      left:-106%;
+      top:0;
+      z-index: -1;
+      transform:skew(18deg);
+      &--white {
+        background: white;
+        z-index: -2;
+        width: 100%;
+        top:-100%;
+          left:-176%;
+        transform:skew(0deg);
+        // width: 150%;
+      }
+    }
   }
   &__right {
     float: left;
     opacity: 0;
-    padding-top: 13px;
     margin-left:30px;
+    height: 100%;
+    padding-top: 10.8%;
+  }
+  &__main-img-wrap {
+    width: 100%;
+    height: 80%;
+    top:10%;
+    position: relative;
+    overflow: hidden;
   }
   &__text {
     font-size: 22px;
@@ -27,7 +69,7 @@
   &__text-img {
     position: absolute;
     left:0;
-    bottom:-14%;
+    bottom:0%;
   }
   &__chat-img {
     position:absolute;
@@ -37,11 +79,19 @@
   &__button {
     position: absolute;
     float: right;
-    right:0;
+    right:20px;
     top:50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
   }
   &__main-img {
-    position: relative;
+    position: absolute;
+    margin-left:5%;
+    top:50%;
+    transform:translateY(-50%);
+
   }
 }
 // animations
