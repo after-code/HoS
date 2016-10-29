@@ -7,10 +7,10 @@
   right:0;
   height: 255px;
   z-index: 32999;
-  width: 350px;
+  width: 310px;
   overflow: hidden;
-  top:40%;
-  right:-220px;
+  top:85%;
+  right:-180px;
   // background: rgba(255,255,255,0);
   height: 120px;
   &__left {
@@ -22,8 +22,9 @@
       top: 25%;
       height: 50%;
       position: absolute;
-      width: 250%;
+      width: 320%;
       overflow: hidden;
+    
     }
     .after {
       width: 70%;
@@ -91,7 +92,8 @@
     margin-left:5%;
     top:50%;
     transform:translateY(-50%);
-
+    width: 75%;
+    z-index: 8888;
   }
 }
 // animations

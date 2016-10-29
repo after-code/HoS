@@ -19,7 +19,7 @@ var i2 = 0;
 var scene = new ScrollMagic.Scene()
 .addTo(controller)
 .on("update", function() {
-  if($(window).width() > 1025){
+  if($(window).width() > 1025 && $("body").hasClass("page-homepage")){
     var x1 = controller.info("scrollDirection"),
         x2 = $(window).scrollTop(),
         x3 = 1600;
@@ -134,7 +134,7 @@ $(function(){
   tl.to($widget_text, 0.2, {opacity:1}, 'start+=0.2');
   tl.to($widget_text_small, 0.2, {opacity:1}, "start+=0.2");
   tl.to($widget_right, 0.2, {opacity:1}, "scale");
-  // tl.to($widget_main_img_wrap, 0.1, {height:"50%", top:"25%"}, "scale-=0.2") ovo mozda
+  tl.to($widget_main_img_wrap, 0.1, {height:"50%", top:"25%"}, "scale-=0.2");
   $(".w-sidebar-widget").mouseenter(function(){
     console.log('over');
     timeout = setTimeout(showWidget, 200);
@@ -146,7 +146,13 @@ $(function(){
       hideWidget();
     },100);
   });
-
+  $(".w-popup-email__wrap").on('click', function(e) {
+  if (e.target !== this)
+    return;
+  hidePopup();
+});
+  $(".w-popup-email__close-ico").click(hidePopup);
+  $(".w-sidebar-widget").click(showPopup);
 });
 function toggleWidget(speed){
   console.log('toggleing');
@@ -170,4 +176,10 @@ function hideWidget(){
     tl.reverse();
     widget_active = false;
   }
+}
+function showPopup() {
+  $(".w-popup-email__wrap").show();
+}
+function hidePopup() {
+  $(".w-popup-email__wrap").hide();
 }
