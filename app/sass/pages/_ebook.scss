@@ -2,4 +2,12 @@
   .wrapper {
     margin-top:24%;
   }
+  .wrapper--small {
+    margin-top: 30%;
+    margin-bottom: 30%;
+    @include breakpoint(tablet) {
+      margin-top: 37%;
+      margin-bottom: 33%;
+    }
+  }
 }

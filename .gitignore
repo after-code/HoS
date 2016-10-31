@@ -28,3 +28,4 @@ bower_components/
 *.css.map
 build/
 dist/
+app/assets/download

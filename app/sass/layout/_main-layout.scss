@@ -37,6 +37,10 @@ html {
   @extend .wrapper;
   // max-width: 1600px;
   padding: 0px 16%;
+  overflow: hidden;
+  @include breakpoint(mobile) {
+    padding:0 3%;
+  }
 }
 .section {
   width: 100%;
@@ -121,7 +125,11 @@ html {
       font-weight: 100;
     }
   }
-  @include breakpoint(mobile){
+  @include breakpoint(tablet){
+    margin-top:158px;
+  }
+  @include breakpoint(mobile) {
+    margin-top: 25%;
   }
 }
 body {
