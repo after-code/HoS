@@ -24,7 +24,7 @@
     font-size: 36px;
     line-height: 42px;
     font-weight: bold;
-    margin-bottom: 15%;
+    margin-bottom: 10%;
     @include breakpoint(typoMax){
       font-size:cvp(36px, 2050px);
       line-height:cvp(42px,2050px);
@@ -69,6 +69,7 @@
   position: absolute;
   bottom:0;
   display: block;
+  color:white;
   @include breakpoint(mobile) {
     position: relative;
     display: inline-block;

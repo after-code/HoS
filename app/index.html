@@ -44,12 +44,12 @@
         <div class="w-popup-email__close-ico"></div>
       </div>
       <div class="w-popup-email__bottom">
-      <form action="">
-        <label for="email">E-mail</label>
-        <input type="email">
-        <label for="email">Message</label>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <input type="submit" class='submit-button' value='MESSAGE'>
+      <form id='mailMe' action="mail.php">
+        <!-- <label for="email">E-mail</label> -->
+        <input type="text" id='email' name='email'>
+        <!-- <label for="">Message</label> -->
+        <textarea type="text" cols="30" rows="10" id='themessage' name='themessage'></textarea>
+        <input type="submit" class='submit-button' value='MESSaAGE'>
       </form>
       </div>
     </div>
@@ -83,7 +83,7 @@
         <div class="header__nav">
           <ul class="header__links">
             <li class="header__link--mobile-heading">WHAT HOS DOES</li>
-            <li class="header__link">ABOUT</li>
+            <li class="header__link"><a href="e-books.html">EBOOKS</a></li>
             <li class="header__link">EDUCATION</li>
             <li class="header__link">CONSULTANCY</li>
             <li class="header__link--mobile-heading">WHO WE ARE</li>
@@ -656,6 +656,7 @@
 <script src="bower_components/viewport-units-buggyfill/viewport-units-buggyfill.js"></script>
 <script src="bower_components/viewport-units-buggyfill/viewport-units-buggyfill.hacks.js"></script>
 <script src='js/main.js'></script>
+<script src='vendor/js/mail.js'></script>
 
 <!--[if lt IE 10]>
 <script>window.viewportUnitsBuggyfill.init({
