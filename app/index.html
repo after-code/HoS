@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html lang="en">
 <head>
     <!-- Google Tag Manager -->
@@ -44,10 +44,10 @@
         <div class="w-popup-email__close-ico"></div>
       </div>
       <div class="w-popup-email__bottom">
-      <form id='mailMe' action="mail.php">
-        <!-- <label for="email">E-mail</label> -->
+      <form id='mailMe' >
+        <label for="email">E-mail</label>
         <input type="text" id='email' name='email'>
-        <!-- <label for="">Message</label> -->
+        <label for="">Message</label>
         <textarea type="text" cols="30" rows="10" id='themessage' name='themessage'></textarea>
         <input type="submit" class='submit-button' value='MESSaAGE'>
       </form>
@@ -60,7 +60,7 @@
         <img src="assets/img/alex-assist-photo.png" alt="" class="w-sidebar-widget__main-img">
       </div>
       <img src="assets/img/alex-name.png" alt="" class="w-sidebar-widget__text-img">
-      <img src="assets/img/comment.png" alt="" class="w-sidebar-widget__chat-img">
+      <img src="assets/img/bubble-ico.png" alt="" class="w-sidebar-widget__chat-img">
       <div class="after-wrap">
         <div class="after"></div>
         <div class="after after--white"></div>
@@ -70,7 +70,7 @@
       <div class="w-sidebar-widget__text--small">ask me</div>
       <div class="w-sidebar-widget__text">anything!</div>
       <div class="w-sidebar-widget__button">
-        <img src="assets/img/mail.png" alt="" />
+        <img src="assets/img/widget-ico.png" alt="" />
       </div>
     </div>
   </div>
@@ -656,7 +656,7 @@
 <script src="bower_components/viewport-units-buggyfill/viewport-units-buggyfill.js"></script>
 <script src="bower_components/viewport-units-buggyfill/viewport-units-buggyfill.hacks.js"></script>
 <script src='js/main.js'></script>
-<script src='vendor/js/mail.js'></script>
+<script src='mail.js'></script>
 
 <!--[if lt IE 10]>
 <script>window.viewportUnitsBuggyfill.init({

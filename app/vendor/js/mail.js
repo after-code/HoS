@@ -2,8 +2,8 @@ $(function () {
     // $('#contact-form').validator();
     console.log("paprike");
     $('#mailMe').on('submit', function (e) {
-    // if (!e.isDefaultPrevented()) {
-        var url = "mail.php";
+    if (!e.isDefaultPrevented()) {
+        var url = "/mail.php";
         $.ajax({
             type: "POST",
             url: url,
@@ -28,6 +28,6 @@ $(function () {
             // }
         });
         return false;
-    // }
+    }
   })
 });

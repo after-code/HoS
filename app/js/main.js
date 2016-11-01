@@ -126,15 +126,16 @@ $(function(){
   $after_wrap = '.after-wrap';
 
 
-  tl.to($widget_chat_img, 0.2, {opacity:0}, 'start');
-  tl.to($widget_text_img, 0.2, {opacity:0}, 'start');
+  tl.to($widget_chat_img, 0.15, {opacity:0, top:"3px", right:"3px", ease: $.bez(standardCurve)}, 'start-=0.10');
+  tl.to($widget_text_img, 0.15, {opacity:0,  ease: $.bez(standardCurve)}, 'start-=0.15');
   tl.to($widget, 0.25, {right:"0px"}, 'start');
-  tl.to($widget_right_after, 0.2, {left:"-27%"}, "start+=0.15");
-  tl.to($widget_right_after_white, 0.2, {left:"7%"}, "start+=0.15");
-  tl.to($widget_text, 0.2, {opacity:1}, 'start+=0.2');
-  tl.to($widget_text_small, 0.2, {opacity:1}, "start+=0.2");
-  tl.to($widget_right, 0.2, {opacity:1}, "scale");
-  tl.to($widget_main_img_wrap, 0.1, {height:"50%", top:"25%"}, "scale-=0.2");
+  tl.to($widget_right_after, 0.30, {left:"-35%",ease: $.bez(standardCurve)}, "start+=0.15");
+  tl.to($widget_right_after_white, 0.01, {left:"7%"}, "start+=0.15");
+  tl.to($widget_right_after_white, 0.5, {opacity:1}, "start+=0.15");
+  // // tl.to($widget_text, 0.2, {opacity:1}, 'start+=0.3');
+  // tl.to($widget_text_small, 0.2, {opacity:1}, "start+=0.4");
+  tl.to($widget_right, 0.2, {opacity:1}, "start+=0.2");
+  tl.to($widget_main_img_wrap, 0.1, {height:"50%", top:"25%"}, "start");
   $(".w-sidebar-widget").mouseenter(function(){
     console.log('over');
     timeout = setTimeout(showWidget, 200);

@@ -1,6 +1,6 @@
 
 .w-sidebar-widget {
-  display: none;
+  // display: none;
   position: fixed;
   // background: red;
   cursor: pointer;
@@ -8,16 +8,17 @@
   right:0;
   height: 255px;
   z-index: 32999;
-  width: 310px;
+  width: 350px;
   overflow: hidden;
-  top:85%;
-  right:-180px;
+  bottom:55%;
+  right:-210px;
+
   // background: rgba(255,255,255,0);
   height: 120px;
   &__left {
     float: left;
     position: relative;
-    width: 33%;
+    width: 35%;
     height: 100%;
     & > .after-wrap {
       top: 25%;
@@ -32,14 +33,15 @@
       height: 100%;
       position: relative;
       background: $cyan;
-      left:-106%;
+      left: -73%;
       top:0;
       z-index: -1;
-      transform:skew(18deg);
+      transform:skew(23deg);
       &--white {
-        background: white;
+        background: black;
         z-index: -2;
         width: 100%;
+        opacity: 0;
         top:-100%;
           left:-176%;
         transform:skew(0deg);
@@ -62,15 +64,19 @@
     overflow: hidden;
   }
   &__text {
-    font-size: 22px;
-    opacity: 0;
+    font-size: 32px;
+    line-height: 21px;
+    margin-left: 10px;
+    color:white;
     &--small {
-      font-size: 22px;
+      font-size: 17px;
+      margin-top: 2px;
+      color:white;
     }
   }
   &__text-img {
     position: absolute;
-    left:0;
+    left:4%;
     bottom:0%;
   }
   &__chat-img {
@@ -81,20 +87,25 @@
   &__button {
     position: absolute;
     float: right;
-    right:20px;
+    right:8px;
     top:50%;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
+    img {
+      width: 35px;
+    }
   }
   &__main-img {
     position: absolute;
-    margin-left:5%;
+    margin-left: 10%;
     top:50%;
     transform:translateY(-50%);
-    width: 75%;
+    width: 70%;
     z-index: 8888;
+    -webkit-animation: glow 5s infinite;
+    border-radius: 50%;
   }
 }
 // animations
@@ -119,3 +130,9 @@
 //       margin-top:-30px;
 //     }
 // }
+
+@-webkit-keyframes glow{
+  0%{box-shadow: 0px 0px 3px 0px  rgba(0, 0, 0,0.2)}
+  40%{box-shadow: 0px 0px 7px 4px rgba(0, 0, 0,0.3)}
+  100%{box-shadow: 0px 0px 3px 0px rgba(0, 0, 0,0.2)}
+}
