@@ -168,7 +168,7 @@ function toggleWidget(speed){
 }
 
 function showWidget(){
-  if (!widget_active){
+  if (!widget_active && $(window).width() > 500){
     tl.play();
     widget_active = true;
   }
@@ -182,7 +182,13 @@ function hideWidget(){
 function showPopup() {
   tl2.play();
   if ($(window).width()< 797){
-    $("html").addClass("opened");
+    setTimeout(function(){
+      $('html, body').scrollTop(0);
+    },200);
+    setTimeout(function(){
+
+      $("html").addClass("opened");
+    },550);
   }
   hideWidget();
 }
@@ -199,8 +205,10 @@ function hidePopup() {
 var tl2 = new TimelineLite(),
     $email_popup_wrap = '.w-popup-email__wrap',
     $email_popup = '.w-popup-email';
+    $email_popup_mask = '.w-popup-email__mask';
 $(function(){
   tl2.pause();
-  tl2.to($email_popup_wrap, 0.15, {display:"block", opacity:"1", ease: $.bez(standardCurve)}, 'start');
-  tl2.to($email_popup, 0.25, {top:"50%", ease: $.bez(decelerationCurve)}, 'start-=0.10');
+  tl2.to($email_popup_wrap, 0.25, {display:"block", opacity:"1", ease: $.bez(standardCurve)}, 'start');
+  tl2.to($email_popup, 0.30, {top:"50%", ease: $.bez(standardCurve)}, 'start-=0.5');
+  tl2.to($email_popup_mask, 0.30, {opacity:'0.11', left:"-50.5%", ease: $.bez(standardCurve)}, 'start+=0.2');
 });

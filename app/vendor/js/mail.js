@@ -10,6 +10,8 @@ $(function () {
             data: $('#mailMe').serialize(),
             success: function (data){
               console.log(data);
+              $('#mailMe')[0].reset();
+              hidePopup();
             },
             error: function(xhr, textStatus, error){
               console.log(xhr.statusText);
