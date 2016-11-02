@@ -4,16 +4,25 @@
   display: none;
   position: fixed;
   z-index: 999999;
+  opacity: 0;
   background: rgba(0,0,0,0.9);
 }
 .w-popup-email {
   width: 37%;
   position: relative;
   background: #F6F6F6;
-  top:50%;
+  top:56%;
   overflow: hidden;
   transform:translateY(-50%);
   margin:0 auto;
+  @include breakpoint(tablet) {
+    width: 65%;
+  }
+  @include breakpoint(mobile) {
+    width: 100%;
+    height: 100%;
+  }
+
 }
 .w-popup-email__top {
   float: left;
@@ -37,6 +46,10 @@
   cursor: pointer;
   top:1%;
   right: 1%;
+  @include breakpoint(mobile) {
+    top:0;
+    background-size: 20px;
+  }
 }
 .w-popup-email__bottom {
   float: left;
@@ -44,7 +57,8 @@
   padding: 6% 9%;
   input, label, textarea {
     width: 100%;
-
+    border-radius: 0;
+    -webkit-appearance: none;
   }
   input, textarea {
     outline:none;
@@ -56,12 +70,13 @@
     }
     font-size: 17px;
     @include breakpoint(typoMax){
-      font-size: cvp(17px, 2050px);
+      font-size: cvp(18px, 2050px);
     }
   }
   textarea {
     border: 1px solid #ccc;
     margin-top:1%;
+    resize: none;
   }
   input {
     height: 48px;
@@ -72,7 +87,7 @@
     font-size: 17px;
     margin-bottom: 5px;
     @include breakpoint(typoMax){
-      font-size: cvp(17px, 2050px);
+      font-size: cvp(19px, 2050px);
     }
   }
   .submit-button {
@@ -88,5 +103,24 @@
     &:hover {
       color:white;
     }
+    border-radius: 0;
+    -webkit-appearance: none;
+    @include breakpoint(mobile) {
+      font-size: 13px;
+      width: auto;
+      padding: 4% 10%;
+    }
+  }
+  @include breakpoint(tablet) {
+      padding: 6% 6%;
+      label, input, textarea {
+        font-size: cvp(16px,783px);
+      }
+  }
+  @include breakpoint(mobile) {
+      padding: 6% 6%;
+      label, input, textarea {
+        font-size:1rem;
+      }
   }
 }

@@ -1,20 +1,22 @@
 <?php
+// header('Content-Type: application/json');
+// echo "hello";
+
 require_once 'vendor/phpmailer/PHPMailerAutoload.php';
 
 
-echo 'hey';
 date_default_timezone_set('Etc/UTC');
 
-header('Content-Type: application/json');
 // $fname = $_POST['name'];
 // $lname = $_POST['surname'];
-$mail = $_POST['email'];
-// $mail = "vasilie.91@gmail.com";
+
+// $mail = $_POST['email'];
+$mail = "vasilie.91@gmail.com";
 
 
 // $subject = $_POST['sub'];
-$message = $_POST['themessage'];
-// $message = 'vasa';
+// $message = $_POST['themessage'];
+$message = 'vasa';
 
 
 // $tel = $_POST['tel'];
@@ -30,7 +32,7 @@ $mail->Password = 'winstonbluetacka1';                           // SMTP passwor
 $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 587;                                    // TCP port to connect to
 $mail->SMTPAuth = true;
-$mail->setFrom($_POST['email']);
+$mail->setFrom("vasilie.91@gmail.com");
 $mail->SMTPSecure = 'ssl';
 $mail->Subject = 'PHPMailer GMail SMTP test';
 // Add a recipient

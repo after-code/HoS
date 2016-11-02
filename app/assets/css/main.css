@@ -75,6 +75,9 @@ html {
   @media (max-width: 2050px) {
     html {
       font-size: 1.14286vw; } }
+  @media (max-width: 450px) {
+    html {
+      font-size: 16px; } }
 
 body {
   color: #222;
@@ -82,6 +85,9 @@ body {
   @media (max-width: 2050px) {
     body {
       font-size: 1.14286vw; } }
+  @media (max-width: 450px) {
+    body {
+      font-size: 16px; } }
 
 @font-face {
   font-family: 'Press';
@@ -2335,7 +2341,7 @@ html.opened {
   z-index: 32999;
   width: 350px;
   overflow: hidden;
-  bottom: 55%;
+  bottom: 2%;
   right: -210px;
   height: 120px; }
   .w-sidebar-widget__left {
@@ -2354,12 +2360,12 @@ html.opened {
       height: 100%;
       position: relative;
       background: #2abec0;
-      left: -73%;
+      left: -74%;
       top: 0;
       z-index: -1;
       transform: skew(23deg); }
       .w-sidebar-widget__left .after--white {
-        background: black;
+        background: #222;
         z-index: -2;
         width: 100%;
         opacity: 0;
@@ -2376,8 +2382,7 @@ html.opened {
     width: 100%;
     height: 80%;
     top: 10%;
-    position: relative;
-    overflow: hidden; }
+    position: relative; }
   .w-sidebar-widget__text {
     font-size: 32px;
     line-height: 21px;
@@ -2430,16 +2435,24 @@ html.opened {
   display: none;
   position: fixed;
   z-index: 999999;
+  opacity: 0;
   background: rgba(0, 0, 0, 0.9); }
 
 .w-popup-email {
   width: 37%;
   position: relative;
   background: #F6F6F6;
-  top: 50%;
+  top: 56%;
   overflow: hidden;
   transform: translateY(-50%);
   margin: 0 auto; }
+  @media (max-width: 1025px) {
+    .w-popup-email {
+      width: 65%; } }
+  @media (max-width: 450px) {
+    .w-popup-email {
+      width: 100%;
+      height: 100%; } }
 
 .w-popup-email__top {
   float: left;
@@ -2462,13 +2475,19 @@ html.opened {
   cursor: pointer;
   top: 1%;
   right: 1%; }
+  @media (max-width: 450px) {
+    .w-popup-email__close-ico {
+      top: 0;
+      background-size: 20px; } }
 
 .w-popup-email__bottom {
   float: left;
   width: 100%;
   padding: 6% 9%; }
   .w-popup-email__bottom input, .w-popup-email__bottom label, .w-popup-email__bottom textarea {
-    width: 100%; }
+    width: 100%;
+    border-radius: 0;
+    -webkit-appearance: none; }
   .w-popup-email__bottom input, .w-popup-email__bottom textarea {
     outline: none;
     border: 1px solid #ccc;
@@ -2479,10 +2498,11 @@ html.opened {
       outline: none; }
     @media (max-width: 2050px) {
       .w-popup-email__bottom input, .w-popup-email__bottom textarea {
-        font-size: 0.82927vw; } }
+        font-size: 0.87805vw; } }
   .w-popup-email__bottom textarea {
     border: 1px solid #ccc;
-    margin-top: 1%; }
+    margin-top: 1%;
+    resize: none; }
   .w-popup-email__bottom input {
     height: 48px;
     margin-bottom: 4%;
@@ -2492,7 +2512,7 @@ html.opened {
     margin-bottom: 5px; }
     @media (max-width: 2050px) {
       .w-popup-email__bottom label {
-        font-size: 0.82927vw; } }
+        font-size: 0.92683vw; } }
   .w-popup-email__bottom .submit-button {
     display: block;
     width: 28%;
@@ -2502,6 +2522,23 @@ html.opened {
     font-weight: bold;
     background: #222;
     cursor: pointer;
-    color: white; }
+    color: white;
+    border-radius: 0;
+    -webkit-appearance: none; }
     .w-popup-email__bottom .submit-button:hover {
       color: white; }
+    @media (max-width: 450px) {
+      .w-popup-email__bottom .submit-button {
+        font-size: 13px;
+        width: auto;
+        padding: 4% 10%; } }
+  @media (max-width: 1025px) {
+    .w-popup-email__bottom {
+      padding: 6% 6%; }
+      .w-popup-email__bottom label, .w-popup-email__bottom input, .w-popup-email__bottom textarea {
+        font-size: 2.04342vw; } }
+  @media (max-width: 450px) {
+    .w-popup-email__bottom {
+      padding: 6% 6%; }
+      .w-popup-email__bottom label, .w-popup-email__bottom input, .w-popup-email__bottom textarea {
+        font-size: 1rem; } }

@@ -3,7 +3,7 @@ $(function () {
     console.log("paprike");
     $('#mailMe').on('submit', function (e) {
     if (!e.isDefaultPrevented()) {
-        var url = "/mail.php";
+        var url = "mail.php";
         $.ajax({
             type: "POST",
             url: url,

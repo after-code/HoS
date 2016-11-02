@@ -128,14 +128,15 @@ $(function(){
 
   tl.to($widget_chat_img, 0.15, {opacity:0, top:"3px", right:"3px", ease: $.bez(standardCurve)}, 'start-=0.10');
   tl.to($widget_text_img, 0.15, {opacity:0,  ease: $.bez(standardCurve)}, 'start-=0.15');
-  tl.to($widget, 0.25, {right:"0px"}, 'start');
+  tl.to($widget, 0.25, {   right:"0px"}, 'start');
+  // tl.to($widget, 5, {    top:" -2%", ease: $.bez(standardCurve)}, 'start');
   tl.to($widget_right_after, 0.30, {left:"-35%",ease: $.bez(standardCurve)}, "start+=0.15");
   tl.to($widget_right_after_white, 0.01, {left:"7%"}, "start+=0.15");
   tl.to($widget_right_after_white, 0.5, {opacity:1}, "start+=0.15");
   // // tl.to($widget_text, 0.2, {opacity:1}, 'start+=0.3');
   // tl.to($widget_text_small, 0.2, {opacity:1}, "start+=0.4");
   tl.to($widget_right, 0.2, {opacity:1}, "start+=0.2");
-  tl.to($widget_main_img_wrap, 0.1, {height:"50%", top:"25%"}, "start");
+  tl.to($widget_main_img_wrap, 0.1, {height:"50%", top:"25%", "overflow":"hidden"}, "start");
   $(".w-sidebar-widget").mouseenter(function(){
     console.log('over');
     timeout = setTimeout(showWidget, 200);
@@ -179,8 +180,27 @@ function hideWidget(){
   }
 }
 function showPopup() {
-  $(".w-popup-email__wrap").show();
+  tl2.play();
+  if ($(window).width()< 797){
+    $("html").addClass("opened");
+  }
+  hideWidget();
 }
 function hidePopup() {
-  $(".w-popup-email__wrap").hide();
+  tl2.reverse();
+  if ($(window).width()< 797){
+    $("html").removeClass("opened");
+  }
+
+
 }
+
+// / Popup animations
+var tl2 = new TimelineLite(),
+    $email_popup_wrap = '.w-popup-email__wrap',
+    $email_popup = '.w-popup-email';
+$(function(){
+  tl2.pause();
+  tl2.to($email_popup_wrap, 0.15, {display:"block", opacity:"1", ease: $.bez(standardCurve)}, 'start');
+  tl2.to($email_popup, 0.25, {top:"50%", ease: $.bez(decelerationCurve)}, 'start-=0.10');
+});
