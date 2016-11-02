@@ -19,35 +19,37 @@ $mail = "vasilie.91@gmail.com";
 $message = 'vasa';
 
 
-// $tel = $_POST['tel'];
-// echo $mail;
-$mail = new PHPMailer(true);
-$mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->SMTPDebug = 2;
-$mail->Debugoutput = 'html';
-$mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
-$mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'vasilie.91@gmail.com';                 // SMTP username
-$mail->Password = 'winstonbluetacka1';                           // SMTP password
-$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
-$mail->Port = 587;                                    // TCP port to connect to
-$mail->SMTPAuth = true;
-$mail->setFrom("vasilie.91@gmail.com");
-$mail->SMTPSecure = 'ssl';
-$mail->Subject = 'PHPMailer GMail SMTP test';
-// Add a recipient
-$mail->addAddress('vasilie.91@gmail.com');               // Name is optional
+//PHPMailer Object
+$mail = new PHPMailer;
 
+//From email address and name
+$mail->From = "vasilie.91@gmail.com";
+$mail->FromName = "vasilije Mielnlivci";
 
-$mail->isHTML(true);                                  // Set email format to HTML
+//To address and name
+// $mail->addAddress("recepient1@example.com", "Recepient Name");
+$mail->addAddress("vasilie.91@gmail.com"); //Recipient name is optional
 
-// $mail->Subject = $subject;
-$mail->Body    = $message;
-$mail->AltBody = $message;
-if(!$mail->send()) {
-  echo 'Message could not be sent.';
-  echo 'Mailer Error: ' . $mail->ErrorInfo;
-} else {
-  echo 'Message has been sent';
+//Address to which recipient will reply
+// $mail->addReplyTo("reply@yourdomain.com", "Reply");
+
+//CC and BCC
+// $mail->addCC("cc@example.com");
+// $mail->addBCC("bcc@example.com");
+
+//Send HTML or Plain Text email
+$mail->isHTML(true);
+
+$mail->Subject = "Zezanje u najabvi brate potpuno";
+$mail->Body = "nema sanse da li je moguce Matori sta ima novo";
+$mail->AltBody = "This is the plain text version of the email content";
+
+if(!$mail->send())
+{
+    echo "Mailer Error: " . $mail->ErrorInfo;
+}
+else
+{
+    echo "Message has been sent successfully";
 }
 ?>
