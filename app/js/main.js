@@ -138,15 +138,16 @@ $(function(){
   tl.to($widget_right, 0.2, {opacity:1}, "start+=0.2");
   tl.to($widget_main_img_wrap, 0.1, {height:"50%", top:"25%", "overflow":"hidden"}, "start");
   $(".w-sidebar-widget").mouseenter(function(){
-    console.log('over');
-    timeout = setTimeout(showWidget, 200);
+    // console.log('over');
+    showWidget();
+    // timeout = setTimeout(showWidget, 200);
   });
   $(".w-sidebar-widget").mouseleave(function(){
     console.log('leave');
     clearTimeout(timeout);
     setTimeout(function(){
       hideWidget();
-    },100);
+    },0);
   });
   $(".w-popup-email__wrap").on('click', function(e) {
   if (e.target !== this)
@@ -210,5 +211,5 @@ $(function(){
   tl2.pause();
   tl2.to($email_popup_wrap, 0.25, {display:"block", opacity:"1", ease: $.bez(standardCurve)}, 'start');
   tl2.to($email_popup, 0.30, {top:"50%", ease: $.bez(standardCurve)}, 'start-=0.5');
-  tl2.to($email_popup_mask, 0.30, {opacity:'0.11', left:"-50.5%", ease: $.bez(standardCurve)}, 'start+=0.2');
+  tl2.to($email_popup_mask, 0.30, {opacity:'0.61', left:"-50.5%", ease: $.bez(standardCurve)}, 'start+=0.2');
 });
