@@ -165,6 +165,7 @@ function toggleWidget(speed){
   } else {
     tl.reverse();
     widget_active = false;
+    console.log('vad');
   }
 }
 
@@ -191,7 +192,7 @@ function showPopup() {
       $("html").addClass("opened");
     },550);
   }
-  hideWidget();
+  // hideWidget();
 }
 function hidePopup() {
   tl2.reverse();
@@ -210,6 +211,6 @@ var tl2 = new TimelineLite(),
 $(function(){
   tl2.pause();
   tl2.to($email_popup_wrap, 0.25, {display:"block", opacity:"1", ease: $.bez(standardCurve)}, 'start');
-  tl2.to($email_popup, 0.30, {top:"50%", ease: $.bez(standardCurve)}, 'start-=0.5');
+  tl2.to($email_popup, 0.30, {top:"50%", ease: $.bez(standardCurve)}, 'start-=0.05');
   tl2.to($email_popup_mask, 0.30, {opacity:'0.61', left:"-50.5%", ease: $.bez(standardCurve)}, 'start+=0.2');
 });

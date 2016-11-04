@@ -2516,8 +2516,10 @@ html.opened {
   .w-popup-email__bottom input, .w-popup-email__bottom label, .w-popup-email__bottom textarea {
     width: 100%;
     border-radius: 0;
-    -webkit-appearance: none; }
+    -webkit-appearance: none;
+    font-family: "Roboto", sans-serif; }
   .w-popup-email__bottom input, .w-popup-email__bottom textarea {
+    padding-left: 10px;
     outline: none;
     border: 1px solid #ccc;
     font-size: 17px; }
@@ -2531,7 +2533,18 @@ html.opened {
   .w-popup-email__bottom textarea {
     border: 1px solid #ccc;
     margin-top: 1%;
-    resize: none; }
+    padding-top: 10px;
+    resize: none;
+    line-height: 20px; }
+    @media (max-width: 2050px) {
+      .w-popup-email__bottom textarea {
+        line-height: 1.21951vw; } }
+    @media (max-width: 1025px) {
+      .w-popup-email__bottom textarea {
+        line-height: 2.86458vw; } }
+    @media (max-width: 450px) {
+      .w-popup-email__bottom textarea {
+        line-height: 6.66667vw; } }
   .w-popup-email__bottom input {
     height: 48px;
     margin-bottom: 4%;

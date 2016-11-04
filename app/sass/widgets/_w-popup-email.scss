@@ -72,8 +72,10 @@
     width: 100%;
     border-radius: 0;
     -webkit-appearance: none;
+    font-family: $text__family--Roboto;
   }
   input, textarea {
+    padding-left:10px;
     outline:none;
     border: 1px solid #ccc;
     &:hover, &:active,&:visited {
@@ -89,7 +91,18 @@
   textarea {
     border: 1px solid #ccc;
     margin-top:1%;
+    padding-top:10px;
     resize: none;
+    line-height: 20px;
+    @include breakpoint(typoMax) {
+      line-height: cvp(25px, 2050px);
+    }
+    @include breakpoint(tablet) {
+      line-height: cvp(22px, 768px);
+    }
+    @include breakpoint(mobile) {
+      line-height: cvp(22px, 330px);
+    }
   }
   input {
     height: 48px;
