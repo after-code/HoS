@@ -40,6 +40,7 @@
   }
   &__text {
     text-align: left;
+    width: 170%;
     font-size: 23px;
     line-height: 29px;
     margin-bottom: 13%;
@@ -48,6 +49,7 @@
     @include breakpoint(typoMax){
       font-size:cvp(23px, 2050px);
       line-height:cvp(29px,2050px);
+        width: 100%;
     }
     @include breakpoint(mobile) {
       max-height: none;
