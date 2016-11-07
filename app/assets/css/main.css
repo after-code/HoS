@@ -2454,6 +2454,15 @@ html.opened {
   z-index: 999999;
   opacity: 0;
   background: rgba(0, 0, 0, 0.87); }
+  .w-popup-email__wrap label {
+    display: block; }
+  .w-popup-email__wrap .error {
+    color: #ee2e45;
+    margin-top: -2%;
+    margin: 0% 0 3% 0px;
+    display: block; }
+  .w-popup-email__wrap textarea.error, .w-popup-email__wrap input.error {
+    border: 1px solid #ee2e45 !important; }
   .w-popup-email__wrap .w-popup-email__mask {
     width: 100%;
     height: 100%;

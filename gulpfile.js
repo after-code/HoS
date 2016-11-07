@@ -20,6 +20,7 @@ gulp.task("scripts",function(){
       "app/bower_components/jquery/dist/jquery.min.js",
       "app/bower_components/gsap/src/minified/TweenMax.min.js",
       "app/bower_components/jquery-bez/jquery.bez.min.js",
+      "app/bower_components/jquery-validation/dist/jquery.validate.js",
       "app/bower_components/gsap/src/minified/TimelineLite.min.js",
       "app/bower_components/scrollmagic/scrollmagic/minified/ScrollMagic.min.js",
       "app/bower_components/scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js",
