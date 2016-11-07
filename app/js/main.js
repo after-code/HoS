@@ -156,6 +156,8 @@ $(function(){
 });
   $(".w-popup-email__close-ico").click(hidePopup);
   $(".w-sidebar-widget").click(showPopup);
+  $(".w-sidebar-widget__right").click(showPopup);
+console.log("matori zeezanje");
 });
 function toggleWidget(speed){
   console.log('toggleing');

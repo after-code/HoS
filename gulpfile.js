@@ -83,4 +83,4 @@ gulp.task("watch",function(){
 // /////////////////////////////////////////////////
 // Default Task
 // /////////////////////////////////////////////////
-gulp.task("default",[ 'styles', 'html', 'browser-sync', 'watch']);
+gulp.task("default",[ 'styles', 'scripts', 'html', 'browser-sync', 'watch']);

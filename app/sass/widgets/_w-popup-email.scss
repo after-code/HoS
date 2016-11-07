@@ -40,11 +40,24 @@
   float: left;
   width: 100%;
   display: block;
-  img {
+  &__img {
     width: 100%;
     display: block;
     margin-top: 0;
     margin-bottom: 0;
+  }
+  &__img--mobile {
+    display: none;
+  }
+  @include breakpoint(mobile){
+    height: 25%;
+    &__img {
+      display: none;
+    }
+    &__img--mobile {
+      display: block;
+      width: 100%;
+    }
   }
 }
 .w-popup-email__close-ico {
@@ -61,6 +74,8 @@
   @include breakpoint(mobile) {
     top:0;
     background-size: 20px;
+    height: 35px;
+    width: 35px;
   }
 }
 .w-popup-email__bottom {
@@ -133,9 +148,10 @@
     border-radius: 0;
     -webkit-appearance: none;
     @include breakpoint(mobile) {
-      font-size: 13px;
       width: auto;
-      padding: 4% 10%;
+      margin-top:0;
+      font-size: 17px;
+      padding: 4% 17%;
     }
   }
   @include breakpoint(tablet) {
@@ -145,9 +161,14 @@
       }
   }
   @include breakpoint(mobile) {
-      padding: 6% 6%;
+      padding: 15% 6%;
+      height: 75%;
       label, input, textarea {
         font-size:1rem;
+        margin-bottom: 14%;
+      }
+      textarea {
+        height: 36%;
       }
   }
 }

@@ -2235,7 +2235,8 @@ html.opened {
 .b-ebook {
   width: 100%;
   float: left;
-  position: relative; }
+  position: relative;
+  margin-bottom: 15%; }
 
 .b-ebook__media {
   width: 55%;
@@ -2257,7 +2258,8 @@ html.opened {
     font-size: 36px;
     line-height: 42px;
     font-weight: bold;
-    margin-bottom: 10%; }
+    margin-bottom: 10%;
+    text-transform: uppercase; }
     @media (max-width: 2050px) {
       .b-ebook__content__header {
         font-size: 1.7561vw;
@@ -2273,7 +2275,7 @@ html.opened {
     font-size: 23px;
     line-height: 29px;
     margin-bottom: 13%;
-    max-height: 9vw;
+    max-height: 11vw;
     overflow: hidden; }
     @media (max-width: 2050px) {
       .b-ebook__content__text {
@@ -2292,13 +2294,23 @@ html.opened {
 
 .b-ebook__button {
   padding: 1.7% 5.5%;
-  background: #ee2e45;
   float: left;
   font-size: 17px;
   position: absolute;
   bottom: 0;
   display: block;
-  color: white; }
+  color: #ee2e45;
+  border: 2px solid #ee2e45;
+  -moz-transition: all 400ms;
+  -o-transition: all 400ms;
+  -ms-transition: all 400ms;
+  -webkit-transition: all 400ms;
+  transition: all 400ms; }
+  .b-ebook__button:active, .b-ebook__button:focus, .b-ebook__button:visited {
+    color: inherit; }
+  .b-ebook__button:hover {
+    background: #ee2e45;
+    color: white; }
   @media (max-width: 450px) {
     .b-ebook__button {
       position: relative;
@@ -2486,11 +2498,21 @@ html.opened {
   float: left;
   width: 100%;
   display: block; }
-  .w-popup-email__top img {
+  .w-popup-email__top__img {
     width: 100%;
     display: block;
     margin-top: 0;
     margin-bottom: 0; }
+  .w-popup-email__top__img--mobile {
+    display: none; }
+  @media (max-width: 450px) {
+    .w-popup-email__top {
+      height: 25%; }
+      .w-popup-email__top__img {
+        display: none; }
+      .w-popup-email__top__img--mobile {
+        display: block;
+        width: 100%; } }
 
 .w-popup-email__close-ico {
   background: url("../../assets/img/close-pop-up.png");
@@ -2506,7 +2528,9 @@ html.opened {
   @media (max-width: 450px) {
     .w-popup-email__close-ico {
       top: 0;
-      background-size: 20px; } }
+      background-size: 20px;
+      height: 35px;
+      width: 35px; } }
 
 .w-popup-email__bottom {
   float: left;
@@ -2572,9 +2596,10 @@ html.opened {
       color: white; }
     @media (max-width: 450px) {
       .w-popup-email__bottom .submit-button {
-        font-size: 13px;
         width: auto;
-        padding: 4% 10%; } }
+        margin-top: 0;
+        font-size: 17px;
+        padding: 4% 17%; } }
   @media (max-width: 1025px) {
     .w-popup-email__bottom {
       padding: 6% 6%; }
@@ -2582,6 +2607,10 @@ html.opened {
         font-size: 2.04342vw; } }
   @media (max-width: 450px) {
     .w-popup-email__bottom {
-      padding: 6% 6%; }
+      padding: 15% 6%;
+      height: 75%; }
       .w-popup-email__bottom label, .w-popup-email__bottom input, .w-popup-email__bottom textarea {
-        font-size: 1rem; } }
+        font-size: 1rem;
+        margin-bottom: 14%; }
+      .w-popup-email__bottom textarea {
+        height: 36%; } }

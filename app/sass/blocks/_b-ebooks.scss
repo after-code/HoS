@@ -2,6 +2,7 @@
   width: 100%;
   float: left;
   position: relative;
+  margin-bottom: 15%;
 }
 .b-ebook__media {
   width: 55%;
@@ -25,6 +26,7 @@
     line-height: 42px;
     font-weight: bold;
     margin-bottom: 10%;
+    text-transform: uppercase;
     @include breakpoint(typoMax){
       font-size:cvp(36px, 2050px);
       line-height:cvp(42px,2050px);
@@ -41,7 +43,7 @@
     font-size: 23px;
     line-height: 29px;
     margin-bottom: 13%;
-    max-height: 9vw;
+    max-height: 11vw;
     overflow: hidden;
     @include breakpoint(typoMax){
       font-size:cvp(23px, 2050px);
@@ -63,13 +65,22 @@
 }
 .b-ebook__button {
   padding: 1.7% 5.5%;
-  background: $red;
+
   float: left;
   font-size: 17px;
   position: absolute;
   bottom:0;
   display: block;
-  color:white;
+  color:$red;
+  border:2px solid $red;
+  @include transition(all 400ms);
+  &:active, &:focus, &:visited {
+    color:inherit;
+  }
+  &:hover {
+    background: $red;
+    color: white;
+  }
   @include breakpoint(mobile) {
     position: relative;
     display: inline-block;
