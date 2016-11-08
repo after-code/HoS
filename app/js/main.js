@@ -22,8 +22,8 @@ var scene = new ScrollMagic.Scene()
   if($(window).width() > 1025 && $("body").hasClass("page-homepage")){
     var x1 = controller.info("scrollDirection"),
         x2 = $(window).scrollTop(),
-        x3 = 1600;
-
+        x3 = 1600,
+        x4 = 200;
 
     console.log(header);
         if ( x1 == "REVERSE" && x2 >= x3 && i1 == 0 ) {
@@ -36,7 +36,7 @@ var scene = new ScrollMagic.Scene()
         }
         if ( x1 == "REVERSE" && x2 == 0 && header == "black") {
             TweenLite.to(".header", 0.28, {top: "0", ease:  $.bez(decelerationCurve), onComplete:function(){
-              TweenLite.to(".header", 0.42, {position:"relative", color:"rgb(34, 34, 34)", background:"rgb(255,255,255)",  ease:  $.bez(standardCurve)});
+              TweenLite.to(".header", 0.42, {position:"relative", color:"rgb(34, 34, 34)", background:"rgba(255,255,255,0)",  ease:  $.bez(standardCurve)});
               TweenLite.to(".header__logo", 0.42, {opacity:'1',delay:0.12, ease:  $.bez(standardCurve)});
               TweenLite.to(".header__logo--white", 0.42, {opacity:'0',delay:0.12, ease:  $.bez(standardCurve), onComplete:headerWhite});
             }});
@@ -48,7 +48,7 @@ var scene = new ScrollMagic.Scene()
             i2 = 0;
           }
         if ( x1 == "FORWARD" && x2 <= x3 ) {
-            TweenLite.to( ".header", 0.4, {position:"relative", background: "white", top:"0", ease: $.bez(accelerationCurve) });
+            TweenLite.to( ".header", 0.4, {position:"relative", background: "rgba(255,255,255,0)", top:"0", ease: $.bez(accelerationCurve) });
             i1 = 0;
             i2 = 0;
         } else if ( x1 == "FORWARD" && x2 >= x3 ) {

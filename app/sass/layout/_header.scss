@@ -1,4 +1,6 @@
 .header__wrap {
+  position:fixed;
+  width:100%;
   @include breakpoint(tablet){
     height: 158px;
   }
