@@ -1,0 +1,74 @@
+.b-about-alex {
+  width: 100%;
+  background: url(../../assets/img/about-alex-background.png);
+  background-repeat: no-repeat;
+  float: left;
+  background-size: cover;
+  background-position-y: -24%;
+}
+.b-about-alex__heading {
+  font-size: 2vw;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 1%;
+  &--small {
+    text-align: center;
+    margin-bottom: 2.7%;
+  }
+}
+.b-about-alex__main-img {
+  width: 100%;
+  text-align: center;
+  img {
+    width: 14%;
+    margin-bottom: 1%;
+  }
+}
+.b-about-alex__division {
+  width: 100%;
+  padding:0 27%;
+  &--left {
+    width: 50%;
+    float: left;
+    margin-right: 9%;
+  }
+  &--right {
+    float: left;
+    width: 41%;
+    padding-top:11%;
+  }
+}
+.b-about-alex__name {
+  margin-bottom: 1%;
+  font-weight: bold;
+  font-size:2vw;
+  span {
+    font-weight: 100;
+    font-family: $text__family--Roboto-Condensed;
+  }
+}
+.b-about-alex__title {
+  font-size: 1vw;
+  margin-bottom: 9%;
+}
+.b-about-alex__text--type1 {
+  font-size: 1.3vw;
+  line-height: 1.8vw;
+  margin-bottom: 5%;
+}
+.b-about-alex__text--type2 {
+  font-size: 1vw;
+  line-height: 1.8vw;
+  margin-bottom: 7%;
+}
+.b-about-alex__list {
+  padding-top:13%;
+  padding-left:7%;
+}
+.b-about-alex__list__heading {
+  font-size: 0.9vw;
+}
+.b-about-alex__list__item {
+  list-style-type: disc;
+  margin-bottom:8%;
+}
