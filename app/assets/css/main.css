@@ -130,9 +130,12 @@ h1 {
     font-weight: 100; }
 
 .header__wrap {
-  position: fixed;
+  position: relative;
   width: 100%;
-  z-index: 29123123012; }
+  opacity: 1;
+  height: 0px;
+  z-index: 29123123012;
+  background: rgba(34, 34, 34, 0); }
   @media (max-width: 1025px) {
     .header__wrap {
       height: 158px; } }
@@ -197,7 +200,7 @@ h1 {
 
 .header__logo, .header__logo--white {
   width: 250px;
-  margin-top: 2.4%;
+  top: 38px;
   float: left;
   position: absolute;
   left: 24.7%; }
@@ -233,8 +236,8 @@ h1 {
 
 .header__links {
   float: left;
-  margin-top: 4.16%;
-  margin-bottom: 4.16%;
+  margin-top: 79px;
+  margin-bottom: 79px;
   margin-left: 42.8%; }
   @media (max-width: 1025px) {
     .header__links {
@@ -291,9 +294,6 @@ h1 {
   .header__link:hover:after, .header__link--mobile-heading:hover:after {
     left: 0%;
     width: 100%; }
-  @media (max-width: 2050px) {
-    .header__link, .header__link--mobile-heading {
-      font-size: 0.97561vw; } }
   @media (max-width: 1025px) {
     .header__link, .header__link--mobile-heading {
       display: block;
@@ -2470,7 +2470,7 @@ html.opened {
   background-repeat: no-repeat; }
 
 .b-fluid-header__element {
-  position: absolute;
+  position: fixed;
   top: 24.7%;
   left: 48%;
   width: 30%;

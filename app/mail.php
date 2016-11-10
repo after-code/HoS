@@ -1,32 +1,33 @@
 <?php
-
 require_once 'vendor/phpmailer/PHPMailerAutoload.php';
 
-
-date_default_timezone_set('Etc/UTC');
 
 // $fname = $_POST['name'];
 // $lname = $_POST['surname'];
 
-$mail = $_POST['email'];
-// $mail = "vasilie.91@gmail.com";
+// $mail =  "test";
+// $mail = $_POST['email'];
 
 
 // $subject = $_POST['sub'];
-$message = $_POST['themessage'];
+$message =  $_POST['themessage'];
 // $message = 'vasa';
 
 
 //PHPMailer Object
-$mail = new PHPMailer;
+$mail = new PHPMailer();
 
 //From email address and name
-$mail->From = "alexandra@house-of-social.com";
-$mail->FromName = "Alexandra Maia";
+$parts = explode("@", $_POST['email']);
+$name = $parts[0];
 
+$mail->From = $_POST['email'];
+$mail->FromName = $name;
+$mail->Sender = "ask.me@house-of-social.com";
 //To address and name
 // $mail->addAddress("recepient1@example.com", "Recepient Name");
-$mail->addAddress("socialmedia@alexandramaia.com"); //Recipient name is optional
+// $mail->addAddress("vasilie.91@gmail.com"); //Recipient name is optional
+$mail->addAddress("alexandra@house-of-social.com"); //Recipient name is optional
 
 //Address to which recipient will reply
 // $mail->addReplyTo("reply@yourdomain.com", "Reply");
