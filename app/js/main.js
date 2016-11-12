@@ -15,25 +15,42 @@ var controller = new ScrollMagic.Controller();
 
 var i1 = 0;
 var i2 = 0;
-
-var scene = new ScrollMagic.Scene()
+var firstScene = true;
+var scene = new ScrollMagic.Scene({triggerElement:"#trigger"})
 .addTo(controller)
 .on("update", function() {
-  if($(window).width() > 1025 && $("body").hasClass("page-homepage")){
+  // if($(window).width() > 1025 && $("body").hasClass("page-homepage")){
     var x1 = controller.info("scrollDirection"),
         x2 = $(window).scrollTop(),
         x3 = 0,
-        x4 = 200;
+        x4 = 100;
 
-     if ( x1 == "FORWARD" && x2 >= x3 ) {
-       tl3.play();
+     if ( x1 == "FORWARD" && x2 >= x4 ) {
+       if(firstScene){
+         firstScene = false;
+         disableScroll();
+         console.log("scrollDisabled");
+
+         tl3.play();
+         setTimeout(function(){
+           enableScroll();
+           console.log("scrollEnabled");
+
+         },1000);
+       } else {
+         tl4.play();
+       }
+      //  $("body,html").css({"overflow-y":"hidden"});
      }
-     if ( x2 <= x4 ) {
-       tl3.reverse();
+     if (x1 == "REVERSE" && x2 <= x4  && !firstScene) {
+       tl4.reverse();
      }
-  }
+  // }
 });
 
+// var scene2 = new ScrollMagic.Scene()
+// .addTo(controller)
+//
 });
 $(function(){
   $(".nav-icon").click(function(){
@@ -184,6 +201,7 @@ function hidePopup() {
 // / Popup animations
 var tl2 = new TimelineLite(),
     tl3 = new TimelineLite(),
+    tl4 = new TimelineLite(),
     $email_popup_wrap = '.w-popup-email__wrap',
     $email_popup = '.w-popup-email';
     $email_popup_mask = '.w-popup-email__mask';
@@ -202,15 +220,60 @@ $(function(){
       $header_link = '.header__link',
       $header_links = '.header__links',
       $header_logo = '.header__logo',
+      $fluid_header = '.b-fluid-header',
+      $body_html = 'body,html',
+      $fluid_header_element = '.b-fluid-header__element',
+      $fluid_header_type = '.b-fluid-header__type',
       $header_logo_white = '.header__logo--white';
   tl3.pause();
-  tl3.to(".header__wrap", 0.20,{"opacity":"0", ease: $.bez(accelerationCurve)},'start');
-  tl3.to($header_links, 0, {marginTop:"20px",marginBottom:"20px", ease: $.bez(decelerationCurve)},'start+=0.2');
-  tl3.to($header_link, 0,  {fontSize:"16",autoRound: false,  color:"white",ease: $.bez(decelerationCurve)},'start+=0.2');
-  tl3.to($header_wrap, 0, {"box-shadow":" 0px 0px 7px 4px rgba(0, 0, 0,0.3)", position:'fixed', height:"auto",  opacity:1, top:"-100px",  background:'rgba(34, 34, 34, 0.99)', ease: $.bez(decelerationCurve)},'start+=0.2');
-  // tl3.to($header_wrap, 0, { ,, ease: $.bez(decelerationCurve)},'start+=0.2');
-  tl3.to($header_logo_white, 0, {left:"27.7%",top:"6px",  width:"107px",opacity:'1',ease: $.bez(decelerationCurve)},'start+=0.2');
-  tl3.to($header_logo, 0, {left:"27.7%",top:"6px",  width:"107px",opacity:'1',ease: $.bez(decelerationCurve)},'start+=0.2');
-  tl3.to($header_wrap, 0.20, {top:"0px", ease: $.bez(decelerationCurve)},'start+=0.2');
+  tl4.pause();
+  //header wrap final treba da se prebaci u tl4 tipa
+  tl4.to(".header__wrap", 0.20,{"opacity":"0", ease: $.bez(accelerationCurve)},'start');
+  tl4.to($header_links, 0, {marginTop:"20px",marginBottom:"20px", ease: $.bez(decelerationCurve)},'start+=0.2');
+  tl4.to($header_link, 0,  {fontSize:"16",autoRound: false,  color:"white",ease: $.bez(decelerationCurve)},'start+=0.2');
+  tl4.to($header_wrap, 0, {"box-shadow":" 0px 0px 7px 4px rgba(0, 0, 0,0.3)", position:'fixed', height:"auto",  opacity:1, top:"-100px",  background:'rgba(34, 34, 34, 0.99)', ease: $.bez(decelerationCurve)},'start+=0.2');
+  tl4.to($header_logo_white, 0, {left:"27.7%",top:"6px",  width:"107px",opacity:'1',ease: $.bez(decelerationCurve)},'start+=0.2');
+  tl4.to($header_logo, 0, {left:"27.7%",top:"6px",  width:"107px",opacity:'1',ease: $.bez(decelerationCurve)},'start+=0.2');
+  tl4.to($header_wrap, 0.20, {top:"0px", ease: $.bez(decelerationCurve)},'start+=0.2');
+
+
+
+  tl3.to($fluid_header, 0.4, {"margin-top":"-56vh", ease: $.bez(accelerationCurve)},'start+=0.2');
+  tl3.to($fluid_header_element, 0.4, {"top":"49.7vh","left":"46.1%", width:"36.4%", ease: $.bez(accelerationCurve)},'start+=0.2');
+  tl3.to($fluid_header_type, 0.4, {top:"24.6vh","left":"28.5vh" ,fontSize:"5vh",lineHeight:"4.7vh", ease: $.bez(accelerationCurve)},'start+=0.2');
+  tl3.to($body_html, 0.4, {scrollTop:0, ease: $.bez(accelerationCurve)},'start+=0.2');
 
 });
+var keys = {37: 1, 38: 1, 39: 1, 40: 1};
+
+function preventDefault(e) {
+  e = e || window.event;
+  if (e.preventDefault)
+      e.preventDefault();
+  e.returnValue = false;
+}
+
+function preventDefaultForScrollKeys(e) {
+    if (keys[e.keyCode]) {
+        preventDefault(e);
+        return false;
+    }
+}
+
+function disableScroll() {
+  if (window.addEventListener) // older FF
+      window.addEventListener('DOMMouseScroll', preventDefault, false);
+  window.onwheel = preventDefault; // modern standard
+  window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
+  window.ontouchmove  = preventDefault; // mobile
+  document.onkeydown  = preventDefaultForScrollKeys;
+}
+
+function enableScroll() {
+    if (window.removeEventListener)
+        window.removeEventListener('DOMMouseScroll', preventDefault, false);
+    window.onmousewheel = document.onmousewheel = null;
+    window.onwheel = null;
+    window.ontouchmove = null;
+    document.onkeydown = null;
+}

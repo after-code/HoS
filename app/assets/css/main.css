@@ -130,7 +130,7 @@ h1 {
     font-weight: 100; }
 
 .header__wrap {
-  position: relative;
+  position: fixed;
   width: 100%;
   opacity: 1;
   height: 0px;
@@ -2467,31 +2467,36 @@ html.opened {
   float: left;
   background-image: url(../../assets/img/about-header-photo.jpg);
   background-size: cover;
+  overflow: hidden;
   background-repeat: no-repeat; }
 
 .b-fluid-header__element {
-  position: fixed;
-  top: 24.7%;
-  left: 48%;
+  position: relative;
+  top: 20.6992vh;
+  left: 81vh;
   width: 30%;
   transform: translateX(-50%); }
 
 .b-fluid-header__vector {
   position: absolute;
-  width: 100%; }
+  height: 53vh; }
   .b-fluid-header__vector img {
-    width: 100%; }
+    height: 100%; }
 
 .b-fluid-header__type {
-  font-size: 3.4vw;
-  line-height: 3.3vw;
+  font-size: 8.4vh;
+  line-height: 7.2vh;
+  position: absolute;
   width: 200%;
   font-style: italic;
   z-index: 111;
-  position: relative;
-  margin-top: 28.8%;
-  left: 27%;
+  top: 17vh;
+  left: 8vw;
   font-weight: bold; }
+
+#trigger {
+  position: absolute;
+  top: 20%; }
 
 .page-homepage .wrapper--big {
   margin-bottom: 2%; }
