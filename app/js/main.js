@@ -16,6 +16,9 @@ var controller = new ScrollMagic.Controller();
 var i1 = 0;
 var i2 = 0;
 var firstScene = true;
+if ($("body").hasClass("page-homepage")){
+  firstScene = false;
+}
 var scene = new ScrollMagic.Scene({triggerElement:"#trigger"})
 .addTo(controller)
 .on("update", function() {
@@ -23,7 +26,7 @@ var scene = new ScrollMagic.Scene({triggerElement:"#trigger"})
     var x1 = controller.info("scrollDirection"),
         x2 = $(window).scrollTop(),
         x3 = 0,
-        x4 = 100;
+        x4 = 200;
 
      if ( x1 == "FORWARD" && x2 >= x4 ) {
        if(firstScene){
@@ -42,7 +45,7 @@ var scene = new ScrollMagic.Scene({triggerElement:"#trigger"})
        }
       //  $("body,html").css({"overflow-y":"hidden"});
      }
-     if (x1 == "REVERSE" && x2 <= x4  && !firstScene) {
+     if (x1 == "REVERSE"  && !firstScene) {
        tl4.reverse();
      }
   // }
