@@ -23,7 +23,7 @@ console.log("First scene: " + firstScene);
 var scene = new ScrollMagic.Scene({triggerElement:"#trigger"})
 .addTo(controller)
 .on("update", function() {
-  // if($(window).width() > 1025 && $("body").hasClass("page-homepage")){
+  if($(window).width() > 1025){
     var x1 = controller.info("scrollDirection"),
         x2 = $(window).scrollTop(),
         x3 = 0,
@@ -41,7 +41,7 @@ var scene = new ScrollMagic.Scene({triggerElement:"#trigger"})
            enableScroll();
            console.log("scrollEnabled");
 
-         },1000);
+         },600);
        } else if (x2 >= x4){
          tl4.reverse();
        }
@@ -52,7 +52,7 @@ var scene = new ScrollMagic.Scene({triggerElement:"#trigger"})
      } else if (x1 == "REVERSE" && !firstScene && x2 < 600){
        tl4.reverse();
      }
-  // }
+  }
 });
 
 // var scene2 = new ScrollMagic.Scene()
@@ -230,6 +230,7 @@ $(function(){
       $fluid_header = '.b-fluid-header',
       $body_html = 'body,html',
       $fluid_header_element = '.b-fluid-header__element',
+      $fluid_header_vector = '.b-fluid-header__vector',
       $fluid_header_type = '.b-fluid-header__type',
       $header_logo_white = '.header__logo--white';
   tl3.pause();
@@ -245,10 +246,12 @@ $(function(){
 
 
 
-  tl3.to($fluid_header, 0.4, {"margin-top":"-56vh", ease: $.bez(accelerationCurve)},'start+=0.2');
-  tl3.to($fluid_header_element, 0.4, {"top":"49.7vh","left":"46.1%", width:"36.4%", ease: $.bez(accelerationCurve)},'start+=0.2');
-  tl3.to($fluid_header_type, 0.4, {top:"24.6vh","left":"28.5vh" ,fontSize:"5vh",lineHeight:"4.7vh", ease: $.bez(accelerationCurve)},'start+=0.2');
-  tl3.to($body_html, 0.4, {scrollTop:0, ease: $.bez(accelerationCurve)},'start+=0.2');
+  tl3.to($fluid_header, 0.4, {"margin-top":"-56vh", ease: $.bez(decelerationCurve)},'start+=0.2');
+  tl3.to($fluid_header_element, 0.4, {"top":"49.7vh","left":"46.1%", width:"36.4%", ease: $.bez(decelerationCurve)},'start+=0.2');
+  tl3.to($fluid_header_vector, 0.4, {transform: "scale(7)", marginTop:"-50%", marginLeft:"-50%", ease: $.bez(accelerationCurve)},'start');
+  tl3.to($fluid_header_vector, 0.3, {transform: "scale(1)", marginTop:"0%", marginLeft:"0%", ease: $.bez(decelerationCurve)},'start+=0.6');
+  tl3.to($fluid_header_type, 0.4, {top:"24.6vh","left":"28.5vh" ,fontSize:"5vh",lineHeight:"4.7vh", ease: $.bez(decelerationCurve)},'start+=0.2');
+  tl3.to($body_html, 0.4, {scrollTop:0, ease: $.bez(decelerationCurve)},'start+=0.2');
 
 });
 var keys = {37: 1, 38: 1, 39: 1, 40: 1};

@@ -2513,7 +2513,7 @@ html.opened {
   @media (max-width: 450px) {
     .page-homepage .wrapper--big {
       margin-bottom: 5%;
-      padding-top: 22%; } }
+      margin-top: 0; } }
 
 .page-ebooks .wrapper, .page-ebooks .wrapper--big, .page-ebooks .wrapper--small {
   margin-top: 24%; }

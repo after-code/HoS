@@ -14,7 +14,8 @@
     }
     @include breakpoint(mobile){
       margin-bottom: 5%;
-      padding-top: 22%;
+      // padding-top: 22%;
+      margin-top:0;
     }
   }
 }
