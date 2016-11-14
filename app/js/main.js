@@ -15,10 +15,11 @@ var controller = new ScrollMagic.Controller();
 
 var i1 = 0;
 var i2 = 0;
-var firstScene = true;
-if ($("body").hasClass("page-homepage")){
-  firstScene = false;
+var firstScene = false;
+if ($("body").hasClass("headerAnimation")){
+  firstScene = true;
 }
+console.log("First scene: " + firstScene);
 var scene = new ScrollMagic.Scene({triggerElement:"#trigger"})
 .addTo(controller)
 .on("update", function() {
@@ -29,6 +30,7 @@ var scene = new ScrollMagic.Scene({triggerElement:"#trigger"})
         x4 = 200;
 
      if ( x1 == "FORWARD" && x2 >= x4 ) {
+
        if(firstScene){
          firstScene = false;
          disableScroll();
@@ -40,12 +42,14 @@ var scene = new ScrollMagic.Scene({triggerElement:"#trigger"})
            console.log("scrollEnabled");
 
          },1000);
-       } else {
-         tl4.play();
+       } else if (x2 >= x4){
+         tl4.reverse();
        }
       //  $("body,html").css({"overflow-y":"hidden"});
      }
-     if (x1 == "REVERSE"  && !firstScene) {
+     if (x1 == "REVERSE"  && !firstScene && x2 >= 600) {
+       tl4.play();
+     } else if (x1 == "REVERSE" && !firstScene && x2 < 600){
        tl4.reverse();
      }
   // }
