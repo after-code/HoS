@@ -44,12 +44,15 @@ var scene = new ScrollMagic.Scene({triggerElement:"#trigger"})
          },600);
        } else if (x2 >= x4){
          tl4.reverse();
+          console.log("forward > 200");
        }
       //  $("body,html").css({"overflow-y":"hidden"});
      }
-     if (x1 == "REVERSE"  && !firstScene && x2 >= 600) {
+     if (x1 == "REVERSE"  && !firstScene && x2 >= 800) {
+       console.log("reverse > 600");
        tl4.play();
-     } else if (x1 == "REVERSE" && !firstScene && x2 < 600){
+     } else if (x1 == "REVERSE" && !firstScene && x2 < 800){
+       console.log("reverse < 600");
        tl4.reverse();
      }
   }
@@ -61,7 +64,6 @@ var scene = new ScrollMagic.Scene({triggerElement:"#trigger"})
 });
 $(function(){
   $(".nav-icon").click(function(){
-    console.log("ex");
     $('.header').toggleClass("active");
     $('.wrapper--big').toggleClass("opened");
     $('html').toggleClass("opened");
@@ -138,12 +140,9 @@ $(function(){
   tl.to($widget_right, 0.2, {opacity:1}, "start+=0.2");
   tl.to($widget_main_img_wrap, 0.1, {height:"50%", top:"25%", "overflow":"hidden"}, "start");
   $(".w-sidebar-widget").mouseenter(function(){
-    // console.log('over');
     showWidget();
-    // timeout = setTimeout(showWidget, 200);
   });
   $(".w-sidebar-widget").mouseleave(function(){
-    console.log('leave');
     clearTimeout(timeout);
     setTimeout(function(){
       hideWidget();
@@ -157,19 +156,7 @@ $(function(){
   $(".w-popup-email__close-ico").click(hidePopup);
   $(".w-sidebar-widget").click(showPopup);
   $(".w-sidebar-widget__right").click(showPopup);
-console.log("matori zeezanje");
 });
-function toggleWidget(speed){
-  console.log('toggleing');
-  if (!widget_active){
-    tl.play();
-    widget_active = true;
-  } else {
-    tl.reverse();
-    widget_active = false;
-    console.log('vad');
-  }
-}
 
 function showWidget(){
   if (!widget_active && $(window).width() > 500){
@@ -245,11 +232,11 @@ $(function(){
   tl4.to($header_wrap, 0.20, {top:"0px", ease: $.bez(decelerationCurve)},'start+=0.2');
 
 
-
+//Fluid header animations
   tl3.to($fluid_header, 0.4, {"margin-top":"-56vh", ease: $.bez(decelerationCurve)},'start+=0.2');
   tl3.to($fluid_header_element, 0.4, {"top":"49.7vh","left":"46.1%", width:"36.4%", ease: $.bez(decelerationCurve)},'start+=0.2');
-  tl3.to($fluid_header_vector, 0.4, {transform: "scale(7)", marginTop:"-50%", marginLeft:"-50%", ease: $.bez(accelerationCurve)},'start');
-  tl3.to($fluid_header_vector, 0.3, {transform: "scale(1)", marginTop:"0%", marginLeft:"0%", ease: $.bez(decelerationCurve)},'start+=0.6');
+  // tl3.to($fluid_header_vector, 0.45, {transform: "scale(7)", marginTop:"-50%", marginLeft:"-50%", ease: $.bez(accelerationCurve)},'start');
+  // tl3.to($fluid_header_vector, 0.45, {transform: "scale(1)", marginTop:"0%", marginLeft:"0%", ease: $.bez(decelerationCurve)},'start+=0.5');
   tl3.to($fluid_header_type, 0.4, {top:"24.6vh","left":"28.5vh" ,fontSize:"5vh",lineHeight:"4.7vh", ease: $.bez(decelerationCurve)},'start+=0.2');
   tl3.to($body_html, 0.4, {scrollTop:0, ease: $.bez(decelerationCurve)},'start+=0.2');
 

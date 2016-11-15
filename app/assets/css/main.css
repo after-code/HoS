@@ -134,7 +134,7 @@ h1 {
   width: 100%;
   opacity: 1;
   height: 0px;
-  z-index: 29123123012;
+  z-index: 30;
   background: rgba(34, 34, 34, 0); }
   @media (max-width: 1025px) {
     .header__wrap {
@@ -520,6 +520,11 @@ html.opened {
         top: auto;
         transform: none; } }
 
+.section--my-journey {
+  overflow: hidden;
+  background-image: url(../../assets/img/yellow-journey-bck.jpg);
+  padding: 7% 24.3%; }
+
 .footer {
   background: #222;
   width: 100%;
@@ -872,6 +877,13 @@ html.opened {
   width: 100%; }
   .b-media__item img {
     width: 100%; }
+
+.b-button__wrap {
+  width: 100%;
+  text-align: center; }
+  .b-button__wrap .b-button {
+    display: inline-block;
+    float: none; }
 
 .b-button {
   color: #222;
@@ -2295,6 +2307,11 @@ html.opened {
   list-style-type: disc;
   margin-bottom: 8%; }
 
+.b-about-alex__sticker {
+  width: 100%;
+  float: left;
+  text-align: center; }
+
 .b-hp-about {
   text-align: center;
   background: #F8F8F8;
@@ -2501,6 +2518,38 @@ html.opened {
 #trigger {
   position: absolute;
   top: 20%; }
+
+.b-my-journey {
+  width: 100%;
+  padding-bottom: 30%;
+  overflow: hidden; }
+
+.b-my-journey__heading,
+.b-my-journey__heading--small {
+  text-align: center; }
+
+.b-my-journey__heading {
+  font-size: 2vw;
+  font-weight: bold;
+  margin-bottom: 2%; }
+
+.b-my-journey__heading--small {
+  margin-bottom: 10%; }
+
+.b-my-journey__squares {
+  width: 100%; }
+
+.b-my-journey__square {
+  width: 45%;
+  float: left;
+  margin: 5%; }
+  .b-my-journey__square:nth-child(2n-1) {
+    margin-left: 0; }
+  .b-my-journey__square:nth-child(2n) {
+    margin-right: 0; }
+  .b-my-journey__square img {
+    width: 100%;
+    display: block; }
 
 .page-homepage .wrapper--big {
   margin-bottom: 2%; }

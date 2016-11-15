@@ -1,0 +1,35 @@
+.b-my-journey {
+  width: 100%;
+  padding-bottom:30%;
+  overflow: hidden;
+}
+.b-my-journey__heading,
+.b-my-journey__heading--small {
+  text-align: center;
+}
+.b-my-journey__heading {
+  font-size: 2vw;
+  font-weight: bold;
+  margin-bottom: 2%;
+}
+.b-my-journey__heading--small {
+  margin-bottom: 10%;
+}
+.b-my-journey__squares {
+  width: 100%;
+}
+.b-my-journey__square {
+  width: 45%;
+  float: left;
+  margin:5%;
+  &:nth-child(2n-1){
+    margin-left:0;
+  }
+  &:nth-child(2n){
+    margin-right:0;
+  }
+  img {
+    width: 100%;
+    display: block;
+  }
+}
