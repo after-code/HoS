@@ -97,6 +97,10 @@
     width: 51%;
     padding-top: 3%;
     height: 76.2%;
+    &__heading {
+      letter-spacing: -1px;
+      width: 100%;
+    }
     @include transition(background 400ms);
     background: rgba(220, 235, 252, 0.93);
     &:hover {

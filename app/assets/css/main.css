@@ -203,7 +203,7 @@ h1 {
   top: 38px;
   float: left;
   position: absolute;
-  left: 24.7%; }
+  left: 19.7%; }
   @media (max-width: 1025px) {
     .header__logo, .header__logo--white {
       float: left;
@@ -841,6 +841,9 @@ html.opened {
     -webkit-transition: background 400ms;
     transition: background 400ms;
     background: rgba(220, 235, 252, 0.93); }
+    .b-media--middle .b-content-sticker__heading {
+      letter-spacing: -1px;
+      width: 100%; }
     .b-media--middle .b-content-sticker:hover {
       background: #dcebfc; }
   @media (max-width: 1025px) {
