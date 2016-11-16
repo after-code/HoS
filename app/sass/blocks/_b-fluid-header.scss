@@ -14,12 +14,18 @@
   left: 81vh;
   width: 30%;
   transform: translateX(-50%);
+  @include breakpoint(mobile) {
+    left:0;
+  }
 }
 .b-fluid-header__vector {
   position:absolute;
   height: 53vh;
   img {
     height:100%;
+  }
+  @include breakpoint(mobile) {
+    height: 33vh;
   }
 }
 .b-fluid-header__type {
@@ -32,6 +38,12 @@
   top:17vh;
   left: 8vw;
   font-weight: bold;
+  @include breakpoint(mobile) {
+    font-size: 3.4vh;
+    line-height: 3.2vh;
+    top: 11vh;
+    left: 41vw;
+  }
 }
 #trigger {
   position: absolute;

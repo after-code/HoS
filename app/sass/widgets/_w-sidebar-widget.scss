@@ -35,7 +35,7 @@
       left: -74%;
       top:0;
       z-index: -1;
-      transform:skew(23deg);
+      @include prefix(transform, skew(23deg), webkit ms moz o);
       &--white {
         background: #222;
         z-index: -2;
@@ -43,7 +43,7 @@
         opacity: 0;
         top:-100%;
           left:-176%;
-        transform:skew(0deg);
+        @include prefix(transform, skew(0deg), webkit ms moz o);
         // width: 150%;
       }
       @include breakpoint(mobile){
@@ -100,10 +100,7 @@
     float: right;
     right:8px;
     top:50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
+    @include prefix(transform, translateY(-50%), webkit ms moz o);
     img {
       width: 35px;
     }
@@ -112,7 +109,7 @@
     position: absolute;
     margin-left: 10%;
     top:50%;
-    transform:translateY(-50%);
+    @include prefix(transform, translateY(-50%), webkit ms moz o);
     width: 70%;
     z-index: 8888;
     -webkit-animation: glow 5s infinite;

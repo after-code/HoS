@@ -10,6 +10,7 @@
   }
   @include breakpoint(mobile){
     height: auto;
+    position: absolute;
   }
 }
 .header {

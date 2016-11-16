@@ -22,7 +22,7 @@ html {
     font-size: cvp(16px, 1400px);
   }
   @include breakpoint(mobile) {
-    font-size: 16px;
+    font-size: 16px !important;
   }
 }
 body {

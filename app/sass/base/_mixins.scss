@@ -5,6 +5,12 @@
   -webkit-transition:#{$value};
   transition:#{$value};
 }
+@mixin prefix($property, $value, $prefixes: ()) {
+  @each $prefix in $prefixes {
+    #{'-' + $prefix + '-' + $property}: $value;
+  }
+  #{$property}: $value;
+}
 $cubic-bezier1 : 'cubic-bezier(0,1,1,1)';
 
 $decelerationCurve : 'cubic-bezier(0.0, 0.0, 0.2, 1)';

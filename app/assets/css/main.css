@@ -77,7 +77,7 @@ html {
       font-size: 1.14286vw; } }
   @media (max-width: 450px) {
     html {
-      font-size: 16px; } }
+      font-size: 16px !important; } }
 
 body {
   color: #222;
@@ -141,7 +141,8 @@ h1 {
       height: 158px; } }
   @media (max-width: 450px) {
     .header__wrap {
-      height: auto; } }
+      height: auto;
+      position: absolute; } }
 
 .header {
   width: 100%;
@@ -880,7 +881,8 @@ html.opened {
 
 .b-button__wrap {
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  float: left; }
   .b-button__wrap .b-button {
     display: inline-block;
     float: none; }
@@ -2244,7 +2246,7 @@ html.opened {
   background-repeat: no-repeat;
   float: left;
   background-size: cover;
-  background-position-y: -24%; }
+  background-position-y: 9vw; }
 
 .b-about-alex__heading {
   font-size: 2vw;
@@ -2311,6 +2313,10 @@ html.opened {
   width: 100%;
   float: left;
   text-align: center; }
+  .b-about-alex__sticker img {
+    width: 21%;
+    margin-left: 11%;
+    margin-bottom: 12.6%; }
 
 .b-hp-about {
   text-align: center;
@@ -2497,12 +2503,18 @@ html.opened {
   left: 81vh;
   width: 30%;
   transform: translateX(-50%); }
+  @media (max-width: 450px) {
+    .b-fluid-header__element {
+      left: 0; } }
 
 .b-fluid-header__vector {
   position: absolute;
   height: 53vh; }
   .b-fluid-header__vector img {
     height: 100%; }
+  @media (max-width: 450px) {
+    .b-fluid-header__vector {
+      height: 33vh; } }
 
 .b-fluid-header__type {
   font-size: 8.4vh;
@@ -2514,6 +2526,12 @@ html.opened {
   top: 17vh;
   left: 8vw;
   font-weight: bold; }
+  @media (max-width: 450px) {
+    .b-fluid-header__type {
+      font-size: 3.4vh;
+      line-height: 3.2vh;
+      top: 11vh;
+      left: 41vw; } }
 
 #trigger {
   position: absolute;
@@ -2523,6 +2541,11 @@ html.opened {
   width: 100%;
   padding-bottom: 30%;
   overflow: hidden; }
+  .b-my-journey .b-button {
+    border: 2px solid #222;
+    margin-top: 15%;
+    padding: 2.4% 2.9%;
+    margin-bottom: -3%; }
 
 .b-my-journey__heading,
 .b-my-journey__heading--small {
@@ -2608,6 +2631,10 @@ html.opened {
       left: -74%;
       top: 0;
       z-index: -1;
+      -webkit-transform: skew(23deg);
+      -ms-transform: skew(23deg);
+      -moz-transform: skew(23deg);
+      -o-transform: skew(23deg);
       transform: skew(23deg); }
       .w-sidebar-widget__left .after--white {
         background: #222;
@@ -2616,6 +2643,10 @@ html.opened {
         opacity: 0;
         top: -100%;
         left: -176%;
+        -webkit-transform: skew(0deg);
+        -ms-transform: skew(0deg);
+        -moz-transform: skew(0deg);
+        -o-transform: skew(0deg);
         transform: skew(0deg); }
       @media (max-width: 450px) {
         .w-sidebar-widget__left .after {
@@ -2662,16 +2693,21 @@ html.opened {
     float: right;
     right: 8px;
     top: 50%;
-    transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
-    -moz-transform: translateY(-50%); }
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%); }
     .w-sidebar-widget__button img {
       width: 35px; }
   .w-sidebar-widget__main-img {
     position: absolute;
     margin-left: 10%;
     top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
     transform: translateY(-50%);
     width: 70%;
     z-index: 8888;
@@ -2719,13 +2755,24 @@ html.opened {
     opacity: 0.61;
     opacity: 0;
     z-index: -1;
+    -webkit-transform: skew(-11.2deg);
+    -ms-transform: skew(-11.2deg);
+    -moz-transform: skew(-11.2deg);
+    -o-transform: skew(-11.2deg);
     transform: skew(-11.2deg); }
+  @media (max-width: 450px) {
+    .w-popup-email__wrap {
+      overflow-y: scroll; } }
 
 .w-popup-email {
   width: 37%;
   position: relative;
   top: 56%;
   overflow: hidden;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
   transform: translateY(-50%);
   margin: 0 auto; }
   @media (max-width: 1025px) {
@@ -2734,7 +2781,13 @@ html.opened {
   @media (max-width: 450px) {
     .w-popup-email {
       width: 100%;
-      height: 100%; } }
+      height: auto;
+      top: 0;
+      -webkit-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+      -moz-transform: translateY(0%);
+      -o-transform: translateY(0%);
+      transform: translateY(0%); } }
 
 .w-popup-email__top {
   float: left;
@@ -2748,13 +2801,11 @@ html.opened {
   .w-popup-email__top__img--mobile {
     display: none; }
   @media (max-width: 450px) {
-    .w-popup-email__top {
-      height: 25%; }
-      .w-popup-email__top__img {
-        display: none; }
-      .w-popup-email__top__img--mobile {
-        display: block;
-        width: 100%; } }
+    .w-popup-email__top__img {
+      display: none; }
+    .w-popup-email__top__img--mobile {
+      display: block;
+      width: 100%; } }
 
 .w-popup-email__close-ico {
   background: url("../../assets/img/close-pop-up.png");
@@ -2770,9 +2821,7 @@ html.opened {
   @media (max-width: 450px) {
     .w-popup-email__close-ico {
       top: 0;
-      background-size: 20px;
-      height: 35px;
-      width: 35px; } }
+      background-size: 20px; } }
 
 .w-popup-email__bottom {
   float: left;
@@ -2849,10 +2898,11 @@ html.opened {
         font-size: 2.04342vw; } }
   @media (max-width: 450px) {
     .w-popup-email__bottom {
-      padding: 15% 6%;
-      height: 75%; }
+      padding: 8% 6%;
+      height: auto;
+      overflow: hidden; }
       .w-popup-email__bottom label, .w-popup-email__bottom input, .w-popup-email__bottom textarea {
-        font-size: 1rem;
-        margin-bottom: 14%; }
+        font-size: 1rem !important;
+        margin-bottom: 5%; }
       .w-popup-email__bottom textarea {
         height: 36%; } }
