@@ -21,7 +21,7 @@ gulp.task("scripts",function(){
       "app/bower_components/gsap/src/minified/TweenMax.min.js",
       "app/bower_components/jquery-bez/jquery.bez.min.js",
       "app/bower_components/jquery-validation/dist/jquery.validate.js",
-      "app/bower_components/gsap/src/minified/TimelineLite.min.js",
+      "app/bower_components/gsap/src/minified/TimelineMax.min.js",
       "app/bower_components/scrollmagic/scrollmagic/minified/ScrollMagic.min.js",
       "app/bower_components/scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js",
       "app/bower_components/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js",
@@ -64,6 +64,7 @@ gulp.task("html", function(){
 // /////////////////////////////////////////////////
 gulp.task('browser-sync', function(){
   browserSync({
+    ghostMode: false,
     server:{
       baseDir:"./app/"
     }

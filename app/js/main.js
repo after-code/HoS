@@ -8,6 +8,9 @@ var open = false;
 var animating = false;
 var animSpeed = 205,
     header__height = $(".header__nav").height();
+    var tl3 = new TimelineMax();
+    var tl4 = new TimelineMax();
+    tl4.pause();
 $(function(){
 
 // ScrollMagic
@@ -21,69 +24,74 @@ if ($("body").hasClass("headerAnimation")){
   firstScene = true;
 }
 console.log("First scene: " + firstScene);
-var scene = new ScrollMagic.Scene({triggerElement:"#trigger"})
-.addTo(controller)
-.on("update", function() {
-  var x1 = controller.info("scrollDirection"),
-      x2 = $(window).scrollTop(),
-      x3 = 0,
-      x4 = 200;
-  if($(window).width() > 1025){
-
-
-     if ( x1 == "FORWARD" && x2 >= x4 ) {
-
-       if(firstScene){
-         firstScene = false;
-         disableScroll();
-         console.log("scrollDisabled");
-
-         tl3.play();
-         setTimeout(function(){
-           enableScroll();
-           console.log("scrollEnabled");
-
-         },600);
-       } else if (x2 >= x4){
-         if (headerActive){
-           tl4.reverse();
-           headerActive = false;
-         }
-          console.log("forward > 200");
-       }
-      //  $("body,html").css({"overflow-y":"hidden"});
-     }
-     if (x1 == "REVERSE"  && !firstScene && x2 >= 800) {
-       console.log("reverse > 600");
-       if (!headerActive){
-         tl4.play();
-         headerActive = true;
-       }
-     } else if (x1 == "REVERSE" && !firstScene && x2 < 800){
-       console.log("reverse < 600");
-       if (headerActive){
-         tl4.reverse();
-         headerActive = false;
-       }
-     }
-  } else {
-    if ( x1 == "FORWARD"  ) {
-      console.log(firstScene);
-      if(firstScene){
-        firstScene = false;
-        disableScroll();
-        console.log("scrollDisabled");
-
-        tl6.play();
-        setTimeout(function(){
-          enableScroll();
-          console.log("scrollEnabled");
-
-        },600);
-      }
-    }
-  }
-});
+var scene = new ScrollMagic.Scene({triggerElement:"#trigger",triggerHook: 'onLeave'})
+.addIndicators()
+// .setTween(tl4)
+.on('start', function () {
+      tl4.play();
+  })
+.addTo(controller);
+// .on("update", function() {
+//   var x1 = controller.info("scrollDirection"),
+//       x2 = $(window).scrollTop(),
+//       x3 = 0,
+//       x4 = 200;
+//   if($(window).width() > 1025){
+//
+//
+//      if ( x1 == "FORWARD" ) {
+//
+//        if(firstScene){
+//          firstScene = false;
+//          disableScroll();
+//          console.log("scrollDisabled");
+//
+//          tl3.play();
+//          setTimeout(function(){
+//            enableScroll();
+//            console.log("scrollEnabled");
+//
+//          },600);
+//        } else if (x2 >= x4){
+//          if (headerActive){
+//            tl4.reverse();
+//            headerActive = false;
+//          }
+//           console.log("forward > 200");
+//        }
+//       //  $("body,html").css({"overflow-y":"hidden"});
+//      }
+//      if (x1 == "REVERSE"  && !firstScene && x2 >= 800) {
+//        console.log("reverse > 600");
+//        if (!headerActive){
+//          tl4.play();
+//          headerActive = true;
+//        }
+//      } else if (x1 == "REVERSE" && !firstScene && x2 < 800){
+//        console.log("reverse < 600");
+//        if (headerActive){
+//          tl4.reverse();
+//          headerActive = false;
+//        }
+//      }
+//   } else {
+//     if ( x1 == "FORWARD"  ) {
+//       console.log(firstScene);
+//       if(firstScene){
+//         firstScene = false;
+//         disableScroll();
+//         console.log("scrollDisabled");
+//
+//         tl6.play();
+//         setTimeout(function(){
+//           enableScroll();
+//           console.log("scrollEnabled");
+//
+//         },600);
+//       }
+//     }
+//   }
+// });
 
 // var scene2 = new ScrollMagic.Scene()
 // .addTo(controller)
@@ -225,15 +233,7 @@ function hidePopup() {
 
 // / Popup animations
 var tl2 = new TimelineLite(),
-    tl3 = new TimelineLite(),
-    tl4 = new TimelineLite({
-      onComplete:function(){
-        tl4.time(0.4);
-      },
-      onReverseComplete:function(){
-        tl4.time(0);
-      }
-    }),
+
     tl5 = new TimelineLite(),
     tl6 = new TimelineLite(),
     $email_popup_wrap = '.w-popup-email__wrap',
@@ -254,19 +254,19 @@ $(function(){
   tl5.to($email_popup_mask, 0.30, {opacity:'0.61', left:"-50.5%", ease: $.bez(standardCurve)}, 'start+=0.2');
   //header navigation animations
 
-  var $header_wrap = '.header__wrap',
-      $header = '.header',
-      $header_link = '.header__link',
-      $header_links = '.header__links',
-      $header_logo = '.header__logo',
-      $fluid_header = '.b-fluid-header',
-      $body_html = 'body,html',
-      $fluid_header_element = '.b-fluid-header__element',
-      $fluid_header_vector = '.b-fluid-header__vector',
-      $fluid_header_type = '.b-fluid-header__type',
-      $header_logo_white = '.header__logo--white';
-  tl3.pause();
-  tl4.pause();
+  var $header_wrap = $('.header__wrap'),
+      $header = $('.header'),
+      $header_link = $('.header__link'),
+      $header_links = $('.header__links'),
+      $header_logo = $('.header__logo'),
+      $fluid_header = $('.b-fluid-header'),
+      $body_html = $('body,html'),
+      $fluid_header_element = $('.b-fluid-header__element'),
+      $fluid_header_vector = $('.b-fluid-header__vector'),
+      $fluid_header_type = $('.b-fluid-header__type'),
+      $header_logo_white = $('.header__logo--white');
+  // tl3.pause();
+  // tl4.pause();
 
   //header wrap final treba da se prebaci u tl4 tipa
   tl4.to(".header__wrap", 0.20,{"opacity":"0", ease: $.bez(accelerationCurve)},'start');
@@ -279,12 +279,12 @@ $(function(){
 
 
 //Fluid header animations on desk
-  tl3.to($fluid_header, 0.4, {"margin-top":"-56vh", ease: $.bez(decelerationCurve)},'start+=0.2');
-  tl3.to($fluid_header_element, 0.4, {"top":"49.7vh","left":"46.1%", width:"36.4%", ease: $.bez(decelerationCurve)},'start+=0.2');
-  // tl3.to($fluid_header_vector, 0.45, {transform: "scale(7)", marginTop:"-50%", marginLeft:"-50%", ease: $.bez(accelerationCurve)},'start');
-  // tl3.to($fluid_header_vector, 0.45, {transform: "scale(1)", marginTop:"0%", marginLeft:"0%", ease: $.bez(decelerationCurve)},'start+=0.5');
-  tl3.to($fluid_header_type, 0.4, {top:"24.6vh","left":"28.5vh" ,fontSize:"5vh",lineHeight:"4.7vh", ease: $.bez(decelerationCurve)},'start+=0.2');
-  tl3.to($body_html, 0.4, {scrollTop:0, ease: $.bez(decelerationCurve)},'start+=0.2');
+  tl3.to($fluid_header, 0.45, {"margin-top":"-56vh", ease: $.bez(standardCurve)},'start');
+  tl3.to($fluid_header_element, 0.3, {"top":"49.7vh","left":"46.1vw", ease: $.bez(standardCurve)},'start');
+  // tl3.to($fluid_header_vector, 0.45, {transform: "scale(7)", marginTop:"-50%", marginLeft:"-50%", ease: $.bez(standardCurve)},'start');
+  // tl3.to($fluid_header_vector, 0.45, {transform: "scale(1)", marginTop:"0%", marginLeft:"0%", ease: $.bez(standardCurve)},'start+=0.5');
+  tl3.to($fluid_header_type, 0.45, {top:"24.6vh","left":"28.5vh" ,fontSize:"5vh",lineHeight:"4.7vh", ease: $.bez(standardCurve)},'start');
+  tl3.to($body_html, 0.4, {scrollTop:0, ease: $.bez(decelerationCurve)},'start');
 
   //Fluid header animations on mobile
     tl6.to($fluid_header, 0.4, {"margin-top":"-74vh", ease: $.bez(decelerationCurve)},'start+=0.2');

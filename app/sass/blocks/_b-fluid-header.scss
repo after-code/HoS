@@ -6,12 +6,13 @@
   background-size:cover;
   overflow: hidden;
   background-repeat:no-repeat;
+  // position: fixed;
   // margin-top: -158px;
 }
 .b-fluid-header__element {
   position: relative;
   top: 20.6992vh;
-  left: 81vh;
+  left: 44vw;
   width: 30%;
   transform: translateX(-50%);
   @include breakpoint(mobile) {
@@ -47,5 +48,5 @@
 }
 #trigger {
   position: absolute;
-  top:20%;
+  top:80%;
 }
