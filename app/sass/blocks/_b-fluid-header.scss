@@ -6,6 +6,7 @@
   background-size:cover;
   overflow: hidden;
   background-repeat:no-repeat;
+  position: fixed;
   // margin-top: -158px;
 }
 .b-fluid-header__element {
@@ -21,6 +22,7 @@
 .b-fluid-header__vector {
   position:absolute;
   height: 53vh;
+  @include prefix(transform, scale(7), webkit ms moz o);
   img {
     height:100%;
   }
@@ -31,6 +33,7 @@
 .b-fluid-header__type {
   font-size: 8.4vh;
   line-height: 7.2vh;
+  opacity: 0;
   position: absolute;
   width: 200%;
   font-style: italic;

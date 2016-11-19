@@ -130,7 +130,7 @@ h1 {
     font-weight: 100; }
 
 .header__wrap {
-  position: relative;
+  position: fixed;
   width: 100%;
   opacity: 1;
   height: 0px;
@@ -202,6 +202,7 @@ h1 {
 .header__logo, .header__logo--white {
   width: 250px;
   top: 38px;
+  opacity: 0;
   float: left;
   position: absolute;
   left: 19.7%; }
@@ -239,7 +240,8 @@ h1 {
   float: left;
   margin-top: 79px;
   margin-bottom: 79px;
-  margin-left: 42.8%; }
+  margin-left: 42.8%;
+  opacity: 0; }
   @media (max-width: 1025px) {
     .header__links {
       z-index: -1;
@@ -2182,7 +2184,8 @@ html.opened {
 
 .b-about-hos {
   width: 100%;
-  float: left; }
+  float: left;
+  margin-top: 44vh; }
   .b-about-hos .b-main-heading {
     margin-bottom: 8.6%; }
 
@@ -2495,7 +2498,8 @@ html.opened {
   background-image: url(../../assets/img/about-header-photo.jpg);
   background-size: cover;
   overflow: hidden;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  position: fixed; }
 
 .b-fluid-header__element {
   position: relative;
@@ -2509,7 +2513,12 @@ html.opened {
 
 .b-fluid-header__vector {
   position: absolute;
-  height: 53vh; }
+  height: 53vh;
+  -webkit-transform: scale(7);
+  -ms-transform: scale(7);
+  -moz-transform: scale(7);
+  -o-transform: scale(7);
+  transform: scale(7); }
   .b-fluid-header__vector img {
     height: 100%; }
   @media (max-width: 450px) {
@@ -2519,6 +2528,7 @@ html.opened {
 .b-fluid-header__type {
   font-size: 8.4vh;
   line-height: 7.2vh;
+  opacity: 0;
   position: absolute;
   width: 200%;
   font-style: italic;
@@ -2602,6 +2612,7 @@ html.opened {
       margin-bottom: 33%; } }
 
 .w-sidebar-widget {
+  opacity: 0;
   position: fixed;
   cursor: pointer;
   right: 0;
