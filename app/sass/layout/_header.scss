@@ -1,5 +1,4 @@
 .header__wrap {
-  position:fixed;
   width:100%;
   opacity: 1;
   height: 0px;
@@ -12,6 +11,9 @@
     height: auto;
     position: absolute;
   }
+}
+.headerAnimation .header__wrap {
+  position: fixed;
 }
 .header {
   width: 100%;

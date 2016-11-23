@@ -130,7 +130,6 @@ h1 {
     font-weight: 100; }
 
 .header__wrap {
-  position: fixed;
   width: 100%;
   opacity: 1;
   height: 0px;
@@ -143,6 +142,9 @@ h1 {
     .header__wrap {
       height: auto;
       position: absolute; } }
+
+.headerAnimation .header__wrap {
+  position: fixed; }
 
 .header {
   width: 100%;
@@ -2490,6 +2492,12 @@ html.opened {
       display: inline-block;
       padding: 4% 11%;
       float: none; } }
+
+.page-about .b-fluid-header {
+  background-image: url(../../assets/img/about-header-photo.jpg); }
+
+.page-about .b-fluid-header__circle {
+  fill: #ee2e45; }
 
 .b-fluid-header {
   height: 100vh;
