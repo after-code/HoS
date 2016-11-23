@@ -425,7 +425,6 @@ html.opened {
       padding: 0 4%; } }
 
 .wrapper--big {
-  margin-top: 10%;
   max-width: 2050px;
   padding-top: 5%; }
   @media (max-width: 1605px) {
@@ -750,6 +749,14 @@ html.opened {
       right: 9%;
       font-size: 17px;
       top: 0; } }
+
+.content-bumper {
+  height: 24vh;
+  float: left;
+  width: 100%; }
+
+.headerAnimation .content-bumper {
+  height: 44vh; }
 
 .b-media, .b-media--big, .b-media--small, .b-media--middle {
   display: block;
@@ -2186,8 +2193,7 @@ html.opened {
 
 .b-about-hos {
   width: 100%;
-  float: left;
-  margin-top: 44vh; }
+  float: left; }
   .b-about-hos .b-main-heading {
     margin-bottom: 8.6%; }
 
