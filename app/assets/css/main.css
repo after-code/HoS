@@ -2519,7 +2519,7 @@ html.opened {
   -moz-transform: scale(7);
   -o-transform: scale(7);
   transform: scale(7); }
-  .b-fluid-header__vector img {
+  .b-fluid-header__vector img, .b-fluid-header__vector svg {
     height: 100%; }
   @media (max-width: 450px) {
     .b-fluid-header__vector {
@@ -2546,6 +2546,9 @@ html.opened {
 #trigger {
   position: absolute;
   top: 20%; }
+
+.b-fluid-header__circle {
+  fill: orange; }
 
 .b-my-journey {
   width: 100%;
