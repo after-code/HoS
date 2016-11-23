@@ -1,0 +1,8 @@
+.c-typography p {
+  font-size: 0.93vw;
+  line-height: 1.7vw;
+  margin-bottom: 7%; }
+
+.c-typography li {
+  list-style-type: disc;
+  margin-bottom: 8%; }

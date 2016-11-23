@@ -107,6 +107,15 @@ body {
   font-family: 'Press';
   src: url(../../assets/font/PressStart2P.ttf); }
 
+.c-typography p {
+  font-size: 0.93vw;
+  line-height: 1.7vw;
+  margin-bottom: 7%; }
+
+.c-typography li {
+  list-style-type: disc;
+  margin-bottom: 8%; }
+
 h1 {
   font-size: 79px;
   text-align: center;
@@ -2219,7 +2228,6 @@ html.opened {
 
 .b-about-hos__row--type1 .b-about-hos__right {
   margin-left: 8%;
-  padding-top: 7.6%;
   width: 38%; }
 
 .b-about-hos__left,
