@@ -4,7 +4,7 @@
   overflow: hidden;
   padding-bottom: 3.7%;
   background-color: $red;
-  background-image: url(../../assets/img/insights-bck.jpg);
+  background-image: url(#{$assetpath}img/insights-bck.jpg);
   .b-service__logo {
     width: 36.7%;
     margin: 0 auto;

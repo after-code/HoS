@@ -44,7 +44,7 @@
   display: none;
   width: 40px;
   height: 40px;
-  background:url(../../assets/img/menu-ico.svg);
+  background:url(#{$assetpath}img/menu-ico.svg);
   background-repeat: no-repeat;
   background-position: center;
   @include transition(margin 300ms);
@@ -264,7 +264,7 @@
       opacity: 1;
     }
     .nav-icon {
-      background:url(../../assets/img/close-nav.svg);
+      background:url(#{$assetpath}img/close-nav.svg);
       background-repeat: no-repeat;
       background-position: center;
       background-size: 56%;
@@ -273,7 +273,7 @@
   }
   @include breakpoint(mobile) {
     .nav-icon {
-      background:url(../../assets/img/close-nav.svg);
+      background:url(#{$assetpath}img/close-nav.svg);
       background-repeat: no-repeat;
       background-position: center;
       background-size: auto;

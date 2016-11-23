@@ -140,7 +140,7 @@ html {
 }
 .section--my-journey {
   overflow: hidden;
-  background-image:url(../../assets/img/yellow-journey-bck.jpg);
+  background-image:url(#{$assetpath}img/yellow-journey-bck.jpg);
   padding: 7% 24.3%;
 }
 body {

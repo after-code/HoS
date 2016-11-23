@@ -1,6 +1,6 @@
 .b-about-alex {
   width: 100%;
-  background: url(../../assets/img/about-alex-background.png);
+  background: url(#{$assetpath}img/about-alex-background.png);
   background-repeat: no-repeat;
   float: left;
   background-size: cover;

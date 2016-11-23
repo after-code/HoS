@@ -2547,9 +2547,6 @@ html.opened {
   position: absolute;
   top: 20%; }
 
-.b-fluid-header__circle {
-  fill: orange; }
-
 .b-my-journey {
   width: 100%;
   padding-bottom: 30%;
@@ -2822,7 +2819,7 @@ html.opened {
       width: 100%; } }
 
 .w-popup-email__close-ico {
-  background: url("../../assets/img/close-pop-up.png");
+  background: url(../../assets/img/close-pop-up.png);
   width: 50px;
   height: 50px;
   background-position: center;
