@@ -17,3 +17,15 @@ $decelerationCurve : 'cubic-bezier(0.0, 0.0, 0.2, 1)';
 $accelerationCurve : 'cubic-bezier(0.4, 0.0, 1, 1)';
 $sharpCurve : 'cubic-bezier(0.4, 0.0, 0.6, 1)';
 $standardCurve : 'cubic-bezier(0.4, 0.0, 0.2, 1)';
+
+// @mixin fhSettings($page, $color, $image){
+//   #{$page} {
+//     background: green;
+//     .b-fluid-header {
+//       background-image:url(../../assets/img/$image);
+//     }
+//     // .b-fluid-header__circle {
+//     //   fill:$color;
+//     // }
+//   }
+// }

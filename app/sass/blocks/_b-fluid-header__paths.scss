@@ -1,0 +1,9 @@
+.page-about {
+  .b-fluid-header {
+    background-image:url(#{$assetpath}img/about-header-photo.jpg);
+  }
+  .b-fluid-header__circle {
+    fill:$red;
+  }
+}
+// @include fhSettings('.page-about',$red, "/about-header-photo.jpg" );

@@ -1,3 +1,6 @@
+$assetpath: '../../assets/' !default;
+
+
 @import 'base/reset';
 @import 'base/colors';
 @import 'base/breakpoints';
@@ -24,6 +27,7 @@
 @import 'blocks/b-about-alex';
 @import 'blocks/b-hp-about';
 @import 'blocks/b-ebooks';
+@import 'blocks/b-fluid-header__paths';
 @import 'blocks/b-fluid-header';
 @import 'blocks/b-my-journey';
 
