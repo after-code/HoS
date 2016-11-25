@@ -1,9 +1,9 @@
 .page-about {
   .b-fluid-header {
-    background-image:url(#{$assetpath}img/about-header-photo.jpg);
+    background-image:url(#{$assetpath}img/about-header-photo--small.jpg);
   }
   .b-fluid-header__circle {
-    fill:$red;
+    fill:$yellow;
   }
 }
 // @include fhSettings('.page-about',$red, "/about-header-photo.jpg" );

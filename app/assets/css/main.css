@@ -2512,16 +2512,16 @@ html.opened {
       float: none; } }
 
 .page-about .b-fluid-header {
-  background-image: url(../../assets/img/about-header-photo.jpg); }
+  background-image: url(../../assets/img/about-header-photo--small.jpg); }
 
 .page-about .b-fluid-header__circle {
-  fill: #ee2e45; }
+  fill: #fcee2f; }
 
 .b-fluid-header {
   height: 100vh;
   width: 100%;
   float: left;
-  background-image: url(../../assets/img/about-header-photo.jpg);
+  background-image: url(../../assets/img/about-header-photo--small.jpg);
   background-size: cover;
   overflow: hidden;
   background-repeat: no-repeat;
