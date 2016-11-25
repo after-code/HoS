@@ -285,11 +285,11 @@
   //Fluid header animations on desk
     // tl3.to($fluid_header, 0.6, {transform:"translateY(-56vh)", ease: Power2.easeOut},'start');
     // tl3.to($fluid_header, 0.6, {marginTop:"-56vh", ease: Power2.easeOut},'start');
-    tl3.to($fluid_header, 0.8, {top:"-56vh", ease: Power4.easeInOut},'start');
-    tl3.to($fluid_header_element, 0.8, {"top":"49.7vh","left":"46.1%", width:"36.4%", ease: Power4.easeInOut},'start');
+    tl3.to($fluid_header, 0.8, {top:"-56vh", ease: Elastic.easeOut.config(1.02, 0.99)},'start');
+    tl3.to($fluid_header_element, 0.8, {"top":"49.7vh","left":"46.1%", width:"36.4%", ease: Power2.easeOut},'start');
     // tl3.to($fluid_header_vector, 0.45, {transform: "scale(7)", marginTop:"-50%", marginLeft:"-50%", ease: $.bez(accelerationCurve)},'start');
     // tl3.to($fluid_header_vector, 0.45, {transform: "scale(1)", marginTop:"0%", marginLeft:"0%", ease: $.bez(decelerationCurve)},'start+=0.5');
-    tl3.to($fluid_header_type, 0.6, {transform: "scale(0.5)", marginLeft:"-25%", ease: Power4.easeOut},'start');
+    tl3.to($fluid_header_type, 0.8, {transform: "scale(0.5)", marginLeft:"-25%", ease: Power2.easeOut},'start');
     tl3.to($widget, 0.55, {opacity: "1" , delay:0.3 , ease: Power4.easeOut},'final');
     tl3.to($fluid_header, 0, {position:"absolute"},'final');
     tl3.to($header_wrap, 0, {position:"absolute"},'final');

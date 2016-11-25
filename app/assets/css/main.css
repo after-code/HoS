@@ -112,6 +112,9 @@ body {
   line-height: 1.7vw;
   margin-bottom: 7%; }
 
+.c-typography ul {
+  padding-left: 7%; }
+
 .c-typography li {
   list-style-type: disc;
   margin-bottom: 8%; }
@@ -2208,7 +2211,7 @@ html.opened {
 
 .b-about-hos__wrap {
   width: 100%;
-  padding: 3% 20%; }
+  padding: 3% 25%; }
 
 .b-about-hos__row, .b-about-hos__row--type1 {
   width: 100%;
@@ -2224,19 +2227,20 @@ html.opened {
 
 .b-about-hos__row--type1 .b-about-hos__left,
 .b-about-hos__row--type1 .b-about-hos__right {
-  width: 49%; }
+  width: 47%;
+  margin: 0; }
 
 .b-about-hos__row--type1 .b-about-hos__right {
-  margin-left: 8%;
-  width: 38%; }
+  margin-left: 6%;
+  width: 45%; }
 
 .b-about-hos__left,
 .b-about-hos__right {
   float: left; }
 
 .b-about-hos__left {
-  padding-left: 12%;
-  width: 60%; }
+  width: 55%;
+  margin-right: 5%; }
 
 .b-about-hos__right {
   margin-bottom: 12.5%;
