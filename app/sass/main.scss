@@ -33,6 +33,9 @@ $assetpath: '../../assets/' !default;
 @import 'blocks/b-fluid-header';
 @import 'blocks/b-my-journey';
 
+@import 'partials/p-hos-block';
+@import 'partials/p-intro-box';
+
 @import 'pages/homepage';
 @import 'pages/ebook';
 

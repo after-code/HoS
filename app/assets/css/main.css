@@ -107,9 +107,20 @@ body {
   font-family: 'Press';
   src: url(../../assets/font/PressStart2P.ttf); }
 
+.c-typography h3 {
+  font-size: 1.51vw;
+  line-height: 1.6vw;
+  font-weight: bold;
+  font-family: "Roboto Condensed", sans-serif;
+  margin-bottom: 3.3%; }
+
+.c-typography h5 {
+  font-size: 0.94vw;
+  margin-bottom: 3.3%; }
+
 .c-typography p {
   font-size: 0.93vw;
-  line-height: 1.7vw;
+  line-height: 1.4vw;
   margin-bottom: 7%; }
 
 .c-typography ul {
@@ -124,7 +135,13 @@ h1 {
   text-align: center;
   padding: 11.2% 0 3.5%;
   font-family: "Roboto Condensed", sans-serif;
-  font-weight: bold; }
+  font-weight: 100; }
+  h1 b {
+    font-weight: 700; }
+  h1 span {
+    color: #2abec0;
+    font-weight: 500;
+    font-size: 2vw; }
   @media (max-width: 2050px) {
     h1 {
       font-size: 3.85366vw; } }
@@ -2609,6 +2626,66 @@ html.opened {
   .b-my-journey__square img {
     width: 100%;
     display: block; }
+
+.p-hos-block {
+  width: 100%;
+  float: left;
+  overflow: hidden;
+  background: white; }
+
+.p-hos-block__media {
+  float: left;
+  width: 47%;
+  position: relative; }
+  .p-hos-block__media img {
+    width: 114%;
+    display: block; }
+  .p-hos-block__media:after {
+    display: block;
+    width: 138%;
+    height: 131%;
+    background: white;
+    content: "";
+    position: absolute;
+    right: -123.5%;
+    transform: skew(-10.1deg);
+    top: 0%;
+    z-index: 1; }
+    @media (max-width: 450px) {
+      .p-hos-block__media:after {
+        display: none; } }
+
+.p-hos-block__content {
+  width: 53%;
+  padding-right: 6%;
+  padding-top: 2.7%;
+  padding-left: 1.1%;
+  display: block;
+  position: relative;
+  float: left;
+  z-index: 28;
+  background: white; }
+
+.p-intro-box {
+  width: 100%;
+  padding-top: 10%;
+  padding-left: 8%;
+  float: left; }
+  .p-intro-box h1 {
+    text-align: left; }
+
+.p-intro-box__content {
+  float: left;
+  width: 46%;
+  margin-right: 5%;
+  padding-top: 7%; }
+
+.p-intro-box__media {
+  float: left;
+  margin-bottom: 12.5%;
+  width: 49%; }
+  .p-intro-box__media img {
+    width: 91%; }
 
 .page-homepage .wrapper--big {
   margin-bottom: 2%; }

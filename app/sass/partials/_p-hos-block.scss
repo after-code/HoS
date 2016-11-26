@@ -1,0 +1,42 @@
+.p-hos-block {
+  width: 100%;
+  float: left;
+  overflow: hidden;
+  background: white;
+}
+.p-hos-block__media {
+  float: left;
+  width: 47%;
+  position: relative;
+  img {
+    width: 114%;
+    display: block;
+  }
+  &:after {
+    display: block;
+    width: 138%;
+    height: 131%;
+    background: white;
+    content: "";
+    position: absolute;
+    right: -123.5%;
+    transform: skew(-10.1deg);
+    top: 0%;
+    z-index: 1;
+    @include breakpoint(mobile) {
+      display: none;
+    }
+  }
+}
+.p-hos-block__content {
+  width: 53%;
+  padding-right: 6%;
+  padding-top: 2.7%;
+  padding-left: 1.1%;
+  display: block;
+  position: relative;
+  float: left;
+  z-index: 28;
+  background: white;
+
+}

@@ -3,7 +3,15 @@ h1 {
   text-align: center;
   padding: 11.2% 0 3.5%;
   font-family: $text__family--Roboto-Condensed;
-  font-weight: bold;
+  font-weight: 100;
+  b {
+    font-weight: 700;
+  }
+  span {
+    color:$cyan;
+    font-weight: 500;
+    font-size: 2vw;
+  }
   @include breakpoint(typoMax) {
     font-size: cvp(79px, 2050px);
   }

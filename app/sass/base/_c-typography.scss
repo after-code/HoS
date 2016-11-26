@@ -1,7 +1,18 @@
 .c-typography {
+  h3 {
+    font-size: 1.51vw;
+    line-height: 1.6vw;
+    font-weight: bold;
+    font-family: $text__family--Roboto-Condensed;
+    margin-bottom: 3.3%;
+  }
+  h5 {
+    font-size: 0.94vw;
+    margin-bottom: 3.3%;
+  }
   p {
     font-size: 0.93vw;
-    line-height: 1.7vw;
+    line-height: 1.4vw;
     margin-bottom: 7%;
   }
   ul {
