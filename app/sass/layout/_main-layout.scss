@@ -38,7 +38,16 @@ html {
   @extend .wrapper;
   // max-width: 1600px;
   padding: 0px 16%;
-  overflow: hidden;
+  // overflow: hidden;
+  @include breakpoint(mobile) {
+    padding:0 3%;
+  }
+}
+.wrapper--xsmall {
+  @extend .wrapper;
+  // max-width: 1600px;
+  padding: 0px 20%;
+  // overflow: hidden;
   @include breakpoint(mobile) {
     padding:0 3%;
   }
@@ -103,6 +112,12 @@ html {
   margin-bottom: 4.4%;
   float: left;
   width: 100%;
+}
+.section--training-programs {
+  width:100%;
+  overflow: hidden;
+  background: #f6f6f6;
+  padding-top:3%;
 }
 .section--header {
   width: 100%;

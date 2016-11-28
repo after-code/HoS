@@ -32,9 +32,14 @@ $assetpath: '../../assets/' !default;
 @import 'blocks/b-fluid-header__paths';
 @import 'blocks/b-fluid-header';
 @import 'blocks/b-my-journey';
+@import 'blocks/b-chat-teaser';
 
 @import 'partials/p-hos-block';
 @import 'partials/p-intro-box';
+@import 'partials/p-video-block';
+@import 'partials/p-contributors';
+@import 'partials/p-list';
+@import 'partials/p-fullbanner';
 
 @import 'pages/homepage';
 @import 'pages/ebook';

@@ -1,0 +1,28 @@
+.p-fullbanner {
+  width: 100%;
+  position: relative;
+  img {
+    width: 100%;
+  }
+  float: left;
+  // background: url(#{$assetpath}/img/consultancy-img.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.p-fullbanner__item {
+  top:5%;
+  left:39%;
+  z-index: 10;
+  width: 28%;
+  position: absolute;
+  img {
+    width: 100%;
+  }
+}
+.p-fullbanner__item__content {
+  margin-top:-70%;
+  position: relative;
+  text-align: center;
+  width: 80%;
+  margin-left:10%;
+}

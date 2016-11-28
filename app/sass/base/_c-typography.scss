@@ -1,25 +1,42 @@
 .c-typography {
   h3 {
-    font-size: 1.51vw;
-    line-height: 1.6vw;
+    font-size: 31px;
+    line-height: 32px;
     font-weight: bold;
     font-family: $text__family--Roboto-Condensed;
     margin-bottom: 3.3%;
+    text-transform: uppercase;
+    @include breakpoint(typoMax){
+      font-size: cvp(31px,2050px);
+      line-height: cvp(32px,2050px);
+    }
   }
   h5 {
     font-size: 0.94vw;
     margin-bottom: 3.3%;
   }
   p {
-    font-size: 0.93vw;
-    line-height: 1.4vw;
+    line-height: 30px;
+    font-size: 20px;
     margin-bottom: 7%;
+    @include breakpoint(typoMax){
+      font-size: cvp(20px,2050px);
+      line-height: cvp(30px,2050px);
+    }
   }
   ul {
     padding-left: 7%;
+    margin-bottom: 7%;
   }
   li {
     list-style-type: disc;
-    margin-bottom: 8%;
+    margin-bottom: 3%;
+    line-height: 30px;
+    font-size: 20px;
+    margin-bottom: 0.8%;
+    @include breakpoint(typoMax){
+      font-size: cvp(20px,2050px);
+      line-height: cvp(30px,2050px);
+    }
   }
 }
