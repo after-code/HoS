@@ -5,6 +5,7 @@
     font-weight: bold;
     font-family: $text__family--Roboto-Condensed;
     margin-bottom: 3.3%;
+    text-transform: uppercase;
   }
   h5 {
     font-size: 0.94vw;
@@ -17,9 +18,13 @@
   }
   ul {
     padding-left: 7%;
+    margin-bottom: 7%;
   }
   li {
     list-style-type: disc;
-    margin-bottom: 8%;
+    margin-bottom: 3%;
+    font-size: 1vw;
+    line-height: 1.5vw;
+    margin-bottom: 0.8%;
   }
 }

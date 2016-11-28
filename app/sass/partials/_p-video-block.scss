@@ -1,0 +1,19 @@
+.p-video-block {
+  width: 100%;
+  margin-bottom: 3%;
+  overflow: hidden;
+  background: white;
+}
+.p-video-block__media {
+  float: left;
+  width: 55%;
+  video {
+    width: 100%;
+  }
+}
+.p-video-block__content {
+  float: left;
+  width: 45%;
+  padding:3%;
+  padding-top:5%;
+}

@@ -3,6 +3,15 @@
   float: left;
   overflow: hidden;
   background: white;
+  margin-bottom: 3%;
+}
+.p-hos-block--big {
+  @extend .p-hos-block;
+  .p-hos-block__media {
+    img {
+      width: 140%;
+    }
+  }
 }
 .p-hos-block__media {
   float: left;
@@ -11,6 +20,26 @@
   img {
     width: 114%;
     display: block;
+  }
+  &__info {
+    position: absolute;
+    bottom: 0;
+    padding: 3%;
+    color:white;
+    text-transform: uppercase;
+  }
+  &__nbr {
+    font-size: 2vw;
+    float: left;
+  }
+  &__desk {
+    float: left;
+    h3 {
+
+    }
+    h5 {
+
+    }
   }
   &:after {
     display: block;
