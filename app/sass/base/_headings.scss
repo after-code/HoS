@@ -22,6 +22,26 @@ h1 {
     font-size: cvp(27px, 330px);
   }
 }
+h2 {
+  font-size: 49px;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 11.2% 0 3.5%;
+  font-family: $text__family--Roboto-Condensed;
+  font-weight: 100;
+  margin-bottom: 4%;
+  b {
+    font-weight: 700;
+  }
+  span {
+    color:$cyan;
+    font-weight: 500;
+    font-size: 2vw;
+  }
+  @include breakpoint(typoMax) {
+    font-size: cvp(49px, 2050px);
+  }
+}
 .b-main-heading {
   margin:0;
   span {

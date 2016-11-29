@@ -1,4 +1,4 @@
-.p-fullbanner {
+.b-fullbanner {
   width: 100%;
   position: relative;
   img {
@@ -9,7 +9,7 @@
   background-size: 100%;
   background-repeat: no-repeat;
 }
-.p-fullbanner__item {
+.b-fullbanner__item {
   top:5%;
   left:39%;
   z-index: 10;
@@ -19,7 +19,7 @@
     width: 100%;
   }
 }
-.p-fullbanner__item__content {
+.b-fullbanner__item__content {
   margin-top:-70%;
   position: relative;
   text-align: center;

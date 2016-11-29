@@ -1,7 +1,9 @@
-.p-list {
+.b-list {
   width: 100%;
+  margin-bottom: 13%;
+  overflow: hidden;
 }
-.p-list__item {
+.b-list__item {
   width: 31%;
   float:left;
   &:nth-of-type(3n-1){

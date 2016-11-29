@@ -33,13 +33,15 @@ $assetpath: '../../assets/' !default;
 @import 'blocks/b-fluid-header';
 @import 'blocks/b-my-journey';
 @import 'blocks/b-chat-teaser';
-
-@import 'partials/p-hos-block';
-@import 'partials/p-intro-box';
-@import 'partials/p-video-block';
-@import 'partials/p-contributors';
-@import 'partials/p-list';
-@import 'partials/p-fullbanner';
+@import 'blocks/b-hos-block';
+@import 'blocks/b-intro-box';
+@import 'blocks/b-video-block';
+@import 'blocks/b-contributors';
+@import 'blocks/b-list';
+@import 'blocks/b-fullbanner';
+@import 'blocks/b-reviews';
+@import 'blocks/b-brands';
+@import 'blocks/b-division2';
 
 @import 'pages/homepage';
 @import 'pages/ebook';

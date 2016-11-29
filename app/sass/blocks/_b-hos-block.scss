@@ -1,19 +1,19 @@
-.p-hos-block {
+.b-hos-block {
   width: 100%;
   float: left;
   overflow: hidden;
   background: white;
   margin-bottom: 3%;
 }
-.p-hos-block--big {
-  @extend .p-hos-block;
-  .p-hos-block__media {
+.b-hos-block--big {
+  @extend .b-hos-block;
+  .b-hos-block__media {
     img {
       width: 140%;
     }
   }
 }
-.p-hos-block__media {
+.b-hos-block__media {
   float: left;
   width: 47%;
   position: relative;
@@ -57,7 +57,7 @@
     }
   }
 }
-.p-hos-block__content {
+.b-hos-block__content {
   width: 53%;
   padding-right: 6%;
   padding-top: 2.7%;
