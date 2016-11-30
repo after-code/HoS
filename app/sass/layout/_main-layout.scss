@@ -38,7 +38,7 @@ html {
 .wrapper--small {
   @extend .wrapper;
   // max-width: 1600px;
-  padding: 0px 16%;
+  padding: 0px 19.5%;
   // overflow: hidden;
   @include breakpoint(mobile) {
     padding:0 3%;
@@ -47,7 +47,7 @@ html {
 .wrapper--xsmall {
   @extend .wrapper;
   // max-width: 1600px;
-  padding: 0px 20%;
+  padding: 0px 25%;
   // overflow: hidden;
   @include breakpoint(mobile) {
     padding:0 3%;
@@ -114,11 +114,34 @@ html {
   float: left;
   width: 100%;
 }
+.section--workshops {
+  // margin-bottom: 4.4%;
+  float: left;
+  width: 100%;
+  background: #f6f6f6;
+  padding-top:8.7%;
+  h2 {
+    margin-bottom: 0%;
+  }
+
+}
+.section--reviews {
+  padding-top:8.7%;
+  width: 100%;
+  overflow: hidden;
+  background: #f6f6f6;
+}
 .section--training-programs {
   width:100%;
   overflow: hidden;
   background: #f6f6f6;
-  padding-top:3%;
+  padding-top: 7.7%;
+  padding-bottom: 7%;
+}
+.section--video-testimonials {
+  padding-top:7%;
+  width: 100%;
+  float: left;
 }
 .section--header {
   width: 100%;

@@ -3,11 +3,11 @@
   float: left;
 }
 .b-contributors__box {
-  width: 46%;
-  margin-bottom:5%;
+  width: 44%;
+  margin-bottom:10%;
   float:left;
   &:nth-of-type(2n){
-    margin-left:8%;
+    margin-left:12%;
   }
 }
 .b-contributors__box__author {
@@ -17,12 +17,23 @@
 }
 .b-contributors__box__img {
   float: left;
-  width: 16%;
+  width: 21%;
 }
 .b-contributors__box__author__info {
   float: left;
-  margin-left: 5%;
-  padding-top:5%;
+  margin-left: 7%;
+  padding-top: 6%;
+  h4 {
+    margin-bottom: 12%;
+    font-size: cvp(25px,2050px);
+  }
+  b {
+    font-weight: 700;
+  }
+  h5 {
+    text-transform: uppercase;
+    font-size: cvp(18px,2050px);
+  }
 }
 .b-contributors__box__content {
   text-align: justify;

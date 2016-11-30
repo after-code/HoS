@@ -31,6 +31,12 @@
     }
   }
 }
+.b-testimonials--white {
+  background: white;
+  &:after {
+    display: none;
+  }
+}
 .b-testimonials__left {
   float: left;
   width: 28%;

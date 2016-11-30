@@ -2,11 +2,28 @@
   width: 100%;
   float: left;
   padding-top:3%;
-  border-top:1px solid #ccc;
+  border-top:1px solid #c4c4c4;
   .b-button {
     float:right;
+    margin-top:1%;
   }
 }
 .b-chat-teaser__content {
   float:left;
+  padding-left:1%;
+  h5 {
+    font-size:40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.5%;
+    @include breakpoint(typoMax) {
+      font-size: cvp(40px,2050px);
+    }
+  }
+  p {
+    font-size: 32px;
+    @include breakpoint(typoMax) {
+      font-size: cvp(32px,2050px);
+    }
+  }
 }

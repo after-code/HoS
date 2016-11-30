@@ -10,7 +10,10 @@ h1 {
   span {
     color:$cyan;
     font-weight: 500;
-    font-size: 2vw;
+    font-size: 50px;
+    @include breakpoint(typoMax) {
+      font-size: cvp(50px, 2050px);
+    }
   }
   @include breakpoint(typoMax) {
     font-size: cvp(79px, 2050px);
@@ -30,6 +33,8 @@ h2 {
   font-family: $text__family--Roboto-Condensed;
   font-weight: 100;
   margin-bottom: 4%;
+  margin-top:0;
+  padding-top:0;
   b {
     font-weight: 700;
   }
