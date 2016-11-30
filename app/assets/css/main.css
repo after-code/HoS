@@ -132,6 +132,15 @@ body {
       font-size: 0.97561vw;
       line-height: 1.46341vw; } }
 
+.c-typography b {
+  font-weight: 700;
+  line-height: 33px;
+  font-size: 23px; }
+  @media (max-width: 2050px) {
+    .c-typography b {
+      font-size: 1.12195vw;
+      line-height: 1.60976vw; } }
+
 .c-typography ul {
   padding-left: 7%;
   margin-bottom: 7%; }
@@ -508,12 +517,14 @@ html.opened {
       padding-top: 20%; } }
 
 .wrapper--small {
+  max-width: inherit;
   padding: 0px 19.5%; }
   @media (max-width: 450px) {
     .wrapper--small {
       padding: 0 3%; } }
 
 .wrapper--xsmall {
+  max-width: inherit;
   padding: 0px 25%; }
   @media (max-width: 450px) {
     .wrapper--xsmall {
@@ -2614,6 +2625,12 @@ html.opened {
 
 .page-about .b-fluid-header__circle {
   fill: #fcee2f; }
+
+.page-education .b-fluid-header, .page-education-customized .b-fluid-header {
+  background-image: url(../../assets/img/edu-header-background.jpg); }
+
+.page-education .b-fluid-header__circle, .page-education-customized .b-fluid-header__circle {
+  fill: #50E3C2; }
 
 .b-fluid-header {
   height: 100vh;

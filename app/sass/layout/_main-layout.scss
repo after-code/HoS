@@ -37,6 +37,7 @@ html {
 }
 .wrapper--small {
   @extend .wrapper;
+  max-width: inherit;
   // max-width: 1600px;
   padding: 0px 19.5%;
   // overflow: hidden;
@@ -47,6 +48,7 @@ html {
 .wrapper--xsmall {
   @extend .wrapper;
   // max-width: 1600px;
+  max-width: inherit;
   padding: 0px 25%;
   // overflow: hidden;
   @include breakpoint(mobile) {

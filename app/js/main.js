@@ -96,6 +96,8 @@ var counter = 0;
   //
   });
   $(function(){
+     var img_path = 'url(' + $('.b-fluid-header').data("img") +")";
+    $(".b-fluid-header").css({"background-image":img_path});
     $(".nav-icon").click(function(){
       $('.header').toggleClass("active");
       $('.wrapper--big').toggleClass("opened");
