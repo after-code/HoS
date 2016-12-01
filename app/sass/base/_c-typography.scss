@@ -11,6 +11,17 @@
       line-height: cvp(32px,2050px);
     }
   }
+  h4 {
+    text-transform: uppercase;
+    margin-bottom: 7.3%;
+    font-weight: bold;
+    font-size:24px;
+    line-height:28px;
+    @include breakpoint(typoMax){
+      font-size: cvp(24px,2050px);
+      line-height: cvp(28px,2050px);
+    }
+  }
   h5 {
     font-size: 0.94vw;
     margin-bottom: 3.3%;

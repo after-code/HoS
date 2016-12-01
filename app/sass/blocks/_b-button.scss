@@ -11,10 +11,11 @@
   color: #222;
   background: $yellow;
   display: inline-block;
-  padding: 1.6% 5.7%;
+  padding: 11px 37px;
   margin-bottom: 4.1%;
-  font-size: 20px;
+  font-size: 13px;
   font-weight: bold;
+  text-transform: uppercase;
   cursor: pointer;
   @include transition(all 300ms $sharpCurve);
   &:hover {
@@ -22,7 +23,7 @@
     color:#222;
   }
   @include breakpoint(typoMax){
-    font-size: cvp(22px,2050px);
+    // font-size: cvp(25px,2050px);
   }
   @include breakpoint(mobile) {
     display: block;
@@ -34,4 +35,9 @@
     margin-top: 15%;
     margin-bottom: 17%;
   }
+}
+.b-button--red {
+  @extend .b-button;
+  background:$red;
+  color:white;
 }
