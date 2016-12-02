@@ -110,10 +110,10 @@
       width: 15%;
   }
 }
-.footer__nav {
+#footer__nav > ul {
   margin-bottom: 7.8%;
 }
-.footer__nav__item {
+#footer__nav > ul > li {
   display: inline-block;
   text-align: left;
 
@@ -132,41 +132,11 @@
 
   }
 }
-.footer__nav__link {
+#footer__nav > ul > li > ul > li {
   margin-bottom: 15px;
   font-size: 20px;
   color: white;
-  &:first-child {
-    color: $footer-gray;
-    font-size: 20px;
-    margin-bottom: 30px;
-    @include breakpoint(typoMax){
-      font-size: cvp(17px,2050px);
-    }
-    @include breakpoint(laptop) {
-      font-size: cvp(22px, 2050px);
-    }
-    @include breakpoint(tablet) {
-      font-size: cvp(17px, 768px);
-    }
 
-    @include breakpoint(mobile) {
-      font-size: cvp(18px, 330px);
-      margin-bottom: 9%;
-    }
-    &:after {
-      width: 22px;
-      height: 2px;
-      background: $footer-gray;
-      content:'';
-      display:block;
-      margin-top:15px;
-      @include breakpoint(mobile) {
-        margin-top:10px;
-        width: 18px
-      }
-    }
-  }
   @include breakpoint(typoMax){
     font-size: cvp(20px,2050px);
   }
@@ -178,6 +148,38 @@
   }
   @include breakpoint(mobile) {
     font-size: 16px;
+  }
+}
+#footer__nav > ul > li > span {
+  color: $footer-gray;
+  display: block;
+  font-size: 20px;
+  margin-bottom: 30px;
+  @include breakpoint(typoMax){
+    font-size: cvp(17px,2050px);
+  }
+  @include breakpoint(laptop) {
+    font-size: cvp(22px, 2050px);
+  }
+  @include breakpoint(tablet) {
+    font-size: cvp(17px, 768px);
+  }
+
+  @include breakpoint(mobile) {
+    font-size: cvp(18px, 330px);
+    margin-bottom: 9%;
+  }
+  &:after {
+    width: 22px;
+    height: 2px;
+    background: $footer-gray;
+    content:'';
+    display:block;
+    margin-top:15px;
+    @include breakpoint(mobile) {
+      margin-top:10px;
+      width: 18px
+    }
   }
 }
 .footer__copyright {
