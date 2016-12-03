@@ -134,8 +134,13 @@ section {
   padding-top:8.7%;
   h2 {
     margin-bottom: 0%;
+    @include breakpoint(mobile){
+      margin-bottom: 5%;
+    }
   }
-
+  @include breakpoint(mobile){
+    padding-top: 15%;
+  }
 }
 .section--process-method {
   float: left;
@@ -178,6 +183,18 @@ section {
   width: 100%;
   float: left;
   padding-bottom: 8%;
+  @include breakpoint(mobile){
+    padding-top: 20%;
+  }
+}
+.section--others {
+  float: left;
+
+  width: 100%;
+  @include breakpoint(mobile){
+    padding: 0 4%;
+    padding-top: 15%;
+  }
 }
 .section--header {
   width: 100%;
@@ -217,6 +234,9 @@ section {
   overflow: hidden;
   background-image:url(#{$assetpath}img/yellow-journey-bck.jpg);
   padding: 7% 24.3%;
+  @include breakpoint(mobile){
+    padding: 5%;
+  }
 }
 body {
   // padding-bottom: 500px;

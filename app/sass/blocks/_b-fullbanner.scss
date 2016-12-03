@@ -1,8 +1,13 @@
 .b-fullbanner {
   width: 100%;
   position: relative;
-  img {
+  &> img {
     width: 100%;
+    @include breakpoint(mobile){
+      width: 454%;
+      left: -50%;
+      position: relative;
+    }
   }
   float: left;
   // background: url(#{$assetpath}/img/consultancy-img.png);
@@ -18,11 +23,25 @@
   img {
     width: 100%;
   }
+  @include breakpoint(mobile){
+    width: 100%;
+    left: 0;
+  }
 }
 .b-fullbanner__item__content {
-  margin-top:-70%;
+  margin-top: -70%;
   position: relative;
   text-align: center;
   width: 80%;
   margin-left:10%;
+  @include breakpoint(mobile){
+    margin-top: -86%;
+    h2 {
+      text-align: center;
+      // width: 150%;
+    }
+    p {
+      margin-bottom: 35%;
+    }
+  }
 }

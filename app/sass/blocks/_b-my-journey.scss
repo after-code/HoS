@@ -23,6 +23,7 @@
 }
 .b-my-journey__squares {
   width: 100%;
+  overflow: hidden;
 }
 .b-my-journey__square {
   width: 45%;
@@ -37,5 +38,9 @@
   img {
     width: 100%;
     display: block;
+  }
+  @include breakpoint(mobile){
+    width: 100%;
+    margin: 0%;
   }
 }

@@ -5,7 +5,13 @@
   margin-bottom: 15%; }
 
 .b-reviews__item {
-  width: 48%;
+  width: 46%;
   float: left; }
   .b-reviews__item:nth-of-type(2n) {
-    margin-left: 4%; }
+    margin-left: 8%; }
+    .b-reviews__item:nth-of-type(2n) .b-reviews__item__img {
+      height: 3.5%; }
+
+.b-reviews__item__img {
+  height: 2.5%;
+  margin-bottom: 7.9%; }

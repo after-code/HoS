@@ -1,4 +1,17 @@
 .c-typography {
+  h2 {
+    b {
+      font-weight: bold;
+      @include breakpoint(mobile){
+        font-size: cvp(30px,330px);
+        line-height: cvp(30px,330px);
+      }
+    }
+    @include breakpoint(mobile){
+      font-size: cvp(30px,330px);
+      line-height: cvp(30px,330px);
+    }
+  }
   h3 {
     font-size: 31px;
     line-height: 32px;
@@ -9,6 +22,12 @@
     @include breakpoint(typoMax){
       font-size: cvp(31px,2050px);
       line-height: cvp(32px,2050px);
+    }
+    @include breakpoint(mobile){
+      font-size: cvp(20px,330px);
+      line-height: cvp(20px,330px);
+      margin-bottom: 11%;
+      text-align: left;
     }
   }
   h4 {
@@ -21,10 +40,17 @@
       font-size: cvp(24px,2050px);
       line-height: cvp(28px,2050px);
     }
+    @include breakpoint(mobile){
+      font-size: cvp(18px,330px);
+      line-height: cvp(22px,330px);
+    }
   }
   h5 {
     font-size: 0.94vw;
     margin-bottom: 3.3%;
+    @include breakpoint(mobile){
+      font-size: cvp(16px,330px);
+    }
   }
   p {
     line-height: 30px;
@@ -33,6 +59,11 @@
     @include breakpoint(typoMax){
       font-size: cvp(20px,2050px);
       line-height: cvp(30px,2050px);
+    }
+    @include breakpoint(mobile){
+      font-size: cvp(18px,330px);
+      line-height: cvp(29px,330px);
+
     }
   }
   b {
@@ -43,10 +74,18 @@
       font-size: cvp(23px,2050px);
       line-height: cvp(33px,2050px);
     }
+    @include breakpoint(mobile){
+      font-size: cvp(18px,330px);
+      line-height: cvp(29px,330px);
+
+    }
   }
   ul {
     padding-left: 7%;
     margin-bottom: 7%;
+    @include breakpoint(mobile){
+      padding-top: 5%;
+    }
   }
   li {
     list-style-type: disc;
@@ -57,6 +96,11 @@
     @include breakpoint(typoMax){
       font-size: cvp(20px,2050px);
       line-height: cvp(30px,2050px);
+    }
+    @include breakpoint(mobile){
+      font-size: cvp(18px,330px);
+      line-height: cvp(27px,330px);
+      margin-bottom: 4%;
     }
   }
 }

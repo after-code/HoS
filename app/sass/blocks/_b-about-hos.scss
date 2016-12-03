@@ -9,6 +9,9 @@
 .b-about-hos__wrap {
   width: 100%;
   padding:3% 25%;
+  @include breakpoint(mobile){
+    padding: 9% 5%;
+  }
 }
 .b-about-hos__row {
   width: 100%;
@@ -30,19 +33,33 @@
   .b-about-hos__right {
     width: 47%;
     margin:0;
+    @include breakpoint(mobile){
+      width: 100%;
+    }
   }
   .b-about-hos__right {
     margin-left: 6%;
     width: 45%;
+    @include breakpoint(mobile){
+      width: 100%;
+      margin-left:0;
+    }
   }
 }
 .b-about-hos__left,
 .b-about-hos__right {
   float: left;
+  @include breakpoint(mobile){
+    width: 100%;
+  }
 }
 .b-about-hos__left {
   width: 55%;
   margin-right: 5%;
+  @include breakpoint(mobile){
+    width: 100%;
+    margin-bottom: 23%;
+  }
 }
 .b-about-hos__right {
   img {
@@ -51,6 +68,9 @@
   }
   margin-bottom: 12.5%;
   width: 40%;
+  @include breakpoint(mobile){
+    width: 100%;
+  }
 }
 .b-about-hos__heading--small {
   font-weight: bold;

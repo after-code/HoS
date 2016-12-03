@@ -10,6 +10,9 @@
   video {
     width: 100%;
   }
+  @include breakpoint(mobile){
+    width: 100%;
+  }
 }
 .b-video-block__content {
   float: left;
@@ -17,4 +20,7 @@
   padding: 3%;
   padding-top: 8%;
   padding-left: 7%;
+  @include breakpoint(mobile){
+    width: 100%;
+  }
 }

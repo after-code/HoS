@@ -3,6 +3,9 @@
   height: 24vh;
   float: left;
   width: 100%;
+  @include breakpoint(mobile){
+    display: none;
+  }
 }
 .headerAnimation .content-bumper{
   height:44vh;

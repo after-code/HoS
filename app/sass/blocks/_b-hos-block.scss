@@ -10,6 +10,9 @@
   .b-hos-block__media {
     img {
       width: 147%;
+      @include breakpoint(mobile){
+        width: 100%;
+      }
     }
   }
 }
@@ -20,6 +23,9 @@
   img {
     width: 114%;
     display: block;
+    @include breakpoint(mobile){
+      width: 100%;
+    }
   }
   &__info {
     position: absolute;
@@ -28,6 +34,9 @@
     color:white;
     width: 100%;
     text-transform: uppercase;
+    @include breakpoint(mobile){
+      padding: 0% 3% 0% 3%;
+    }
   }
   &__nbr {
     width: 18%;
@@ -37,6 +46,11 @@
     @include breakpoint(typoMax) {
       font-size:cvp(78px,2050px);
     }
+    @include breakpoint(mobile){
+      width: 100%;
+      font-size: cvp(36px,330px);
+      margin-bottom: 11%;
+    }
   }
   &__desk {
     width: 82%;
@@ -45,10 +59,17 @@
       font-size: cvp(47px,2050px);
       font-weight: 700;
       color:$yellow;
+      @include breakpoint(mobile){
+        font-size: cvp(21px,330px);
+        text-align: left;
+      }
     }
     h5 {
       font-size: cvp(19px,2050px);
       margin-bottom: 1.8%;
+      @include breakpoint(mobile){
+        font-size: cvp(9px,330px);
+      }
 
     }
   }
@@ -67,6 +88,9 @@
       display: none;
     }
   }
+  @include breakpoint(mobile){
+    width: 100%;
+  }
 }
 .b-hos-block__content {
   width: 53%;
@@ -78,12 +102,17 @@
   float: left;
   z-index: 28;
   background: white;
+  @include breakpoint(mobile){
+    width: 100%;
+    padding: 10% 4% 0 4%;
+  }
 
 }
 .workshop .b-hos-block__media__desk {
   h3 {
     color: $red;
   }
+
 }
 .masterclass .b-hos-block__media__desk {
   h3 {

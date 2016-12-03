@@ -7,19 +7,32 @@
   h1 {
     text-align: left;
   }
+  @include breakpoint(mobile){
+    padding: 4%;
+    padding-top: 9%;
+  }
 }
 .b-intro-box__content {
   float: left;
   width: 46%;
   margin-right: 5%;
   padding-top: 7%;
-
+  @include breakpoint(mobile){
+    width: 100%;
+  }
 }
 .b-intro-box__media {
   float: left;
   img {
     width: 98%;
+    @include breakpoint(mobile){
+      width: 94%;
+      margin-top: 2%;
+    }
   }
   margin-bottom: 12.5%;
   width: 49%;
+  @include breakpoint(mobile){
+    width: 100%;
+  }
 }

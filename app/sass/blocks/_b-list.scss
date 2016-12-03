@@ -2,6 +2,10 @@
   width: 100%;
   margin-bottom: 13%;
   overflow: hidden;
+  @include breakpoint(mobile){
+    padding: 0 4%;
+    padding-top: 7%;
+  }
 }
 .b-list__item {
   width: 31%;
@@ -9,10 +13,24 @@
   &:nth-of-type(3n-1){
     margin-left:3.5%;
     margin-right:3.5%;
+    @include breakpoint(mobile){
+      margin-left:0;
+      margin-right:0;
+    }
   }
   h3 {
     margin-bottom: 13%;
     border-bottom: 3px solid #222;
     padding-bottom: 2%;
+    @include breakpoint(mobile){
+      margin-bottom: 2%;
+    }
+  }
+  @include breakpoint(mobile){
+    width: 100%;
+    margin-bottom: 15%;
+    br {
+      display: none;
+    }
   }
 }

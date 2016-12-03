@@ -5,7 +5,9 @@
   float: left;
   background-size: cover;
   background-position-y: 9vw;
-
+  @include breakpoint(mobile){
+    padding-top: 15%;
+  }
 }
 .b-about-alex__heading {
   font-size: 2vw;
@@ -24,19 +26,37 @@
     width: 14%;
     margin-bottom: 1%;
   }
+  @include breakpoint(mobile){
+    padding-top: 7%;
+    img {
+      width: 60%;
+    }
+  }
 }
 .b-about-alex__division {
   width: 100%;
   padding:0 27%;
+
   &--left {
     width: 50%;
     float: left;
     margin-right: 9%;
+    @include breakpoint(mobile){
+      width: 100%;
+    }
   }
   &--right {
     float: left;
     width: 41%;
     padding-top:11%;
+    @include breakpoint(mobile){
+      width: 100%;
+    }
+  }
+  @include breakpoint(mobile){
+    padding: 0 5%;
+    overflow: hidden;
+    padding-top: 21%;
   }
 }
 .b-about-alex__name {
@@ -47,10 +67,18 @@
     font-weight: 100;
     font-family: $text__family--Roboto-Condensed;
   }
+  @include breakpoint(mobile){
+    font-size: cvp(41px, 330px);
+    margin-bottom: 3%;
+  }
 }
 .b-about-alex__title {
   font-size: 1vw;
   margin-bottom: 9%;
+  @include breakpoint(mobile){
+    font-size: cvp(18px,330px);
+    margin-bottom: 21%;
+  }
 }
 .b-about-alex__text--type1 {
   font-size: 1.3vw;
@@ -81,5 +109,9 @@
     width: 21%;
     margin-left: 11%;
     margin-bottom: 12.6%;
+    @include breakpoint(mobile){
+      width: 111%;
+      margin-left: -25%;
+    }
   }
 }

@@ -72,23 +72,24 @@ var counter = 0;
            headerActive = false;
          }
        }
-    } else {
-      if ( x1 == "FORWARD"  ) {
-        console.log(firstScene);
-        if(firstScene){
-          firstScene = false;
-          disableScroll();
-          console.log("scrollDisabled");
-
-          tl6.play();
-          setTimeout(function(){
-            enableScroll();
-            console.log("scrollEnabled");
-
-          },600);
-        }
-      }
     }
+    //  else {
+    //   if ( x1 == "FORWARD"  ) {
+    //     console.log(firstScene);
+    //     if(firstScene){
+    //       firstScene = false;
+    //       disableScroll();
+    //       console.log("scrollDisabled");
+    //
+    //       tl6.play();
+    //       setTimeout(function(){
+    //         enableScroll();
+    //         console.log("scrollEnabled");
+    //
+    //       },600);
+    //     }
+    //   }
+    // }
   });
 
   // var scene2 = new ScrollMagic.Scene()

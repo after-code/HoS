@@ -8,6 +8,10 @@
   background-repeat:no-repeat;
   position: fixed;
   // margin-top: -158px;
+  @include breakpoint(mobile){
+    position: relative;
+    height: 58%;
+  }
 }
 .b-fluid-header__element {
   position: relative;
@@ -16,7 +20,8 @@
   width: 30%;
   transform: translateX(-50%);
   @include breakpoint(mobile) {
-    left:0;
+    left: 3%;
+    top: 19%;
   }
 }
 .b-fluid-header__vector {
@@ -27,7 +32,7 @@
     height:100%;
   }
   @include breakpoint(mobile) {
-    height: 33vh;
+    height: 43vh;
   }
 }
 .b-fluid-header__type {
@@ -42,10 +47,12 @@
   left: 8vw;
   font-weight: bold;
   @include breakpoint(mobile) {
-    font-size: 3.4vh;
-    line-height: 3.2vh;
-    top: 11vh;
-    left: 41vw;
+    font-size: 6.1vh;
+    line-height: 5.9vh;
+    top: 13vh;
+    left: 20vw;
+    width: 312%;
+    display: block;
   }
 }
 #trigger {
