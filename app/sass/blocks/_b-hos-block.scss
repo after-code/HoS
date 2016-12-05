@@ -102,6 +102,9 @@
   float: left;
   z-index: 28;
   background: white;
+  span {
+    color: $red;
+  }
   @include breakpoint(mobile){
     width: 100%;
     padding: 10% 4% 0 4%;

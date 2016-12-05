@@ -68,17 +68,17 @@
   }
   b {
     font-weight: 700;
-    line-height: 33px;
-    font-size: 23px;
-    @include breakpoint(typoMax){
-      font-size: cvp(23px,2050px);
-      line-height: cvp(33px,2050px);
-    }
-    @include breakpoint(mobile){
-      font-size: cvp(18px,330px);
-      line-height: cvp(29px,330px);
-
-    }
+    // line-height: 33px;
+    // font-size: 23px;
+    // @include breakpoint(typoMax){
+    //   font-size: cvp(23px,2050px);
+    //   line-height: cvp(33px,2050px);
+    // }
+    // @include breakpoint(mobile){
+    //   font-size: cvp(18px,330px);
+    //   line-height: cvp(29px,330px);
+    //
+    // }
   }
   ul {
     padding-left: 7%;

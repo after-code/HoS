@@ -125,6 +125,13 @@ section {
   padding-top: 5%;
   background: #f6f6f6;
   padding-bottom: 5%;
+  background: url(#{$assetpath}img/ins-video-bck.jpg);
+  .b-video-block {
+    background: transparent;
+    &__content {
+      padding-top: 2%;
+    }
+  }
 }
 .section--workshops {
   // margin-bottom: 4.4%;
@@ -189,7 +196,7 @@ section {
 }
 .section--others {
   float: left;
-
+  padding-top: 10%;
   width: 100%;
   @include breakpoint(mobile){
     padding: 0 4%;

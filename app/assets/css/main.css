@@ -173,17 +173,7 @@ body {
       line-height: 8.78788vw; } }
 
 .c-typography b {
-  font-weight: 700;
-  line-height: 33px;
-  font-size: 23px; }
-  @media (max-width: 2050px) {
-    .c-typography b {
-      font-size: 1.12195vw;
-      line-height: 1.60976vw; } }
-  @media (max-width: 450px) {
-    .c-typography b {
-      font-size: 5.45455vw;
-      line-height: 8.78788vw; } }
+  font-weight: 700; }
 
 .c-typography ul {
   padding-left: 7%;
@@ -366,8 +356,8 @@ h2 {
       background-size: auto; } }
 
 .header__logo, .header__logo--white {
-  width: 250px;
-  top: 38px;
+  width: 9%;
+  top: 26%;
   opacity: 0;
   float: left;
   position: absolute;
@@ -404,8 +394,8 @@ h2 {
 
 .header__links {
   float: left;
-  margin-top: 79px;
-  margin-bottom: 79px;
+  margin-top: 4%;
+  margin-bottom: 4%;
   margin-left: 42.8%;
   opacity: 0; }
   @media (max-width: 1025px) {
@@ -463,6 +453,9 @@ h2 {
   .header__link:hover:after, .header__link--mobile-heading:hover:after {
     left: 0%;
     width: 100%; }
+  @media (max-width: 2050px) {
+    .header__link, .header__link--mobile-heading {
+      font-size: 0.97561vw; } }
   @media (max-width: 1025px) {
     .header__link, .header__link--mobile-heading {
       display: block;
@@ -679,7 +672,12 @@ section {
 .section--insight-video {
   padding-top: 5%;
   background: #f6f6f6;
-  padding-bottom: 5%; }
+  padding-bottom: 5%;
+  background: url(../../assets/img/ins-video-bck.jpg); }
+  .section--insight-video .b-video-block {
+    background: transparent; }
+    .section--insight-video .b-video-block__content {
+      padding-top: 2%; }
 
 .section--workshops {
   float: left;
@@ -738,6 +736,7 @@ section {
 
 .section--others {
   float: left;
+  padding-top: 10%;
   width: 100%; }
   @media (max-width: 450px) {
     .section--others {
@@ -2848,7 +2847,7 @@ section {
 .b-fluid-header__element {
   position: relative;
   top: 20.6992vh;
-  left: 81vh;
+  left: 38vw;
   width: 30%;
   transform: translateX(-50%); }
   @media (max-width: 450px) {
@@ -3074,6 +3073,8 @@ section {
   float: left;
   z-index: 28;
   background: white; }
+  .b-hos-block__content span {
+    color: #ee2e45; }
   @media (max-width: 450px) {
     .b-hos-block__content {
       width: 100%;
@@ -3088,7 +3089,6 @@ section {
 .b-intro-box {
   width: 100%;
   padding-top: 3.2%;
-  padding-left: 12.2%;
   float: left;
   margin-bottom: 13%; }
   .b-intro-box h1 {
