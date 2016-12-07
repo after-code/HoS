@@ -25,6 +25,9 @@ var counter = 0;
   console.log("First scene: " + firstScene);
   var scene = new ScrollMagic.Scene()
   .addTo(controller)
+  .on("enter", function(event){
+    console.log(event.scrollDirection);
+  })
   .on("update", function() {
     var x1 = controller.info("scrollDirection"),
         x2 = $(window).scrollTop(),

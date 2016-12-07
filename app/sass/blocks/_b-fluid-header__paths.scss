@@ -19,7 +19,7 @@
     background-image:url(#{$assetpath}img/edu-header-background.jpg);
   }
   .b-fluid-header__circle {
-    fill:#222222;
+    fill:$red;
   }
 }
 // @include fhSettings('.page-about',$red, "/about-header-photo.jpg" );
