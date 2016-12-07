@@ -10,11 +10,9 @@
   h1 {
     text-align: left;
   }
-  .row:after {
-    @extend .clearfix;
-  }
   .row {
     position: relative;
+    @extend .clearfix;
   }
   .col {
     float: left;
