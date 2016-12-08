@@ -24,7 +24,7 @@ h1 {
     font-size: cvp(79px, 2050px);
   }
   @include breakpoint(tablet) {
-    font-size:cvp(50px, 768px);
+    font-size:cvp(55px,1024px);
   }
   @include breakpoint(mobile) {
     font-size: cvp(30px, 330px);
@@ -64,6 +64,10 @@ h2 {
   @include breakpoint(typoMax) {
     font-size: cvp(49px, 2050px);
     line-height: cvp(53px, 2050px);
+  }
+  @include breakpoint(tablet){
+    font-size: cvp(30px,1024px);
+    line-height: cvp(30px,1024px);
   }
   @include breakpoint(mobile){
     font-size: cvp(30px,330px);

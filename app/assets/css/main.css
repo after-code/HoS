@@ -147,6 +147,11 @@ body {
     .c-typography h4 {
       font-size: 1.17073vw;
       line-height: 1.36585vw; } }
+  @media (max-width: 1025px) {
+    .c-typography h4 {
+      font-size: 1.75781vw;
+      line-height: 1.95312vw;
+      margin-bottom: 5.3%; } }
   @media (max-width: 450px) {
     .c-typography h4 {
       font-size: 5.45455vw;
@@ -231,7 +236,7 @@ h1 {
       font-size: 3.85366vw; } }
   @media (max-width: 1025px) {
     h1 {
-      font-size: 6.51042vw; } }
+      font-size: 5.37109vw; } }
   @media (max-width: 450px) {
     h1 {
       font-size: 9.09091vw;
@@ -268,6 +273,10 @@ h2 {
     h2 {
       font-size: 2.39024vw;
       line-height: 2.58537vw; } }
+  @media (max-width: 1025px) {
+    h2 {
+      font-size: 2.92969vw;
+      line-height: 2.92969vw; } }
   @media (max-width: 450px) {
     h2 {
       font-size: 9.09091vw;
@@ -606,7 +615,7 @@ html.opened {
   padding: 0px 19.5%; }
   @media (max-width: 1025px) {
     .wrapper--small {
-      padding: 0px 10.5%; } }
+      padding: 0px 5.5%; } }
   @media (max-width: 450px) {
     .wrapper--small {
       padding: 0 3%; } }
@@ -614,6 +623,9 @@ html.opened {
 .wrapper--xsmall {
   max-width: inherit;
   padding: 0px 25%; }
+  @media (max-width: 1025px) {
+    .wrapper--xsmall {
+      padding: 0px 10.5%; } }
   @media (max-width: 450px) {
     .wrapper--xsmall {
       padding: 0 3%; } }
@@ -768,6 +780,9 @@ html.opened {
   overflow: hidden;
   background-image: url(../../assets/img/yellow-journey-bck.jpg);
   padding: 7% 24.3%; }
+  @media (max-width: 1025px) {
+    .section--my-journey {
+      padding: 7% 10%; } }
   @media (max-width: 450px) {
     .section--my-journey {
       padding: 5%; } }
@@ -2627,7 +2642,8 @@ html.opened {
 
 .b-about-alex__division {
   width: 100%;
-  padding: 0 27%; }
+  padding: 0 27%;
+  overflow: hidden; }
   .b-about-alex__division--left {
     width: 50%;
     float: left;
@@ -2642,6 +2658,9 @@ html.opened {
     @media (max-width: 450px) {
       .b-about-alex__division--right {
         width: 100%; } }
+  @media (max-width: 1025px) {
+    .b-about-alex__division {
+      padding: 0 10%; } }
   @media (max-width: 450px) {
     .b-about-alex__division {
       padding: 0 5%;
@@ -2902,6 +2921,10 @@ html.opened {
   @media (max-width: 1025px) {
     .b-fluid-header {
       position: relative;
+      height: 38%; } }
+  @media (max-width: 450px) {
+    .b-fluid-header {
+      position: relative;
       height: 58%; } }
 
 .b-fluid-header__element {
@@ -2910,6 +2933,10 @@ html.opened {
   left: 38vw;
   width: 30%;
   transform: translateX(-50%); }
+  @media (max-width: 1025px) {
+    .b-fluid-header__element {
+      top: 5.6992vh;
+      left: 22vw; } }
   @media (max-width: 450px) {
     .b-fluid-header__element {
       left: 3%;
@@ -2925,6 +2952,9 @@ html.opened {
   transform: scale(7); }
   .b-fluid-header__vector img, .b-fluid-header__vector svg {
     height: 100%; }
+  @media (max-width: 1025px) {
+    .b-fluid-header__vector {
+      height: 27vh; } }
   @media (max-width: 450px) {
     .b-fluid-header__vector {
       height: 43vh; } }
@@ -2940,6 +2970,12 @@ html.opened {
   top: 17vh;
   left: 8vw;
   font-weight: bold; }
+  @media (max-width: 1025px) {
+    .b-fluid-header__type {
+      font-size: 3vh;
+      line-height: 2.9vh;
+      top: 13vh;
+      left: 20vw; } }
   @media (max-width: 450px) {
     .b-fluid-header__type {
       font-size: 6.1vh;

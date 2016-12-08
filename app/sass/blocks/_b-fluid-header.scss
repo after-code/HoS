@@ -8,7 +8,11 @@
   background-repeat:no-repeat;
   position: fixed;
   // margin-top: -158px;
-  @include breakpoint(tablet){
+  @include breakpoint(tablet) {
+    position: relative;
+    height: 38%;
+  }
+  @include breakpoint(mobile){
     position: relative;
     height: 58%;
   }
@@ -19,6 +23,10 @@
   left: 38vw;
   width: 30%;
   transform: translateX(-50%);
+  @include breakpoint(tablet) {
+    top: 5.6992vh;
+    left: 22vw;
+  }
   @include breakpoint(mobile) {
     left: 3%;
     top: 19%;
@@ -30,6 +38,9 @@
   @include prefix(transform, scale(7), webkit ms moz o);
   img, svg {
     height:100%;
+  }
+  @include breakpoint(tablet) {
+    height: 27vh;
   }
   @include breakpoint(mobile) {
     height: 43vh;
@@ -46,6 +57,12 @@
   top:17vh;
   left: 8vw;
   font-weight: bold;
+  @include breakpoint(tablet) {
+    font-size: 3vh;
+    line-height: 2.9vh;
+    top: 13vh;
+    left: 20vw;
+  }
   @include breakpoint(mobile) {
     font-size: 6.1vh;
     line-height: 5.9vh;

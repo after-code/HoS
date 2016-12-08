@@ -42,7 +42,7 @@ html {
   padding: 0px 19.5%;
   // overflow: hidden;
   @include breakpoint(tablet) {
-    padding: 0px 10.5%;
+    padding: 0px 5.5%;
   }
   @include breakpoint(mobile) {
     padding:0 3%;
@@ -54,6 +54,9 @@ html {
   max-width: inherit;
   padding: 0px 25%;
   // overflow: hidden;
+  @include breakpoint(tablet) {
+    padding: 0px 10.5%;
+  }
   @include breakpoint(mobile) {
     padding:0 3%;
   }
@@ -239,6 +242,9 @@ html {
   overflow: hidden;
   background-image:url(#{$assetpath}img/yellow-journey-bck.jpg);
   padding: 7% 24.3%;
+  @include breakpoint(tablet){
+    padding: 7% 10%;
+  }
   @include breakpoint(mobile){
     padding: 5%;
   }

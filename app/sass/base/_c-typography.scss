@@ -40,6 +40,11 @@
       font-size: cvp(24px,2050px);
       line-height: cvp(28px,2050px);
     }
+    @include breakpoint(tablet){
+      font-size: cvp(18px,1024px);
+      line-height: cvp(20px,1024px);
+      margin-bottom: 5.3%;
+    }
     @include breakpoint(mobile){
       font-size: cvp(18px,330px);
       line-height: cvp(22px,330px);

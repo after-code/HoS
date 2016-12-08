@@ -36,7 +36,7 @@
 .b-about-alex__division {
   width: 100%;
   padding:0 27%;
-
+  overflow: hidden;
   &--left {
     width: 50%;
     float: left;
@@ -52,6 +52,9 @@
     @include breakpoint(mobile){
       width: 100%;
     }
+  }
+  @include breakpoint(tablet){
+    padding: 0 10%;
   }
   @include breakpoint(mobile){
     padding: 0 5%;
