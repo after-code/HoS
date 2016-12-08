@@ -41,6 +41,9 @@ html {
   // max-width: 1600px;
   padding: 0px 19.5%;
   // overflow: hidden;
+  @include breakpoint(tablet) {
+    padding: 0px 10.5%;
+  }
   @include breakpoint(mobile) {
     padding:0 3%;
   }
@@ -59,8 +62,8 @@ html {
   width: 100%;
 }
 .section--about {
-  width: 100%;
-  float: left;
+  // width: 100%;
+  // float: left;
   margin-bottom: 4.4%;
 }
 .section--video {
@@ -113,7 +116,7 @@ html {
 }
 .section--insights {
   margin-bottom: 4.4%;
-  float: left;
+  // float: left;
   width: 100%;
 }
 .section--insight-video {
@@ -130,8 +133,8 @@ html {
 }
 .section--workshops {
   // margin-bottom: 4.4%;
-  float: left;
-  width: 100%;
+  // float: left;
+  // width: 100%;
   background: #f6f6f6;
   padding-top:8.7%;
   h2 {
@@ -145,8 +148,8 @@ html {
   }
 }
 .section--process-method {
-  float: left;
-  width: 100%;
+  // float: left;
+  // width: 100%;
   margin-bottom: 10%;
   overflow: hidden;
   h2 {
@@ -182,17 +185,17 @@ html {
 }
 .section--video-testimonials {
   padding-top:7%;
-  width: 100%;
-  float: left;
+  // width: 100%;
+  // float: left;
   padding-bottom: 8%;
   @include breakpoint(mobile){
     padding-top: 20%;
   }
 }
 .section--others {
-  float: left;
+  // float: left;
   padding-top: 10%;
-  width: 100%;
+  // width: 100%;
   @include breakpoint(mobile){
     padding: 0 4%;
     padding-top: 15%;

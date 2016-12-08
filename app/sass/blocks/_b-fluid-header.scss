@@ -8,7 +8,7 @@
   background-repeat:no-repeat;
   position: fixed;
   // margin-top: -158px;
-  @include breakpoint(mobile){
+  @include breakpoint(tablet){
     position: relative;
     height: 58%;
   }

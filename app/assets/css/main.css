@@ -167,6 +167,10 @@ body {
     .c-typography p {
       font-size: 0.97561vw;
       line-height: 1.46341vw; } }
+  @media (max-width: 1025px) {
+    .c-typography p {
+      font-size: 1.75781vw;
+      line-height: 2.34375vw; } }
   @media (max-width: 450px) {
     .c-typography p {
       font-size: 5.45455vw;
@@ -192,6 +196,10 @@ body {
     .c-typography li {
       font-size: 0.97561vw;
       line-height: 1.46341vw; } }
+  @media (max-width: 1025px) {
+    .c-typography li {
+      font-size: 1.75781vw;
+      line-height: 2.34375vw; } }
   @media (max-width: 450px) {
     .c-typography li {
       font-size: 5.45455vw;
@@ -288,7 +296,8 @@ h2 {
   background: rgba(34, 34, 34, 0); }
   @media (max-width: 1025px) {
     .header__wrap {
-      height: 158px; } }
+      height: 158px;
+      position: absolute; } }
   @media (max-width: 450px) {
     .header__wrap {
       height: auto;
@@ -296,7 +305,7 @@ h2 {
 
 .headerAnimation .header__wrap {
   position: fixed; }
-  @media (max-width: 450px) {
+  @media (max-width: 1025px) {
     .headerAnimation .header__wrap {
       position: absolute; } }
 
@@ -595,6 +604,9 @@ html.opened {
 .wrapper--small {
   max-width: inherit;
   padding: 0px 19.5%; }
+  @media (max-width: 1025px) {
+    .wrapper--small {
+      padding: 0px 10.5%; } }
   @media (max-width: 450px) {
     .wrapper--small {
       padding: 0 3%; } }
@@ -610,8 +622,6 @@ html.opened {
   width: 100%; }
 
 .section--about {
-  width: 100%;
-  float: left;
   margin-bottom: 4.4%; }
 
 .section--video {
@@ -661,7 +671,6 @@ html.opened {
 
 .section--insights {
   margin-bottom: 4.4%;
-  float: left;
   width: 100%; }
 
 .section--insight-video {
@@ -675,8 +684,6 @@ html.opened {
       padding-top: 2%; }
 
 .section--workshops {
-  float: left;
-  width: 100%;
   background: #f6f6f6;
   padding-top: 8.7%; }
   .section--workshops h2 {
@@ -689,8 +696,6 @@ html.opened {
       padding-top: 15%; } }
 
 .section--process-method {
-  float: left;
-  width: 100%;
   margin-bottom: 10%;
   overflow: hidden;
   padding-top: 5%; }
@@ -722,17 +727,13 @@ html.opened {
 
 .section--video-testimonials {
   padding-top: 7%;
-  width: 100%;
-  float: left;
   padding-bottom: 8%; }
   @media (max-width: 450px) {
     .section--video-testimonials {
       padding-top: 20%; } }
 
 .section--others {
-  float: left;
-  padding-top: 10%;
-  width: 100%; }
+  padding-top: 10%; }
   @media (max-width: 450px) {
     .section--others {
       padding: 0 4%;
@@ -999,7 +1000,7 @@ html.opened {
   height: 24vh;
   float: left;
   width: 100%; }
-  @media (max-width: 450px) {
+  @media (max-width: 1025px) {
     .content-bumper {
       display: none; } }
 
@@ -1007,9 +1008,7 @@ html.opened {
   height: 44vh; }
 
 .t-preamble {
-  width: 100%;
   padding-top: 3.2%;
-  float: left;
   margin-bottom: 13%; }
   @media (max-width: 450px) {
     .t-preamble {
@@ -2900,7 +2899,7 @@ html.opened {
   overflow: hidden;
   background-repeat: no-repeat;
   position: fixed; }
-  @media (max-width: 450px) {
+  @media (max-width: 1025px) {
     .b-fluid-header {
       position: relative;
       height: 58%; } }

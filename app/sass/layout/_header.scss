@@ -6,6 +6,7 @@
   background: rgba(34,34,34,0);
   @include breakpoint(tablet){
     height: 158px;
+    position: absolute;
   }
   @include breakpoint(mobile){
     height: auto;
@@ -14,7 +15,7 @@
 }
 .headerAnimation .header__wrap {
   position: fixed;
-  @include breakpoint(mobile){
+  @include breakpoint(tablet){
     position: absolute;
   }
 }

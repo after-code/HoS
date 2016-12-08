@@ -60,10 +60,13 @@
       font-size: cvp(20px,2050px);
       line-height: cvp(30px,2050px);
     }
+    @include breakpoint(tablet){
+      font-size: cvp(18px,1024px);
+      line-height: cvp(24px,1024px);
+    }
     @include breakpoint(mobile){
       font-size: cvp(18px,330px);
       line-height: cvp(29px,330px);
-
     }
   }
   b {
@@ -96,6 +99,10 @@
     @include breakpoint(typoMax){
       font-size: cvp(20px,2050px);
       line-height: cvp(30px,2050px);
+    }
+    @include breakpoint(tablet){
+      font-size: cvp(18px,1024px);
+      line-height: cvp(24px,1024px);
     }
     @include breakpoint(mobile){
       font-size: cvp(18px,330px);
