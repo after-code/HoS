@@ -569,11 +569,6 @@ html.opened {
     height: 100%;
     overflow: hidden; }
 
-section {
-  width: 100%;
-  float: left;
-  overflow: hidden; }
-
 .wrapper, .wrapper--big, .wrapper--small, .wrapper--xsmall {
   max-width: 1850px;
   overflow: hidden;

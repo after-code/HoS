@@ -16,8 +16,8 @@ $assetpath: '../../assets/' !default;
 @import 'layout/footer';
 @import 'layout/content-bumper';
 
-@import 'block-grid/t-preamble';
-@import 'block-grid/t-text';
+@import 'grid-types/t-preamble';
+@import 'grid-types/t-text';
 
 @import 'blocks/b-media';
 @import 'blocks/b-button';
