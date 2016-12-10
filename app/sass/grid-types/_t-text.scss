@@ -24,4 +24,11 @@
   .col-md-4:nth-of-type(3n) {
     width: 31%;
   }
+  .col-md-4 {
+    h3 {
+      margin-bottom: 13%;
+      border-bottom: 3px solid #222;
+      padding-bottom: 2%;
+    }
+  }
 }

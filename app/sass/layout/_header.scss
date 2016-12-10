@@ -120,7 +120,7 @@
 }
 .header__nav {
   transition: opacity 400ms, padding 400ms;
-  overflow: hidden;
+  // overflow: hidden;
   @include breakpoint(tablet){
     max-height: 0;
     position: absolute;
@@ -287,6 +287,33 @@
     .header__nav {
       max-height: 750px;
       padding-top:3%;
+    }
+  }
+}
+.header__nav {
+  ul > li {
+    position: relative;
+  }
+  ul > li > ul {
+    margin-left:0;
+    display: none;
+    position: absolute;
+    top:0px;
+    padding-top:30px;
+    padding-bottom:30px;
+    width: 200px;
+  }
+  ul > li:hover > ul {
+      margin-left:0;
+      display: block;
+  }
+  ul > li > ul >li {
+    position: relative;
+    margin-bottom: 4%;
+    text-transform: uppercase;
+    &:hover {
+      background: #222;
+      color:white;
     }
   }
 }

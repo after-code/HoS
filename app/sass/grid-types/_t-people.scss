@@ -1,0 +1,52 @@
+.t-people {
+  .col {
+    position: relative;
+  }
+  .row {
+    @extend .clearfix;
+    width: 100%;
+  }
+  .col-md-6 {
+    width: 44%;
+    margin-bottom: 10%;
+    float: left;
+    .row {
+      // float: left;
+      width: 100%;
+      margin-bottom: 6%;
+      .col-md-3 {
+        width: 21%;
+        float: left;
+        img {
+          width:100%;
+        }
+      }
+      .col-md-9 {
+        width: 70%;
+        margin-left:7%;
+        float: left;
+        .content {
+          margin-top:8%;
+          h4 {
+            margin-bottom: 2%;
+          }
+        }
+      }
+    }
+    @include breakpoint(mobile){
+      width: 100%;
+    }
+  }
+  .col-md-6:nth-of-type(2n){
+    margin-left: 12%;
+    @include breakpoint(mobile){
+      width: 100%;
+      margin-left:0;
+    }
+  }
+  @include breakpoint(mobile){
+    .pane-in {
+      padding: 4%;
+    }
+  }
+}

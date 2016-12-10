@@ -25,9 +25,6 @@ var counter = 0;
   console.log("First scene: " + firstScene);
   var scene = new ScrollMagic.Scene()
   .addTo(controller)
-  .on("enter", function(event){
-    console.log(event.scrollDirection);
-  })
   .on("update", function() {
     var x1 = controller.info("scrollDirection"),
         x2 = $(window).scrollTop(),
@@ -280,7 +277,8 @@ var counter = 0;
         $header_logo_white = $('.header__logo--white');
     tl3.pause();
     tl4.pause();
-
+    var header_logo_top = $(".header__logo").offset().top+'px';
+    $(".header__logo, .header__logo--white").css({top:header_logo_top});
     //header wrap final treba da se prebaci u tl4 tipa
     tl4.to(".header__wrap", 0.20,{"opacity":"0", ease: $.bez(accelerationCurve)},'start');
     tl4.to($header_links, 0, {marginTop:"20px",marginBottom:"20px", ease: $.bez(decelerationCurve)},'start+=0.2');
