@@ -824,6 +824,10 @@ html.opened {
     .section--my-journey {
       padding: 5%; } }
 
+video {
+  max-width: 100%;
+  height: auto; }
+
 .footer {
   background: #222;
   width: 100%;
@@ -1060,8 +1064,7 @@ html.opened {
   height: 44vh; }
 
 .t-preamble {
-  padding-top: 3.2%;
-  margin-bottom: 13%; }
+  padding-top: 3.2%; }
   @media (max-width: 450px) {
     .t-preamble {
       padding: 4%;
