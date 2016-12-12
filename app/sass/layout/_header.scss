@@ -302,6 +302,14 @@
     padding-top:30px;
     padding-bottom:30px;
     width: 200px;
+    @include breakpoint(mobile){
+      display: block;
+      padding-top:3%;
+      padding-bottom:3%;
+      position: relative;
+      width: 100%;
+      padding-left: 10%;
+    }
   }
   ul > li:hover > ul {
       margin-left:0;
@@ -314,6 +322,12 @@
     &:hover {
       background: #222;
       color:white;
+    }
+    @include breakpoint(mobile){
+      list-style-type: disc;
+      font-size: cvp(17px,330px);
+      line-height: cvp(28px,330px);
+      padding-left: 1%;
     }
   }
 }

@@ -590,6 +590,14 @@ h2 {
   padding-top: 30px;
   padding-bottom: 30px;
   width: 200px; }
+  @media (max-width: 450px) {
+    .header__nav ul > li > ul {
+      display: block;
+      padding-top: 3%;
+      padding-bottom: 3%;
+      position: relative;
+      width: 100%;
+      padding-left: 10%; } }
 
 .header__nav ul > li:hover > ul {
   margin-left: 0;
@@ -602,6 +610,12 @@ h2 {
   .header__nav ul > li > ul > li:hover {
     background: #222;
     color: white; }
+  @media (max-width: 450px) {
+    .header__nav ul > li > ul > li {
+      list-style-type: disc;
+      font-size: 5.15152vw;
+      line-height: 8.48485vw;
+      padding-left: 1%; } }
 
 html.opened {
   overflow: hidden;
@@ -2961,18 +2975,21 @@ html.opened {
       float: none; } }
 
 .page-about .b-fluid-header {
+  background-color: #fcee2f;
   background-image: url(../../assets/img/about-header-photo--small.jpg); }
 
 .page-about .b-fluid-header__circle {
   fill: #fcee2f; }
 
 .page-education .b-fluid-header, .page-education-customized .b-fluid-header {
+  background-color: #50E3C2;
   background-image: url(../../assets/img/edu-header-background.jpg); }
 
 .page-education .b-fluid-header__circle, .page-education-customized .b-fluid-header__circle {
   fill: #50E3C2; }
 
 .page-insight-report .b-fluid-header {
+  background-color: #ee2e45;
   background-image: url(../../assets/img/edu-header-background.jpg); }
 
 .page-insight-report .b-fluid-header__circle {
@@ -2982,6 +2999,7 @@ html.opened {
   height: 100vh;
   width: 100%;
   float: left;
+  background-color: white;
   background-image: url(../../assets/img/about-header-photo--small.jpg);
   background-size: cover;
   overflow: hidden;
@@ -2994,7 +3012,7 @@ html.opened {
   @media (max-width: 450px) {
     .b-fluid-header {
       position: relative;
-      height: 58%; } }
+      height: 58vh; } }
 
 .b-fluid-header__element {
   position: relative;

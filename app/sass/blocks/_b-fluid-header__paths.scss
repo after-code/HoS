@@ -1,5 +1,6 @@
 .page-about {
   .b-fluid-header {
+    background-color:$yellow;
     background-image:url(#{$assetpath}img/about-header-photo--small.jpg);
   }
   .b-fluid-header__circle {
@@ -8,6 +9,7 @@
 }
 .page-education, .page-education-customized {
   .b-fluid-header {
+    background-color:#50E3C2;
     background-image:url(#{$assetpath}img/edu-header-background.jpg);
   }
   .b-fluid-header__circle {
@@ -16,6 +18,7 @@
 }
 .page-insight-report {
   .b-fluid-header {
+    background-color:$red;
     background-image:url(#{$assetpath}img/edu-header-background.jpg);
   }
   .b-fluid-header__circle {
