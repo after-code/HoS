@@ -1,12 +1,10 @@
 
 .content-bumper {
   height: 24vh;
-  float: left;
-  width: 100%;
   @include breakpoint(tablet){
     display: none;
   }
 }
-.headerAnimation .content-bumper{
+.headerAnimation .content-bumper {
   height:44vh;
 }
