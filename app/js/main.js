@@ -59,6 +59,7 @@ var counter = 0;
          console.log("reverse > 600");
          if (!headerActive){
            console.log(tl4.time()+'play');
+           $(".header__wrap").addClass("header-animated");
            tl4.play();
 
            headerActive = true;
@@ -236,11 +237,12 @@ var counter = 0;
   var tl2 = new TimelineLite(),
       tl3 = new TimelineLite(),
       tl4 = new TimelineLite({
-        onComplete:function(){
-          tl4.time(0.4);
-        },
         onReverseComplete:function(){
-          tl4.time(0);
+          $(".header__wrap").removeClass("header-animated");
+
+          $(".header").animate({opacity:0},0, function(){
+            $(".header").animate({opacity:1},150);
+          });
         }
       }),
       tl5 = new TimelineLite(),
@@ -250,6 +252,8 @@ var counter = 0;
       $email_popup = '.w-popup-email';
       $email_popup_mask = '.w-popup-email__mask';
       tl6.pause();
+
+      window._tl4 = tl4;
 
   $(function(){
     tl2.pause();
@@ -268,6 +272,7 @@ var counter = 0;
         $header = $('.header'),
         $header_link = $('.header__link'),
         $header_links = $('.header__links'),
+        $header_nav = $('.header__nav'),
         $header_logo = $('.header__logo'),
         $fluid_header = $('.b-fluid-header'),
         $body_html = $('body,html'),
@@ -280,14 +285,22 @@ var counter = 0;
     var header_logo_top = $(".header__logo").offset().top+'px';
     $(".header__logo, .header__logo--white").css({top:header_logo_top});
     //header wrap final treba da se prebaci u tl4 tipa
-    tl4.to(".header__wrap", 0.20,{"opacity":"0", ease: $.bez(accelerationCurve)},'start');
-    tl4.to($header_links, 0, {marginTop:"20px",marginBottom:"20px", ease: $.bez(decelerationCurve)},'start+=0.2');
-    tl4.to($header_link, 0,  {fontSize:"16",autoRound: false,  color:"white",ease: $.bez(decelerationCurve)},'start+=0.2');
-    tl4.to($header_wrap, 0, {"box-shadow":" 0px 0px 7px 4px rgba(0, 0, 0,0.3)", position:'fixed', height:"auto",  opacity:1, top:"-100px",  background:'rgba(34, 34, 34, 0.99)', ease: $.bez(decelerationCurve)},'start+=0.2');
-    tl4.to($header_logo_white, 0, {left:"27.7%",top:"6px",  width:"107px",opacity:'1',ease: $.bez(decelerationCurve)},'start+=0.2');
-    tl4.to($header_logo, 0, {left:"27.7%",top:"6px",  width:"107px",opacity:'1',ease: $.bez(decelerationCurve)},'start+=0.2');
-    tl4.to($header_wrap, 0.20, {top:"0px", ease: $.bez(decelerationCurve)},'start+=0.2');
+    // tl4.to(".header__wrap", 0.20,{"opacity":"0", ease: $.bez(accelerationCurve)},'start');
+    // tl4.to($header_nav, 0, {padding:"10px", ease: $.bez(decelerationCurve)},'start+=0.2');
+    // tl4.to($header_link, 0,  {fontSize:"16",autoRound: false,  color:"white",ease: $.bez(decelerationCurve)},'start+=0.2');
+    // tl4.to($header_wrap, 0, {"box-shadow":" 0px 0px 7px 4px rgba(0, 0, 0,0.3)", position:'fixed', height:"auto",  opacity:1, top:"-100px",  background:'rgba(34, 34, 34, 0.99)', ease: $.bez(decelerationCurve)},'start+=0.2');
+    // tl4.to($header_logo_white, 0, {left:"27.7%",top:"6px",  width:"107px",opacity:'1',ease: $.bez(decelerationCurve)},'start+=0.2');
+    // tl4.to($header_logo, 0, {left:"27.7%",top:"6px",  width:"107px",opacity:'1',ease: $.bez(decelerationCurve)},'start+=0.2');
+    // tl4.to($header_wrap, 0.20, {top:"0px", ease: $.bez(decelerationCurve)},'start+=0.2');
 
+    //header wrap final treba da se prebaci u tl4 tipa
+    // tl4.to(".header__wrap", 0.20,{"opacity":"0", ease: $.bez(accelerationCurve)},'start');
+    // tl4.to($header_nav, 0, {padding:"10px", ease: $.bez(decelerationCurve)},'start+=0.2');
+    // tl4.to($header_link, 0,  {fontSize:"16",autoRound: false,  color:"white",ease: $.bez(decelerationCurve)},'start+=0.2');
+    // tl4.to($header_wrap, 0, {"box-shadow":" 0px 0px 7px 4px rgba(0, 0, 0,0.3)", position:'fixed', height:"auto",  opacity:1, top:"-100px",  background:'rgba(34, 34, 34, 0.99)', ease: $.bez(decelerationCurve)},'start+=0.2');
+    // tl4.to($header_logo_white, 0, {left:"27.7%",top:"6px",  width:"107px",opacity:'1',ease: $.bez(decelerationCurve)},'start+=0.2');
+    // tl4.to($header_logo, 0, {left:"27.7%",top:"6px",  width:"107px",opacity:'1',ease: $.bez(decelerationCurve)},'start+=0.2');
+    tl4.to($header_wrap, 0.15, {top:"0px", ease: $.bez(decelerationCurve)},'start+=0.2');
 
 
   //Fluid header animations on desk
@@ -300,7 +313,7 @@ var counter = 0;
     tl3.to($fluid_header_type, 0.5, {transform: "scale(0.5)", marginLeft:"-25%", ease: Power4.easeInOut},'start');
     tl3.to($widget, 0.55, {opacity: "1" , delay:0.3 , ease: Power4.easeInOut},'final');
     tl3.to($fluid_header, 0, {position:"absolute"},'final');
-    tl3.to($header_wrap, 0, {position:"absolute"},'final');
+    // tl3.to($header_wrap, 0, {position:"absolute"},'final');
     tl3.to($body_html, 0.8, {scrollTop:0},'start');
 
     //Fluid header animations on mobile
