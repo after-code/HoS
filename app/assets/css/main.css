@@ -318,7 +318,8 @@ h2 {
 .header {
   width: 100%;
   z-index: 999;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .header .wrapper, .header .wrapper--big, .header .wrapper--small, .header .wrapper--xsmall {
     height: 100%; }
     .header .wrapper:after, .header .wrapper--big:after, .header .wrapper--small:after, .header .wrapper--xsmall:after {
