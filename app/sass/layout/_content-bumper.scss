@@ -1,10 +1,10 @@
 
 .header__wrap {
   height: 24vh;
+  @include breakpoint(tablet){
+    display: none;
+  }
 }
 .headerAnimation .header__wrap {
   height:44vh;
-  @include breakpoint(mobile){
-    height: 100%;
-  }
 }
