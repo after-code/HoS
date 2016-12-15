@@ -300,7 +300,7 @@ var counter = 0;
     // tl4.to($header_wrap, 0, {"box-shadow":" 0px 0px 7px 4px rgba(0, 0, 0,0.3)", position:'fixed', height:"auto",  opacity:1, top:"-100px",  background:'rgba(34, 34, 34, 0.99)', ease: $.bez(decelerationCurve)},'start+=0.2');
     // tl4.to($header_logo_white, 0, {left:"27.7%",top:"6px",  width:"107px",opacity:'1',ease: $.bez(decelerationCurve)},'start+=0.2');
     // tl4.to($header_logo, 0, {left:"27.7%",top:"6px",  width:"107px",opacity:'1',ease: $.bez(decelerationCurve)},'start+=0.2');
-    tl4.to($header, 0.15, {top:"0px", ease: $.bez(decelerationCurve)},'start+=0.2');
+    tl4.to($header_wrap, 0.15, {top:"0px", ease: $.bez(decelerationCurve)},'start+=0.2');
 
 
   //Fluid header animations on desk

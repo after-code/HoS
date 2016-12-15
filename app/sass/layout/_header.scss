@@ -23,7 +23,6 @@
   z-index: 999;
   position: relative;
   overflow: hidden;
-  top:0;
   .wrapper {
     height: 100%;
     &:after {
@@ -120,12 +119,11 @@
   }
 }
 .header-animated {
-
+  position:fixed;
+  opacity:1;
+  top:-58px;
   .header {
     background:#222;
-    position:fixed;
-    opacity:1;
-    // top:-88px;
   }
   .header__links {
     margin-top: 1%;
@@ -330,15 +328,15 @@
     top:1%;
     left:1%;
     width: 98%;
-    height: 12%;
+    height: 20%;
     margin:0;
-    // background: rgba(53,204,123,1);
-    // background: -moz-linear-gradient(left, rgba(53,204,123,1) 0%, rgba(87,213,235,1) 100%);
-    // background: -webkit-gradient(left top, right top, color-stop(0%, rgba(53,204,123,1)), color-stop(100%, rgba(87,213,235,1)));
-    // background: -webkit-linear-gradient(left, rgba(53,204,123,1) 0%, rgba(87,213,235,1) 100%);
-    // background: -o-linear-gradient(left, rgba(53,204,123,1) 0%, rgba(87,213,235,1) 100%);
-    // background: -ms-linear-gradient(left, rgba(53,204,123,1) 0%, rgba(87,213,235,1) 100%);
-    background: linear-gradient(to right, #06CACA 0%, #0CA9B9 100%);
+    background: rgba(53,204,123,1);
+    background: -moz-linear-gradient(left, rgba(53,204,123,1) 0%, rgba(87,213,235,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(53,204,123,1)), color-stop(100%, rgba(87,213,235,1)));
+    background: -webkit-linear-gradient(left, rgba(53,204,123,1) 0%, rgba(87,213,235,1) 100%);
+    background: -o-linear-gradient(left, rgba(53,204,123,1) 0%, rgba(87,213,235,1) 100%);
+    background: -ms-linear-gradient(left, rgba(53,204,123,1) 0%, rgba(87,213,235,1) 100%);
+    background: linear-gradient(to right, rgba(53,204,123,1) 0%, rgba(87,213,235,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#35cc7b', endColorstr='#57d5eb', GradientType=1 );
     z-index: 2;
 
@@ -367,7 +365,6 @@
     height: 100%;
     float: left;
     display: block;
-    color: white;
     a {
       display: block;
       position: relative;
@@ -376,7 +373,7 @@
       text-align: center;
     }
     &:hover {
-      background: rgba(0,0,0,0.1);
+      background: #222;
       color:white;
     }
     @include breakpoint(mobile){
