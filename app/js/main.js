@@ -29,7 +29,7 @@ var counter = 0;
     var x1 = controller.info("scrollDirection"),
         x2 = $(window).scrollTop(),
         x3 = 0,
-        x4 = 200;
+        x4 = 600;
     if($(window).width() > 1025){
 
 
@@ -64,7 +64,7 @@ var counter = 0;
 
            headerActive = true;
          }
-       } else if (x1 == "REVERSE" && !firstScene && x2 < 800){
+       } else if (x1 == "REVERSE" && !firstScene && x2 < 1000){
          console.log("reverse < 600");
          if (headerActive){
            console.log(tl4.time()+'reverse');
@@ -241,7 +241,7 @@ var counter = 0;
           $(".header__wrap").removeClass("header-animated");
 
           $(".header").animate({opacity:0},0, function(){
-            $(".header").animate({opacity:1},150);
+            $(".header").animate({opacity:1},250);
           });
         }
       }),
@@ -363,4 +363,13 @@ var counter = 0;
       window.ontouchmove = null;
       document.onkeydown = null;
   }
+  var menu_clone = $(".expanded > .menu").clone().addClass("clone");
+  $("body").prepend("<div class='header-submenu'></div>");
+  $(".header-submenu").append(menu_clone).prepend("<div class='close-menu'></div>");
+  $(".expanded").click(function(){
+    $(".header-submenu").addClass("active");
+  });
+  $(".close-menu").click(function(){
+    $(".header-submenu").removeClass("active");
+  });
 })(jQuery);
