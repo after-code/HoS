@@ -22,7 +22,7 @@
   @extend .clearfix;
   width: 100%;
   z-index: 999;
-  position: relative;
+  position: absolute;
 
   .wrapper {
     height: 100%;
