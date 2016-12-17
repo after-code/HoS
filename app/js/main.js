@@ -109,10 +109,8 @@ var counter = 0;
     $(".footer__back-to-top").click(function(){
       $("html, body").animate({scrollTop:"0px"},1000, $.bez(accelerationCurve));
     });
-    if ($(window).width() > 1025){
-      // var header_height = $(".header__nav").height();
-      // $(".header__wrap").css({"height":header_height+"px"});
-      // $(".b-fluid-header").css({"margin-top":-header_height+"px"});
+    if ($(window).width() > 450){
+      submenuInit();
     }
     $( window ).resize(function() {
       if ($(window).width() <1025) {
@@ -363,13 +361,26 @@ var counter = 0;
       window.ontouchmove = null;
       document.onkeydown = null;
   }
-  var menu_clone = $(".expanded > .menu").clone().addClass("clone");
-  $("body").prepend("<div class='header-submenu'></div>");
-  $(".header-submenu").append(menu_clone).prepend("<div class='close-menu'></div>");
-  $(".expanded").click(function(){
-    $(".header-submenu").addClass("active");
-  });
-  $(".close-menu").click(function(){
-    $(".header-submenu").removeClass("active");
-  });
+  function submenuInit(){
+    var menu_clone = $(".expanded > .menu").clone().addClass("clone");
+    $("body").prepend("<div class='header-submenu__wrap'><div class='header-submenu'></div><div class='header-submenu__mask'></div></div>");
+    $(".header-submenu").append(menu_clone).append("<div class='header-submenu__bottom'><span>Download report</span></div>").prepend("<div class='close-menu'></div>");
+    $(".expanded").click(function(){
+      $(".header-submenu__wrap").addClass("active").animate({"opacity":'1'},200);
+      $(".header__wrap").animate({opacity:0},200);
+    });
+    $(".close-menu").click(function(){
+      $(".header-submenu__wrap").animate({"opacity":"0"},200, function(){
+        $(".header-submenu__wrap").removeClass("active");
+      });
+      $(".header__wrap").animate({opacity:1},150);
+    });
+    $(".header-submenu__mask").click(function(){
+      $(".header-submenu__wrap").animate({"opacity":"0"},200, function(){
+        $(".header-submenu__wrap").removeClass("active");
+      });
+      $(".header__wrap").animate({opacity:1},150);
+    });
+  }
+
 })(jQuery);
