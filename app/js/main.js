@@ -361,25 +361,43 @@ var counter = 0;
       window.ontouchmove = null;
       document.onkeydown = null;
   }
+  var submenu_timeout;
+  function showSubmenu(){
+    $(".header-submenu__wrap").addClass("active").animate({"opacity":'1'},200);
+    $(".header__wrap").animate({opacity:0},200);
+  }
+  function hideSubmenu(){
+    $(".header-submenu__wrap").animate({"opacity":"0"},200, function(){
+      $(".header-submenu__wrap").removeClass("active");
+    });
+    $(".header__wrap").animate({opacity:1},100);
+  }
   function submenuInit(){
-    var menu_clone = $(".expanded > .menu").clone().addClass("clone");
+    var menu_clone = $("#block-system-main-menu .expanded > .menu").clone().addClass("clone");
     $("body").prepend("<div class='header-submenu__wrap'><div class='header-submenu'></div><div class='header-submenu__mask'></div></div>");
     $(".header-submenu").append(menu_clone).append("<div class='header-submenu__bottom'><span>Download report</span></div>").prepend("<div class='close-menu'></div>");
-    $(".expanded").click(function(){
-      $(".header-submenu__wrap").addClass("active").animate({"opacity":'1'},200);
-      $(".header__wrap").animate({opacity:0},200);
+    $("#block-system-main-menu .expanded").click(function(){
+      clearTimeout(submenu_timeout);
+      showSubmenu();
+    });
+    $("#block-system-main-menu .expanded").mouseenter(function(){
+      clearTimeout(submenu_timeout);
+      showSubmenu();
+    });
+    $(".header-submenu").mouseenter(function(){
+      clearTimeout(submenu_timeout);
+      showSubmenu();
+    });
+    $(".header-submenu").mouseleave(function(){
+      submenu_timeout = setTimeout(function(){
+        hideSubmenu();
+      },400);
     });
     $(".close-menu").click(function(){
-      $(".header-submenu__wrap").animate({"opacity":"0"},200, function(){
-        $(".header-submenu__wrap").removeClass("active");
-      });
-      $(".header__wrap").animate({opacity:1},150);
+      hideSubmenu();
     });
     $(".header-submenu__mask").click(function(){
-      $(".header-submenu__wrap").animate({"opacity":"0"},200, function(){
-        $(".header-submenu__wrap").removeClass("active");
-      });
-      $(".header__wrap").animate({opacity:1},150);
+      hideSubmenu();
     });
   }
 

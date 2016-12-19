@@ -318,7 +318,7 @@ h2 {
 .header {
   width: 100%;
   z-index: 999;
-  position: relative; }
+  position: absolute; }
   .header .wrapper, .header .wrapper--big, .header .wrapper--small, .header .wrapper--xsmall {
     height: 100%; }
     .header .wrapper:after, .header .wrapper--big:after, .header .wrapper--small:after, .header .wrapper--xsmall:after {
@@ -741,7 +741,7 @@ h2 {
   height: 100%;
   position: absolute;
   z-index: 999;
-  background: rgba(255, 255, 255, 0.7); }
+  background: rgba(255, 255, 255, 0.9); }
 
 .header-submenu__wrap {
   display: none;
