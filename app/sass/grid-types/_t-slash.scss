@@ -53,7 +53,6 @@
     img {
       margin-bottom: 2%;
       width: 86%;
-      margin-left: 3%;
       @include breakpoint(tablet) {
         width: 94%;
         margin-bottom: 1%;
@@ -97,6 +96,15 @@
         line-height: 24px;
         text-align: left;
       }
+    }
+  }
+  .b-button {
+    border: 3px solid #222;
+    padding: 3.2% 11%;
+    margin-left: 6%;
+    &:hover {
+      background: #222;
+      color:white;
     }
   }
 }
