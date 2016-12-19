@@ -4,7 +4,7 @@
   float: left;
   position: relative;
 }
-.b-media--big, .views-row-2 .b-media {
+.b-media--big, .views-row-1 .b-media {
   @extend .b-media;
   width: 46.6%;
   margin-right: 3.5%;
@@ -46,7 +46,7 @@
     }
   }
 }
-.b-media--small, .views-row-1 .b-media {
+.b-media--small, .views-row-2 .b-media {
   @extend .b-media;
   width: 36.5%;
   margin-top: 14%;

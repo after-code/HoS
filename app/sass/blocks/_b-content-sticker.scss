@@ -17,84 +17,85 @@
     padding:0 0% 0 6%;
     padding-top: 6%;
   }
-}
-.b-content-sticker__tag {
-  margin-top: 10%;
-  margin-bottom: 1.2%;
-  font-size: 22px;
-  text-transform: uppercase;
-  float: left;
-  @include breakpoint(typoMax) {
-    font-size: cvp(22px, 2050px);
+
+  .b-content-sticker__tag{
+    margin-top: 10%;
+    margin-bottom: 1.2%;
+    font-size: 22px;
+    text-transform: uppercase;
+    float: left;
+    @include breakpoint(typoMax) {
+      font-size: cvp(22px, 2050px);
+    }
+    @include breakpoint(laptop) {
+      margin-top: 11%;
+      font-size: cvp(26px, 2050px);
+    }
+    @include breakpoint(mobile) {
+      font-size: 13px;
+      margin-top: 9%;
+    }
   }
-  @include breakpoint(laptop) {
-    margin-top: 11%;
-    font-size: cvp(26px, 2050px);
+  .b-content-sticker__heading, h2  {
+    font-size: 50px;
+    line-height: 51px;
+    font-weight: 800;
+    width: 90%;
+    text-transform: uppercase;
+    margin-bottom: 6%;
+    float: left;
+    @include breakpoint(typoMax) {
+      font-size: cvp(50px, 2050px);
+      line-height: cvp(51px, 2050px);
+    }
+    @include breakpoint(laptop) {
+      font-size: cvp(61px, 2050px);
+      line-height: cvp(56px, 2050px);
+    }
+    @include breakpoint(tablet){
+      font-size: cvp(50px,768px);
+      line-height: cvp(52px,768px);
+      margin-bottom: 4%;
+    }
+    @include breakpoint(mobile) {
+      font-size: cvp(28px,360px);
+      line-height: cvp(29px,360px);
+      margin-bottom: 6%;
+    }
   }
-  @include breakpoint(mobile) {
-    font-size: 13px;
-    margin-top: 9%;
+  .b-content-sticker__text, p{
+    line-height: 30px;
+    font-size: 22px;
+    float: left;
+    padding-right: 9%;
+    @include breakpoint(typoMax) {
+      font-size:cvp(22px, 2050px);
+      line-height: cvp(30px, 2050px);
+    }
+    @include breakpoint(tablet) {
+      font-size:cvp(22px, 768px);
+      line-height: cvp(32px, 768px);
+    }
+    @include breakpoint(mobile) {
+      font-size: cvp(16px,360px) ;
+      line-height:cvp(18px, 360px);
+    }
   }
-}
-.b-content-sticker__heading {
-  font-size: 50px;
-  line-height: 51px;
-  font-weight: 800;
-  width: 90%;
-  text-transform: uppercase;
-  margin-bottom: 6%;
-  float: left;
-  @include breakpoint(typoMax) {
-    font-size: cvp(50px, 2050px);
-    line-height: cvp(51px, 2050px);
-  }
-  @include breakpoint(laptop) {
-    font-size: cvp(61px, 2050px);
-    line-height: cvp(56px, 2050px);
-  }
-  @include breakpoint(tablet){
-    font-size: cvp(50px,768px);
-    line-height: cvp(52px,768px);
+  .b-content-sticker__date {
+    float: left;
+    text-transform: uppercase;
+    color:#4a90e2;
     margin-bottom: 4%;
-  }
-  @include breakpoint(mobile) {
-    font-size: cvp(28px,360px);
-    line-height: cvp(29px,360px);
-    margin-bottom: 6%;
-  }
-}
-.b-content-sticker__text{
-  line-height: 30px;
-  font-size: 22px;
-  float: left;
-  padding-right: 9%;
-  @include breakpoint(typoMax) {
-    font-size:cvp(22px, 2050px);
-    line-height: cvp(30px, 2050px);
-  }
-  @include breakpoint(tablet) {
-    font-size:cvp(22px, 768px);
-    line-height: cvp(32px, 768px);
-  }
-  @include breakpoint(mobile) {
-    font-size: cvp(16px,360px) ;
-    line-height:cvp(18px, 360px);
-  }
-}
-.b-content-sticker__date {
-  float: left;
-  text-transform: uppercase;
-  color:#4a90e2;
-  margin-bottom: 4%;
-  font-size: 20px;
-  @include breakpoint(typoMax) {
-    font-size:cvp(20px, 2050px);
-  }
-  @include breakpoint(tablet){
-    margin-bottom: 6%;
-    font-size: cvp(22px,768px);
-  }
-  @include breakpoint(mobile) {
-    font-size: cvp(16px,360px);
+    font-size: 20px;
+    @include breakpoint(typoMax) {
+      font-size:cvp(20px, 2050px);
+    }
+    @include breakpoint(tablet){
+      margin-bottom: 6%;
+      font-size: cvp(22px,768px);
+    }
+    @include breakpoint(mobile) {
+      font-size: cvp(16px,360px);
+    }
   }
 }
