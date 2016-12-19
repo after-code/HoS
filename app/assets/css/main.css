@@ -294,6 +294,14 @@ h2 {
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 100; }
 
+.page-title {
+  padding-left: 19.5%;
+  padding-right: 19.5%; }
+  @media (max-width: 450px) {
+    .page-title {
+      padding-left: 5%;
+      padding-right: 5%; } }
+
 .last-element {
   padding-bottom: 6.4%; }
 
@@ -1358,9 +1366,11 @@ video {
   position: relative; }
   .t-slash .col-md-6:nth-of-type(1) {
     float: left;
-    width: 52%; }
+    width: 52%;
+    position: absolute;
+    height: 100%; }
     .t-slash .col-md-6:nth-of-type(1) img {
-      width: 114%;
+      height: 100%;
       display: block; }
     @media (max-width: 1025px) {
       .t-slash .col-md-6:nth-of-type(1) {
@@ -1370,14 +1380,19 @@ video {
     @media (max-width: 450px) {
       .t-slash .col-md-6:nth-of-type(1) {
         width: 100%;
-        margin-bottom: 4%; } }
+        margin-bottom: 4%;
+        position: relative;
+        height: auto; }
+        .t-slash .col-md-6:nth-of-type(1) img {
+          height: auto; } }
   .t-slash .col-md-6:nth-of-type(2) {
     width: 48%;
     padding-top: 2%;
     display: block;
     position: relative;
-    float: left;
+    float: right;
     z-index: 20;
+    padding-bottom: 2%;
     background: #fcee2f; }
     .t-slash .col-md-6:nth-of-type(2):after {
       display: block;
@@ -1916,9 +1931,11 @@ video {
   position: relative; }
   .b-service--consultancy .b-service__media {
     float: left;
-    width: 52%; }
+    width: 52%;
+    position: absolute;
+    height: 100%; }
     .b-service--consultancy .b-service__media img {
-      width: 114%;
+      height: 100%;
       display: block; }
     .b-service--consultancy .b-service__media .b-service__svg, .b-service--consultancy .b-service__media .b-service--insights .b-service__svg--small, .b-service--insights .b-service--consultancy .b-service__media .b-service__svg--small {
       display: none;
@@ -1955,7 +1972,7 @@ video {
     padding-top: 2%;
     display: block;
     position: relative;
-    float: left;
+    float: right;
     z-index: 20;
     background: #fcee2f; }
     .b-service--consultancy .b-service__content:after {

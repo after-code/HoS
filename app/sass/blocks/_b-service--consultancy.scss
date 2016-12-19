@@ -10,8 +10,10 @@
   .b-service__media  {
     float: left;
     width: 52%;
+    position: absolute;
+    height: 100%;
     img {
-      width: 114%;
+      height: 100%;
       display: block;
     }
     .b-service__svg {
@@ -57,7 +59,7 @@
     padding-top: 2%;
     display: block;
     position: relative;
-    float: left;
+    float: right;
     z-index: 20;
     background: $yellow;
     &:after {
