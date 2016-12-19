@@ -88,3 +88,11 @@ h3 {
     font-weight: 100;
   }
 }
+.page-title {
+  padding-left:19.5%;
+  padding-right:19.5%;
+  @include breakpoint(mobile){
+    padding-left:5%;
+    padding-right:5%;
+  }
+}
