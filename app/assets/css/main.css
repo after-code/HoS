@@ -311,9 +311,11 @@ h2 {
       height: auto;
       position: absolute; } }
 
-@media (max-width: 1025px) {
-  .headerAnimation .header__wrap {
-    position: absolute; } }
+.headerAnimation .header__wrap {
+  position: fixed; }
+  @media (max-width: 1025px) {
+    .headerAnimation .header__wrap {
+      position: absolute; } }
 
 .header {
   width: 100%;
@@ -426,7 +428,7 @@ h2 {
       overflow: hidden; } }
 
 .header-animated {
-  position: fixed;
+  position: fixed !important;
   opacity: 1;
   top: -78px; }
   .header-animated .header {
@@ -460,6 +462,9 @@ h2 {
   @media (max-width: 1025px) {
     .header__nav {
       top: 86%; } }
+  @media (max-width: 450px) {
+    .header__nav {
+      overflow: hidden; } }
 
 .header__link, .header__link--mobile-heading {
   display: inline-block;
@@ -672,18 +677,17 @@ h2 {
   width: 50%;
   height: 100%;
   float: left;
-  display: block;
+  display: table;
   color: white;
   transition: background 250ms;
   border-right: 1px solid rgba(255, 255, 255, 0.4); }
   .menu.clone > li:nth-of-type(2) {
     border-right: none; }
   .menu.clone > li a {
-    display: block;
+    display: table-cell;
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: center; }
+    text-align: center;
+    vertical-align: middle; }
   .menu.clone > li:hover {
     background: rgba(0, 0, 0, 0.05);
     color: white; }
@@ -809,13 +813,10 @@ html.opened {
   text-align: center;
   float: right; }
 
-.section--events {
-  background: #fef339;
-  padding-bottom: 20%;
-  position: relative;
-  display: none; }
+.section--upcoming-events {
+  position: relative; }
   @media (max-width: 450px) {
-    .section--events {
+    .section--upcoming-events {
       background: white;
       padding: 0 4%; } }
 
@@ -960,6 +961,46 @@ video {
   max-width: 100%;
   height: auto; }
 
+.section--events-slim a:nth-of-type(1) {
+  float: left;
+  width: 46%; }
+  .section--events-slim a:nth-of-type(1) .b-conference {
+    width: 100%; }
+    .section--events-slim a:nth-of-type(1) .b-conference__content {
+      padding-left: 0;
+      padding-right: 0; }
+  .section--events-slim a:nth-of-type(1) .b-conference__info {
+    width: 78%; }
+    @media (max-width: 450px) {
+      .section--events-slim a:nth-of-type(1) .b-conference__info {
+        width: 74%; } }
+  @media (max-width: 450px) {
+    .section--events-slim a:nth-of-type(1) .b-conference__date {
+      padding-left: 2%; } }
+  @media (max-width: 450px) {
+    .section--events-slim a:nth-of-type(1) {
+      width: 100%; } }
+
+.section--events-slim a:nth-of-type(2) {
+  float: right;
+  width: 46%; }
+  .section--events-slim a:nth-of-type(2) .b-conference {
+    width: 100%; }
+    .section--events-slim a:nth-of-type(2) .b-conference__content {
+      padding-left: 0;
+      padding-right: 0; }
+  .section--events-slim a:nth-of-type(2) .b-conference__info {
+    width: 78%; }
+    @media (max-width: 450px) {
+      .section--events-slim a:nth-of-type(2) .b-conference__info {
+        width: 74%; } }
+  @media (max-width: 450px) {
+    .section--events-slim a:nth-of-type(2) .b-conference__date {
+      padding-left: 2%; } }
+  @media (max-width: 450px) {
+    .section--events-slim a:nth-of-type(2) {
+      width: 100%; } }
+
 .footer {
   background: #222;
   width: 100%;
@@ -986,6 +1027,8 @@ video {
     @media (max-width: 450px) {
       .footer:before {
         display: none; } }
+  .footer.footer--flat:before {
+    display: none; }
   @media (max-width: 450px) {
     .footer {
       overflow: hidden; } }
@@ -1421,6 +1464,87 @@ video {
       .t-video .col-md-6:nth-of-type(2) {
         width: 100%; } }
 
+.t-contact-us {
+  padding-top: 15%;
+  padding-bottom: 10%; }
+  .t-contact-us form {
+    width: 100%;
+    padding: 5% 10%; }
+    @media (max-width: 450px) {
+      .t-contact-us form {
+        padding: 5% 4%; } }
+  .t-contact-us h2 {
+    margin-bottom: 10%; }
+    @media (max-width: 450px) {
+      .t-contact-us h2 {
+        margin-bottom: 15%; } }
+  .t-contact-us h3 {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 7%; }
+    @media (max-width: 2050px) {
+      .t-contact-us h3 {
+        font-size: 2.04878vw; } }
+    @media (max-width: 450px) {
+      .t-contact-us h3 {
+        font-size: 7.57576vw;
+        margin-bottom: 15%; } }
+  .t-contact-us input[type='text'] {
+    width: 100%;
+    outline: none;
+    margin-bottom: 11%;
+    background: #f3f3f3;
+    height: 54px;
+    line-height: 40px;
+    -webkit-appearance: none;
+    border: none;
+    border-bottom: 4px solid #dadada;
+    padding: 0 10px;
+    font-size: 21px; }
+    @media (max-width: 2050px) {
+      .t-contact-us input[type='text'] {
+        font-size: 1.02439vw; } }
+    @media (max-width: 450px) {
+      .t-contact-us input[type='text'] {
+        font-size: 16px;
+        line-height: 24px;
+        height: 40px; } }
+  .t-contact-us label {
+    width: 100%;
+    display: block;
+    margin-bottom: 1%;
+    font-size: 28px; }
+    @media (max-width: 2050px) {
+      .t-contact-us label {
+        font-size: 1.36585vw; } }
+    @media (max-width: 450px) {
+      .t-contact-us label {
+        font-size: 6.66667vw;
+        margin-bottom: 5%; } }
+  .t-contact-us textarea {
+    width: 100%;
+    margin-bottom: 5%;
+    -webkit-appearance: none;
+    background: #f3f3f3;
+    resize: none;
+    border: none;
+    border-bottom: 4px solid #dadada;
+    outline: none;
+    padding: 10px;
+    font-size: 21px;
+    line-height: 30px; }
+    @media (max-width: 2050px) {
+      .t-contact-us textarea {
+        font-size: 1.02439vw;
+        line-height: 1.46341vw; } }
+    @media (max-width: 450px) {
+      .t-contact-us textarea {
+        font-size: 16px;
+        line-height: 24px; } }
+  @media (max-width: 450px) {
+    .t-contact-us {
+      padding-top: 40%; } }
+
 .b-media, .b-media--big, .b-media--small, .b-media--middle {
   display: block;
   width: 35%;
@@ -1564,6 +1688,9 @@ video {
 .b-button, .b-button--red {
   color: #222;
   background: #fcee2f;
+  -webkit-appearance: none;
+  outline: none;
+  border: none;
   display: inline-block;
   padding: 11px 37px;
   margin-bottom: 4.1%;
@@ -1595,7 +1722,7 @@ video {
   color: white; }
 
 .b-events {
-  width: 44.7%;
+  width: 100%;
   margin: 0 auto;
   background: white;
   position: relative;

@@ -301,6 +301,7 @@ var counter = 0;
     tl4.to($header_wrap, 0.15, {top:"0px", ease: $.bez(decelerationCurve)},'start+=0.2');
 
 
+
   //Fluid header animations on desk
     // tl3.to($fluid_header, 0.6, {transform:"translateY(-56vh)", ease: Power2.easeOut},'start');
     // tl3.to($fluid_header, 0.6, {marginTop:"-56vh", ease: Power2.easeOut},'start');
@@ -311,6 +312,7 @@ var counter = 0;
     tl3.to($fluid_header_type, 0.5, {transform: "scale(0.5)", marginLeft:"-25%", ease: Power4.easeInOut},'start');
     tl3.to($widget, 0.55, {opacity: "1" , delay:0.3 , ease: Power4.easeInOut},'final');
     tl3.to($fluid_header, 0, {position:"absolute"},'final');
+    tl3.to($header_wrap, 0, {position:"static"},'final');
     // tl3.to($header_wrap, 0, {position:"absolute"},'final');
     tl3.to($body_html, 0.8, {scrollTop:0},'start');
 

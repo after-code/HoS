@@ -26,6 +26,11 @@
       display: none;
     }
   }
+  &.footer--flat {
+    &:before {
+      display: none;
+    }
+  }
   @include breakpoint(mobile) {
     overflow: hidden;
   }

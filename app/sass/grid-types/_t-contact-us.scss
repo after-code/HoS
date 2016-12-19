@@ -1,0 +1,92 @@
+.t-contact-us {
+  padding-top:15%;
+  padding-bottom: 10%;
+  form {
+    width: 100%;
+    padding:5% 10%;
+    @include breakpoint(mobile) {
+      padding:5% 4%;
+    }
+  }
+  h2 {
+    margin-bottom: 10%;
+    @include breakpoint(mobile) {
+      margin-bottom: 15%;
+    }
+  }
+  h3 {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 7%;
+    @include breakpoint(typoMax) {
+      font-size: cvp(42px, 2050px);
+    }
+    @include breakpoint(mobile) {
+      font-size: cvp(25px, 330px);
+      margin-bottom: 15%;
+    }
+  }
+  input[type='text']{
+    width: 100%;
+    outline:none;
+    margin-bottom:11%;
+    background: #f3f3f3;
+    height: 54px;
+    line-height: 40px;
+    -webkit-appearance:none;
+    border:none;
+    border-bottom: 4px solid #dadada;
+    padding:0 10px;
+    font-size:21px;
+    &:hover,
+    &:focus,
+    &:active {
+
+    }
+    @include breakpoint(typoMax) {
+      font-size:cvp(21px, 2050px);
+    }
+    @include breakpoint(mobile) {
+      font-size:16px;
+      line-height: 24px;
+      height: 40px;
+    }
+  }
+  label {
+    width: 100%;
+    display: block;
+    margin-bottom: 1%;
+    font-size:28px;
+    @include breakpoint(typoMax) {
+      font-size:cvp(28px, 2050px);
+    }
+    @include breakpoint(mobile) {
+      font-size:cvp(22px, 330px);
+      margin-bottom: 5%;
+    }
+  }
+  textarea {
+    width: 100%;
+    margin-bottom: 5%;
+    -webkit-appearance:none;
+    background: #f3f3f3;
+    resize:none;
+    border:none;
+    border-bottom: 4px solid #dadada;
+    outline:none;
+    padding:10px;
+    font-size:21px;
+    line-height: 30px;
+    @include breakpoint(typoMax) {
+      font-size:cvp(21px, 2050px);
+      line-height:cvp(30px, 2050px);
+    }
+    @include breakpoint(mobile) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  @include breakpoint(mobile) {
+    padding-top: 40%;
+  }
+}

@@ -74,11 +74,9 @@ html {
   text-align: center;
   float: right;
 }
-.section--events {
-  background:#fef339;
-  padding-bottom: 20%;
+.section--upcoming-events {
   position: relative;
-  display: none;
+  // display: none;
   @include breakpoint(mobile) {
     background: white;
     padding: 0 4%;
@@ -255,4 +253,56 @@ body {
 video {
   max-width: 100%;
   height: auto;
+}
+.section--events-slim {
+  a:nth-of-type(1){
+    float: left;
+    width: 46%;
+    .b-conference {
+      width: 100%;
+      &__content {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+    .b-conference__info {
+      width:78%;
+      @include breakpoint(mobile) {
+        width: 74%;
+      }
+    }
+    .b-conference__date {
+      @include breakpoint(mobile) {
+        padding-left:2%;
+      }
+    }
+    @include breakpoint(mobile) {
+      width: 100%;
+    }
+  }
+  a:nth-of-type(2){
+    float: right;
+    width: 46%;
+    .b-conference {
+      width: 100%;
+      &__content {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+    .b-conference__info {
+      width:78%;
+      @include breakpoint(mobile) {
+        width: 74%;
+      }
+    }
+    .b-conference__date {
+      @include breakpoint(mobile) {
+        padding-left:2%;
+      }
+    }
+    @include breakpoint(mobile) {
+      width: 100%;
+    }
+  }
 }
