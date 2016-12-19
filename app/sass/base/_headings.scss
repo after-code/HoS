@@ -1,11 +1,11 @@
 h1 {
   font-size: 79px;
-  text-align: center;
+  text-align: left;
   padding: 11.2% 0 3.5%;
   font-family: $text__family--Roboto-Condensed;
   font-weight: 100;
   text-transform: uppercase;
-  b {
+  b, strong {
     font-weight: 700;
   }
   span {
@@ -43,7 +43,7 @@ h2 {
   margin-top:0;
   padding-top:0;
   line-height: 53px;
-  b {
+  b, strong {
     font-weight: 700;
   }
   small {

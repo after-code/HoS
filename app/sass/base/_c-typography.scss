@@ -1,6 +1,6 @@
 .c-typography {
   h2 {
-    b {
+    b, strong {
       font-weight: bold;
       @include breakpoint(mobile){
         font-size: cvp(30px,330px);
@@ -74,7 +74,7 @@
       line-height: cvp(29px,330px);
     }
   }
-  b {
+  b, strong {
     font-weight: 700;
     // line-height: 33px;
     // font-size: 23px;

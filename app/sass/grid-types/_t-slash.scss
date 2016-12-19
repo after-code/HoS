@@ -106,5 +106,8 @@
       background: #222;
       color:white;
     }
+    @include breakpoint(mobile){
+      margin-left:auto;
+    }
   }
 }
