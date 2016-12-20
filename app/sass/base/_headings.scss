@@ -104,6 +104,10 @@ h3 {
 .page-title {
   padding-left:19.5%;
   padding-right:19.5%;
+  @include breakpoint(laptop){
+    padding-left:16.5%;
+    padding-right:16.5%;
+  }
   @include breakpoint(mobile){
     padding-left:5%;
     padding-right:5%;

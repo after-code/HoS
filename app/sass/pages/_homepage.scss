@@ -1,4 +1,4 @@
-.page-homepage {
+.page-homepage, .page-home {
   .wrapper--big {
     margin-bottom: 2%;
     &.opened {
@@ -16,6 +16,14 @@
       margin-bottom: 5%;
       // padding-top: 22%;
       margin-top:0;
+    }
+  }
+  main {
+    @include breakpoint(tablet) {
+      padding-top:12%;
+    }
+    @include breakpoint(mobile) {
+      padding-top:28%;
     }
   }
 }
