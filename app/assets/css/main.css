@@ -1454,7 +1454,8 @@ video {
         margin-bottom: 9%; } }
     .t-slash .col-md-6:nth-of-type(2) img {
       margin-bottom: 2%;
-      width: 86%; }
+      width: 86%;
+      margin-left: 6%; }
       @media (max-width: 1025px) {
         .t-slash .col-md-6:nth-of-type(2) img {
           width: 94%;
@@ -3313,21 +3314,21 @@ video {
       margin-top: 3%;
       margin-left: auto; } }
 
-.b-hp-about__text {
+.b-hp-about__right p.b-hp-about__text {
   font-size: 32.8px;
   line-height: 48px;
   padding: 0 4.6%; }
   @media (max-width: 2050px) {
-    .b-hp-about__text {
+    .b-hp-about__right p.b-hp-about__text {
       font-size: 1.6vw;
       line-height: 2.34146vw; } }
   @media (max-width: 1025px) {
-    .b-hp-about__text {
+    .b-hp-about__right p.b-hp-about__text {
       font-size: 2.34375vw;
       line-height: 3.125vw;
       margin-bottom: 8%; } }
   @media (max-width: 450px) {
-    .b-hp-about__text {
+    .b-hp-about__right p.b-hp-about__text {
       font-size: 5.45455vw;
       line-height: 7.87879vw;
       margin-bottom: 8%; } }
@@ -3992,6 +3993,9 @@ video {
 @media (max-width: 450px) {
   .page-homepage main, .page-home main {
     padding-top: 28%; } }
+
+.page-homepage .home-promotion, .page-home .home-promotion {
+  margin-bottom: 12%; }
 
 .page-ebooks .wrapper, .page-ebooks .wrapper--big, .page-ebooks .wrapper--small, .page-ebooks .wrapper--xsmall {
   margin-top: 24%; }
