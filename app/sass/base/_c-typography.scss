@@ -23,6 +23,10 @@
       font-size: cvp(31px,2050px);
       line-height: cvp(32px,2050px);
     }
+    @include breakpoint(laptop){
+      font-size: cvp(31px,1700px);
+      line-height: cvp(32px,1700px);
+    }
     @include breakpoint(mobile){
       font-size: cvp(20px,330px);
       line-height: cvp(20px,330px);
@@ -39,6 +43,10 @@
     @include breakpoint(typoMax){
       font-size: cvp(24px,2050px);
       line-height: cvp(28px,2050px);
+    }
+    @include breakpoint(tablet){
+      font-size: cvp(24px,1700px);
+      line-height: cvp(28px,1700px);
     }
     @include breakpoint(tablet){
       font-size: cvp(18px,1024px);
@@ -64,6 +72,10 @@
     @include breakpoint(typoMax){
       font-size: cvp(20px,2050px);
       line-height: cvp(30px,2050px);
+    }
+    @include breakpoint(laptop) {
+      font-size: cvp(20px,1700px);
+      line-height: cvp(30px,1700px);
     }
     @include breakpoint(tablet){
       font-size: cvp(18px,1024px);
@@ -104,6 +116,10 @@
     @include breakpoint(typoMax){
       font-size: cvp(20px,2050px);
       line-height: cvp(30px,2050px);
+    }
+    @include breakpoint(typoMax){
+      font-size: cvp(20px,1700px);
+      line-height: cvp(30px,1700px);
     }
     @include breakpoint(tablet){
       font-size: cvp(18px,1024px);

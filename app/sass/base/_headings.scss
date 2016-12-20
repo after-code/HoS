@@ -15,6 +15,9 @@ h1 {
     @include breakpoint(typoMax) {
       font-size: cvp(50px, 2050px);
     }
+    @include breakpoint(laptop) {
+      font-size: cvp(50px, 1700px);
+    }
     @include breakpoint(mobile){
       font-size: cvp(22px,330px);
       line-height: cvp(38px,330px);
@@ -22,6 +25,9 @@ h1 {
   }
   @include breakpoint(typoMax) {
     font-size: cvp(79px, 2050px);
+  }
+  @include breakpoint(laptop) {
+    font-size: cvp(79px, 1700px);
   }
   @include breakpoint(tablet) {
     font-size:cvp(55px,1024px);
@@ -52,6 +58,9 @@ h2 {
     @include breakpoint(typoMax) {
       font-size: cvp(23px, 2050px);
     }
+    @include breakpoint(laptop) {
+      font-size: cvp(23px, 1700px);
+    }
     @include breakpoint(mobile){
       font-size: cvp(18px,330px);
     }
@@ -64,6 +73,10 @@ h2 {
   @include breakpoint(typoMax) {
     font-size: cvp(49px, 2050px);
     line-height: cvp(53px, 2050px);
+  }
+  @include breakpoint(laptop) {
+    font-size: cvp(49px, 1700px);
+    line-height: cvp(53px, 1700px);
   }
   @include breakpoint(tablet){
     font-size: cvp(30px,1024px);

@@ -44,6 +44,9 @@ html {
   @include breakpoint(tablet) {
     padding: 0px 5.5%;
   }
+  @include breakpoint(laptop) {
+    padding: 0% 16.5%;
+  }
   @include breakpoint(mobile) {
     padding:0 3%;
   }
@@ -54,6 +57,9 @@ html {
   max-width: inherit;
   padding: 0px 25%;
   // overflow: hidden;
+  @include breakpoint(laptop) {
+    padding: 0px 20.5%;
+  }
   @include breakpoint(tablet) {
     padding: 0px 10.5%;
   }

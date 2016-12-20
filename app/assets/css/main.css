@@ -130,6 +130,10 @@ body {
     .c-typography h3 {
       font-size: 1.5122vw;
       line-height: 1.56098vw; } }
+  @media (max-width: 1700px) {
+    .c-typography h3 {
+      font-size: 1.82353vw;
+      line-height: 1.88235vw; } }
   @media (max-width: 450px) {
     .c-typography h3 {
       font-size: 6.06061vw;
@@ -147,6 +151,10 @@ body {
     .c-typography h4 {
       font-size: 1.17073vw;
       line-height: 1.36585vw; } }
+  @media (max-width: 1025px) {
+    .c-typography h4 {
+      font-size: 1.41176vw;
+      line-height: 1.64706vw; } }
   @media (max-width: 1025px) {
     .c-typography h4 {
       font-size: 1.75781vw;
@@ -172,6 +180,10 @@ body {
     .c-typography p {
       font-size: 0.97561vw;
       line-height: 1.46341vw; } }
+  @media (max-width: 1700px) {
+    .c-typography p {
+      font-size: 1.17647vw;
+      line-height: 1.76471vw; } }
   @media (max-width: 1025px) {
     .c-typography p {
       font-size: 1.75781vw;
@@ -201,6 +213,10 @@ body {
     .c-typography li {
       font-size: 0.97561vw;
       line-height: 1.46341vw; } }
+  @media (max-width: 2050px) {
+    .c-typography li {
+      font-size: 1.17647vw;
+      line-height: 1.76471vw; } }
   @media (max-width: 1025px) {
     .c-typography li {
       font-size: 1.75781vw;
@@ -227,6 +243,9 @@ h1 {
     @media (max-width: 2050px) {
       h1 span {
         font-size: 2.43902vw; } }
+    @media (max-width: 1700px) {
+      h1 span {
+        font-size: 2.94118vw; } }
     @media (max-width: 450px) {
       h1 span {
         font-size: 6.66667vw;
@@ -234,6 +253,9 @@ h1 {
   @media (max-width: 2050px) {
     h1 {
       font-size: 3.85366vw; } }
+  @media (max-width: 1700px) {
+    h1 {
+      font-size: 4.64706vw; } }
   @media (max-width: 1025px) {
     h1 {
       font-size: 5.37109vw; } }
@@ -262,6 +284,9 @@ h2 {
     @media (max-width: 2050px) {
       h2 small {
         font-size: 1.12195vw; } }
+    @media (max-width: 1700px) {
+      h2 small {
+        font-size: 1.35294vw; } }
     @media (max-width: 450px) {
       h2 small {
         font-size: 5.45455vw; } }
@@ -273,6 +298,10 @@ h2 {
     h2 {
       font-size: 2.39024vw;
       line-height: 2.58537vw; } }
+  @media (max-width: 1700px) {
+    h2 {
+      font-size: 2.88235vw;
+      line-height: 3.11765vw; } }
   @media (max-width: 1025px) {
     h2 {
       font-size: 2.92969vw;
@@ -304,6 +333,54 @@ h2 {
 
 .last-element {
   padding-bottom: 6.4%; }
+
+.margin__bottom--5 {
+  margin-bottom: 5%; }
+
+.margin__bottom--10 {
+  margin-bottom: 10%; }
+
+.margin__bottom--15 {
+  margin-bottom: 15%; }
+
+.margin__bottom--20 {
+  margin-bottom: 20%; }
+
+.margin__top--5 {
+  margin-top: 5%; }
+
+.margin__top--10 {
+  margin-top: 10%; }
+
+.margin__top--15 {
+  margin-top: 15%; }
+
+.margin__top--20 {
+  margin-top: 20%; }
+
+.padding__bottom--5 {
+  padding-bottom: 5%; }
+
+.padding__bottom--10 {
+  padding-bottom: 10%; }
+
+.padding__bottom--15 {
+  padding-bottom: 15%; }
+
+.padding__bottom--20 {
+  padding-bottom: 20%; }
+
+.padding__top--5 {
+  padding-top: 5%; }
+
+.padding__top--10 {
+  padding-top: 10%; }
+
+.padding__top--15 {
+  padding-top: 15%; }
+
+.padding__top--20 {
+  padding-top: 20%; }
 
 .header__wrap {
   width: 100%;
@@ -797,6 +874,9 @@ html.opened {
   @media (max-width: 1025px) {
     .wrapper--small {
       padding: 0px 5.5%; } }
+  @media (max-width: 1700px) {
+    .wrapper--small {
+      padding: 0% 16.5%; } }
   @media (max-width: 450px) {
     .wrapper--small {
       padding: 0 3%; } }
@@ -804,6 +884,9 @@ html.opened {
 .wrapper--xsmall {
   max-width: inherit;
   padding: 0px 25%; }
+  @media (max-width: 1700px) {
+    .wrapper--xsmall {
+      padding: 0px 20.5%; } }
   @media (max-width: 1025px) {
     .wrapper--xsmall {
       padding: 0px 10.5%; } }
