@@ -1371,6 +1371,7 @@ video {
   margin-left: 6%; }
   @media (max-width: 450px) {
     .t-text .col-md-6:nth-of-type(2n) {
+      margin-left: 0;
       width: 100%; } }
 
 .t-text .col-md-4:nth-of-type(3n-2) {
@@ -1385,7 +1386,9 @@ video {
   margin-right: 3.5%; }
   @media (max-width: 450px) {
     .t-text .col-md-4:nth-of-type(3n-1) {
-      width: 100%; } }
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0; } }
 
 .t-text .col-md-4:nth-of-type(3n) {
   width: 31%; }
