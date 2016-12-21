@@ -3,12 +3,26 @@
   position: relative;
   &> img {
     width: 100%;
+    @include breakpoint(tablet) {
+      width: 150%;
+      left: -25%;
+      position: relative;
+    }
     @include breakpoint(mobile){
       width: 454%;
       left: -50%;
       position: relative;
     }
   }
+  h2 {
+    text-align: center;
+    @include breakpoint(laptop) {
+      font-size: cvp(42px, 1700px);
+
+      line-height: cvp(48px, 1700px);
+    }
+  }
+
   // float: left;
   // background: url(#{$assetpath}/img/consultancy-img.png);
   background-size: 100%;
@@ -22,6 +36,11 @@
   position: absolute;
   img {
     width: 100%;
+  }
+  @include breakpoint(tablet) {
+    top: 7%;
+    left: 30%;
+    width: 40%;
   }
   @include breakpoint(mobile){
     width: 100%;
