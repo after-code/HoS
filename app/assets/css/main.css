@@ -966,9 +966,9 @@ html.opened {
       padding-top: 15%; } }
 
 .section--consultancy-wos {
-  padding-top: 5%;
+  padding-top: 8.4%;
   padding-bottom: 5%;
-  margin-top: 5%;
+  margin-top: 7.7%;
   margin-bottom: 5%;
   position: relative; }
   .section--consultancy-wos .col-md-6:nth-of-type(1) img {
@@ -3993,28 +3993,30 @@ video {
 .b-line--top:before, .section--consultancy-wos:before {
   content: '';
   position: relative;
-  height: 4px;
-  width: 150px;
+  height: 3px;
+  width: 83px;
   background: #222;
   top: 0%;
   left: 50%;
   display: block;
   /* text-align: center; */
   transform: translateX(-50%);
-  position: absolute; }
+  position: absolute;
+  visibility: visible; }
 
 .b-line--bottom:after, .section--consultancy-wos:after {
   content: '';
   position: relative;
-  height: 4px;
-  width: 150px;
+  height: 3px;
+  width: 83px;
   background: #222;
-  bottom: 0%;
+  bottom: -10%;
   left: 50%;
   display: block;
   /* text-align: center; */
   transform: translateX(-50%);
-  position: absolute; }
+  position: absolute;
+  visibility: visible; }
 
 .page-homepage .wrapper--big, .page-home .wrapper--big {
   margin-bottom: 2%; }
