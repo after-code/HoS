@@ -109,7 +109,7 @@ var counter = 0;
     $(".footer__back-to-top").click(function(){
       $("html, body").animate({scrollTop:"0px"},1000, $.bez(accelerationCurve));
     });
-    if ($(window).width() > 450){
+    if ($(window).width() > 1024){
       submenuInit();
     }
     $( window ).resize(function() {
