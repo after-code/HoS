@@ -41,11 +41,11 @@ html {
   // max-width: 1600px;
   padding: 0px 19.5%;
   // overflow: hidden;
-  @include breakpoint(tablet) {
-    padding: 0px 5.5%;
-  }
   @include breakpoint(laptop) {
     padding: 0% 16.5%;
+  }
+  @include breakpoint(tablet) {
+    padding: 0px 5.5%;
   }
   @include breakpoint(mobile) {
     padding:0 3%;

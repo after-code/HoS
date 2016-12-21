@@ -12,7 +12,7 @@
   // margin-top: -158px;
   @include breakpoint(tablet) {
     position: relative;
-    height: 38%;
+    height: 38vh;
   }
   @include breakpoint(mobile){
     position: relative;

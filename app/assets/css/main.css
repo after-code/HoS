@@ -824,12 +824,12 @@ html.opened {
 .wrapper--small {
   max-width: inherit;
   padding: 0px 19.5%; }
-  @media (max-width: 1025px) {
-    .wrapper--small {
-      padding: 0px 5.5%; } }
   @media (max-width: 1700px) {
     .wrapper--small {
       padding: 0% 16.5%; } }
+  @media (max-width: 1025px) {
+    .wrapper--small {
+      padding: 0px 5.5%; } }
   @media (max-width: 450px) {
     .wrapper--small {
       padding: 0 3%; } }
@@ -3455,7 +3455,7 @@ video {
   @media (max-width: 1025px) {
     .b-fluid-header {
       position: relative;
-      height: 38%; } }
+      height: 38vh; } }
   @media (max-width: 450px) {
     .b-fluid-header {
       position: relative;
