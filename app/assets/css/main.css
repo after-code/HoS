@@ -965,6 +965,23 @@ html.opened {
       padding: 0 4%;
       padding-top: 15%; } }
 
+.section--consultancy-wos {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  position: relative; }
+  .section--consultancy-wos .col-md-6:nth-of-type(1) img {
+    height: 2.5%;
+    margin-bottom: 7.9%; }
+  .section--consultancy-wos .col-md-6:nth-of-type(2) img {
+    height: 3.5%;
+    margin-bottom: 7.9%; }
+  @media (max-width: 450px) {
+    .section--consultancy-wos {
+      padding: 0 4%;
+      padding-top: 15%; } }
+
 .section--header {
   width: 100%;
   position: absolute;
@@ -3873,7 +3890,6 @@ video {
 .b-fullbanner {
   width: 100%;
   position: relative;
-  float: left;
   background-size: 100%;
   background-repeat: no-repeat; }
   .b-fullbanner > img {
@@ -3973,6 +3989,32 @@ video {
       width: 100%;
       margin-left: 0;
       margin-bottom: 10%; } }
+
+.b-line--top:before, .section--consultancy-wos:before {
+  content: '';
+  position: relative;
+  height: 4px;
+  width: 150px;
+  background: #222;
+  top: 0%;
+  left: 50%;
+  display: block;
+  /* text-align: center; */
+  transform: translateX(-50%);
+  position: absolute; }
+
+.b-line--bottom:after, .section--consultancy-wos:after {
+  content: '';
+  position: relative;
+  height: 4px;
+  width: 150px;
+  background: #222;
+  bottom: 0%;
+  left: 50%;
+  display: block;
+  /* text-align: center; */
+  transform: translateX(-50%);
+  position: absolute; }
 
 .page-homepage .wrapper--big, .page-home .wrapper--big {
   margin-bottom: 2%; }

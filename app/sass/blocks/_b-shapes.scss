@@ -1,0 +1,30 @@
+.b-line--top {
+  &:before {
+    content: '';
+    position: relative;
+    height: 4px;
+    width: 150px;
+    background: #222;
+    top: 0%;
+    left: 50%;
+    display: block;
+    /* text-align: center; */
+    transform: translateX(-50%);
+    position: absolute;
+  }
+}
+.b-line--bottom {
+  &:after {
+    content: '';
+    position: relative;
+    height: 4px;
+    width: 150px;
+    background: #222;
+    bottom: 0%;
+    left: 50%;
+    display: block;
+    /* text-align: center; */
+    transform: translateX(-50%);
+    position: absolute;
+  }
+}
