@@ -157,6 +157,7 @@
     background: #fff;
     left:0;
     opacity: 0;
+    overflow: hidden;
   }
   @include breakpoint(tablet){
     top:86%;

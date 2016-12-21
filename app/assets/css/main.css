@@ -330,6 +330,10 @@ h2 {
     .page-title {
       padding-left: 16.5%;
       padding-right: 16.5%; } }
+  @media (max-width: 1025px) {
+    .page-title {
+      padding-left: 5.5%;
+      padding-right: 5.5%; } }
   @media (max-width: 450px) {
     .page-title {
       padding-left: 5%;
@@ -496,7 +500,8 @@ h2 {
       width: 100%;
       background: #fff;
       left: 0;
-      opacity: 0; } }
+      opacity: 0;
+      overflow: hidden; } }
   @media (max-width: 1025px) {
     .header__nav {
       top: 86%; } }
