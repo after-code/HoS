@@ -158,7 +158,7 @@ body {
   @media (max-width: 1025px) {
     .c-typography h4 {
       font-size: 1.75781vw;
-      line-height: 1.95312vw;
+      line-height: 1.95313vw;
       margin-bottom: 5.3%; } }
   @media (max-width: 450px) {
     .c-typography h4 {
@@ -1443,7 +1443,6 @@ video {
     padding: 4%; } }
 
 .t-slash {
-  margin-bottom: 4.4%;
   background: #fcee2f;
   overflow: hidden;
   position: relative; }
@@ -2153,7 +2152,7 @@ video {
     margin-left: 6%; }
     @media (max-width: 1025px) {
       .b-service--consultancy .b-button, .b-service--consultancy .b-button--red {
-        font-size: 1.95312vw;
+        font-size: 1.95313vw;
         padding: 4% 13%; } }
     @media (max-width: 450px) {
       .b-service--consultancy .b-button, .b-service--consultancy .b-button--red {
@@ -2164,7 +2163,6 @@ video {
       color: white; }
 
 .b-service--training {
-  background-image: url(../../assets/img/background-turquoise-2.jpg);
   text-align: center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -2209,6 +2207,7 @@ video {
         line-height: 7.5vw;
         margin-bottom: 9.3%; } }
   .b-service--training .b-service__division {
+    background-image: url(../../assets/img/background-turquoise-2.jpg);
     width: 100%;
     padding: 0 8.2%;
     padding-top: 1.4%;
@@ -2248,7 +2247,7 @@ video {
     @media (max-width: 1025px) {
       .b-service--training .b-service__element__nbr {
         float: left;
-        font-size: 3.51562vw; } }
+        font-size: 3.51563vw; } }
     @media (max-width: 450px) {
       .b-service--training .b-service__element__nbr {
         font-size: 10.83333vw;
@@ -2320,7 +2319,7 @@ video {
     @media (max-width: 1025px) {
       .b-service--training .b-service__button {
         margin-top: 0.6%;
-        font-size: 1.95312vw;
+        font-size: 1.95313vw;
         padding: 2% 6.8%; } }
     @media (max-width: 450px) {
       .b-service--training .b-service__button {
@@ -2668,6 +2667,8 @@ video {
       width: 100%; }
     .b-conference__wrap > a:nth-child(3) {
       float: right; }
+  .b-conference__wrap > div:nth-child(2) {
+    float: right; }
 
 @media (max-width: 450px) {
   .b-conference--mobile-short {
@@ -2784,7 +2785,7 @@ video {
         font-size: 0.97561vw; } }
     @media (max-width: 1025px) {
       .b-conference__info__city {
-        font-size: 1.95312vw;
+        font-size: 1.95313vw;
         margin-top: -2%;
         margin-bottom: 2%; } }
     @media (max-width: 450px) {

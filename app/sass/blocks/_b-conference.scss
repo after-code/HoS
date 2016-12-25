@@ -33,6 +33,9 @@
       float: right;
     }
   }
+  &>div:nth-child(2){
+    float:right;
+  }
 }
 .b-conference--mobile-short {
   @include breakpoint(mobile) {
