@@ -1,5 +1,7 @@
 .t-video {
   background: white;
+  padding-top: 7%;
+  margin-bottom: 4%;
   @extend .clearfix;
   .col-md-6:nth-of-type(1) {
     float: left;

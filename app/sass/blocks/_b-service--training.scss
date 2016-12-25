@@ -1,7 +1,5 @@
 .b-service--training {
-  text-align: center;
-  background-repeat: no-repeat;
-  background-size: 100%;
+
   margin-bottom: 4.4%;
   width: 100%;
   .b-service__logo {
@@ -46,6 +44,9 @@
     }
   }
   .b-service__division {
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
     background-image: url(#{$assetpath}img/background-turquoise-2.jpg);
     width: 100%;
     padding: 0 8.2%;
