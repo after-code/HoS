@@ -44,10 +44,16 @@
     }
   }
   .col-md-4 {
+    @include breakpoint(mobile) {
+      margin-bottom: 8%;
+    }
     h3 {
       margin-bottom: 13%;
       border-bottom: 3px solid #222;
       padding-bottom: 2%;
+      @include breakpoint(mobile) {
+        margin-bottom:4%;
+      }
     }
   }
 }

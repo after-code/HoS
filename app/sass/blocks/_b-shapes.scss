@@ -1,4 +1,5 @@
 .b-line--top {
+
   &:before {
     content: '';
     position: relative;
@@ -12,9 +13,13 @@
     transform: translateX(-50%);
     position: absolute;
     visibility: visible;
+    @include breakpoint(mobile) {
+      display: none;
+    }
   }
 }
 .b-line--bottom {
+
   &:after {
     content: '';
     position: relative;
@@ -28,5 +33,8 @@
     transform: translateX(-50%);
     position: absolute;
     visibility: visible;
+    @include breakpoint(mobile) {
+      display: none;
+    }
   }
 }

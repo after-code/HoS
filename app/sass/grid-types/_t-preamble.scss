@@ -1,8 +1,13 @@
 .t-preamble {
-  // padding-top: 3.2%;
+  position: relative;
+  margin-bottom: 12%;
+  @extend .b-line--bottom;
   @include breakpoint(mobile){
     padding: 4%;
     padding-top: 9%;
+    &:after {
+      display: none;
+    }
   }
   h1 {
     text-align: left;
