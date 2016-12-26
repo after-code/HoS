@@ -341,6 +341,15 @@ video {
 }
 .section--consultancy-sms {
   margin-bottom:8%;
+  h2 {
+    margin-bottom: 11%;
+  }
+}
+section.section--consultancy-sms {
+  margin-bottom: 10%;
+  @include breakpoint(mobile) {
+    padding: 0 5%;
+  }
 }
 .home-promotion {
   margin-bottom: 10%;

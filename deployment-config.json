@@ -1,0 +1,9 @@
+{
+    "type": "sftp",
+    "host": "street.rs",
+    "username": "after",
+    "password": "4haus",
+    "port": 22,
+    "remotePath": "/home/after/push/hos/sites/all/themes/hos/static/",
+    "uploadOnSave": true
+}
