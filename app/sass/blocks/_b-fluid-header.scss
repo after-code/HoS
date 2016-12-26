@@ -81,3 +81,24 @@
 .b-fluid-header__circle {
   // fill:orange;
 }
+.header-no-animation {
+  .b-fluid-header {
+    top: -56vh;
+    position: absolute;
+  }
+  .b-fluid-header__element {
+    width: 36.4%;
+    left: 46.1%;
+    top: 49.7vh;
+  }
+  .b-fluid-header__vector {
+    margin-left: 0%;
+    margin-top: 0%;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+  }
+  .b-fluid-header__type {
+    opacity: 1;
+    margin-left: -25%;
+    transform: matrix(0.5, 0, 0, 0.5, 0, 0);
+  }
+}

@@ -1,0 +1,57 @@
+.page-contact {
+  h1.page-title {
+    font-size: 49px;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 11.2% 0 3.5%;
+    font-family: $text__family--Roboto-Condensed;
+    font-weight: bold;
+    margin-bottom: 10%;
+    margin-top:0;
+    padding-top:15%;
+    padding-left: 16.5%;
+    padding-right: 16.5%;
+    line-height: 53px;
+    b, strong {
+      font-weight: 700;
+    }
+    small {
+      font-weight: 500;
+      font-size: 23px;
+      @include breakpoint(typoMax) {
+        font-size: cvp(23px, 2050px);
+      }
+      @include breakpoint(laptop) {
+        font-size: cvp(23px, 1700px);
+      }
+      @include breakpoint(mobile){
+        font-size: cvp(18px,330px);
+      }
+    }
+    span {
+      color:$cyan;
+      font-weight: 500;
+      font-size: 2vw;
+    }
+    @include breakpoint(typoMax) {
+      font-size: cvp(49px, 2050px);
+      line-height: cvp(53px, 2050px);
+    }
+    @include breakpoint(laptop) {
+      font-size: cvp(49px, 1700px);
+      line-height: cvp(53px, 1700px);
+    }
+    @include breakpoint(tablet){
+      font-size: cvp(30px,1024px);
+      line-height: cvp(30px,1024px);
+    }
+    @include breakpoint(mobile){
+      font-size: cvp(30px,330px);
+      line-height: cvp(30px,330px);
+      margin-bottom: 15%;
+      padding-left: 5%;
+      padding-right: 5%;
+      padding-top: 33%;
+    }
+  }
+}

@@ -104,9 +104,10 @@ html {
     display: block;
     position: absolute;
     background: #fef339;
-    top: 47%;
+    top: 37%;
     left: -34%;
     z-index: -1;
+    visibility: visible;
     transform: rotate(-170.3deg);
     @include breakpoint(mobile) {
       display: none;
@@ -362,6 +363,7 @@ section.section--consultancy-sms {
     background: #03c4c4;
   }
   .t-slash .col-md-6:nth-of-type(2) {
+    padding-top: 4%;
     background: #03c4c4;
     &:after {
       background: #03c4c4;
@@ -373,6 +375,15 @@ section.section--consultancy-sms {
     }
   }
 }
-.section--home-insights {
+.section--home-insights, .section--home-consuntancy {
   margin-bottom: 4.4%;
+}
+.section--conference--heading {
+  padding: 11.2% 12.4% 0%;
+  @include breakpoint(mobile) {
+    padding: 11.2% 4% 0%;
+  }
+}
+.panel-separator {
+  display: none;
 }

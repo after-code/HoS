@@ -3,6 +3,7 @@
   background: $white-gray;
   overflow: hidden;
   padding-bottom: 9%;
+  margin-bottom: 5%;
   @include breakpoint(tablet){
     padding-bottom: 0;
   }

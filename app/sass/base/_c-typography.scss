@@ -1,5 +1,5 @@
 .c-typography {
-  h2 {
+  h1, h2 {
     b, strong {
       font-weight: bold;
       @include breakpoint(mobile){
