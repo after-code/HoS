@@ -8,6 +8,7 @@
     }
     @include breakpoint(mobile) {
       padding:0 4%;
+      padding-top:10%;
     }
   }
   .content-bumper {
