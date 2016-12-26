@@ -220,12 +220,14 @@ html {
     img {
       height: 2.5%;
       margin-bottom: 7.9%;
+      height: 40px;
     }
   }
   .col-md-6:nth-of-type(2){
     img {
       height: 3.5%;
       margin-bottom: 7.9%;
+      height: 40px;
     }
   }
   @include breakpoint(mobile){

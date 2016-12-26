@@ -978,10 +978,12 @@ html.opened {
   position: relative; }
   .section--consultancy-wos .col-md-6:nth-of-type(1) img {
     height: 2.5%;
-    margin-bottom: 7.9%; }
+    margin-bottom: 7.9%;
+    height: 40px; }
   .section--consultancy-wos .col-md-6:nth-of-type(2) img {
     height: 3.5%;
-    margin-bottom: 7.9%; }
+    margin-bottom: 7.9%;
+    height: 40px; }
   @media (max-width: 450px) {
     .section--consultancy-wos {
       padding: 0 4%;
