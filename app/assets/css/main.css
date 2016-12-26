@@ -158,7 +158,7 @@ body {
   @media (max-width: 1025px) {
     .c-typography h4 {
       font-size: 1.75781vw;
-      line-height: 1.95313vw;
+      line-height: 1.95312vw;
       margin-bottom: 5.3%; } }
   @media (max-width: 450px) {
     .c-typography h4 {
@@ -2152,7 +2152,7 @@ video {
     margin-left: 6%; }
     @media (max-width: 1025px) {
       .b-service--consultancy .b-button, .b-service--consultancy .b-button--red {
-        font-size: 1.95313vw;
+        font-size: 1.95312vw;
         padding: 4% 13%; } }
     @media (max-width: 450px) {
       .b-service--consultancy .b-button, .b-service--consultancy .b-button--red {
@@ -2247,7 +2247,7 @@ video {
     @media (max-width: 1025px) {
       .b-service--training .b-service__element__nbr {
         float: left;
-        font-size: 3.51563vw; } }
+        font-size: 3.51562vw; } }
     @media (max-width: 450px) {
       .b-service--training .b-service__element__nbr {
         font-size: 10.83333vw;
@@ -2319,7 +2319,7 @@ video {
     @media (max-width: 1025px) {
       .b-service--training .b-service__button {
         margin-top: 0.6%;
-        font-size: 1.95313vw;
+        font-size: 1.95312vw;
         padding: 2% 6.8%; } }
     @media (max-width: 450px) {
       .b-service--training .b-service__button {
@@ -2785,7 +2785,7 @@ video {
         font-size: 0.97561vw; } }
     @media (max-width: 1025px) {
       .b-conference__info__city {
-        font-size: 1.95313vw;
+        font-size: 1.95312vw;
         margin-top: -2%;
         margin-bottom: 2%; } }
     @media (max-width: 450px) {
