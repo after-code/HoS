@@ -47,7 +47,8 @@
     text-align: center;
     background-repeat: no-repeat;
     background-size: 100%;
-    background-image: url(#{$assetpath}img/background-turquoise-2.jpg);
+    background: #222;
+    color: white;
     width: 100%;
     padding: 0 8.2%;
     padding-top: 1.4%;
@@ -142,6 +143,7 @@
       font-size: cvp(24px,330px);
       line-height: cvp(26px,330px);
       margin-bottom: 15%;
+      text-align: left;
     }
   }
   .b-service__button {
@@ -184,6 +186,6 @@
   @include breakpoint(mobile) {
     overflow: hidden;
     background-image: none;
-    background: $cyan;
+    background: transparent;
   }
 }
