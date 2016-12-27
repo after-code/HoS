@@ -16,6 +16,7 @@
   }
   .b-conference__wrap {
     padding: 10% 12.5%;
+    max-width: none;
     @include breakpoint(mobile) {
       padding:5% 4%;
     }
@@ -31,5 +32,15 @@
     @include breakpoint(mobile) {
       width: 100%;
     }
+  }
+  .b-fluid-header__vector {
+    display: none;
+  }
+  .b-fluid-header__type {
+    font-style: normal;
+    left: 50%;
+    margin-left: 0;
+    transform: translateX(-50%);
+    text-align: center;
   }
 }

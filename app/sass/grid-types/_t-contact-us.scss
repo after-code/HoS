@@ -21,6 +21,7 @@
     }
   }
   input[type='text'], input[type='email']{
+    border-radius: 0;
     width: 100%;
     outline:none;
     margin-bottom:11%;
@@ -66,6 +67,7 @@
     text-align: center;
   }
   textarea {
+    border-radius: 0;
     width: 100%;
     margin-bottom: 5%;
     -webkit-appearance:none;

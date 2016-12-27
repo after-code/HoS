@@ -25,4 +25,13 @@
     fill:$red;
   }
 }
+.page-detail-education {
+  .b-fluid-header {
+    background-color:#ccc;
+    background-image:url(#{$assetpath}img/sm-background.jpg);
+  }
+  .b-fluid-header__circle {
+    // fill:$red;
+  }
+}
 // @include fhSettings('.page-about',$red, "/about-header-photo.jpg" );
