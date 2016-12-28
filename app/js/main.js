@@ -206,6 +206,7 @@ var counter = 0;
     }
   }
   function showPopup() {
+    console.log('popup shown');
     if ($(window).width()< 460){
       tl5.play();
     } else {
@@ -222,6 +223,7 @@ var counter = 0;
     // hideWidget();
   }
   function hidePopup() {
+    console.log('popup hidden');
     tl2.reverse();
     tl5.reverse();
     if ($(window).width()< 797){
@@ -391,9 +393,9 @@ var counter = 0;
       showSubmenu();
     });
     $(".header-submenu").mouseleave(function(){
-      submenu_timeout = setTimeout(function(){
+      // submenu_timeout = setTimeout(function(){
         hideSubmenu();
-      },400);
+      // },400);
     });
     $(".close-menu").click(function(){
       hideSubmenu();

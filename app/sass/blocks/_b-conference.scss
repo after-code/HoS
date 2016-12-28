@@ -147,6 +147,7 @@
   float: left;
   padding-left: 7%;
   width: 79%;
+  height: 18vw;
   &__city {
     color: $red;
     margin-bottom: 3%;
@@ -163,6 +164,7 @@
       margin-bottom: 2%;
     }
     @include breakpoint(mobile) {
+      height: auto;
       font-size: 12px;
       margin-bottom: 2%;
       color:$red;
@@ -198,9 +200,9 @@
     line-height: 38px;
     margin-bottom: 4%;
     font-size: 25px;
-    min-height: 225px;
+    // min-height: 225px;
     @include breakpoint(typoMax){
-      min-height: 11vw;
+      // min-height: 11vw;
       font-size:cvp(25px, 2050px);
       line-height:cvp(38px, 2050px);
     }
