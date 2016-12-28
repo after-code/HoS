@@ -1,7 +1,7 @@
 .t-preamble {
   position: relative;
-  margin-bottom: 12%;
-  @extend .b-line--bottom;
+  // margin-bottom: 12%;
+  // @extend .b-line--bottom;
   @include breakpoint(mobile){
     padding: 4%;
     padding-top: 9%;

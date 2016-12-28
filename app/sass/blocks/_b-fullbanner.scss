@@ -27,6 +27,15 @@
   // background: url(#{$assetpath}/img/consultancy-img.png);
   background-size: 100%;
   background-repeat: no-repeat;
+  .b-button {
+    background: transparent;
+    border: 2px solid #222;
+    padding: 15px 33px;
+    &:hover {
+      background: #222;
+      color:white;
+    }
+  }
 }
 .b-fullbanner__item {
   top:5%;

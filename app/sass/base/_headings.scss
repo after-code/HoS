@@ -39,7 +39,7 @@ h1 {
   }
 }
 h2 {
-  font-size: 49px;
+  font-size: 66px;
   text-transform: uppercase;
   text-align: left;
   padding: 11.2% 0 3.5%;
@@ -71,11 +71,11 @@ h2 {
     font-size: 2vw;
   }
   @include breakpoint(typoMax) {
-    font-size: cvp(49px, 2050px);
+    font-size: cvp(66px, 2050px);
     line-height: cvp(53px, 2050px);
   }
   @include breakpoint(laptop) {
-    font-size: cvp(49px, 1700px);
+    font-size: cvp(66px, 1700px);
     line-height: cvp(53px, 1700px);
   }
   @include breakpoint(tablet){

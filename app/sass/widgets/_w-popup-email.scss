@@ -45,6 +45,13 @@
   overflow: hidden;
   @include prefix(transform, translateY(-50%), webkit ms moz o);
   margin:0 auto;
+  h2 {
+    font-size: 38px;
+    font-weight: bold;
+    @include breakpoint(typeMax){
+      font-size:cvp(38px, 2050px);
+    }
+  }
   @include breakpoint(tablet) {
     width: 65%;
   }
@@ -147,7 +154,7 @@
       font-size: cvp(19px, 2050px);
     }
   }
-  .submit-button {
+  .submit-button, .button-primary {
     display: block;
     width: 28%;
     margin: 0 auto;

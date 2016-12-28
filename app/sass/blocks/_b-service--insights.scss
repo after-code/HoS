@@ -195,10 +195,14 @@
     }
   }
   .b-service__content__social {
+    padding-left:0 !important;
     p {
       font-size: 28px;
       color: white;
       margin-bottom: 6%;
+      @include breakpoint(typoMax){
+        font-size: cvp(28px, 2050px);
+      }
       @include breakpoint(mobile) {
         font-size: cvp(20px, 330px);
       }
@@ -221,6 +225,9 @@
       width: 13%;
       margin-top: 6%;
       margin-bottom: 11%;
+    }
+    &:hover {
+      opacity: 0.8;
     }
   }
 }

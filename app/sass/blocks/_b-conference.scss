@@ -9,7 +9,7 @@
     margin-bottom: 8%;
   }
 }
-.b-conference__wrap {
+.b-conference__wrap, .b-conference--wrap {
   max-width: 1525px;
   width: 100%;
   a{
@@ -68,7 +68,7 @@
     display: block;
   }
 }
-.b-conference__content {
+.b-conference__content, .b-conference--content {
   width: 100%;
   overflow: hidden;
   background: white;
@@ -87,6 +87,7 @@
   float: left;
   font-size: 35px;
   font-weight: bold;
+  text-transform: uppercase;
   position:relative;
   font-family:$text__family--Roboto;
   .b-day {
@@ -147,9 +148,10 @@
   float: left;
   padding-left: 7%;
   width: 79%;
-  height: 18vw;
+  min-height: 19vw;
   &__city {
     color: $red;
+    text-transform: uppercase;
     margin-bottom: 3%;
     font-size: 20px;
     margin-top: 1%;

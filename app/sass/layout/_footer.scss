@@ -36,12 +36,12 @@
   }
 }
 .footer__wrap {
-  width: 34%;
+  width: 46%;
   margin:0 auto;
   // overflow: hidden;
   @extend .clearfix;
   @include breakpoint(laptop) {
-    width: 42%;
+    width: 46%;
   }
   @include breakpoint(tablet) {
     width: 89%;
@@ -56,13 +56,13 @@
 .social__heading {
   position: relative;
   top: -30px;
-  font-size: 20px;
+  font-size: 23px;
   color: $footer-gray;
   @include breakpoint(typoMax){
-    font-size: cvp(20px, 2050px);
+    font-size: cvp(23px, 2050px);
   }
   @include breakpoint(laptop) {
-    font-size: cvp(22px, 2050px);
+    font-size: cvp(23px, 2050px);
   }
   @include breakpoint(tablet) {
     font-size: cvp(19px, 768px);
@@ -139,14 +139,14 @@
 }
 #footer__nav > ul > li > ul > li {
   margin-bottom: 15px;
-  font-size: 20px;
+  font-size: 23px;
   color: white;
 
   @include breakpoint(typoMax){
-    font-size: cvp(20px,2050px);
+    font-size: cvp(23px,2050px);
   }
   @include breakpoint(laptop) {
-      font-size: cvp(20px, 2050px);
+      font-size: cvp(23px, 2050px);
   }
   @include breakpoint(tablet) {
     font-size: cvp(17px, 768px);
@@ -158,13 +158,13 @@
 #footer__nav > ul > li > span {
   color: $footer-gray;
   display: block;
-  font-size: 20px;
+  font-size: 23px;
   margin-bottom: 30px;
   @include breakpoint(typoMax){
-    font-size: cvp(17px,2050px);
+    font-size: cvp(23px,2050px);
   }
   @include breakpoint(laptop) {
-    font-size: cvp(22px, 2050px);
+    font-size: cvp(23px, 2050px);
   }
   @include breakpoint(tablet) {
     font-size: cvp(17px, 768px);
@@ -237,12 +237,12 @@
 .footer__back-to-top {
   float: right;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 18px;
   @include breakpoint(typoMax){
-    font-size: cvp(15px,2050px);
+    font-size: cvp(18px,2050px);
   }
   @include breakpoint(laptop) {
-    font-size: cvp(16px, 2050px);
+    font-size: cvp(18px, 2050px);
   }
   @include breakpoint(tablet) {
     font-size: cvp(13px, 768px);

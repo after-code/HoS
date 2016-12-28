@@ -93,7 +93,7 @@ html {
   position: relative;
   width: 100%;
   padding: 0 12.5%;
-  padding-bottom: 25%;
+  padding-bottom: 6%;
   .b-conference:nth-child(3){
     float: right;
   }
@@ -184,6 +184,12 @@ html {
   background: #f6f6f6;
   padding-top: 7.7%;
   padding-bottom: 7%;
+  .education-list-preamble {
+    width: 80%;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+  }
   &__info {
     text-align: center;
     width: 80%;
@@ -230,6 +236,9 @@ html {
       margin-bottom: 7.9%;
       height: 40px;
     }
+  }
+  h2.pane-title {
+    text-align: center;
   }
   @include breakpoint(mobile){
     padding: 0 4%;

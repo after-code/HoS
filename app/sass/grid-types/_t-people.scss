@@ -7,6 +7,9 @@
     @extend .clearfix;
     width: 100%;
   }
+  h2.pane-title {
+    text-align: center;
+  }
   .col-md-6 {
     width: 44%;
     margin-bottom: 10%;
