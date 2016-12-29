@@ -3,6 +3,7 @@
   form {
     width: 100%;
     padding:5% 10%;
+    padding-top: 0;
     @include breakpoint(mobile) {
       padding:5% 4%;
     }
@@ -32,7 +33,7 @@
     border-radius: 0;
     width: 100%;
     outline:none;
-    margin-bottom:2%;
+    margin-bottom: 5%;
     background: #f3f3f3;
     height: 54px;
     line-height: 40px;
@@ -74,6 +75,11 @@
   }
   input[type='submit'] {
     @extend .b-button--red;
+    padding: 18px 37px !important;
+    &:hover {
+      background: #222;
+      color:white;
+    }
   }
   .form-actions {
     text-align: center;

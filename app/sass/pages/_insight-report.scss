@@ -1,6 +1,12 @@
 .page-insight-report {
-  .b-intro-box__media {
-    margin-top: 4%;
-    margin-bottom: 0;
+  // .b-intro-box__media {
+  //   margin-top: 4%;
+  //   margin-bottom: 0;
+  // }
+  .t-preamble .c-typography h3 {
+    margin-bottom: 7.3%;
+  }
+  .t-preamble .col-md-6:nth-of-type(2n-1){
+    padding-top:2%;
   }
 }

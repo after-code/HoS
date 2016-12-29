@@ -4,7 +4,7 @@
   // @extend .b-line--bottom;
   @include breakpoint(mobile){
     padding: 4%;
-    padding-top: 9%;
+    padding-top: 4%;
     &:after {
       display: none;
     }
