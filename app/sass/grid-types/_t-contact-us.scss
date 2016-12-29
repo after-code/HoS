@@ -20,6 +20,14 @@
       margin-bottom: 15%;
     }
   }
+  .clientside-error {
+    width: 80%;
+    margin-left: 10%;
+    @include breakpoint(mobile) {
+      width: 92%;
+      margin-left:4%;
+    }
+  }
   input[type='text'], input[type='email']{
     border-radius: 0;
     width: 100%;
@@ -33,6 +41,10 @@
     border-bottom: 4px solid #dadada;
     padding:0 10px;
     font-size:21px;
+    &.error {
+      border:2px solid red;
+    }
+
     &:hover,
     &:focus,
     &:active {

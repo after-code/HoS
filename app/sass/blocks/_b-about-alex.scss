@@ -7,6 +7,7 @@
   background-position-y: 16vw;
   @include breakpoint(mobile){
     padding-top: 15%;
+    background-position-y: 76vw;
   }
 }
 .b-about-alex__heading {

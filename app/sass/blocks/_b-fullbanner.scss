@@ -18,8 +18,11 @@
     text-align: center;
     @include breakpoint(laptop) {
       font-size: cvp(42px, 1700px);
-
       line-height: cvp(48px, 1700px);
+    }
+    @include breakpoint(mobile) {
+      font-size: cvp(30px,330px);
+      line-height: cvp(30px,330px);
     }
   }
 
@@ -34,6 +37,10 @@
     &:hover {
       background: #222;
       color:white;
+    }
+    @include breakpoint(mobile) {
+      background: $yellow;
+      border:2px solid transparent;
     }
   }
 }

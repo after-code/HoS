@@ -150,3 +150,8 @@
   40%{box-shadow: 0px 0px 7px 4px rgba(0, 0, 0,0.3)}
   100%{box-shadow: 0px 0px 3px 0px rgba(0, 0, 0,0.2)}
 }
+.header-no-animation {
+  .w-sidebar-widget {
+    opacity:1;
+  }
+}
