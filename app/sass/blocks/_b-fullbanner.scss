@@ -23,6 +23,7 @@
     @include breakpoint(mobile) {
       font-size: cvp(30px,330px);
       line-height: cvp(30px,330px);
+
     }
   }
 
@@ -43,9 +44,12 @@
       border:2px solid transparent;
     }
   }
+  @include breakpoint(mobile) {
+    overflow: hidden;
+  }
 }
 .b-fullbanner__item {
-  top:5%;
+  top: 17%;
   left: 36%;
   z-index: 10;
   width: 28%;
@@ -59,12 +63,13 @@
     width: 40%;
   }
   @include breakpoint(mobile){
+    top: 18%;
     width: 100%;
     left: 0;
   }
 }
 .b-fullbanner__item__content {
-  margin-top: -70%;
+  margin-top: -76%;
   position: relative;
   text-align: center;
   width: 80%;

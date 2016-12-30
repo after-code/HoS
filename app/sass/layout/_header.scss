@@ -118,6 +118,9 @@
     padding-left: 5%;
     overflow: hidden;
   }
+  @include breakpoint(mobile) {
+    float: none;
+  }
 }
 .header-animated {
   position:fixed !important;

@@ -44,7 +44,6 @@
     }
   }
   .col-md-4 {
-    padding-right: 5%;
     @include breakpoint(mobile) {
       margin-bottom: 8%;
     }

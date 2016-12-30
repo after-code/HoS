@@ -8,6 +8,12 @@
     @include breakpoint(typoMax) {
       font-size: cvp(82px,2050px);
     }
+    @include breakpoint(mobile) {
+      font-size: 10vw;
+      padding-top: 11%;
+      padding-left: 5%;
+      padding-bottom: 5%;
+    }
   }
   h2 {
     margin-bottom: 1%;
@@ -20,6 +26,14 @@
       padding-bottom: 17%;
     }
   }
+  h2.pane-title {
+    @include breakpoint(mobile) {
+      text-align: left;
+      line-height: 12vw;
+      padding-top: 9%;
+      padding-left: 2%;
+    }
+  }
   .b-button {
     font-family: $text__family--Roboto-Condensed;
   }
@@ -28,5 +42,8 @@
   }
   .b-fluid-header__type {
     display: none;
+  }
+  .b-fluid-header {
+    background-position-y: -277%;
   }
 }
