@@ -1,4 +1,4 @@
-.t-contact-us {
+.t-contact-us, .t-form {
   padding-bottom: 10%;
   form {
     width: 100%;
@@ -74,6 +74,7 @@
     }
   }
   input[type='submit'] {
+    font-family: $text__family--Roboto-Condensed;
     @extend .b-button--red;
     padding: 18px 37px !important;
     &:hover {

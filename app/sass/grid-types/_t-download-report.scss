@@ -1,0 +1,56 @@
+.t-download-report {
+  background: #f2f2f2;
+  padding-top: 3%;
+  padding-bottom: 0;
+  margin-bottom: 7%;
+  form {
+    padding:0;
+    input[type='text'], input[type='email'], textarea{
+      background: white;
+    }
+  }
+  .webform-component-textfield, .webform-component-email {
+    width: 48%;
+    float: left;
+    &:nth-of-type(2n+1) {
+      margin-left:4%;
+    }
+    @include breakpoint(mobile) {
+      width: 100%;
+      margin-left:0;
+    }
+  }
+  h2 {
+    font-weight: 100;
+    text-align: left;
+    line-height: 60px;
+    font-size: 52px;
+    margin-bottom: 0;
+    @include breakpoint(typoMax) {
+      line-height: cvp(60px, 2050px);
+      font-size: cvp(52px, 2050px);
+    }
+  }
+  .clientside-error {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 4%;
+  }
+  .webform-component--markup-top {
+    margin:0;
+    margin-bottom: 5%;
+  }
+  &:after {
+    content: "If you do not receive the confirmation message, \A please check your spam E-mail folder.";
+    text-align: center;
+    margin-bottom: 5%;
+    font-style: italic;
+    color: #919191;
+    visibility: visible;
+    width: 100%;
+    display: block;
+    height: auto;
+    white-space: pre;
+    padding-bottom: 3%;
+  }
+}
