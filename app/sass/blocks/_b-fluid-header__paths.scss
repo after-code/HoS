@@ -34,4 +34,9 @@
     // fill:$red;
   }
 }
+.page-ebooks {
+  .b-fluid-header__circle {
+    fill:$cyan;
+  }
+}
 // @include fhSettings('.page-about',$red, "/about-header-photo.jpg" );

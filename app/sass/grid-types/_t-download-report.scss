@@ -9,11 +9,17 @@
       background: white;
     }
   }
+  input[type='submit']{
+    margin-bottom: 1.7% !important;
+  }
   .webform-component-textfield, .webform-component-email {
     width: 48%;
     float: left;
     &:nth-of-type(2n+1) {
       margin-left:4%;
+      @include breakpoint(mobile){
+        margin-left:0;
+      }
     }
     @include breakpoint(mobile) {
       width: 100%;
@@ -29,6 +35,10 @@
     @include breakpoint(typoMax) {
       line-height: cvp(60px, 2050px);
       font-size: cvp(52px, 2050px);
+    }
+    @include breakpoint(mobile) {
+      line-height: cvp(40px, 330px);
+      font-size: cvp(35px, 330px);
     }
   }
   .clientside-error {
@@ -52,5 +62,17 @@
     height: auto;
     white-space: pre;
     padding-bottom: 3%;
+    font-size: 17px;
+    line-height: 20px;
+    @include breakpoint(typoMax){
+      font-size:cvp(17px, 2050px);
+      line-height:cvp(20px, 2050px);
+    }
+    @include breakpoint(mobile){
+      font-size:cvp(17px, 330px);
+      line-height:cvp(20px, 330px);
+      // width: 80%;
+      // margin-left:10%;
+    }
   }
 }
