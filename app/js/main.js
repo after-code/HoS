@@ -306,12 +306,6 @@ var counter = 0;
     window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
     window.ontouchmove  = preventDefault; // mobile
     document.onkeydown  = preventDefaultForScrollKeys;
-
-    window.addEventListener('DOMMouseScroll', play, false);
-    window.onwheel = play; // modern standard
-    window.onmousewheel = document.onmousewheel = play; // older browsers, IE
-    window.ontouchmove  = play; // mobile
-    document.onkeydown  = play;
   }
   function play(){
     tl3.play();
