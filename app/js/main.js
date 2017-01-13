@@ -10,6 +10,7 @@
   var animating = false;
   var animSpeed = 205,
       header__height = $(".header__nav").height();
+  disableScroll();
   $(function(){
 var counter = 0;
   // ScrollMagic
@@ -45,7 +46,7 @@ var counter = 0;
              enableScroll();
              console.log("scrollEnabled");
 
-           },600);
+           },8800);
          } else if (x2 >= x4){
            if (headerActive){
              tl4.reverse();
@@ -305,6 +306,15 @@ var counter = 0;
     window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
     window.ontouchmove  = preventDefault; // mobile
     document.onkeydown  = preventDefaultForScrollKeys;
+
+    window.addEventListener('DOMMouseScroll', play, false);
+    window.onwheel = play; // modern standard
+    window.onmousewheel = document.onmousewheel = play; // older browsers, IE
+    window.ontouchmove  = play; // mobile
+    document.onkeydown  = play;
+  }
+  function play(){
+    tl3.play();
   }
   function enableScroll() {
       if (window.removeEventListener)
