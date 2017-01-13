@@ -265,7 +265,7 @@ var counter = 0;
 
   //Fluid header animations on desk
     tl3.to($fluid_header, 0.5, {transform:"translate3d(0,-56vh,0)", ease: Power4.easeInOut},'start');
-    tl3.to($fluid_header_element, 0.5, {transform:"translate3d(-16.1vw, 29.7vh, 0)", width:"36.4%", ease: Power4.easeInOut},'start');
+    tl3.to($fluid_header_element, 0.5, {transform:"translate3d(-16.1vw, 29.7vh, 0)", ease: Power4.easeInOut},'start');
     tl3.to($fluid_header_type, 0.5, {transform: "scale(0.5)", left:'1vw', ease: Power4.easeInOut},'start');
     tl3.to($widget, 0.55, {opacity: "1" , delay:0.3 , ease: Power4.easeInOut},'final');
     tl3.to($fluid_header, 0, {position:"absolute"},'final');
