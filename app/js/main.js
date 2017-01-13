@@ -10,7 +10,6 @@
   var animating = false;
   var animSpeed = 205,
       header__height = $(".header__nav").height();
-  disableScroll();
   $(function(){
 var counter = 0;
   // ScrollMagic
