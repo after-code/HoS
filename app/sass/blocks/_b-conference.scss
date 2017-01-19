@@ -1,7 +1,7 @@
 .b-conference {
   width: 46%;
   float: left;
-  padding-bottom:50px;
+  padding-bottom: 10%;
   @include breakpoint(mobile) {
     width: 100%;
     border:1px solid #e9e9e9;

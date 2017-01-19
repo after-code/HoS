@@ -93,7 +93,7 @@ html {
   position: relative;
   width: 100%;
   padding: 0 12.5%;
-  padding-bottom: 6%;
+  padding-bottom: 3%;
   .b-conference:nth-child(3){
     float: right;
   }
@@ -397,8 +397,11 @@ section.section--consultancy-sms {
     }
   }
 }
-.section--home-insights, .section--home-consuntancy {
+.section--home-insights  {
   margin-bottom: 4.4%;
+}
+.section--home-consuntancy {
+  margin-bottom: 9%;
 }
 .section--conference--heading {
   padding: 5.6% 12.4% 0%;
