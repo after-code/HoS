@@ -51,8 +51,8 @@
     color: white;
     width: 100%;
     padding: 0 8.2%;
-    padding-top: 4.1%;
-    padding-bottom: 4.5%;
+    padding-top: 3.1%;
+    padding-bottom: 3.1%;
     @include breakpoint(typoMax){
         padding-top: 4.1%;
     }
@@ -81,12 +81,12 @@
     }
   }
   .b-service__element__nbr {
-    font-size: 50px;
-    margin-bottom: -1%;
+    font-size: 41px;
+    margin-bottom: 2%;
     // padding-left: 3%;
     color:$yellow;
     @include breakpoint(typoMax){
-      font-size: cvp(50px,2050px);
+      font-size: cvp(41px,2050px);
     }
     @include breakpoint(tablet) {
       float: left;
@@ -101,6 +101,7 @@
   .b-service__element__heading {
     line-height: 56px;
     margin-bottom: -1%;
+    display: none;
     font-size: 26px;
     color: white;
     @include breakpoint(typoMax){
@@ -129,11 +130,11 @@
     }
   }
   .b-service__element__text {
-    font-size: 45px;
-    line-height: 52px;
+    font-size: 36px;
+    line-height: 45px;
     @include breakpoint(typoMax){
-      font-size: cvp(45px,2050px);
-      line-height: cvp(52px,2050px);
+      font-size: cvp(36px,2050px);
+      line-height: cvp(45px,2050px);
     }
     @include breakpoint(tablet) {
       font-size: cvp(20px, 768px);

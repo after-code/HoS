@@ -82,8 +82,8 @@
     .content >p {
       width: 90%;
       margin-bottom:6%;
-      font-size: 34px;
-      line-height: 42px;
+      font-size: 28px;
+      line-height: 38px;
       padding: 0 6%;
       &--small {
         margin-bottom: 5%;
@@ -92,8 +92,8 @@
         }
       }
       @include breakpoint(typoMax){
-        line-height: cvp(42px,2050px);
-        font-size: cvp(34px,2050px);
+        line-height: cvp(38px,2050px);
+        font-size: cvp(28px,2050px);
       }
       @include breakpoint(tablet) {
         padding-left: 3%;
