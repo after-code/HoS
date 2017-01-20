@@ -824,7 +824,7 @@ html.opened {
       padding: 0 4%; } }
 
 .wrapper--big {
-  max-width: 2050px; }
+  max-width: 1600px; }
   @media (max-width: 1025px) {
     .wrapper--big {
       padding-top: 20%; } }
@@ -2762,14 +2762,14 @@ section.section--consultancy-sms {
         font-size: 13px;
         margin-top: 9%; } }
   .b-content-sticker .b-content-sticker__heading, .b-content-sticker h2 {
-    font-size: 50px;
-    line-height: 51px;
+    font-size: 47px;
+    line-height: 43px;
     font-weight: 800;
     width: 90%;
     text-transform: uppercase;
     margin-bottom: 6%;
     float: left; }
-    @media (max-width: 2050px) {
+    @media (max-width: 1600px) {
       .b-content-sticker .b-content-sticker__heading, .b-content-sticker h2 {
         font-size: 2.43902vw;
         line-height: 2.4878vw; } }
@@ -2788,11 +2788,11 @@ section.section--consultancy-sms {
         line-height: 8.05556vw;
         margin-bottom: 6%; } }
   .b-content-sticker .b-content-sticker__text, .b-content-sticker p {
-    line-height: 30px;
-    font-size: 22px;
+    line-height: 22px;
+    font-size: 16px;
     float: left;
     padding-right: 9%; }
-    @media (max-width: 2050px) {
+    @media (max-width: 1600px) {
       .b-content-sticker .b-content-sticker__text, .b-content-sticker p {
         font-size: 1.07317vw;
         line-height: 1.46341vw; } }
@@ -2809,8 +2809,8 @@ section.section--consultancy-sms {
     text-transform: uppercase;
     color: #4a90e2;
     margin-bottom: 4%;
-    font-size: 20px; }
-    @media (max-width: 2050px) {
+    font-size: 15px; }
+    @media (max-width: 1600px) {
       .b-content-sticker .b-content-sticker__date {
         font-size: 0.97561vw; } }
     @media (max-width: 1025px) {
