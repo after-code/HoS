@@ -5,6 +5,9 @@
   @if $point == typoMax {
      @media (max-width: 2050px)  { @content ; }
   }
+  @if $point == typoMaxHp {
+     @media (max-width: 1600px)  { @content ; }
+  }
   @if $point == mobile {
      @media (max-width: 450px)  { @content ; }
   }

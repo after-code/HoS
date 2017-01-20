@@ -811,7 +811,7 @@ html.opened {
     overflow: hidden; }
 
 .wrapper, .wrapper--big, .wrapper--small, .wrapper--xsmall {
-  max-width: 1850px;
+  max-width: 1600px;
   overflow: hidden;
   width: 100%;
   padding: 0 4%;
@@ -877,7 +877,7 @@ html.opened {
   position: relative;
   width: 100%;
   padding: 0 12.5%;
-  padding-bottom: 6%; }
+  padding-bottom: 3%; }
   .section--conference .b-conference:nth-child(3) {
     float: right; }
   .section--conference:after {
@@ -1107,7 +1107,7 @@ section.section--consultancy-sms {
 .home-promotion {
   margin-bottom: 10%; }
 
-.section--home-education .b-button, .section--home-education .b-button--red, .section--home-education .t-contact-us input[type='submit'], .t-contact-us .section--home-education input[type='submit'], .section--home-education .t-form input[type='submit'], .t-form .section--home-education input[type='submit'] {
+.section--home-education .b-button, .section--home-education .b-button--red, .section--home-education .t-contact-us input[type='submit'], .t-contact-us .section--home-education input[type='submit'], .section--home-education .t-form input[type='submit'], .t-form .section--home-education input[type='submit'], .section--home-education .b-button--events {
   border: none !important; }
 
 .section--home-education .t-slash {
@@ -1123,8 +1123,11 @@ section.section--consultancy-sms {
   .section--home-education .b-service--training {
     background: none; } }
 
-.section--home-insights, .section--home-consuntancy {
+.section--home-insights {
   margin-bottom: 4.4%; }
+
+.section--home-consuntancy {
+  margin-bottom: 9%; }
 
 .section--conference--heading {
   padding: 5.6% 12.4% 0%;
@@ -1585,18 +1588,18 @@ section.section--consultancy-sms {
     .t-slash .col-md-6:nth-of-type(2) .content > p {
       width: 90%;
       margin-bottom: 6%;
-      font-size: 34px;
-      line-height: 42px;
+      font-size: 26px;
+      line-height: 32px;
       padding: 0 6%; }
       .t-slash .col-md-6:nth-of-type(2) .content > p--small {
         margin-bottom: 5%; }
         @media (max-width: 1025px) {
           .t-slash .col-md-6:nth-of-type(2) .content > p--small {
             margin-bottom: 9%; } }
-      @media (max-width: 2050px) {
+      @media (max-width: 1600px) {
         .t-slash .col-md-6:nth-of-type(2) .content > p {
-          line-height: 2.04878vw;
-          font-size: 1.65854vw; } }
+          line-height: 1.85366vw;
+          font-size: 1.36585vw; } }
       @media (max-width: 1025px) {
         .t-slash .col-md-6:nth-of-type(2) .content > p {
           padding-left: 3%;
@@ -1614,15 +1617,15 @@ section.section--consultancy-sms {
           margin-bottom: 5%;
           line-height: 24px;
           text-align: left; } }
-  .t-slash .b-button, .t-slash .b-button--red, .t-slash .t-contact-us input[type='submit'], .t-contact-us .t-slash input[type='submit'], .t-slash .t-form input[type='submit'], .t-form .t-slash input[type='submit'] {
+  .t-slash .b-button, .t-slash .b-button--red, .t-slash .t-contact-us input[type='submit'], .t-contact-us .t-slash input[type='submit'], .t-slash .t-form input[type='submit'], .t-form .t-slash input[type='submit'], .t-slash .b-button--events {
     border: 3px solid #222;
     padding: 3.2% 11%;
     margin-left: 6%; }
-    .t-slash .b-button:hover, .t-slash .b-button--red:hover, .t-slash .t-contact-us input[type='submit']:hover, .t-contact-us .t-slash input[type='submit']:hover, .t-slash .t-form input[type='submit']:hover, .t-form .t-slash input[type='submit']:hover {
+    .t-slash .b-button:hover, .t-slash .b-button--red:hover, .t-slash .t-contact-us input[type='submit']:hover, .t-contact-us .t-slash input[type='submit']:hover, .t-slash .t-form input[type='submit']:hover, .t-form .t-slash input[type='submit']:hover, .t-slash .b-button--events:hover {
       background: #222;
       color: white; }
     @media (max-width: 450px) {
-      .t-slash .b-button, .t-slash .b-button--red, .t-slash .t-contact-us input[type='submit'], .t-contact-us .t-slash input[type='submit'], .t-slash .t-form input[type='submit'], .t-form .t-slash input[type='submit'] {
+      .t-slash .b-button, .t-slash .b-button--red, .t-slash .t-contact-us input[type='submit'], .t-contact-us .t-slash input[type='submit'], .t-slash .t-form input[type='submit'], .t-form .t-slash input[type='submit'], .t-slash .b-button--events {
         margin-left: auto;
         padding: 5.6% 6%; } }
 
@@ -1740,7 +1743,7 @@ section.section--consultancy-sms {
       .t-contact-us textarea, .t-form textarea {
         font-size: 16px;
         line-height: 24px; } }
-  .t-contact-us .b-button, .t-contact-us .b-button--red, .t-contact-us input[type='submit'], .t-form .b-button, .t-form .b-button--red, .t-form input[type='submit'] {
+  .t-contact-us .b-button, .t-contact-us .b-button--red, .t-contact-us input[type='submit'], .t-contact-us .b-button--events, .t-form .b-button, .t-form .b-button--red, .t-form input[type='submit'], .t-form .b-button--events {
     margin-top: 5%; }
   @media (max-width: 450px) {
     .t-contact-us, .t-form {
@@ -1955,18 +1958,18 @@ section.section--consultancy-sms {
   width: 100%;
   text-align: center;
   float: left; }
-  .b-button__wrap .b-button, .b-button__wrap .b-button--red, .b-button__wrap .t-contact-us input[type='submit'], .t-contact-us .b-button__wrap input[type='submit'], .b-button__wrap .t-form input[type='submit'], .t-form .b-button__wrap input[type='submit'] {
+  .b-button__wrap .b-button, .b-button__wrap .b-button--red, .b-button__wrap .t-contact-us input[type='submit'], .t-contact-us .b-button__wrap input[type='submit'], .b-button__wrap .t-form input[type='submit'], .t-form .b-button__wrap input[type='submit'], .b-button__wrap .b-button--events {
     display: inline-block;
     float: none; }
 
-.b-button, .b-button--red, .t-contact-us input[type='submit'], .t-form input[type='submit'] {
+.b-button, .b-button--red, .t-contact-us input[type='submit'], .t-form input[type='submit'], .b-button--events {
   color: #222;
   background: #fcee2f;
   -webkit-appearance: none;
   outline: none;
   border: none;
   display: inline-block;
-  padding: 11px 37px;
+  padding: 16px 37px;
   margin-bottom: 4.1%;
   font-size: 15px;
   font-weight: bold;
@@ -1977,11 +1980,11 @@ section.section--consultancy-sms {
   -ms-transition: all 300ms cubic-bezier(0.4, 0.0, 0.6, 1);
   -webkit-transition: all 300ms cubic-bezier(0.4, 0.0, 0.6, 1);
   transition: all 300ms cubic-bezier(0.4, 0.0, 0.6, 1); }
-  .b-button:hover, .b-button--red:hover, .t-contact-us input[type='submit']:hover, .t-form input[type='submit']:hover {
+  .b-button:hover, .b-button--red:hover, .t-contact-us input[type='submit']:hover, .t-form input[type='submit']:hover, .b-button--events:hover {
     background: white;
     color: #222; }
   @media (max-width: 450px) {
-    .b-button, .b-button--red, .t-contact-us input[type='submit'], .t-form input[type='submit'] {
+    .b-button, .b-button--red, .t-contact-us input[type='submit'], .t-form input[type='submit'], .b-button--events {
       display: block;
       font-size: 15px;
       padding: 5.6% 6%;
@@ -1995,6 +1998,13 @@ section.section--consultancy-sms {
 .b-button--red, .t-contact-us input[type='submit'], .t-form input[type='submit'] {
   background: #ee2e45;
   color: white; }
+
+.b-button--events {
+  border: 3px solid #222;
+  background: transparent; }
+  .b-button--events:hover {
+    background: #222;
+    color: white; }
 
 .b-events {
   width: 100%;
@@ -2065,7 +2075,7 @@ section.section--consultancy-sms {
       display: block; }
   .b-events .b-button__wrap {
     text-align: center; }
-  .b-events .b-button, .b-events .b-button--red, .b-events .t-contact-us input[type='submit'], .t-contact-us .b-events input[type='submit'], .b-events .t-form input[type='submit'], .t-form .b-events input[type='submit'] {
+  .b-events .b-button, .b-events .b-button--red, .b-events .t-contact-us input[type='submit'], .t-contact-us .b-events input[type='submit'], .b-events .t-form input[type='submit'], .t-form .b-events input[type='submit'], .b-events .b-button--events {
     margin-top: 5.3%;
     color: #222;
     border: 3px solid #222;
@@ -2080,14 +2090,14 @@ section.section--consultancy-sms {
     -ms-transition: all 300ms cubic-bezier(0.4, 0.0, 0.6, 1);
     -webkit-transition: all 300ms cubic-bezier(0.4, 0.0, 0.6, 1);
     transition: all 300ms cubic-bezier(0.4, 0.0, 0.6, 1); }
-    .b-events .b-button:hover, .b-events .b-button--red:hover, .b-events .t-contact-us input[type='submit']:hover, .t-contact-us .b-events input[type='submit']:hover, .b-events .t-form input[type='submit']:hover, .t-form .b-events input[type='submit']:hover {
+    .b-events .b-button:hover, .b-events .b-button--red:hover, .b-events .t-contact-us input[type='submit']:hover, .t-contact-us .b-events input[type='submit']:hover, .b-events .t-form input[type='submit']:hover, .t-form .b-events input[type='submit']:hover, .b-events .b-button--events:hover {
       background: #222;
       color: #fff; }
     @media (max-width: 2050px) {
-      .b-events .b-button, .b-events .b-button--red, .b-events .t-contact-us input[type='submit'], .t-contact-us .b-events input[type='submit'], .b-events .t-form input[type='submit'], .t-form .b-events input[type='submit'] {
+      .b-events .b-button, .b-events .b-button--red, .b-events .t-contact-us input[type='submit'], .t-contact-us .b-events input[type='submit'], .b-events .t-form input[type='submit'], .t-form .b-events input[type='submit'], .b-events .b-button--events {
         font-size: 1.07317vw; } }
     @media (max-width: 450px) {
-      .b-events .b-button, .b-events .b-button--red, .b-events .t-contact-us input[type='submit'], .t-contact-us .b-events input[type='submit'], .b-events .t-form input[type='submit'], .t-form .b-events input[type='submit'] {
+      .b-events .b-button, .b-events .b-button--red, .b-events .t-contact-us input[type='submit'], .t-contact-us .b-events input[type='submit'], .b-events .t-form input[type='submit'], .t-form .b-events input[type='submit'], .b-events .b-button--events {
         font-size: 15px;
         padding: 5.6% 6%;
         width: 82%;
@@ -2256,15 +2266,15 @@ section.section--consultancy-sms {
   .b-service--consultancy .b-service__content__text {
     width: 90%;
     margin-bottom: 6%;
-    font-size: 34px;
-    line-height: 42px;
+    font-size: 26px;
+    line-height: 32px;
     padding: 0 6%; }
     .b-service--consultancy .b-service__content__text--small {
       margin-bottom: 5%; }
       @media (max-width: 1025px) {
         .b-service--consultancy .b-service__content__text--small {
           margin-bottom: 9%; } }
-    @media (max-width: 2050px) {
+    @media (max-width: 1600px) {
       .b-service--consultancy .b-service__content__text {
         line-height: 2.04878vw;
         font-size: 1.65854vw; } }
@@ -2309,19 +2319,19 @@ section.section--consultancy-sms {
       .b-service--consultancy .b-service__quote__text {
         line-height: 1.65854vw;
         font-size: 1.36585vw; } }
-  .b-service--consultancy .b-button, .b-service--consultancy .b-button--red, .b-service--consultancy .t-contact-us input[type='submit'], .t-contact-us .b-service--consultancy input[type='submit'], .b-service--consultancy .t-form input[type='submit'], .t-form .b-service--consultancy input[type='submit'] {
+  .b-service--consultancy .b-button, .b-service--consultancy .b-button--red, .b-service--consultancy .t-contact-us input[type='submit'], .t-contact-us .b-service--consultancy input[type='submit'], .b-service--consultancy .t-form input[type='submit'], .t-form .b-service--consultancy input[type='submit'], .b-service--consultancy .b-button--events {
     border: 3px solid #222;
     padding: 3.2% 11%;
     margin-left: 6%; }
     @media (max-width: 1025px) {
-      .b-service--consultancy .b-button, .b-service--consultancy .b-button--red, .b-service--consultancy .t-contact-us input[type='submit'], .t-contact-us .b-service--consultancy input[type='submit'], .b-service--consultancy .t-form input[type='submit'], .t-form .b-service--consultancy input[type='submit'] {
+      .b-service--consultancy .b-button, .b-service--consultancy .b-button--red, .b-service--consultancy .t-contact-us input[type='submit'], .t-contact-us .b-service--consultancy input[type='submit'], .b-service--consultancy .t-form input[type='submit'], .t-form .b-service--consultancy input[type='submit'], .b-service--consultancy .b-button--events {
         font-size: 1.95312vw;
         padding: 4% 13%; } }
     @media (max-width: 450px) {
-      .b-service--consultancy .b-button, .b-service--consultancy .b-button--red, .b-service--consultancy .t-contact-us input[type='submit'], .t-contact-us .b-service--consultancy input[type='submit'], .b-service--consultancy .t-form input[type='submit'], .t-form .b-service--consultancy input[type='submit'] {
+      .b-service--consultancy .b-button, .b-service--consultancy .b-button--red, .b-service--consultancy .t-contact-us input[type='submit'], .t-contact-us .b-service--consultancy input[type='submit'], .b-service--consultancy .t-form input[type='submit'], .t-form .b-service--consultancy input[type='submit'], .b-service--consultancy .b-button--events {
         margin-left: auto;
         font-size: 4.54545vw; } }
-    .b-service--consultancy .b-button:hover, .b-service--consultancy .b-button--red:hover, .b-service--consultancy .t-contact-us input[type='submit']:hover, .t-contact-us .b-service--consultancy input[type='submit']:hover, .b-service--consultancy .t-form input[type='submit']:hover, .t-form .b-service--consultancy input[type='submit']:hover {
+    .b-service--consultancy .b-button:hover, .b-service--consultancy .b-button--red:hover, .b-service--consultancy .t-contact-us input[type='submit']:hover, .t-contact-us .b-service--consultancy input[type='submit']:hover, .b-service--consultancy .t-form input[type='submit']:hover, .t-form .b-service--consultancy input[type='submit']:hover, .b-service--consultancy .b-button--events:hover {
       background: #222;
       color: white; }
 
@@ -2374,8 +2384,8 @@ section.section--consultancy-sms {
     color: white;
     width: 100%;
     padding: 0 8.2%;
-    padding-top: 4.1%;
-    padding-bottom: 4.5%; }
+    padding-top: 3.1%;
+    padding-bottom: 3.1%; }
     @media (max-width: 2050px) {
       .b-service--training .b-service__division {
         padding-top: 4.1%; } }
@@ -2402,12 +2412,12 @@ section.section--consultancy-sms {
         width: 100%;
         padding: 0; } }
   .b-service--training .b-service__element__nbr {
-    font-size: 50px;
-    margin-bottom: -1%;
+    font-size: 41px;
+    margin-bottom: 2%;
     color: #fcee2f; }
     @media (max-width: 2050px) {
       .b-service--training .b-service__element__nbr {
-        font-size: 2.43902vw; } }
+        font-size: 2vw; } }
     @media (max-width: 1025px) {
       .b-service--training .b-service__element__nbr {
         float: left;
@@ -2420,6 +2430,7 @@ section.section--consultancy-sms {
   .b-service--training .b-service__element__heading {
     line-height: 56px;
     margin-bottom: -1%;
+    display: none;
     font-size: 26px;
     color: white; }
     @media (max-width: 2050px) {
@@ -2444,12 +2455,12 @@ section.section--consultancy-sms {
           height: 4px;
           margin-top: 15px; } }
   .b-service--training .b-service__element__text {
-    font-size: 45px;
-    line-height: 52px; }
+    font-size: 36px;
+    line-height: 45px; }
     @media (max-width: 2050px) {
       .b-service--training .b-service__element__text {
-        font-size: 2.19512vw;
-        line-height: 2.53659vw; } }
+        font-size: 1.7561vw;
+        line-height: 2.19512vw; } }
     @media (max-width: 1025px) {
       .b-service--training .b-service__element__text {
         font-size: 2.60417vw;
@@ -2579,13 +2590,13 @@ section.section--consultancy-sms {
     font-weight: bold;
     color: #fcee2f;
     width: 60%;
-    font-size: 98px;
+    font-size: 76px;
     font-style: italic;
     font-weight: bold;
     margin-bottom: 2.8%; }
-    @media (max-width: 2050px) {
+    @media (max-width: 1600px) {
       .b-service--insights .b-service__heading {
-        font-size: 4.78049vw; } }
+        font-size: 4.75vw; } }
     @media (max-width: 450px) {
       .b-service--insights .b-service__heading {
         font-size: 10vw;
@@ -2613,15 +2624,15 @@ section.section--consultancy-sms {
         padding-top: 8%; } }
   .b-service--insights .b-service__text {
     color: white;
-    font-size: 54.7px;
-    line-height: 62px;
+    font-size: 42px;
+    line-height: 48px;
     margin-right: 5%;
     margin-bottom: 13%;
     width: 83%; }
-    @media (max-width: 2050px) {
+    @media (max-width: 1600px) {
       .b-service--insights .b-service__text {
-        font-size: 2.66829vw;
-        line-height: 3.02439vw; } }
+        font-size: 2.625vw;
+        line-height: 3vw; } }
     @media (max-width: 450px) {
       .b-service--insights .b-service__text {
         display: none;
@@ -2680,12 +2691,12 @@ section.section--consultancy-sms {
   .b-service--insights .b-service__content__social {
     padding-left: 0 !important; }
     .b-service--insights .b-service__content__social p {
-      font-size: 28px;
+      font-size: 21px;
       color: white;
       margin-bottom: 6%; }
-      @media (max-width: 2050px) {
+      @media (max-width: 1600px) {
         .b-service--insights .b-service__content__social p {
-          font-size: 1.36585vw; } }
+          font-size: 1.3125vw; } }
       @media (max-width: 450px) {
         .b-service--insights .b-service__content__social p {
           font-size: 6.06061vw; } }
@@ -2813,7 +2824,7 @@ section.section--consultancy-sms {
 .b-conference {
   width: 46%;
   float: left;
-  padding-bottom: 50px; }
+  padding-bottom: 10%; }
   @media (max-width: 450px) {
     .b-conference {
       width: 100%;
@@ -3546,13 +3557,13 @@ section.section--consultancy-sms {
       margin-left: auto; } }
 
 .b-hp-about__right p.b-hp-about__text {
-  font-size: 32.8px;
-  line-height: 48px;
+  font-size: 25px;
+  line-height: 37px;
   padding: 0 4.6%; }
-  @media (max-width: 2050px) {
+  @media (max-width: 1600px) {
     .b-hp-about__right p.b-hp-about__text {
-      font-size: 1.6vw;
-      line-height: 2.34146vw; } }
+      font-size: 1.5625vw;
+      line-height: 2.3125vw; } }
   @media (max-width: 1025px) {
     .b-hp-about__right p.b-hp-about__text {
       font-size: 2.34375vw;
@@ -3811,7 +3822,7 @@ section.section--consultancy-sms {
   width: 100%;
   padding-bottom: 30%;
   overflow: hidden; }
-  .b-my-journey .b-button, .b-my-journey .b-button--red, .b-my-journey .t-contact-us input[type='submit'], .t-contact-us .b-my-journey input[type='submit'], .b-my-journey .t-form input[type='submit'], .t-form .b-my-journey input[type='submit'] {
+  .b-my-journey .b-button, .b-my-journey .b-button--red, .b-my-journey .t-contact-us input[type='submit'], .t-contact-us .b-my-journey input[type='submit'], .b-my-journey .t-form input[type='submit'], .t-form .b-my-journey input[type='submit'], .b-my-journey .b-button--events {
     border: 2px solid #222;
     margin-top: 15%;
     padding: 2.4% 2.9%;
@@ -3854,7 +3865,7 @@ section.section--consultancy-sms {
   float: left;
   padding-top: 3%;
   border-top: 1px solid #c4c4c4; }
-  .b-chat-teaser .b-button, .b-chat-teaser .b-button--red, .b-chat-teaser .t-contact-us input[type='submit'], .t-contact-us .b-chat-teaser input[type='submit'], .b-chat-teaser .t-form input[type='submit'], .t-form .b-chat-teaser input[type='submit'] {
+  .b-chat-teaser .b-button, .b-chat-teaser .b-button--red, .b-chat-teaser .t-contact-us input[type='submit'], .t-contact-us .b-chat-teaser input[type='submit'], .b-chat-teaser .t-form input[type='submit'], .t-form .b-chat-teaser input[type='submit'], .b-chat-teaser .b-button--events {
     float: right;
     margin-top: 1%; }
   @media (max-width: 450px) {
@@ -4177,15 +4188,15 @@ section.section--consultancy-sms {
       .b-fullbanner h2 {
         font-size: 9.09091vw;
         line-height: 9.09091vw; } }
-  .b-fullbanner .b-button, .b-fullbanner .b-button--red, .b-fullbanner .t-contact-us input[type='submit'], .t-contact-us .b-fullbanner input[type='submit'], .b-fullbanner .t-form input[type='submit'], .t-form .b-fullbanner input[type='submit'] {
+  .b-fullbanner .b-button, .b-fullbanner .b-button--red, .b-fullbanner .t-contact-us input[type='submit'], .t-contact-us .b-fullbanner input[type='submit'], .b-fullbanner .t-form input[type='submit'], .t-form .b-fullbanner input[type='submit'], .b-fullbanner .b-button--events {
     background: transparent;
     border: 2px solid #222;
     padding: 15px 33px; }
-    .b-fullbanner .b-button:hover, .b-fullbanner .b-button--red:hover, .b-fullbanner .t-contact-us input[type='submit']:hover, .t-contact-us .b-fullbanner input[type='submit']:hover, .b-fullbanner .t-form input[type='submit']:hover, .t-form .b-fullbanner input[type='submit']:hover {
+    .b-fullbanner .b-button:hover, .b-fullbanner .b-button--red:hover, .b-fullbanner .t-contact-us input[type='submit']:hover, .t-contact-us .b-fullbanner input[type='submit']:hover, .b-fullbanner .t-form input[type='submit']:hover, .t-form .b-fullbanner input[type='submit']:hover, .b-fullbanner .b-button--events:hover {
       background: #222;
       color: white; }
     @media (max-width: 450px) {
-      .b-fullbanner .b-button, .b-fullbanner .b-button--red, .b-fullbanner .t-contact-us input[type='submit'], .t-contact-us .b-fullbanner input[type='submit'], .b-fullbanner .t-form input[type='submit'], .t-form .b-fullbanner input[type='submit'] {
+      .b-fullbanner .b-button, .b-fullbanner .b-button--red, .b-fullbanner .t-contact-us input[type='submit'], .t-contact-us .b-fullbanner input[type='submit'], .b-fullbanner .t-form input[type='submit'], .t-form .b-fullbanner input[type='submit'], .b-fullbanner .b-button--events {
         background: #fcee2f;
         border: 2px solid transparent; } }
   @media (max-width: 450px) {
@@ -4396,7 +4407,7 @@ section.section--consultancy-sms {
     padding-top: 9%;
     padding-left: 2%; } }
 
-.page-contact .b-button, .page-contact .b-button--red, .page-contact .t-contact-us input[type='submit'], .t-contact-us .page-contact input[type='submit'], .page-contact .t-form input[type='submit'], .t-form .page-contact input[type='submit'] {
+.page-contact .b-button, .page-contact .b-button--red, .page-contact .t-contact-us input[type='submit'], .t-contact-us .page-contact input[type='submit'], .page-contact .t-form input[type='submit'], .t-form .page-contact input[type='submit'], .page-contact .b-button--events {
   font-family: "Roboto Condensed", sans-serif; }
 
 .page-contact .w-sidebar-widget {

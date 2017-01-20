@@ -101,8 +101,8 @@
   .b-service__content__text {
     width: 90%;
     margin-bottom:6%;
-    font-size: 34px;
-    line-height: 42px;
+    font-size: 26px;
+    line-height: 32px;
     padding: 0 6%;
     &--small {
       margin-bottom: 5%;
@@ -110,7 +110,7 @@
         margin-bottom: 9%;
       }
     }
-    @include breakpoint(typoMax){
+    @include breakpoint(typoMaxHp){
       line-height: cvp(42px,2050px);
       font-size: cvp(34px,2050px);
     }

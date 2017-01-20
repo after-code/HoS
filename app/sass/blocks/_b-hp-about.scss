@@ -64,12 +64,12 @@
   }
 }
 .b-hp-about__right p.b-hp-about__text {
-  font-size: 32.8px;
-  line-height: 48px;
+  font-size: 25px;
+  line-height: 37px;
   padding: 0 4.6%;
-  @include breakpoint(typoMax){
-    font-size: cvp(32.8px, 2050px);
-    line-height: cvp(48px, 2050px);
+  @include breakpoint(typoMaxHp){
+    font-size: cvp(25px, 1600px);
+    line-height: cvp(37px, 1600px);
   }
   @include breakpoint(tablet) {
     font-size: cvp(18px, 768px);
