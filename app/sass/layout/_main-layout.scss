@@ -25,7 +25,7 @@ html {
   @extend .wrapper;
   // opacity: 0;
   // margin-top:10%;
-  max-width: 2050px;
+  max-width: 1600px;
   // padding-top: 5%;
   @extend .clearfix;
   @include breakpoint(laptop) {
