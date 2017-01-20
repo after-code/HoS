@@ -5,7 +5,7 @@
   position: relative;
   .col-md-6:nth-of-type(1) {
     float: left;
-    width: 52%;
+    width: 50%;
     position: absolute;
     height: 100%;
     .content {
@@ -36,8 +36,8 @@
     }
   }
   .col-md-6:nth-of-type(2) {
-    width: 48%;
-    padding-top: 2%;
+    width: 50%;
+    padding-top: 5.3%;
     display: block;
     position: relative;
     float: right;
@@ -51,8 +51,8 @@
       background: #fcee2f;
       content: "";
       position: absolute;
-      left: -13%;
-      transform: skew(-12.6deg);
+      left: -19%;
+      transform: skew(-14.6deg);
       top: 0%;
       z-index: -1;
       @include breakpoint(mobile) {
@@ -66,9 +66,9 @@
 
     }
     img {
-      margin-bottom: 7%;
+      margin-bottom: 10%;
       width: 80%;
-      margin-left: 6%;
+      margin-left: 0%;
       @include breakpoint(tablet) {
         width: 94%;
         margin-bottom: 1%;
@@ -83,8 +83,9 @@
       width: 90%;
       margin-bottom:6%;
       font-size: 26px;
-      line-height: 32px;
+      line-height: 40px;
       padding: 0 6%;
+      padding-left:0;
       &--small {
         margin-bottom: 5%;
         @include breakpoint(tablet) {
@@ -92,8 +93,8 @@
         }
       }
       @include breakpoint(typoMaxHp){
-        line-height: cvp(38px,2050px);
-        font-size: cvp(28px,2050px);
+        line-height: cvp(40px,1600px);
+        font-size: cvp(26px,1600px);
       }
       @include breakpoint(tablet) {
         padding-left: 3%;
