@@ -94,12 +94,11 @@
     }
   }
   .b-service__element__nbr {
-    font-size: 41px;
-    margin-bottom: 2%;
+    font-size: 61px;
     // padding-left: 3%;
     color:#b9c8cf;
     @include breakpoint(typoMax){
-      font-size: cvp(41px,2050px);
+      font-size: cvp(61px,2050px);
     }
     @include breakpoint(tablet) {
       float: left;
@@ -112,14 +111,14 @@
     }
   }
   .b-service__element__heading {
-    line-height: 56px;
-    margin-bottom: -1%;
-    font-size: 26px;
+    line-height: 59px;
+    margin-bottom: 2%;
+    font-size: 29px;
     text-transform: uppercase;
     color: $cyan;
     @include breakpoint(typoMax){
-      font-size: cvp(26px,2050px);
-      line-height: cvp(56px,2050px);
+      font-size: cvp(29px,2050px);
+      line-height: cvp(59px,2050px);
     }
     @include breakpoint(tablet) {
       font-size: 17px;
@@ -143,12 +142,13 @@
     }
   }
   .b-service__element__text {
-    font-size: 36px;
-    line-height: 45px;
+    font-size: 39px;
+    line-height: 49px;
     color:#222;
+    text-transform: none;
     @include breakpoint(typoMax){
-      font-size: cvp(36px,2050px);
-      line-height: cvp(45px,2050px);
+      font-size: cvp(39px,2050px);
+      line-height: cvp(49px,2050px);
     }
     @include breakpoint(tablet) {
       font-size: cvp(20px, 768px);
@@ -210,5 +210,6 @@
   color:#222;
   background: #f8f8f8;
   margin-bottom:0;
+  font-weight: 100;
   max-width: 1600px;
 }

@@ -1,0 +1,11 @@
+.section--landing {
+  .wrapper {
+    display: flex;
+    align-items: center;
+    // height: 100vh;
+    @include breakpoint(mobile){
+      display: block;
+      height: auto;
+    }
+  }
+}

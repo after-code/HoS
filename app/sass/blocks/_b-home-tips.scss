@@ -1,0 +1,86 @@
+.b-home-tips {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 4.4%;
+}
+.b-home-tips__left, .b-home-tips__right {
+  width: 49.6%;
+  float:left;
+  background-color: $yellow;
+}
+.b-home-tips__right {
+  background: url(#{$assetpath}img/bw.jpg);
+  float: right;
+  width: 50.4%;
+  p {
+    text-align: center;
+    font-size: 30px;
+    color: $yellow;
+    font-style: italic;
+    width: 54%;
+    margin: 0 auto;
+    margin-top: 12%;
+  }
+}
+.b-home-tips__left {
+  position: absolute;
+  top:0;
+  bottom:0;
+  p {
+    font-size: 58px;
+    margin-left: 12%;
+    font-weight: bold;
+    line-height: 56px;
+    font-style: italic;
+    text-transform: uppercase;
+    padding-right: 12%;
+  }
+}
+.b-home-tips__typo {
+  margin-left: 14%;
+  margin-top: 6%;
+  width: 29%;
+  margin-bottom: 1.2%;
+}
+
+
+
+
+.b-home-tips__social {
+  padding-left:0 !important;
+  text-align: center;
+  p {
+    font-size: 21px;
+    color: white;
+    margin-bottom: 6%;
+    @include breakpoint(typoMaxHp){
+      font-size: cvp(21px, 1600px);
+    }
+    @include breakpoint(mobile) {
+      font-size: cvp(20px, 330px);
+    }
+  }
+}
+.b-home-tips__social__item {
+  display: inline-block;
+  width: 5%;
+  margin-right: 5%;
+  &:nth-child(4){
+    width: 3%;
+    @include breakpoint(mobile) {
+      width: 6%;
+    }
+  }
+  img {
+    width: 100%;
+  }
+  @include breakpoint(mobile) {
+    width: 13%;
+    margin-top: 6%;
+    margin-bottom: 11%;
+  }
+  &:hover {
+    opacity: 0.8;
+  }
+}
