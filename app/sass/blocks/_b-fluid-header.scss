@@ -118,7 +118,7 @@
     line-height: 6vh;
     strong {
       font-weight: bold;
-      border-bottom:2px solid $cyan;
+      border-bottom:3px solid $cyan;
       text-transform: uppercase;
       @include breakpoint(mobile) {
         border-bottom: none;

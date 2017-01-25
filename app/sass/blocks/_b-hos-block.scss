@@ -59,6 +59,7 @@
       font-size: cvp(47px,2050px);
       font-weight: 700;
       color:$yellow;
+      width: 63%;
       @include breakpoint(mobile){
         font-size: cvp(21px,330px);
         text-align: left;

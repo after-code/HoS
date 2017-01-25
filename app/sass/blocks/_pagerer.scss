@@ -1,0 +1,23 @@
+.pagerer {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3%;
+}
+.pager li{
+  width: 40px;
+  height:40px;
+  color:silver;
+  margin:5px;
+  display: inline-block;
+  vertical-align: bottom;
+  line-height: 40px;
+  text-align: center;
+  border:1px solid gainsboro;
+  a {
+    display: block;
+  }
+}
+.pager-current {
+  background: #ededed;
+  color:#4a4a4a;
+}
