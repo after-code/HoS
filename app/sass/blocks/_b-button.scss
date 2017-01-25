@@ -46,6 +46,20 @@
   @extend .b-button;
   background:$red;
   color:white;
+  &:hover {
+    background: #222;
+    color:white;
+  }
+}
+.b-button--clear {
+  @extend .b-button;
+  color:#222;
+  background: transparent;
+  border:3px solid #222;
+  &:hover {
+    background: #222;
+    color:white;
+  }
 }
 .b-button--events, .b-button--insight {
   @extend .b-button;

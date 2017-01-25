@@ -414,6 +414,9 @@ section.section--consultancy-sms {
       background: none;
     }
   }
+  @include breakpoint(mobile) {
+    margin-bottom: 0;
+  }
 }
 .section--home-insights  {
   margin-bottom: 4.4%;

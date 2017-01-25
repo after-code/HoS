@@ -1,6 +1,11 @@
 .t-people {
   padding-top:7%;
   padding-bottom: 3%;
+  margin-bottom: 10%;
+  @extend .b-line--bottom;
+  &:after {
+    bottom: 4% !important;
+  }
   .col {
     position: relative;
   }

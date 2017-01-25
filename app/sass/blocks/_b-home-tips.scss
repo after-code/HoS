@@ -8,19 +8,48 @@
   width: 49.6%;
   float:left;
   background-color: $yellow;
+  @include breakpoint(mobile) {
+    width: 100%;
+    float: left;
+    position: relative;
+  }
 }
 .b-home-tips__right {
   background: url(#{$assetpath}img/bw.jpg);
   float: right;
   width: 50.4%;
+  position: relative;
+  background-size: 196% auto;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  .b-home-tips__heading {
+    margin-bottom: 2%;
+  }
   p {
     text-align: center;
+    line-height: 32px;
     font-size: 30px;
-    color: $yellow;
+    color: #fcee2f;
     font-style: italic;
-    width: 54%;
+    width: 51%;
     margin: 0 auto;
-    margin-top: 12%;
+    margin-top: 11%;
+    margin-left: 33%;
+  }
+  &:before {
+    height: 100%;
+    width: 19%;
+    transform: skew(-21deg);
+    position: absolute;
+    content: "";
+    background: $yellow;
+    left: -9%;
+    @include breakpoint(mobile) {
+      display: none;
+    }
+  }
+  @include breakpoint(mobile) {
+    width: 100%;
   }
 }
 .b-home-tips__left {
@@ -36,6 +65,9 @@
     text-transform: uppercase;
     padding-right: 12%;
   }
+  @include breakpoint(mobile) {
+    position: relative;
+  }
 }
 .b-home-tips__typo {
   margin-left: 14%;
@@ -48,8 +80,15 @@
 
 
 .b-home-tips__social {
+  float: right;
+  width: 84%;
   padding-left:0 !important;
   text-align: center;
+  margin-bottom: 2% !important;
+  &>p {
+    margin-top: 5.1%;
+    margin-bottom: 2% !important;
+  }
   p {
     font-size: 21px;
     color: white;
@@ -64,8 +103,8 @@
 }
 .b-home-tips__social__item {
   display: inline-block;
-  width: 5%;
-  margin-right: 5%;
+  width: 6%;
+  margin-right: 6%;
   &:nth-child(4){
     width: 3%;
     @include breakpoint(mobile) {
@@ -83,4 +122,15 @@
   &:hover {
     opacity: 0.8;
   }
+}
+.twit {
+  margin-right:0;
+}
+
+.b-home-tips__social__heading {
+  text-align: center !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  width: 100% !important;
+  font-style: normal !important;
 }
