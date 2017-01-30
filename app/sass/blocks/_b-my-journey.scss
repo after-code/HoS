@@ -10,22 +10,29 @@
   }
 }
 .b-my-journey__heading,
-.b-my-journey__heading--small {
+.b-my-journey--heading,
+.b-my-journey__heading--small,
+.b-my-journey--heading--small,
+ {
   text-align: center;
 }
-.b-my-journey__heading {
+.b-my-journey__heading,
+.b-my-journey--heading {
   font-size: 2vw;
   font-weight: bold;
   margin-bottom: 2%;
 }
-.b-my-journey__heading--small {
+.b-my-journey__heading--small,
+.b-my-journey--heading--small {
   margin-bottom: 10%;
 }
-.b-my-journey__squares {
+.b-my-journey__squares,
+.b-my-journey--squares {
   width: 100%;
   overflow: hidden;
 }
-.b-my-journey__square {
+.b-my-journey__square,
+.b-my-journey--square {
   width: 45%;
   float: left;
   margin:5%;
