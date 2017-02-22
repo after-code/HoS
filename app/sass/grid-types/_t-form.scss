@@ -1,0 +1,27 @@
+.t-form {
+  .messages.error {
+    background-color: transparent;
+    background-image: url(#{$assetpath}img/close-error.png);
+    background-size: 26px;
+    border:none;
+  }
+  label.error {
+    font-size: 16px;
+    color: #222;
+  }
+  .messages {
+    // margin-bottom: 6%;
+    // margin-top: 3%;
+    ul {
+      margin-left:-3px;
+    }
+    ul > li {
+      margin-bottom:6px;
+      color: #222;
+      font-size: 16px;
+    }
+  }
+  .webform-client-form-24 {
+    padding-top:2%;
+  }
+}

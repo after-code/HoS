@@ -1,0 +1,49 @@
+.page-node-download {
+ .t-preamble {
+   padding: 0 !important;
+   max-width: 700px;
+   padding-top: 13% !important;
+   margin: auto;
+   h1 {
+     line-height: 39px;
+    font-size: 37px;
+    padding-top: 10px;
+    margin-bottom: 28px;
+    text-transform: none;
+    strong {
+      font-weight: bold;
+    }
+   }
+  }
+  .tableheader-processed {
+     max-width: 700px;
+     margin:auto;
+     thead {
+       th {
+         padding: 5px 20px;
+         font-size: 14px;
+       }
+       th:first-child {
+         text-align: left;
+       }
+       th:last-child {
+         text-align: right;
+       }
+     }
+     tbody {
+      border-bottom: 4px solid #dadada;
+      background: #f2f2f2;
+      td {
+        font-size: 16px;
+        a {
+          text-decoration: underline;
+          color: blue;
+        }
+        padding: 11px 10px;
+        &:last-child {
+          text-align: right;
+        }
+      }
+     }
+  }
+}

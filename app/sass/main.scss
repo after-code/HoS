@@ -25,6 +25,7 @@ $assetpath: '../../assets/' !default;
 @import 'grid-types/t-contact-us';
 @import 'grid-types/t-image';
 @import 'grid-types/t-download-report';
+@import 'grid-types/t-form';
 
 @import 'blocks/b-media';
 @import 'blocks/b-button';
@@ -63,6 +64,7 @@ $assetpath: '../../assets/' !default;
 @import 'pages/contact';
 @import 'pages/edu-detail';
 @import 'pages/insight-report';
+@import 'pages/download';
 
 
 @import 'widgets/w-sidebar-widget';
