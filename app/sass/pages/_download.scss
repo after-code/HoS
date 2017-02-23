@@ -14,6 +14,13 @@
       font-weight: bold;
     }
    }
+   @include breakpoint(mobile) {
+      padding: 4% !important;
+      padding-top: 30% !important;
+      p {
+        padding-bottom: 15%;
+      }
+   }
   }
   .tableheader-processed {
      max-width: 700px;
