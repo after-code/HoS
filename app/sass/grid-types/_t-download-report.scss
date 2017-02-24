@@ -37,8 +37,8 @@
       font-size: cvp(52px, 2050px);
     }
     @include breakpoint(mobile) {
-      line-height: cvp(40px, 330px);
-      font-size: cvp(35px, 330px);
+      font-size: 30px;
+      line-height: 38px;
     }
   }
   .clientside-error {
@@ -79,6 +79,9 @@
     clear: both;
     padding-top: 4%;
   }
+  @include breakpoint(mobile) {
+    padding: 14% 3%;
+  }
 }
 .mena-webform-submitted {
   h3 {
@@ -100,15 +103,25 @@
         background-size: contain;
         background-repeat: no-repeat;
     }
+    @include breakpoint(mobile) {
+      padding-top: 9%;
+      margin-bottom: 10%;
+    }
   }
   p {
     font-size:19px;
     margin-bottom: 8%;
+    @include breakpoint(mobile) {
+      margin-bottom: 15%;
+    }
   }
   small {
     font-style:italic;
     margin-bottom: 2%;
     display: inline-block;
     font-weight:bold;
+    @include breakpoint(mobile) {
+      margin-bottom: 10%;
+    }
   }
 }
