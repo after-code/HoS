@@ -1,3 +1,8 @@
+var element_ids = window.location.href.split("?id=")[1];
+if(element_ids != undefined){
+  jQuery('body').removeClass('headerAnimation').addClass("header-no-animation");
+  scrollToEl();
+}
 (function ($){
   var header = "white";
   var decelerationCurve = [0.0, 0.0, 0.2, 1];
@@ -212,7 +217,11 @@ var counter = 0;
 
   // / Popup animations
   var tl2 = new TimelineLite(),
-      tl3 = new TimelineLite(onComplete:function(){scrollToEl()),
+      tl3 = new TimelineLite({onComplete: function(){
+        setTimeout(function(){
+          scrollToEl();
+        },1500);
+      }}),
       tl4 = new TimelineLite({
         onReverseComplete:function(){
           $(".header__wrap").removeClass("header-animated");
@@ -373,6 +382,7 @@ function animate_header(){
 }
 function scrollToEl(){
   console.log("scrollTo");
+<<<<<<< HEAD
   if (window.location.href.split("?id=")[1] != "") {
 
     // $("body, html").scrollTo('#'+window.location.href.split("#")[1]);
@@ -384,4 +394,19 @@ function scrollToEl(){
   }
 } else {
   console.log(window.location.href.split("?id=")[1]);
+=======
+  if (window.location.href.split("?id=")[1] != "undefined") {
+
+    // $("body, html").scrollTo('#'+window.location.href.split("#")[1]);
+    var element_id = window.location.href.split("?id=")[1],
+        element = document.getElementById(element_id);
+        element_offset = element.offsetTop;
+    jQuery('html, body').css({
+        scrollTop: element_offset
+          // $("body, html").scrollTo('#'+wi")[1]).offset().top
+    });
+  } else {
+    console.log(window.location.href.split("?id=")[1]);
+  }
+>>>>>>> 065383b466223f94603addcf10192dacd02f7947
 }

@@ -1,6 +1,56 @@
 .w-insight-popup {
+<<<<<<< HEAD
+  // width: 200px;
+  // height: 500px;
+  background: #fff;
+  width: 100%;
+  width: 643px;
+  height: 580px;
+  // max-width: 800px;
+  margin:0 auto;
+  overflow: hidden;
+  @include breakpoint(tablet){
+    width: 100vw;
+    height: 100vh;
+  }
+}
+.w-insight-popup__top {
+  // width: 200px;
+  // height: 500px;
+  // background: red;
+  overflow: hidden;
+  display: block;
+  margin-bottom: 36px;
+  img {
+    width: 100%;
+    display: block;
+    @include breakpoint(mobile){
+      display: none;
+    }
+  }
+  .mobile {
+    display: none;
+    @include breakpoint(mobile){
+      display: block;
+    }
+  }
+}
+#cboxOverlay {
+  background: #222;
+  opacity: 0.8;
+}
+#cboxClose{
+  background-image: url("http://www.house-of-social.com/sites/default/files/close.png");
+  top: 22px;
+  right: 22px;
+  background-size: contain;
+}
+#colorbox {
+  outline: none;
+=======
   width: 200px;
   height: 500px;
   background: red;
   overflow: hidden;
+>>>>>>> f42baddbb6fc74eab354e58027f080a9a9e44646
 }
