@@ -1816,8 +1816,8 @@ section.section--consultancy-sms {
         font-size: 2.53659vw; } }
     @media (max-width: 450px) {
       .t-download-report h2 {
-        line-height: 12.12121vw;
-        font-size: 10.60606vw; } }
+        font-size: 30px;
+        line-height: 38px; } }
   .t-download-report .clientside-error {
     width: 100%;
     margin: 0;
@@ -1850,6 +1850,9 @@ section.section--consultancy-sms {
   .t-download-report .captcha {
     clear: both;
     padding-top: 4%; }
+  @media (max-width: 450px) {
+    .t-download-report {
+      padding: 14% 3%; } }
 
 .mena-webform-submitted h3 {
   padding-top: 2%;
@@ -1868,33 +1871,40 @@ section.section--consultancy-sms {
     display: inline-block;
     background-size: contain;
     background-repeat: no-repeat; }
+  @media (max-width: 450px) {
+    .mena-webform-submitted h3 {
+      padding-top: 9%;
+      margin-bottom: 10%; } }
 
 .mena-webform-submitted p {
   font-size: 19px;
   margin-bottom: 8%; }
+  @media (max-width: 450px) {
+    .mena-webform-submitted p {
+      margin-bottom: 15%; } }
 
 .mena-webform-submitted small {
   font-style: italic;
   margin-bottom: 2%;
   display: inline-block;
   font-weight: bold; }
+  @media (max-width: 450px) {
+    .mena-webform-submitted small {
+      margin-bottom: 10%; } }
 
 .t-form .messages.error {
-  background-color: transparent;
   background-image: url(../../assets/img/close-error.png);
   background-size: 26px;
   border: none; }
 
 .t-form label.error {
-  font-size: 16px;
-  color: #222; }
+  font-size: 16px; }
 
 .t-form .messages ul {
   margin-left: -3px; }
 
 .t-form .messages ul > li {
   margin-bottom: 6px;
-  color: #222;
   font-size: 16px; }
 
 .t-form .webform-client-form-24 {
@@ -4797,6 +4807,12 @@ section.section--consultancy-sms {
     text-transform: none; }
     .page-node-download .t-preamble h1 strong {
       font-weight: bold; }
+  @media (max-width: 450px) {
+    .page-node-download .t-preamble {
+      padding: 4% !important;
+      padding-top: 30% !important; }
+      .page-node-download .t-preamble p {
+        padding-bottom: 15%; } }
 
 .page-node-download .tableheader-processed {
   max-width: 700px;
@@ -5136,6 +5152,11 @@ section.section--consultancy-sms {
 
 .webform-component-textarea {
   margin-bottom: 5%; }
+
+.w-insight-popup {
+  width: 200px;
+  height: 500px;
+  background: red; }
 
 .last-element {
   padding-bottom: 6.4%; }
