@@ -212,7 +212,7 @@ var counter = 0;
 
   // / Popup animations
   var tl2 = new TimelineLite(),
-      tl3 = new TimelineLite(),
+      tl3 = new TimelineLite(onComplete:function(){scrollToEl()),
       tl4 = new TimelineLite({
         onReverseComplete:function(){
           $(".header__wrap").removeClass("header-animated");
@@ -370,4 +370,18 @@ function animate_header(){
     jQuery(".b-fluid-header").animate({"top":"0vh"});
     header_animated = !header_animated;
   }
+}
+function scrollToEl(){
+  console.log("scrollTo");
+  if (window.location.href.split("?id=")[1] != "") {
+
+    // $("body, html").scrollTo('#'+window.location.href.split("#")[1]);
+
+    $('html, body').animate({
+        scrollTop: $('#'+window.location.href.split("?id=")[1] != "") {
+          // $("body, html").scrollTo('#'+wi")[1]).offset().top
+    }, 2000);
+  }
+} else {
+  console.log(window.location.href.split("?id=")[1]);
 }
