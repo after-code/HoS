@@ -381,9 +381,9 @@ function scrollToEl(id){
   console.log(id);
     var element = document.getElementById(id),
         element_offset = element.offsetTop;
-    jQuery('html, body').css({
+    jQuery('html, body').animate({
         scrollTop: element_offset
-    });
+    },10);
 }
 function initialFlags(){
   var _url = window.location.href.split("?")[1];
