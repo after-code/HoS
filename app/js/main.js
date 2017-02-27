@@ -381,20 +381,6 @@ function animate_header(){
   }
 }
 function scrollToEl(){
-  console.log("scrollTo");
-<<<<<<< HEAD
-  if (window.location.href.split("?id=")[1] != "") {
-
-    // $("body, html").scrollTo('#'+window.location.href.split("#")[1]);
-
-    $('html, body').animate({
-        scrollTop: $('#'+window.location.href.split("?id=")[1] != "") {
-          // $("body, html").scrollTo('#'+wi")[1]).offset().top
-    }, 2000);
-  }
-} else {
-  console.log(window.location.href.split("?id=")[1]);
-=======
   if (window.location.href.split("?id=")[1] != "undefined") {
 
     // $("body, html").scrollTo('#'+window.location.href.split("#")[1]);
@@ -408,5 +394,4 @@ function scrollToEl(){
   } else {
     console.log(window.location.href.split("?id=")[1]);
   }
->>>>>>> 065383b466223f94603addcf10192dacd02f7947
 }
