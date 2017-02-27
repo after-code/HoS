@@ -379,15 +379,18 @@ function animate_header(){
 }
 function scrollToEl(id){
   console.log(id);
-    var element = document.getElementById(id),
-        element_offset = element.offsetTop;
-    jQuery('html, body').animate({
-        scrollTop: element_offset
-    },10);
+    var element = document.getElementById(id);
+    var element_offset;
+    if (element){
+      element_offset = element.offsetTop;
+      jQuery('html, body').animate({
+        scrollTop: element_offset-50
+      },10);
+    }
 }
 function initialFlags(){
   var _url = window.location.href.split("?")[1];
-  
+
   if (!!_url){
     var splited_url1 = _url.split("&")[0] || "",
         splited_url2 = _url.split("&")[1] || "",
