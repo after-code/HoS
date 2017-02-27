@@ -388,10 +388,13 @@ function scrollToEl(_id){
 function initialFlags(){
   var _url = window.location.href.split("?")[1];
   console.log(_url);
-  var isAnimation = _url.split("&")[0].split('animation=')[1];
-      _id = _url.split("&")[1].split('id=')[1];
-  console.log(isAnimation);
-  console.log(_id);
+  if (!!_url){
+    var isAnimation = _url.split("&")[0].split('animation=')[1];
+    _id = _url.split("&")[1].split('id=')[1];
+    console.log(isAnimation);
+    console.log(_id);
+
+  }
 
   if (isAnimation == 'false'){
     jQuery('body').removeClass('headerAnimation').addClass("header-no-animation");
