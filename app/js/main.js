@@ -378,6 +378,7 @@ function animate_header(){
   }
 }
 function scrollToEl(_id){
+  console.log(_id);
     var element = document.getElementById(_id),
         element_offset = element.offsetTop;
     jQuery('html, body').css({
@@ -387,14 +388,13 @@ function scrollToEl(_id){
 function initialFlags(){
   var _url = window.location.href.split("?")[1];
   console.log(_url);
-  var isAnimation = _url.split("&")[0].split('animation=')[0];
-      _id = _url.split("&")[1].split('id=')[0];
+  var isAnimation = _url.split("&")[0].split('animation=')[1];
+      _id = _url.split("&")[1].split('id=')[1];
   console.log(isAnimation);
   console.log(_id);
 
   if (isAnimation == 'false'){
     jQuery('body').removeClass('headerAnimation').addClass("header-no-animation");
-    scrollToEl();
+    scrollToEl(_id);
   }
-  scrollToEl(_id);
 }
