@@ -387,10 +387,12 @@ function scrollToEl(id){
 }
 function initialFlags(){
   var _url = window.location.href.split("?")[1];
-  console.log(_url);
+  
   if (!!_url){
-    var isAnimation = _url.split("&")[0].split('animation=')[1];
-    _id = _url.split("&")[1].split('id=')[1];
+    var splited_url1 = _url.split("&")[0] || "",
+        splited_url2 = _url.split("&")[1] || "",
+        isAnimation = splited_url1.split('animation=')[1];
+    _id = splited_url2.split('id=')[1];
     console.log(isAnimation);
     console.log(_id);
 
