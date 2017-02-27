@@ -377,9 +377,9 @@ function animate_header(){
     header_animated = !header_animated;
   }
 }
-function scrollToEl(_id){
-  console.log(_id);
-    var element = document.getElementById(_id),
+function scrollToEl(id){
+  console.log(id);
+    var element = document.getElementById(id),
         element_offset = element.offsetTop;
     jQuery('html, body').css({
         scrollTop: element_offset
