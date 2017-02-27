@@ -1,8 +1,4 @@
-var element_ids = window.location.href.split("?id=")[1];
-if(element_ids != undefined){
-  jQuery('body').removeClass('headerAnimation').addClass("header-no-animation");
-  scrollToEl();
-}
+initialFlags();
 (function ($){
   var header = "white";
   var decelerationCurve = [0.0, 0.0, 0.2, 1];
@@ -217,11 +213,12 @@ var counter = 0;
 
   // / Popup animations
   var tl2 = new TimelineLite(),
-      tl3 = new TimelineLite({onComplete: function(){
-        setTimeout(function(){
-          scrollToEl();
-        },1500);
-      }}),
+      tl3 = new TimelineLite({
+        onComplete: function(){
+          setTimeout(function(){
+            scrollToEl();
+          },1500);
+        }}),
       tl4 = new TimelineLite({
         onReverseComplete:function(){
           $(".header__wrap").removeClass("header-animated");
@@ -380,18 +377,27 @@ function animate_header(){
     header_animated = !header_animated;
   }
 }
-function scrollToEl(){
-  if (window.location.href.split("?id=")[1] != "undefined") {
+function scrollToEl(_id){
 
-    // $("body, html").scrollTo('#'+window.location.href.split("#")[1]);
-    var element_id = window.location.href.split("?id=")[1],
-        element = document.getElementById(element_id);
+      var element = document.getElementById(_id);
         element_offset = element.offsetTop;
     jQuery('html, body').css({
         scrollTop: element_offset
           // $("body, html").scrollTo('#'+wi")[1]).offset().top
     });
-  } else {
-    console.log(window.location.href.split("?id=")[1]);
   }
+}
+function initialFlags(){
+  var _url = window.location.href.split("?")[1];
+  console.log(_url);
+  var isAnimation = _url.split("&")[0].split('animation=')[0];
+      _id = _url.split("&")[1].split('id=')[0];
+  console.log(isAnimation);
+  console.log(_id);
+
+  if (isAnimation == 'false'){
+    jQuery('body').removeClass('headerAnimation').addClass("header-no-animation");
+    scrollToEl();
+  }
+  scrollToEl(_id);
 }
