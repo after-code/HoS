@@ -1,4 +1,4 @@
-// initialFlags();
+initialFlags();
 (function ($){
   var header = "white";
   var decelerationCurve = [0.0, 0.0, 0.2, 1];
