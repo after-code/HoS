@@ -378,14 +378,11 @@ function animate_header(){
   }
 }
 function scrollToEl(_id){
-
-      var element = document.getElementById(_id);
+    var element = document.getElementById(_id),
         element_offset = element.offsetTop;
     jQuery('html, body').css({
         scrollTop: element_offset
-          // $("body, html").scrollTo('#'+wi")[1]).offset().top
     });
-  }
 }
 function initialFlags(){
   var _url = window.location.href.split("?")[1];
