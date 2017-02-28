@@ -94,12 +94,11 @@
     }
   }
   .b-fluid-header__element {
-    width: 100%;
-    left:0;
-    transform:translateX(0);
+    // width: 100%;
+    // left:0;
+    transform:matrix(1, 0, 0, 1, -231.357, 224.235);
+    // opacity: 0.2;
     // top: 57.7vh;
-    transform: matrix(1, 0, 0, 1, -300.909, 304.425);
-    left: 45%;
     @include breakpoint(mobile) {
       left: 0%;
       top: 19%;
@@ -109,7 +108,9 @@
     // display: none;
   }
   .b-fluid-header__type {
-    left: -38%;
+    opacity: 1;
+    left: 1vw;
+    transform: matrix(0.5, 0, 0, 0.5, 0, 0);
     strong {
       font-weight: bold;
       border-bottom:3px solid $cyan;
@@ -123,8 +124,5 @@
       line-height: 5.9vh;
       width: 100%;
     }
-    font-weight: bold;
-    font-style: italic;
-    text-align: left;
   }
 }

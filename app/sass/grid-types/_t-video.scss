@@ -25,3 +25,10 @@
     }
   }
 }
+.t-video--full {
+  overflow: hidden;
+  margin-bottom: 7.4%;
+  video {
+    width: 100%;
+  }
+}
