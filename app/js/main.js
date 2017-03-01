@@ -337,7 +337,7 @@ var counter = 0;
   function submenuInit(){
     var menu_clone = $("#block-system-main-menu .expanded > .menu").clone().addClass("clone");
     $("body").prepend("<div class='header-submenu__wrap'><div class='header-submenu'></div><div class='header-submenu__mask'></div></div>");
-    $(".header-submenu").append(menu_clone).append("<div class='header-submenu__bottom'><span>Download report</span></div>").prepend("<div class='close-menu'></div>");
+    $(".header-submenu").append(menu_clone).prepend("<div class='close-menu'></div>");
     $("#block-system-main-menu .expanded").click(function(){
       clearTimeout(submenu_timeout);
       showSubmenu();
